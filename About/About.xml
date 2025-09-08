@@ -4,10 +4,10 @@
     <author>ferny</author>
     <packageId>ferny.BetterArchitect</packageId>
     <description>Better architect</description> <!-- description of mod -->
-    <supportedVersions> <!-- compatible rimworld versions -->
+    <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
-	<modDependencies> <!-- required mods -->
+	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
 			<displayName>Harmony</displayName>
