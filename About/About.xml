@@ -22,6 +22,21 @@
 	</modDependencies>
     <incompatibleWith>
         <li>ferny.floormenu</li>
+        <li>ferny.animalscategory</li>
+        <li>ferny.automationcategory</li>
+        <li>ferny.auxiliariescategory</li>
+        <li>ferny.bedroomcategory</li>
+        <li>ferny.biotechcategory</li>
+        <li>ferny.childhoodcategory</li>
+        <li>ferny.culturecategory</li>
+        <li>ferny.combatcategory</li>
+        <li>ferny.environmentcategory</li>
+        <li>ferny.hivecategory</li>
+        <li>ferny.lightingcategory</li>
+        <li>ferny.networkcategory</li>
+        <li>ferny.noodysseycategory</li>
+        <li>ferny.outreachcategory</li>
+        <li>ferny.transportcategory</li>
     </incompatibleWith>
     <loadAfter>
         <li>Ludeon.RimWorld</li>

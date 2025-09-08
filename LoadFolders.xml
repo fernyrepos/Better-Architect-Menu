@@ -155,5 +155,8 @@
     <li IfModActive="erin.japanesefurniture">Mods and Shit/Erins Japanese Furniture</li>
     <li IfModActive="ferny.progressionagriculture">Mods and Shit/Progression Agriculture</li>
     <li IfModActive="bean.turretpack">Mods and Shit/Beans Turret Pack</li>
+    <li IfModActive="cixwow.helixienboiler">Mods and Shit/Helixien Gas Boiler</li>
+    <li IfModActive="cixwow.helixienbrazier">Mods and Shit/Helixien Gas Brazier</li>
+    <li IfModActive="cixwow.helixiengasproduction">Mods and Shit/Helixien Gas Production</li>
   </v1.6>
 </loadFolders>
