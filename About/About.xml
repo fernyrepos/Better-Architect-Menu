@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ModMetaData>
-    <author>ferny</author>
     <packageId>ferny.BetterArchitect</packageId>
     <name>Better Architect Menu</name> <!-- mod name -->
+    <author>ferny</author> <!-- author -->
     <description>Better architect</description> <!-- description of mod -->
     <supportedVersions> <!-- compatible rimworld versions -->
         <li>1.6</li>
