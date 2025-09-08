@@ -140,11 +140,17 @@
     <li IfModActive="sarg.alphabooks">Mods and Shit/Alpha Books</li>
     <li IfModActive="telardo.multifloors">Mods and Shit/Multifloors</li>
     <li IfModActive="det.epochspottery">Mods and Shit/Epochs Pottery</li>
+    <li IfModActive="det.epochstallow">Mods and Shit/Epochs Tallow</li>
+    <li IfModActive="det.epochsincense">Mods and Shit/Epochs Incense</li>
     <li IfModActive="rebuild.embrasures">Mods and Shit/Rebuild Embrasures</li>
     <li IfModActive="sov.visanderhedge">Mods and Shit/Blooming Hedges</li>
     <li IfModActive="aoba.fortress.industrial">Mods and Shit/Fortifications Industrial</li>
     <li IfModActive="aoba.fortress.industrial.nucleardawn">Mods and Shit/Fortifications Industrial Nuclear Dawn</li>
     <li IfModActive="talias.vfehardleatherconcrete">Mods and Shit/Industrial Hardleather and Concrete</li>
     <li IfModActive="mf.ahm">Mods and Shit/Advance Incubator</li>
+    <li IfModActive="ghost.rootsofrimworld">Mods and Shit/Roots of Rimworld</li>
+    <li IfModActive="erin.japanesefurniture">Mods and Shit/Erins Japanese Furniture</li>
+    <li IfModActive="ferny.progressionagriculture">Mods and Shit/Progression Agriculture</li>
+    <li IfModActive="bean.turretpack">Mods and Shit/Beans Turret Pack</li>
   </v1.6>
 </loadFolders>

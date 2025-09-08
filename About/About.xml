@@ -176,11 +176,17 @@
         <li>sarg.alphabooks</li>
         <li>telardo.multifloors</li>
         <li>det.epochspottery</li>
+        <li>det.epochstallow</li>
+        <li>det.epochsincense</li>
         <li>rebuild.embrasures</li>
         <li>sov.visanderhedge</li>
         <li>aoba.fortress.industrial</li>
         <li>aoba.fortress.industrial.nucleardawn</li>
         <li>talias.vfehardleatherconcrete</li>
         <li>mf.ahm</li>
+        <li>ghost.rootsofrimworld</li>
+        <li>erin.japanesefurniture</li>
+        <li>ferny.progressionagriculture</li>
+        <li>bean.turretpack</li>
     </loadAfter>
 </ModMetaData>
