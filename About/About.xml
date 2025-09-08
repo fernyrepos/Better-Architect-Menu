@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ModMetaData>
     <name>Better Architect Menu</name>
-    <author>ferny</author>
+    <author>ferny</author> <!-- type version number bellow -->
+	<!-- <modVersion>1.11.0</modVersion> -->
     <packageId>ferny.BetterArchitect</packageId>
     <description>Better architect</description>
     <supportedVersions>
@@ -175,5 +176,4 @@
         <li>adamas.vendingmachines</li>
         <li>sarg.alphabooks</li>
         <li>telardo.multifloors</li>
-    </loadAfter>
 </ModMetaData>
