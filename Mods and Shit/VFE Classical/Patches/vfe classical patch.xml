@@ -35,6 +35,15 @@
                         <designationCategory>Ferny_Heating</designationCategory>
                     </value>
                 </Operation>
+                
+<!-- PRODUCTION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEC_CraftingBench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Production</designationCategory>
+                    </value>
+                </Operation>
 
 <!-- PROCESSING PRODUCTION -->
                 <Operation Class="PatchOperationReplace">
@@ -65,6 +74,15 @@
                     <xpath>Defs/ThingDef[defName="VFEC_Beacon"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Outreach</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- WEAPONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEC_Turret_Scorpion"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
                     </value>
                 </Operation>
 </Patch>
