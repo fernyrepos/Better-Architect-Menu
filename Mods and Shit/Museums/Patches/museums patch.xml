@@ -12,6 +12,24 @@
                 </Operation>
 
 <!-- HOSTING -->
+                <Operation Class="PatchOperationFindMod">
+                    <mods>
+                    <li>Hospitality (Continued)</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationReplace">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="Museums_DonationBox"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory>Ferny_Museum</designationCategory>
+                        </value>
+                        </li>
+                    </operations>
+                    </match>
+                </Operation>
+
+
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="Museums_DonationBox"]/designationCategory</xpath>
                     <value>

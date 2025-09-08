@@ -32,7 +32,7 @@
                     <value>
                         <modExtensions>
                         <li Class="BetterArchitect.NestedCategoryExtension">
-                            <parentCategory>Ferny_Life</parentCategory>
+                            <parentCategory>Ferny_Hosting</parentCategory>
                         </li>
                         </modExtensions>
                     </value>
@@ -55,18 +55,47 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/DesignationCategoryDef[defName="Security"]/label</xpath>
                     <value>
-                        <label>Combat</label>
+                        <label>Fight</label>
                     </value>
                 </Operation>
 
-<!-- RENAME PRODUCTION -->
+<!-- EXPERIMENTAL -->
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="Ferny_Colony"]/label</xpath>
+                    <value>
+                        <label>Manage</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="Structure"]/label</xpath>
+                    <value>
+                        <label>Build</label>
+                    </value>
+                </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/DesignationCategoryDef[defName="Production"]/label</xpath>
                     <value>
-                        <label>Production</label>
+                        <label>Make</label>
                     </value>
                 </Operation>
-
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="Ferny_Automation"]/label</xpath>
+                    <value>
+                        <label>Automate</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="Ferny_Storage"]/label</xpath>
+                    <value>
+                        <label>Store</label>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="Furniture"]/label</xpath>
+                    <value>
+                        <label>Furnish</label>
+                    </value>
+                </Operation>
 
 
 <!-- MISC AT THE BOTTOM -->

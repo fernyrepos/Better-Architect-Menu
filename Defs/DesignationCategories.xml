@@ -87,11 +87,13 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+
+
   <DesignationCategoryDef>
-    <defName>Ferny_ResearchProduction</defName>
-    <label>Research</label>
-    <description>Foundational production methods.</description>
-    <order>650</order>
+    <defName>Ferny_Production</defName>
+    <label>Produce</label>
+    <description>Make stuff.</description>
+    <order>652</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -103,10 +105,11 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+
   <DesignationCategoryDef>
-    <defName>Ferny_Production</defName>
-    <label>Production</label>
-    <description>Make stuff.</description>
+    <defName>Ferny_ProcessingProduction</defName>
+    <label>Process</label>
+    <description>Processing production methods.</description>
     <order>652</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
@@ -135,22 +138,6 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-  <DesignationCategoryDef>
-    <defName>Ferny_Farming</defName>
-    <label>Farming</label>
-    <description>Things that relate to agriculture.</description>
-    <order>639</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-      <li>Designator_ZoneAdd_Growing</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Production</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
 
   <DesignationCategoryDef>
     <defName>Ferny_Kitchen</defName>
@@ -168,11 +155,29 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+
   <DesignationCategoryDef>
-    <defName>Ferny_ProcessingProduction</defName>
-    <label>Processing</label>
-    <description>Processing production methods.</description>
-    <order>639</order>
+    <defName>Ferny_Farming</defName>
+    <label>Farming</label>
+    <description>Things that relate to agriculture.</description>
+    <order>640</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_ZoneAdd_Growing</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Production</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_ResearchProduction</defName>
+    <label>Research</label>
+    <description>Foundational production methods.</description>
+    <order>640</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -183,7 +188,6 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
-
 
   <DesignationCategoryDef>
     <defName>Ferny_Auxiliaries</defName>
@@ -860,7 +864,7 @@
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Hosting</defName>
-		<label>Amenities</label>
+		<label>Entertain</label>
 		<order>9</order>
 		<specialDesignatorClasses>
 		  <li>Designator_Cancel</li>
@@ -897,5 +901,7 @@
 			</li>
 		</modExtensions>
   </DesignationCategoryDef>  
+
+
 
 </Defs>

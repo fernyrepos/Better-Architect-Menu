@@ -31,190 +31,200 @@
     </value>
 </Operation>
 
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Chemfuel Expanded</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_ChemfuelCrematorium"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
 
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_ChemfuelStoveLarge"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CE_ChemfuelDeepFrier"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CE_ChemfuelGrill"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CE_ChemfuelPot"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CE_AirFryer"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CE_ChemfuelStove"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="SCP_ChemDrill"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_ChemfuelBrazierDark"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_ChemfuelBrazier"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_InfiniteDeepchemPumpjack"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CAS_ChemfuelCooler"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CAS_ChemfuelHeater"]/designationCategory</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_Sunlamp"]</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_ChemfuelStandingLamp"]</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_SunlampDark"]</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CAS_ChemfuelWallLight"]</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationAdd">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_ChemfuelFloodlight"]</xpath>
+  <value>
+    <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CE_InfiniteChemfuelPump"]/designationCategory</xpath>
+  <value>
+    <designationCategory></designationCategory>
+  </value>
+</li>
+
+<li Class="PatchOperationReplace">
+  <success>Always</success>
+  <xpath>Defs/ThingDef[defName="CA_InfiniteDeepchemPumpjack"]/designationCategory</xpath>
+  <value>
+    <designationCategory></designationCategory>
+  </value>
+</li>
+
+      </operations>
+    </match>
+  </Operation>
 <!-- CHEMFUEL -->
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_ChemfuelCrematorium"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_ChemfuelStoveLarge"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CE_FueledSmithyLarge"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CE_ChemfuelDeepFrier"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CE_ChemfuelGrill"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CE_ChemfuelPot"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CE_AirFryer"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_ChemfuelSmithy"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_ChemfuelSmelter"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CE_ChemfuelStove"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="SCP_ChemDrill"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_ChemfuelBrazierDark"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_ChemfuelBrazier"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_InfiniteDeepchemPumpjack"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CAS_ChemfuelCooler"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CAS_ChemfuelHeater"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationAdd">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_Sunlamp"]</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationAdd">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_ChemfuelStandingLamp"]</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationAdd">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_SunlampDark"]</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationAdd">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CAS_ChemfuelWallLight"]</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationAdd">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_ChemfuelFloodlight"]</xpath>
-    <value>
-        <designationCategory>Ferny_ChemfuelNetwork</designationCategory>
-    </value>
-</Operation>
-
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CE_InfiniteChemfuelPump"]/designationCategory</xpath>
-    <value>
-        <designationCategory></designationCategory>
-    </value>
-</Operation>
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="CA_InfiniteDeepchemPumpjack"]/designationCategory</xpath>
-    <value>
-        <designationCategory></designationCategory>
-    </value>
-</Operation>
 
 
 
