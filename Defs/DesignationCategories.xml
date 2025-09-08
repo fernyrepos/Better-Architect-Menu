@@ -686,6 +686,22 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_ExosuitsTransport</defName>
+    <label>Exosuits</label>
+    <description>Build exosuits.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Transport</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
   
   <DesignationCategoryDef>
     <defName>Ferny_TransportInfrastructure</defName>

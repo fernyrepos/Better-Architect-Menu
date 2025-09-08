@@ -146,6 +146,9 @@
     <li IfModActive="sov.visanderhedge">Mods and Shit/Blooming Hedges</li>
     <li IfModActive="aoba.fortress.industrial">Mods and Shit/Fortifications Industrial</li>
     <li IfModActive="aoba.fortress.industrial.nucleardawn">Mods and Shit/Fortifications Industrial Nuclear Dawn</li>
+    <li IfModActive="aoba.exosuit.framework">Mods and Shit/Exosuit Framework</li>
+    <li IfModActive="aoba.deadmanswitch.core">Mods and Shit/Dead Mans Switch</li>
+    <li IfModActive="aoba.deadmanswitch.mobiledragoon">Mods and Shit/Dead Mans Switch Mobile Dragoon</li>
     <li IfModActive="talias.vfehardleatherconcrete">Mods and Shit/Industrial Hardleather and Concrete</li>
     <li IfModActive="mf.ahm">Mods and Shit/Advance Incubator</li>
     <li IfModActive="ghost.rootsofrimworld">Mods and Shit/Roots of Rimworld</li>
