@@ -63,13 +63,6 @@
 <!-- BARRICADES -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="FT_MGNest"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Barricades</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="FT_SandBag_Base"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Barricades</designationCategory>
@@ -108,6 +101,13 @@
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Weapons</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="FT_MGNest"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Weapons</designationCategory>
                     </value>
