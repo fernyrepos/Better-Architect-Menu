@@ -23,7 +23,6 @@ namespace BetterArchitect
         private static DesignationCategoryDef lastMainCategory;
         private static string lastSearchText = "";
         public static MaterialInfo selectedMaterial;
-
         public static void Reset()
         {
             selectedCategory.Clear();
@@ -98,7 +97,7 @@ namespace BetterArchitect
 
         private static bool IsSpecialCategory(DesignationCategoryDef cat)
         {
-            return cat == DefsOf.Orders || cat == DesignationCategoryDefOf.Zone || cat.defName == "Blueprints";
+            return cat == DefsOf.Orders || cat == DesignationCategoryDefOf.Zone || cat.defName == "Blueprints" || cat.GetModExtension<SpecialCategoryExtension>() != null;
         }
 
         private static (List<Designator> buildables, List<Designator> orders) SeparateDesignatorsByType(IEnumerable<Designator> allDesignators, DesignationCategoryDef category)
@@ -848,7 +847,7 @@ namespace BetterArchitect
             {
                 foreach (var cost in costs)
                 {
-                    if (cost.thingDef.stuffProps != null && (DebugSettings.godMode || Find.CurrentMap.listerThings.ThingsOfDef(cost.thingDef).Any()))
+                    if (DebugSettings.godMode || Find.CurrentMap.listerThings.ThingsOfDef(cost.thingDef).Any())
                     {
                         AddFloor(element, new MaterialInfo(cost.thingDef.LabelCap, cost.thingDef.uiIcon, cost.thingDef.uiIconColor, cost.thingDef), floorsByMaterial);
                     }
@@ -1000,6 +999,207 @@ namespace BetterArchitect
             }
             return null;
         }
+
+        private static float? GetStatValueIfDefined(BuildableDef buildable, StatDef statDef)
+        {
+            if (statDef.showIfUndefined is false && buildable.StatBaseDefined(statDef) is false)
+            {
+                return null;
+            }
+            var stuff = GetStuffFrom(buildable);
+            var value = buildable.GetStatValueAbstract(statDef, stuff);
+            return value;
+        }
+
+        private static float? GetTotalStorageCapacity(BuildableDef buildable)
+        {
+            if (buildable is ThingDef thingDef && typeof(Building_Storage).IsAssignableFrom(thingDef.thingClass) && thingDef.building != null && thingDef.building.maxItemsInCell > 0)
+            {
+                return thingDef.building.maxItemsInCell * thingDef.size.x * thingDef.size.z;
+            }
+            return null;
+        }
+
+        private static string GetLabel(this Designator designator)
+        {
+            if (designator is Designator_Build buildDesignator)
+            {
+                var oldWriteStuff = buildDesignator.writeStuff;
+                buildDesignator.writeStuff = false;
+                var label = buildDesignator.LabelCap;
+                buildDesignator.writeStuff = oldWriteStuff;
+                return label;
+            }
+            return designator.LabelCap;
+        }
+        
+        private static void ProcessGizmoResult(GizmoResult result, Designator designator, ref Designator mouseoverGizmo, ref Designator interactedGizmo, ref Designator floatMenuGizmo, ref Event interactedEvent)
+        {
+            if (result.State >= GizmoState.Mouseover) mouseoverGizmo = designator;
+            if (result.State == GizmoState.Interacted)
+            {
+                interactedGizmo = designator;
+                interactedEvent = result.InteractEvent;
+            }
+            else if (result.State == GizmoState.OpenedFloatMenu)
+            {
+                floatMenuGizmo = designator;
+                interactedEvent = result.InteractEvent;
+            }
+        }
+        
+        private static void ProcessGizmoInteractions(Designator interactedGizmo, Designator floatMenuGizmo, Event interactedEvent)
+        {
+            if (interactedGizmo != null)
+            {
+                if (DubsMintMenusActive)
+                {
+                    InitializeDubsMintMenusReflection();
+                }
+                if (DubsMintMenusActive && IsDubsMintMenusEditMode())
+                {
+                    ToggleDesignatorInWheel(interactedGizmo);
+                    Event.current.Use();
+                }
+                else
+                {
+                    interactedGizmo.ProcessInput(interactedEvent);
+                    Event.current.Use();
+                }
+            }
+            if (floatMenuGizmo != null)
+            {
+                var floatMenuOptions = floatMenuGizmo.RightClickFloatMenuOptions.ToList();
+                if (floatMenuOptions.Any())
+                {
+                    Find.WindowStack.Add(new FloatMenu(floatMenuOptions));
+                    Event.current.Use();
+                }
+                else
+                {
+                    floatMenuGizmo.ProcessInput(interactedEvent);
+                    Event.current.Use();
+                }
+            }
+        }
+        
+        private static float GetCategoryViewHeight(int itemCount)
+        {
+            return itemCount * 41f;
+        }
+
+        private static System.Type mainTabWindowMayaMenuType;
+        private static System.Reflection.FieldInfo editModeField;
+        private static System.Type dubUtilsType;
+        private static System.Reflection.MethodInfo getDesignatorKeyMethod;
+        private static System.Type dubsMintMenusModType;
+        private static System.Reflection.PropertyInfo settingsProperty;
+        private static System.Reflection.MethodInfo toggleDesMethod;
+        private static System.Reflection.MethodInfo refreshDesignatorCachesMethod;
+        private static bool? _dubsMintMenusActive;
+        public static bool DubsMintMenusActive => _dubsMintMenusActive ??= ModsConfig.IsActive("Dubwise.DubsMintMenus");
+
+        private static void InitializeDubsMintMenusReflection()
+        {
+            if (mainTabWindowMayaMenuType != null)
+                return;
+
+            if (!DubsMintMenusActive)
+                return;
+
+            try
+            {
+                mainTabWindowMayaMenuType = AccessTools.TypeByName("DubsMintMenus.MainTabWindow_MayaMenu");
+                if (mainTabWindowMayaMenuType == null)
+                {
+                    Log.Error("InitializeDubsMintMenusReflection: mainTabWindowMayaMenuType is null");
+                    return;
+                }
+                editModeField = AccessTools.Field(mainTabWindowMayaMenuType, "EditMode");
+                if (editModeField == null)
+                {
+                    Log.Error("InitializeDubsMintMenusReflection: editModeField is null");
+                    return;
+                }
+                refreshDesignatorCachesMethod = AccessTools.Method(mainTabWindowMayaMenuType, "RefreshDesignatorCaches");
+                if (refreshDesignatorCachesMethod == null)
+                {
+                    Log.Error("InitializeDubsMintMenusReflection: refreshDesignatorCachesMethod is null");
+                    return;
+                }
+
+                dubUtilsType = AccessTools.TypeByName("DubsMintMenus.DubUtils");
+                if (dubUtilsType == null)
+                {
+                    Log.Error("InitializeDubsMintMenusReflection: dubUtilsType is null");
+                    return;
+                }
+                getDesignatorKeyMethod = AccessTools.Method(dubUtilsType, "GetDesignatorKey");
+                if (getDesignatorKeyMethod == null)
+                {
+                    Log.Error("InitializeDubsMintMenusReflection: getDesignatorKeyMethod is null");
+                    return;
+                }
+
+                dubsMintMenusModType = AccessTools.TypeByName("DubsMintMenus.DubsMintMenusMod");
+                if (dubsMintMenusModType == null)
+                {
+                    Log.Error("InitializeDubsMintMenusReflection: dubsMintMenusModType is null");
+                    return;
+                }
+                settingsProperty = AccessTools.Property(dubsMintMenusModType, "Settings");
+                if (settingsProperty == null)
+                {
+                    Log.Error("InitializeDubsMintMenusReflection: settingsProperty is null");
+                    return;
+                }
+
+                var settingsType = AccessTools.TypeByName("DubsMintMenus.Settings");
+                if (settingsType == null)
+                {
+                    Log.Error("InitializeDubsMintMenusReflection: settingsType is null");
+                    return;
+                }
+                toggleDesMethod = AccessTools.Method(settingsType, "ToggleDes");
+                if (toggleDesMethod == null)
+                {
+                    Log.Error("InitializeDubsMintMenusReflection: toggleDesMethod is null");
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"Error in InitializeDubsMintMenusReflection: {ex}");
+            }
+        }
+
+        private static bool IsDubsMintMenusEditMode()
+        {
+            try
+            {
+                return (bool)editModeField.GetValue(null);
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        private static void ToggleDesignatorInWheel(Designator designator)
+        {
+            try
+            {
+                var key = getDesignatorKeyMethod.Invoke(null, new object[] { designator }) as string;
+                var settings = settingsProperty.GetValue(null);
+                toggleDesMethod.Invoke(settings, new object[] { key });
+                refreshDesignatorCachesMethod.Invoke(null, null);
+            }
+            catch (Exception ex)
+            {
+                Log.Warning($"BetterArchitect: Failed to toggle designator in wheel: {ex}");
+            }
+        }
+
         private static System.Type vehicleBuildDefType;
         private static System.Reflection.FieldInfo thingToSpawnProp;
         private static System.Reflection.FieldInfo vehicleStatsField;
@@ -1143,82 +1343,6 @@ namespace BetterArchitect
             }
 
             return null;
-        }
-
-        private static float? GetStatValueIfDefined(BuildableDef buildable, StatDef statDef)
-        {
-            if (statDef.showIfUndefined is false && buildable.StatBaseDefined(statDef) is false)
-            {
-                return null;
-            }
-            var stuff = GetStuffFrom(buildable);
-            var value = buildable.GetStatValueAbstract(statDef, stuff);
-            return value;
-        }
-
-        private static float? GetTotalStorageCapacity(BuildableDef buildable)
-        {
-            if (buildable is ThingDef thingDef && typeof(Building_Storage).IsAssignableFrom(thingDef.thingClass) && thingDef.building != null && thingDef.building.maxItemsInCell > 0)
-            {
-                return thingDef.building.maxItemsInCell * thingDef.size.x * thingDef.size.z;
-            }
-            return null;
-        }
-
-        private static string GetLabel(this Designator designator)
-        {
-            if (designator is Designator_Build buildDesignator)
-            {
-                var oldWriteStuff = buildDesignator.writeStuff;
-                buildDesignator.writeStuff = false;
-                var label = buildDesignator.LabelCap;
-                buildDesignator.writeStuff = oldWriteStuff;
-                return label;
-            }
-            return designator.LabelCap;
-        }
-        
-        private static void ProcessGizmoResult(GizmoResult result, Designator designator, ref Designator mouseoverGizmo, ref Designator interactedGizmo, ref Designator floatMenuGizmo, ref Event interactedEvent)
-        {
-            if (result.State >= GizmoState.Mouseover) mouseoverGizmo = designator;
-            if (result.State == GizmoState.Interacted)
-            {
-                interactedGizmo = designator;
-                interactedEvent = result.InteractEvent;
-            }
-            else if (result.State == GizmoState.OpenedFloatMenu)
-            {
-                floatMenuGizmo = designator;
-                interactedEvent = result.InteractEvent;
-            }
-        }
-        
-        private static void ProcessGizmoInteractions(Designator interactedGizmo, Designator floatMenuGizmo, Event interactedEvent)
-        {
-            if (interactedGizmo != null)
-            {
-                interactedGizmo.ProcessInput(interactedEvent);
-                Event.current.Use();
-            }
-            if (floatMenuGizmo != null)
-            {
-                var floatMenuOptions = floatMenuGizmo.RightClickFloatMenuOptions.ToList();
-                if (floatMenuOptions.Any())
-                {
-                    Find.WindowStack.Add(new FloatMenu(floatMenuOptions));
-                    Event.current.Use();
-                }
-                else
-                {
-                    floatMenuGizmo.ProcessInput(interactedEvent);
-                    Event.current.Use();
-                }
-            }
-        }
-        
-        private static float GetCategoryViewHeight(int itemCount)
-        {
-            return itemCount * 41f;
         }
     }
 }

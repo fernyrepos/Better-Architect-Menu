@@ -4,7 +4,7 @@
     <author>ferny</author> <!-- type version number bellow -->
 	<!-- <modVersion>1.11.0</modVersion> -->
     <packageId>ferny.BetterArchitect</packageId>
-    <description>Better architect</description>
+    <description>Better architect</description> <!-- description of mod -->
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
