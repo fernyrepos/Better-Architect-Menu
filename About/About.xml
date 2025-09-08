@@ -23,7 +23,7 @@
     <incompatibleWith>
         <li>ferny.floormenu</li>
     </incompatibleWith>
-    <loadAfter>
+    <loadAfter> <!-- mods to load before this patch -->
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Royalty</li>
         <li>Ludeon.RimWorld.Ideology</li>
