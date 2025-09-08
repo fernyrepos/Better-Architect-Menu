@@ -175,5 +175,12 @@
         <li>adamas.vendingmachines</li>
         <li>sarg.alphabooks</li>
         <li>telardo.multifloors</li>
+        <li>det.epochspottery</li>
+        <li>rebuild.embrasures</li>
+        <li>sov.visanderhedge</li>
+        <li>aoba.fortress.industrial</li>
+        <li>aoba.fortress.industrial.nucleardawn</li>
+        <li>talias.vfehardleatherconcrete</li>
+        <li>mf.ahm</li>
     </loadAfter>
 </ModMetaData>

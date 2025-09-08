@@ -139,5 +139,12 @@
     <li IfModActive="adamas.vendingmachines">Mods and Shit/Vending Machines</li>
     <li IfModActive="sarg.alphabooks">Mods and Shit/Alpha Books</li>
     <li IfModActive="telardo.multifloors">Mods and Shit/Multifloors</li>
+    <li IfModActive="det.epochspottery">Mods and Shit/Epochs Pottery</li>
+    <li IfModActive="rebuild.embrasures">Mods and Shit/Rebuild Embrasures</li>
+    <li IfModActive="sov.visanderhedge">Mods and Shit/Blooming Hedges</li>
+    <li IfModActive="aoba.fortress.industrial">Mods and Shit/Fortifications Industrial</li>
+    <li IfModActive="aoba.fortress.industrial.nucleardawn">Mods and Shit/Fortifications Industrial Nuclear Dawn</li>
+    <li IfModActive="talias.vfehardleatherconcrete">Mods and Shit/Industrial Hardleather and Concrete</li>
+    <li IfModActive="mf.ahm">Mods and Shit/Advance Incubator</li>
   </v1.6>
 </loadFolders>

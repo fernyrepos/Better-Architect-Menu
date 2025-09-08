@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>   
+
+<!-- PROCESSING PRODUCTION -->
+                <Operation Class="PatchOperationFindMod">
+                  <mods>
+                    <li>Vanilla Factions Expanded - Medieval 2</li>
+                  </mods>
+                  <match Class="PatchOperationSequence">
+                    <operations>
+                      <li Class="PatchOperationReplace">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="talias_EletricLeatherBoilpot"]/designationCategory</xpath>
+                        <value>
+                          <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                        </value>
+                      </li>
+                    </operations>
+                  </match>
+                </Operation>
+                <Operation Class="PatchOperationFindMod">
+                  <mods>
+                    <li>Vanilla Factions Expanded - Classical</li>
+                  </mods>
+                  <match Class="PatchOperationSequence">
+                    <operations>
+                      <li Class="PatchOperationReplace">
+                        <success>Always</success>
+                        <xpath>Defs/ThingDef[defName="talias_EletricConcreteMaker"]/designationCategory</xpath>
+                        <value>
+                          <designationCategory>Ferny_ProcessingProduction</designationCategory>
+                        </value>
+                      </li>
+                    </operations>
+                  </match>
+                </Operation>
+</Patch>
