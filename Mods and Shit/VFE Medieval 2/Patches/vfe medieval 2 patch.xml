@@ -150,7 +150,7 @@
 <!-- DECORATIONS -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="VFEE_ImperialBanner"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="VFEM2_StandingBanner"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Decorations</designationCategory>
                     </value>
