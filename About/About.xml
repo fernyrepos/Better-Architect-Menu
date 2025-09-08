@@ -20,7 +20,7 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/1195427067</steamWorkshopUrl>
 		</li>
 	</modDependencies>
-    <incompatibleWith>
+    <incompatibleWith> <!-- mods that are incompatible with this mod -->
         <li>ferny.floormenu</li>
     </incompatibleWith>
     <loadAfter> <!-- mods to load before this patch -->
