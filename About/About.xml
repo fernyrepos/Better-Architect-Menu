@@ -21,10 +21,12 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/1195427067</steamWorkshopUrl>
 		</li>
 	</modDependencies>
-    <incompatibleWith>
+    <incompatibleWith> <!-- mods that are incompatible with this mod -->
         <li>ferny.floormenu</li>
     </incompatibleWith>
-    <loadAfter>
+	<loadBefore> <!-- mods to put after this patch -->
+	</loadBefore>
+    <loadAfter> <!-- mods to load before this patch -->
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Royalty</li>
         <li>Ludeon.RimWorld.Ideology</li>
