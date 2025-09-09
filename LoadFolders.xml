@@ -131,6 +131,7 @@
     <li IfModActive="gy.ppextend">Mods and Shit/Power Poles Extended</li>
     <li IfModActive="rabiosus.extinguisherdrone">Mods and Shit/Extinguisher Drone</li>
     <li IfModActive="gogatio.mechanoidupgrades">Mods and Shit/Mechanoid Upgrades</li>
+    <li IfModActive="sbz.gravshipstorage">Mods and Shit/Gravship Storage</li>
     <li IfModActive="sbz.neatstorage">Mods and Shit/Neat Storage</li>
     <li IfModActive="vanillaexpanded.vfepropsanddecor">Mods and Shit/VFE Props</li>
     <li IfModActive="orion.cashregister">Mods and Shit/Cash Register</li>

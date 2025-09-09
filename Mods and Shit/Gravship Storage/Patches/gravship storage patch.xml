@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+
+<!-- GRAVSHIP STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="sbz_GravshipCrate"]</xpath>
+                    <value>
+                        <designationCategory>Odyssey</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="sbz_GravshipGlassShelf"]</xpath>
+                    <value>
+                        <designationCategory>Odyssey</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="sbz_GravshipShelf"]</xpath>
+                    <value>
+                        <designationCategory>Odyssey</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="sbz_GravshipTwoTierShelf"]</xpath>
+                    <value>
+                        <designationCategory>Odyssey</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="sbz_GravshipWeaponRack"]</xpath>
+                    <value>
+                        <designationCategory>Odyssey</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="sbz_LargeGravshipCrate"]</xpath>
+                    <value>
+                        <designationCategory>Odyssey</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="sbz_LongGravshipCrate"]</xpath>
+                    <value>
+                        <designationCategory>Odyssey</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="sbz_SmallGravshipShelf"]</xpath>
+                    <value>
+                        <designationCategory>Odyssey</designationCategory>
+                    </value>
+                </Operation>
+
+</Patch>
