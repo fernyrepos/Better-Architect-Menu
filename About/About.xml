@@ -193,5 +193,6 @@
         <li>cixwow.helixienboiler</li>
         <li>cixwow.helixienbrazier</li>
         <li>cixwow.helixiengasproduction</li>
+        <li>sbz.neatstoragefridge</li>
     </loadAfter>
 </ModMetaData>
