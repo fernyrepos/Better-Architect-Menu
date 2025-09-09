@@ -144,7 +144,6 @@
     <li IfModActive="aoba.fortress.industrial">Mods and Shit/Fortifications Industrial</li>
     <li IfModActive="aoba.fortress.industrial.nucleardawn">Mods and Shit/Fortifications Industrial Nuclear Dawn</li>
     <li IfModActive="talias.vfehardleatherconcrete">Mods and Shit/Industrial Hardleather and Concrete</li>
-    <li IfModActive="mf.ahm">Mods and Shit/Advance Incubator</li>
     <li IfModActive="ghost.rootsofrimworld">Mods and Shit/Roots of Rimworld</li>
     <li IfModActive="erin.japanesefurniture">Mods and Shit/Erins Japanese Furniture</li>
     <li IfModActive="ferny.progressionagriculture">Mods and Shit/Progression Agriculture</li>
