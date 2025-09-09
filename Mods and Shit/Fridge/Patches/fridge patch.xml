@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+
+<!-- FREEZER STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_CorpseFridge"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Freezer</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_DoubleChestFridge"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Freezer</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_DoubleWallFridge"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Freezer</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_Fridge"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Freezer</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_LargeFridge"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Freezer</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_SingleChestFridge"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Freezer</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="sbz_SingleWallFridge"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Freezer</designationCategory>
+                    </value>
+                </Operation>
+
+</Patch>
