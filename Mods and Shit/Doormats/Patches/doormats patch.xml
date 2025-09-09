@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- DOORMATS -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Alias_DoorMatLarge"]</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Alias_DoorMatLinked"]</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Alias_DoorMatMedium"]</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Alias_DoorMatSmall"]</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+</Patch>

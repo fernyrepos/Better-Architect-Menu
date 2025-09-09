@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>              
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="PlanningExtended"]/order</xpath>
+                    <value>
+                        <order>4</order>
+                    </value>
+                </Operation>      
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="PlanningExtended"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Colony</parentCategory>
+                        </li>
+                        <li Class="BetterArchitect.SpecialCategoryExtension"></li>
+                        </modExtensions>
+                    </value>
+                </Operation>
+</Patch>

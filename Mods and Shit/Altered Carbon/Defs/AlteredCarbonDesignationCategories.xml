@@ -12,7 +12,7 @@
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Biotech</parentCategory>
+        <parentCategory>Ferny_Biotech</parentCategory>
       </li>
     </modExtensions>
   </DesignationCategoryDef>

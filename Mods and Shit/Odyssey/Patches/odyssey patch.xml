@@ -13,7 +13,7 @@
         <success>Always</success>
         <xpath>Defs/DesignationCategoryDef[defName="Odyssey"]/label</xpath>
         <value>
-            <label>Orbit</label>
+            <label>Orbital</label>
         </value>
     </Operation>
 

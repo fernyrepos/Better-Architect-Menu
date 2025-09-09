@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Remove Skylights category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="skylights"]</xpath>
+    </Operation>
+
+    <!-- Add special skylights designator -->
+    <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Lighting"]/specialDesignatorClasses</xpath>
+    <value>
+        <li>Dubs_Skylight.Designator_RemoveSkylights</li>
+    </value>
+    </Operation>
+
+    <!-- Add Ferny_Lighting category to buildables -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="SkyLightA"]</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="SkyLightB"]</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="SkyLightC"]</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="SkyLightD"]</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+</Patch>

@@ -16,5 +16,14 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+  <DesignationCategoryDef>
+    <defName>VCHE_PipeNetworks</defName>
+    <label>Resources</label>
+    <order>350</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
 
 </Defs>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>              
+
+
+<!-- Special -->   
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="MapEdit"]</xpath>
+                    <value>
+                        <modExtensions>
+                            <li Class="BetterArchitect.SpecialCategoryExtension"></li>
+                        </modExtensions>
+                    </value>
+                </Operation>
+
+</Patch>

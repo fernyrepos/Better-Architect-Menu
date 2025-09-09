@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Patch>
-<!-- REINFORCED MECHANOID 2 PATCHES -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RM_GestaltEngine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Mechanoids</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RM_VanometricGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
     <!-- RM_Turret_AutoShardLance -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="RM_Turret_AutoShardLance"]/designationCategory</xpath>
