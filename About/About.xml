@@ -39,12 +39,32 @@
         <li>ferny.transportcategory</li>
     </incompatibleWith>
     <loadAfter>
+
+<!-- CORE + DLCS -->
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Royalty</li>
         <li>Ludeon.RimWorld.Ideology</li>
         <li>Ludeon.RimWorld.Biotech</li>
         <li>Ludeon.RimWorld.Anomaly</li>
         <li>Ludeon.RimWorld.Odyssey</li>
+
+<!-- LOAD AFTER PROGRESSION -->
+		<li>ferny.progressionfantasy</li>
+		<li>ferny.progressionstorytellers</li>
+		<li>ferny.progressionwarrants</li>
+		<li>ferny.progressiontemperature</li>
+		<li>ferny.progressionverticality</li>
+		<li>ferny.progressioncore</li>
+		<li>ferny.progressiongenetics</li>
+		<li>ferny.progressionaesthetics</li>
+		<li>ferny.progressionwarfare</li>
+		<li>ferny.progressionhospitality</li>
+		<li>ferny.progressionproduction</li>
+		<li>ferny.progressionstorage</li>
+		<li>ferny.progressionscenarios</li>
+		<li>ferny.progressiongravship</li>
+
+<!-- THE REST -->
         <li>brrainz.harmony</li>
 		<li>VanillaExpanded.VFECore</li>
 		<li>VanillaExpanded.VFESpacer</li>
@@ -53,13 +73,10 @@
 		<li>ferny.fuckextfurniture</li>
 		<li>oskarpotocki.vfe.empire</li>
 		<li>biomesteam.biomesfossils</li>
-		<li>ferny.progressionhospitality</li>
 		<li>com.bymarcin.architecticons</li>
 		<li>rebuild.cotr.doorsandcorners</li>
 		<li>zal.lanterns</li>
 		<li>dankpyon.medieval.overhaul</li>
-		<li>ferny.progressionaesthetics</li>
-        <li>ferny.progressionstorage</li>
 		<li>Sov.BBrazier</li>
 		<li>van.dacrypts</li>
 		<li>sarg.alphapropsparks</li>
@@ -92,7 +109,6 @@
 		<li>VanillaExpanded.VGeneticsEMoreLabStuff</li>
 		<li>VanillaExpanded.VFEArchitect</li>
 		<li>ferny.xenooranimalgenetics</li>
-		<li>ferny.progressiongenetics</li>
 		<li>com.bymarcin.architecticons</li>
 		<li>animal.bedsnew</li>
 		<li>sarg.alphaimplants</li>
@@ -106,7 +122,6 @@
 		<li>mn.autoAnimalFlap</li>
 		<li>cucumpear.animalbeds</li>
 		<li>Reel.TurretPipeline</li>
-		<li>Mlie.ReinforcedMechanoid2</li>
 		<li>oskarpotocki.vfe.pirates</li>
         <li>deadmano.rimanoarchitecticons</li>
 		<li>overpl.AnimalSarcophagus</li>
@@ -194,5 +209,40 @@
         <li>cixwow.helixienbrazier</li>
         <li>cixwow.helixiengasproduction</li>
         <li>sbz.neatstoragefridge</li>
+        <li>Mlie.MorePlanning</li>
+        <li>doug.mapedittools</li>
+        <li>scherub.planningextended</li>
+		<li>chaoticenrico.researchpapers</li>
+		<li>ccyt.stargatesmod</li>
+		<li>k.glitternet</li>
+		<li>spdskatr.projectrimfactory</li>
+		<li>sumghai.replimat</li>
+		<li>bart.bioformmatrix</li>
+		<li>akaster.ivdruginfuser</li>
+		<li>mf.ahm</li>
+		<li>moistestwhale.gitscyberneticequipment</li>
+		<li>troopersmith1.lifesupport</li>
+		<li>xmb.ancienthydroponicfarmfacilities.mo</li>
+		<li>nephlite.orbitaltradecolumn</li>
+		<li>xmb.giantimperialcannonturret.mo</li>
+		<li>aranmaho.rimsalehouse</li>
+		<li>biotexpans.mythic</li>
+		<li>blues.breaker</li>
+		<li>jalapenolabs.rimworld.electricitymeter</li>
+		<li>cruelmoose.uc</li>
+		<li>mlie.temperaturegauge</li>
+		<li>mlie.reinforcedmechanoid2</li>
+		<li>deadbeat.medicalcabinet</li>
+		<li>side1iner.possessionsplus</li>
+		<li>mlie.bioreactor</li>
+		<li>det.epochstallow</li>
+		<li>det.epochsincense</li>
+		<li>det.epochspottery</li>
+		<li>sumghai.medpod</li>
+		<li>aoba.deadmanswitch.motorized</li>
+		<li>vin.warehouse.storage</li>
+		<li>jf.royalcarpets</li>
+        <li>as1aw.morehunterdrones</li>
+        <li>tug.satyrfaun.expanded</li>
     </loadAfter>
 </ModMetaData>

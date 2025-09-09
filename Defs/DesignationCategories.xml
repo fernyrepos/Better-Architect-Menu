@@ -695,7 +695,7 @@
     <defName>Ferny_TransportInfrastructure</defName>
     <label>Infrastructure</label>
     <description>Build transport infrastructure.</description>
-    <order>7</order>
+    <order>2</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>

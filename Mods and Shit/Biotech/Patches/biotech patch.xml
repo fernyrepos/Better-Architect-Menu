@@ -168,13 +168,6 @@
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[@Name="MechGestatorBase"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Mechanoids</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="SubcoreEncoder"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Mechanoids</designationCategory>

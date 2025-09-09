@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BTEMy_SimpleReveredTotem"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ideology</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BTEMy_WrathfulTotem"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ideology</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BTEMy_LifeFilledTotem"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ideology</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="BTEMy_Mythic"]</xpath>
+	</Operation>
+</Patch>

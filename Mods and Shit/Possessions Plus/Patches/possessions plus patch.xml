@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PSB_PersonalStorageBox"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GearStorage</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PSU_PersonalStorageUnit"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GearStorage</designationCategory>
+		</value>
+	</Operation>
+</Patch>

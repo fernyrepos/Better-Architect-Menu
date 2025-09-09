@@ -119,7 +119,7 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/DesignationCategoryDef[defName="Temperature"]/label</xpath>
                     <value>
-                        <label>Area</label>
+                        <label>Environment</label>
                     </value>
                 </Operation>
 

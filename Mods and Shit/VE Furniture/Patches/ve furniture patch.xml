@@ -286,4 +286,13 @@
                         <designationCategory>Ferny_GearStorage</designationCategory>
                     </value>
                 </Operation>
+
+<!-- CULTURE -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFE_AnimalSarcophagus"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
 </Patch>
