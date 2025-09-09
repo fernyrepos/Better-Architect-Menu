@@ -162,14 +162,13 @@
     <description>Things that relate to agriculture.</description>
     <order>640</order>
     <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
       <li>Designator_ZoneAdd_Growing</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
         <parentCategory>Production</parentCategory>
       </li>
+      <li Class="BetterArchitect.SpecialCategoryExtension"></li>
     </modExtensions>
   </DesignationCategoryDef>
 

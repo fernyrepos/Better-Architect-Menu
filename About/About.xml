@@ -37,6 +37,7 @@
         <li>ferny.noodysseycategory</li>
         <li>ferny.outreachcategory</li>
         <li>ferny.transportcategory</li>
+        <li>cedaro.tidy.designation</li>
     </incompatibleWith>
     <loadAfter>
 
@@ -206,14 +207,6 @@
         <li>adamas.vendingmachines</li>
         <li>sarg.alphabooks</li>
         <li>telardo.multifloors</li>
-        <li>rebuild.embrasures</li>
-        <li>sov.visanderhedge</li>
-        <li>aoba.fortress.industrial</li>
-        <li>aoba.fortress.industrial.nucleardawn</li>
-        <li>talias.vfehardleatherconcrete</li>
-        <li>ghost.rootsofrimworld</li>
-        <li>erin.japanesefurniture</li>
-        <li>bean.turretpack</li>
         <li>cixwow.helixienboiler</li>
         <li>cixwow.helixienbrazier</li>
         <li>cixwow.helixiengasproduction</li>
@@ -248,15 +241,24 @@
 		<li>det.epochsincense</li>
 		<li>det.epochspottery</li>
 		<li>sumghai.medpod</li>
-        <li>aoba.exosuit.framework</li>
-        <li>aoba.deadmanswitch.core</li>
-        <li>aoba.deadmanswitch.mobiledragoon</li>
 		<li>aoba.deadmanswitch.motorized</li>
 		<li>vin.warehouse.storage</li>
 		<li>jf.royalcarpets</li>
         <li>as1aw.morehunterdrones</li>
         <li>tug.satyrfaun.expanded</li>
+        <li>aoba.exosuit.framework</li>
+        <li>aoba.deadmanswitch.core</li>
+        <li>aoba.deadmanswitch.mobiledragoon</li>
+        <li>rebuild.embrasures</li>
+        <li>sov.visanderhedge</li>
+        <li>aoba.fortress.industrial</li>
+        <li>aoba.fortress.industrial.nucleardawn</li>
+        <li>talias.vfehardleatherconcrete</li>
+        <li>ghost.rootsofrimworld</li>
+        <li>erin.japanesefurniture</li>
+        <li>bean.turretpack</li>
         <li>lts.cc</li>
         <li>happycam.multianalyzers</li>
-    </loadAfter>
+        <!-- (Add new mods here ^^^^^) -->
+    </loadAfter>  
 </ModMetaData>
