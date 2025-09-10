@@ -47,4 +47,20 @@
                         <designationCategory>Ferny_Traps</designationCategory>
                     </value>
                 </Operation>
+
+<!-- GEAR STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Building_OutfitStand"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Building_KidOutfitStand"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
 </Patch>
