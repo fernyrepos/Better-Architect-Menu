@@ -179,6 +179,25 @@
     <li IfModActive="dubwise.dubsskylights">Mods and Shit/Dubs Skylights</li>
     <li IfModActive="as1aw.morehunterdrones">Mods and Shit/More Hunter Drones</li>
     <li IfModActive="tug.satyrfaun.expanded">Mods and Shit/Roo SFE</li>
-            <!-- (Add new mods here ^^^^^) -->
+	<li IfModActive="mlie.jwlatmosphericwaterprocessor">Mods and Shit/Atmospheric Water Processor</li>
+	<li IfModActive="mlie.reinforcedmechanoid2">Mods and Shit/Reinforced Mechanoid 2</li>
+	<li IfModActive="eclair155.reinforcedmechanoid2extended">Mods and Shit/Reinforced Mechanoid 2 Extended</li>
+	<li IfModActive="vanillaexpanded.vhe">Mods and Shit/VE Hair</li>
+	<li IfModActive="cp.uncle.boris.brainwash.chair">Mods and Shit/Brainwash Chair</li>
+	<li IfModActive="storagewindow.programmerlily.com">Mods and Shit/Storage Window</li>
+	<li IfModActive="kikohi.jewelry">Mods and Shit/Jewelry</li>
+	<li IfModActive="orion.therapy">Mods and Shit/Therapy</li>
+	<li IfModActive="windwardsnow.mechanitorweapons">Mods and Shit/Mechanitor Weapons</li>
+	<li IfModActive="zal.sbt">Mods and Shit/Subspace Burst Transponder</li>
+	<li IfModActive="rimthunder.core">Mods and Shit/RimThunder Core</li>
+	<li IfModActive="k.psitech">Mods and Shit/PsiTech</li>
+	<li IfModActive="statistno1.personabond">Mods and Shit/Persona Bond Forge</li>
+	<li IfModActive="kimo.cryptotechprint">Mods and Shit/Techprint for Cryptogear</li>
+	<li IfModActive="xmb.ancientminingindustry.mo">Mods and Shit/Ancient Mining Industry</li>
+	<li IfModActive="rah.rvte">Mods and Shit/Rah's Vanilla Turret Expansion</li>
+	<li IfModActive="ilyvion.colonymanagerredux">Mods and Shit/Colony Manager Redux</li>
+	<li IfModActive="breadmo.cinders">Mods and Shit/Cinders of the Embergarden</li>
+	<li IfModActive="azzyh.mechchargerbooster">Mods and Shit/Mech Charger Booster</li>
+	<!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MechChargerBooster_I"]</xpath>
+		<value>
+			<designationCategory>Ferny_Mechanoids</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MechChargerBooster_II"]</xpath>
+		<value>
+			<designationCategory>Ferny_Mechanoids</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MechChargerBooster_III"]</xpath>
+		<value>
+			<designationCategory>Ferny_Mechanoids</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MechChargerBooster_IV"]</xpath>
+		<value>
+			<designationCategory>Ferny_Mechanoids</designationCategory>
+		</value>
+	</Operation>
+</Patch>

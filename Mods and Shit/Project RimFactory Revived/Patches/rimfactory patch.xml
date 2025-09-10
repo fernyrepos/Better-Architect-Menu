@@ -43,11 +43,46 @@
 			<designationCategory>Ferny_Lighting</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="PRF_4k_Battery"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="PRF_4k_Battery"]</xpath>
 		<value>
 			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_16k_Battery"]</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+		<Operation Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PRF_64k_Battery"]</xpath>
+			<value>
+				<designationCategory>Ferny_PowerStorage</designationCategory>
+			</value>
+		</Operation>
+		<Operation Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PRF_256k_Battery"]</xpath>
+			<value>
+				<designationCategory>Ferny_PowerStorage</designationCategory>
+			</value>
+		</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TableRoboticMachining"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_ResearchTerminal"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
 		</value>
 	</Operation>
 </Patch>
