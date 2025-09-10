@@ -27,16 +27,16 @@
                 </Operation>
 
 <!-- HEATING -->
-                <Operation Class="PatchOperationReplace">
+                <Operation Class="PatchOperationAdd">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="RB_Fireplace"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="RB_Fireplace"]</xpath>
                     <value>
                         <designationCategory>Ferny_Heating</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
+                <Operation Class="PatchOperationAdd">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="RB_OverwallFireplace"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="RB_OverwallFireplace"]</xpath>
                     <value>
                         <designationCategory>Ferny_Heating</designationCategory>
                     </value>

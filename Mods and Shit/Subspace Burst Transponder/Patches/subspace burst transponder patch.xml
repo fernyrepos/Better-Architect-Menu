@@ -2,9 +2,9 @@
 <Patch>
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="ResearchServer"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="Building_SubspaceBurstTransponder"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Storage</designationCategory>
+			<designationCategory>Ferny_Outreach</designationCategory>
 		</value>
 	</Operation>
 </Patch>

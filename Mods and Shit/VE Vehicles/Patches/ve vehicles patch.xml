@@ -179,7 +179,13 @@
                         <designationCategory>Ferny_MilitaryTransport</designationCategory>
                     </value>
                 </Operation>
-
+	            <Operation Class="PatchOperationAdd">
+		            <success>Always</success>
+		            <xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]</xpath>
+		            <value>
+						<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		            </value>
+	            </Operation>
 
 <!-- INFRASTRUCTURE -->
                 <Operation Class="PatchOperationReplace">
@@ -240,12 +246,12 @@
                     </match>
                 </Operation>
 
-<!-- TRAPS -->
+<!-- BARRICADES -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VVE_TankTrap"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Traps</designationCategory>
+                        <designationCategory>Ferny_Barricades</designationCategory>
                     </value>
                 </Operation>
 

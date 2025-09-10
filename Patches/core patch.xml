@@ -546,6 +546,15 @@
                     </value>
                 </Operation>
 
+<!-- AREA OTHER -->
+	            <Operation Class="PatchOperationReplace">
+		            <success>Always</success>
+		            <xpath>Defs/ThingDef[defName="MoisturePump"]/designationCategory</xpath>
+		            <value>
+			            <designationCategory>Temperature</designationCategory>
+		            </value>
+	            </Operation>
+
 <!-- CULTURE -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
@@ -625,7 +634,14 @@
                     </value>
                 </Operation>
 
-
+	            <!-- Placed here as ground penetrating scanner uses research skill and "researches" deposits -->
+	            <Operation Class="PatchOperationReplace">
+		            <success>Always</success>
+		            <xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]/designationCategory</xpath>
+		            <value>
+			            <designationCategory>Ferny_ResearchProduction</designationCategory>
+		            </value>
+	            </Operation>
 
 <!-- TABLES -->
                 <Operation Class="PatchOperationAdd">
@@ -810,6 +826,7 @@
                     </value>
                 </Operation>
                         <!-- <designationCategory>Ferny_CreativeProduction</designationCategory> -->
+	
 <!-- INFRASTRUCTURE -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
