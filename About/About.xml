@@ -261,6 +261,7 @@
         <li>happycam.multianalyzers</li>
         <li>khamenman.outfitstandsplus</li>
         <li>ushanka.glittertechexpansion</li>
+        <li>argon.expandedmaterials.metals</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>  
 </ModMetaData>
