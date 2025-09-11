@@ -194,6 +194,7 @@
     <li IfModActive="lts.cc">Mods and Shit/Crypto Coffins</li>
     <li IfModActive="happycam.multianalyzers">Mods and Shit/More Multi-analyzsers</li>
     <li IfModActive="khamenman.outfitstandsplus">Mods and Shit/Outfit Stands Plus</li>
+    <li IfModActive="ushanka.glittertechexpansion">Mods and Shit/Ushankas Glittertech Expansion</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
