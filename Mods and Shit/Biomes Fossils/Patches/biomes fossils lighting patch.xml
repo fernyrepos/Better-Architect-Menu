@@ -19,7 +19,14 @@
                     </value>
                 </Operation>
 
-
+<!-- MUSEUM STUFF -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="BMT_VelvetRope"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Museum</designationCategory>
+                    </value>
+                </Operation>
 
 <!-- AMENITIES -->
                 <Operation Class="PatchOperationReplace">
