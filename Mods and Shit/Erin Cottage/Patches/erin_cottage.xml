@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>          
+<Patch>       
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="CCol_BucketPlantPot"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="CCol_Grinder"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                  <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="CCol_TeaSet"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                  <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="CCol_WheelBarrow"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                    <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="CCol_PottedPlantA"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                    <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="CCol_PottedPlantB"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                      <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="CCol_PottedPlantC"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                      <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="CCol_PottedPlantD"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>  
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CCot_CottageArmchair"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CCot_CottageDiningChair"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CCot_CottageDresser"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Bedroom</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CCot_CottageEndTable"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Aquarium</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CCot_SmallBookshelf"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CCot_Basket"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CCot_Fireplace" or defName="CCot_FireplaceElectric"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Heating</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CCol_WoodStove" or defName="CCol_ChemfuelStove" or defName="CCol_ElectricStove"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Heating</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CCol_CampCauldron"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Kitchen</designationCategory>
+                    </value>
+                </Operation>
+</Patch>
