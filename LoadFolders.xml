@@ -155,7 +155,7 @@
     <li IfModActive="mf.ahm">Mods and Shit/Advanced Incubator</li>
     <li IfModActive="troopersmith1.lifesupport">Mods and Shit/Life Support</li>
     <li IfModActive="nephlite.orbitaltradecolumn">Mods and Shit/Utility Columns</li>
-	  <li IfModActive="xmb.giantimperialcannonturret.mo">Mods and Shit/Giant Imperial Turret</li>
+	<li IfModActive="xmb.giantimperialcannonturret.mo">Mods and Shit/Giant Imperial Turret</li>
     <li IfModActive="aranmaho.rimsalehouse">Mods and Shit/Trading House</li>
     <li IfModActive="jalapenolabs.rimworld.electricitymeter">Mods and Shit/Electricity Meter</li>
     <li IfModActive="cruelmoose.uc">Mods and Shit/Universal Conduit</li>
@@ -217,7 +217,8 @@
     <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
-    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
+    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
+	<li IfModActive="hol.extrematorium">Mods and Shit/Extrematorium Etc</li>
             <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

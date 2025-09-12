@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Extrematorium"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PlasmaSmelter"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AdvancedBiofuelRefinery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
