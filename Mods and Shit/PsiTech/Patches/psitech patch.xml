@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- PEOPLE -->
+	
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="PTPsychicTraier"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Life</designationCategory>
+                    </value>
+                </Operation>
+	
+				<Operation Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="PTPsychicSuppressionFieldProjector"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_Life</designationCategory>
+					</value>
+				</Operation>
+
+<!-- PRODUCTION -->
+	
+				<Operation Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="PTPsychicWorkbench"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_Production</designationCategory>
+					</value>
+				</Operation>
+	
+</Patch>

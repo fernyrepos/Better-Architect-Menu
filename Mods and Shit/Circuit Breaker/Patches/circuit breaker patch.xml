@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="bluesbreaker"]/designationCategory</xpath>
@@ -7,6 +8,7 @@
 			<designationCategory>Ferny_PowerManagement</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="bluesfuse"]/designationCategory</xpath>
@@ -14,4 +16,5 @@
 			<designationCategory>Ferny_PowerManagement</designationCategory>
 		</value>
 	</Operation>
+	
 </Patch>

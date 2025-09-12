@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- POWER -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RM_VanometricGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+<!-- WEAPONS -->
+
+    <Operation Class="PatchOperationReplace">
+		<success>Always</success>
+        <xpath>Defs/ThingDef[defName="RM_Turret_AutoShardLance"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Weapons</designationCategory>
+        </value>
+    </Operation>
+	
+    <Operation Class="PatchOperationReplace">
+		<success>Always</success>
+        <xpath>Defs/ThingDef[defName="RM_Turret_AutoShardSwarmer"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Weapons</designationCategory>
+        </value>
+    </Operation>
+
+<!-- MECHANOIDS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RM_GestaltEngine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Mechanoids</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="RM_DroidBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Mechanoids</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

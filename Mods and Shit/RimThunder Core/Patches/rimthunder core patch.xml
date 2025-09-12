@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- TRANSPORT INFRASTRUCTURE -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName=""]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RTC_ToolShelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RTC_BlastCabinet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RTC_EngineHanger"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_AssemblyBench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_AssemblyCrane"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- GROUND TRANSPORT-->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Bicycle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

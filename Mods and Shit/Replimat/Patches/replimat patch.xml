@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]/label</xpath>
-		<value>
-			<label>Resources</label>
-		</value>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		<match Class="PatchOperationAddModExtension">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="Replimat_Replimat"]</xpath>
+			<value>
+				<li Class="BetterArchitect.NestedCategoryExtension">
+					<parentCategory>VCHE_PipeNetworks</parentCategory>
+				</li>
+			</value>
+		</match>
 	</Operation>
-	<Operation Class="PatchOperationAddModExtension">
-		<success>Always</success>
-		<xpath>Defs/DesignationCategoryDef[defName="Replimat_Replimat"]</xpath>
-		<value>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>VCHE_PipeNetworks</parentCategory>
-			</li>
-		</value>
-	</Operation>
+	
 </Patch>

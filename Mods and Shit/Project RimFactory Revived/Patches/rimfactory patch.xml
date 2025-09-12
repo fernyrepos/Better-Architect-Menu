@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
+<!-- Rename category and move to AUTOMATION -->
+	
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/DesignationCategoryDef[defName="Industrial"]/label</xpath>
 		<value>
-			<label>Industry</label>
+			<label>Production</label>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationAddModExtension">
 		<success>Always</success>
 		<xpath>Defs/DesignationCategoryDef[defName="Industrial"]</xpath>
@@ -15,39 +19,147 @@
 			</li>
 		</value>
 	</Operation>
+	
+<!-- GENERAL STORAGE -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="PRF_MassStorageBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+<!-- LOGISTICS -->
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="PRF_Floorspotlight"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="PRF_DigitalStorageUnit_I"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Logistics</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_ColdStorageUnit_I"]</xpath>
+		<value>
+			<designationCategory>Ferny_Logistics</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_IOPort_I"]</xpath>
+		<value>
+			<designationCategory>Ferny_Logistics</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_IOPort_II"]</xpath>
+		<value>
+			<designationCategory>Ferny_Logistics</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_IOPPusher_I"]</xpath>
+		<value>
+			<designationCategory>Ferny_Logistics</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_FuelingMachine"]</xpath>
+		<value>
+			<designationCategory>Ferny_Logistics</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_SmartHopper"]</xpath>
+		<value>
+			<designationCategory>Ferny_Logistics</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="PRF_Conveyor_Base"]</xpath>
+		<value>
+			<designationCategory>Ferny_Logistics</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="PRF_Puller_Base"]</xpath>
+		<value>
+			<designationCategory>Ferny_Logistics</designationCategory>
+		</value>
+	</Operation>PRF_Puller_Base
+
+	<!-- AUTOMATION OTHER -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="PRF_MiniDroneStation"]</xpath>
+		<value>
+			<designationCategory>Ferny_Automation</designationCategory>
+		</value>
+	</Operation>
+
+<!-- LIGHTING -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="PRF_MiscBase"]</xpath>
 		<value>
 			<designationCategory>Ferny_Lighting</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
+
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="PRF_IndustrialLamp"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[@ParentName="PRF_FloorIconBase"]</xpath>
 		<value>
 			<designationCategory>Ferny_Lighting</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
+
+	<!-- POWER STORAGE -->
+	
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="PRF_SunWallLight"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="PRF_WallLight"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="PRF_4k_Battery"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[@ParentName="BiggerBatteries_BuildingBase"]</xpath>
 		<value>
 			<designationCategory>Ferny_PowerStorage</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- PRODUCTION -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TableRoboticMachining"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- RESEARCH -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PRF_ResearchTerminal"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+	
 </Patch>

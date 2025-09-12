@@ -27,7 +27,7 @@
                 </Operation>
 
 <!-- HEATING -->
-                <Operation Class="PatchOperationReplace">
+                <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="RB_Fireplace"]/designationCategory</xpath>
                     <value>

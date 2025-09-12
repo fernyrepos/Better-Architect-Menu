@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
 	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="BTEMy_SimpleReveredTotem"]/designationCategory</xpath>
+		<xpath>Defs/DesignationCategoryDef[defName="BTEMy_Mythic"]/order</xpath>
 		<value>
-			<designationCategory>Ideology</designationCategory>
+			<order>10</order>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="BTEMy_WrathfulTotem"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ideology</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="BTEMy_LifeFilledTotem"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ideology</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationRemove">
+
+	<Operation Class="PatchOperationAddModExtension">
 		<success>Always</success>
 		<xpath>Defs/DesignationCategoryDef[defName="BTEMy_Mythic"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Life</parentCategory>
+			</li>
+		</value>
 	</Operation>
+
 </Patch>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MA_IncenseBurner"]/designationCategory</xpath>
@@ -7,6 +8,7 @@
 			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MA_StandingIncenseBurner"]/designationCategory</xpath>
@@ -14,4 +16,5 @@
 			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
+
 </Patch>

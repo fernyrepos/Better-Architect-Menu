@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!--
+		All current patching is handled by dead mans switch patch.xml.
+		This file is left here in case of future updates.
+	-->
+	
+</Patch>

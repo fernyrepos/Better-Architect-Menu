@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Turret_Balistarium"]</xpath>
+		<xpath>Defs/ThingDef[@ParentName="GITurret"]</xpath>
 		<value>
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Turret_Pilum"]</xpath>
-		<value>
-			<designationCategory>Ferny_Weapons</designationCategory>
-		</value>
-	</Operation>
+	
 </Patch>

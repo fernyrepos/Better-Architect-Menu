@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[@ParentName="DMS_BaseVehicleBuild"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/Vehicles.VehicleBuildDef[defName="DMS_Mule_ATV_Blueprint"]</xpath>
@@ -7,25 +16,5 @@
 			<designationCategory>Ferny_GroundTransport</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/Vehicles.VehicleBuildDef[defName="DMS_ArmySteed_APC_Blueprint"]</xpath>
-		<value>
-			<designationCategory>Ferny_MilitaryTransport</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/Vehicles.VehicleBuildDef[defName="DMS_Chameleon_TD_Blueprint"]</xpath>
-		<value>
-			<designationCategory>Ferny_MilitaryTransport</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/Vehicles.VehicleBuildDef[defName="DMS_Chelydridae_MainBattleTank_Blueprint"]</xpath>
-		<value>
-			<designationCategory>Ferny_MilitaryTransport</designationCategory>
-		</value>
-	</Operation>
+
 </Patch>

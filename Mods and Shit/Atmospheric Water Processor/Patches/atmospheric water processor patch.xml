@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>          
+<Patch>       
+	
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="JWL_AtmoCollector"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Hygiene</designationCategory>
+        </value>
+    </Operation>
+	
+</Patch>

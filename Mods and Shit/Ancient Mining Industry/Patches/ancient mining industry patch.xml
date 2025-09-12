@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_Turret_ShotgunTurretN"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+<!-- OUTREACH -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMo_AncientRemoteMineralScanners"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Outreach</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MISC -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_ElectricalEquipment"]</xpath>
+		<value>
+			<designationCategory>Misc</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_MineralConveyor"]</xpath>
+		<value>
+			<designationCategory>Misc</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_TunnelStructuralSupport_a"]</xpath>
+		<value>
+			<designationCategory>Misc</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_TunnelStructuralSupport_b"]</xpath>
+		<value>
+			<designationCategory>Misc</designationCategory>
+		</value>
+	</Operation>
+		
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_MineralExports"]</xpath>
+		<value>
+			<designationCategory>Misc</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

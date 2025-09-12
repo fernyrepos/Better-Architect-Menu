@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="StargateMod_OrlinStargate"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[@ParentName="StargateMod_StargateBase"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="StargateMod_AdvancedStargate"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
-		</value>
-	</Operation>
+	
 </Patch>

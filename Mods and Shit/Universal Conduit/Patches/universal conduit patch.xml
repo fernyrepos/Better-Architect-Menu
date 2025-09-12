@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="ConduitUniversal"]/designationCategory</xpath>
-		<value>
-			<designationCategory>VCHE_PipeNetworks</designationCategory>
-		</value>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[@Name="PowerConduit"]/designationCategory</xpath>
+					<value>
+						<designationCategory>VCHE_PipeNetworks</designationCategory>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[@ParentName="PowerConduit"]/designationCategory</xpath>
+					<value>
+						<designationCategory>VCHE_PipeNetworks</designationCategory>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="ConduitUniversalWater"]/designationCategory</xpath>
-		<value>
-			<designationCategory>VCHE_PipeNetworks</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="PowerlessConduitUniversal"]/designationCategory</xpath>
-		<value>
-			<designationCategory>VCHE_PipeNetworks</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="PowerlessConduitUniversalWater"]/designationCategory</xpath>
-		<value>
-			<designationCategory>VCHE_PipeNetworks</designationCategory>
-		</value>
-	</Operation>
+	
 </Patch>

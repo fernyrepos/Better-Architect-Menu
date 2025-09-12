@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- WEAPONS -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="Cinder_AutocannonTurret"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cinder_RocketswarmLauncher"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cinder_TacticalTurret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+<!-- OUTREACH -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cinder_SignalGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Outreach</designationCategory>
+		</value>
+	</Operation>
+
+<!-- PRODUCTION -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cinder_AncientWorkstation"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+
+<!-- MECHANOIDS or AUTOMATROIDS -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>The Dead Man's Switch</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[@ParentName="Cinder_NonfunctionalBuilding_Impassable"]/designationCategory</xpath>
+			<value>
+				<designationCategory>DMS_Category</designationCategory>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationFindMod">
+			<mods>
+				<li>Biotech</li>
+			</mods>
+			<match Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[@ParentName="Cinder_NonfunctionalBuilding_Impassable"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Mechanoids</designationCategory>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+	
+</Patch>

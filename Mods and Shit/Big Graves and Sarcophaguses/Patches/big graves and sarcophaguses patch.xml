@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<!-- BIG GRAVES AND SARCOPHAGUSES -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Wanzi_BigGrave"]</xpath>
+        <value>
+            <designationCategory>Ideology</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Wanzi_BigSarcophagus"]</xpath>
+        <value>
+            <designationCategory>Ideology</designationCategory>
+        </value>
+    </Operation>
+</Patch>

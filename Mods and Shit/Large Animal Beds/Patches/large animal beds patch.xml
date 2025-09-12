@@ -10,7 +10,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="PetBedWithQualityBase" or defName="CCPMAnimalSleepingSpot" or defName="CCPLAnimalSleepingSpot" or defName="CCPMAnimalSleepingBox" or defName="CCPLAnimalSleepingBox" or defName="CCPMAnimalSleepingBed" or defName="CCPLAnimalSleepingBed"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Animals</designationCategory>
+			<designationCategory>Ferny_AnimalBedding</designationCategory>
 		</value>
 	</Operation>
 	
@@ -19,7 +19,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="AnimalSleepingBox" or defName="AnimalBed" or defName="AnimalSleepingSpot"]/designationCategory[text()="CCP_PetBeds"]</xpath>
 		<value>
-			<designationCategory>Ferny_Animals</designationCategory>
+			<designationCategory>Ferny_AnimalBedding</designationCategory>
 		</value>
 	</Operation>
 	

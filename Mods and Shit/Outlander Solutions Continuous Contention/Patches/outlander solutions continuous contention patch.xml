@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- WORLD -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNetController"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_World</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNetCable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_World</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNetCompiler"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_World</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNetProcAssistant"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_World</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ContinuousContention_DefenseNode_SignalTower"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_World</designationCategory>
+		</value>
+	</Operation>
+
+<!-- AMMUNITION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ContinuousContention_ShellMagazine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AmmunitionNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ContinuousContention_Turret_Skyscreen"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ContinuousContention_Turret_StrikeCannon"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>
