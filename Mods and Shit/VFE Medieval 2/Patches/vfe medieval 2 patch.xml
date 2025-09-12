@@ -124,6 +124,22 @@
                     </value>
                 </Operation>
 
+	            <Operation Class="PatchOperationReplace">
+		            <success>Always</success>
+		            <xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench"]/designationCategory</xpath>
+		            <value>
+			            <designationCategory>Ferny_Production</designationCategory>
+		            </value>
+	            </Operation>
+
+	            <Operation Class="PatchOperationReplace">
+		            <success>Always</success>
+		            <xpath>Defs/ThingDef[defName="VFEM2_AlchemicalWorkbench_Electric"]/designationCategory</xpath>
+		            <value>
+			            <designationCategory>Ferny_Production</designationCategory>
+		            </value>
+	            </Operation>
+
 <!-- DECORATIONS -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
