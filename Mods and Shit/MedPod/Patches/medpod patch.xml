@@ -8,31 +8,5 @@
 			<designationCategory>Ferny_Medical</designationCategory>
 		</value>
 	</Operation>
-
-<!-- ANIMAL BEDDING -->
-	
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="MedPodAnimal"]</xpath>
-		<value>
-			<designationCategory>Ferny_AnimalBedding</designationCategory>	
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="MedPodAnimalMedium"]</xpath>
-		<value>
-			<designationCategory>Ferny_AnimalBedding</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="MedPodAnimalBig"]</xpath>
-		<value>
-			<designationCategory>Ferny_AnimalBedding</designationCategory>
-		</value>
-	</Operation>
 	
 </Patch>
