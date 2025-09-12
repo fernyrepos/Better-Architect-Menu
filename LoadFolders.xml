@@ -84,7 +84,7 @@
     <li IfModActive="thek.guardingp">Mods and Shit/Guarding Pawns</li>
     <li IfModActive="oskarpotocki.vanillavehiclesexpanded">Mods and Shit/VE Vehicles</li>
     <li IfModActive="oskarpotocki.vanillavehiclesexpandedtier3">Mods and Shit/VE Vehicles Tier 3</li>
-    <!-- <li IfModActive="ht.lunartika">Mods and Shit/Heavy Truck</li> -->
+    <li IfModActive="ht.lunartika">Mods and Shit/Heavy Truck</li>
     <li IfModActive="chaotic.rvinterior">Mods and Shit/Vehicle Interior Framework</li>
     <li IfModActive="defi.blueprints.fork">Mods and Shit/Blueprints</li>
     <li IfModActive="ninagoblin.enhancedvatlearning">Mods and Shit/Enhanced Vat Learning</li>
@@ -179,7 +179,9 @@
     <li IfModActive="jf.royalcarpets">Mods and Shit/Royal Carpets</li>
     <li IfModActive="dubwise.dubsskylights">Mods and Shit/Dubs Skylights</li>
     <li IfModActive="as1aw.morehunterdrones">Mods and Shit/More Hunter Drones</li>
-    <li IfModActive="tug.satyrfaun.expanded">Mods and Shit/Roo SFE</li> 
+    <li IfModActive="tug.satyrfaun.expanded">Mods and Shit/Roo SFE</li>
+    <li IfModActive="divineDerivative.tilledsoil">Mods and Shit/Configurable Tilled Soil</li>
+    <li IfModActive="BriannBanned.BriannsMissileFramework">Mods and Shit/Brianns Missiles</li>
     <li IfModActive="Poncho.AutomaticHydroponics">Mods and Shit/Automatic Hydroponics</li>
     <li IfModActive="biotexpans.mythic">Mods and Shit/Biotech Expansion Mythic</li>
 	<li IfModActive="ccyt.stargatesmod">Mods and Shit/Stargates!</li>
