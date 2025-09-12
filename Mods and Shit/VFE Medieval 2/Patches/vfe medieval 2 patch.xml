@@ -70,20 +70,6 @@
                         <designationCategory>Ferny_Walls</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="VFEM2_CastleWall"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Walls</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="VFEM2_LowCastleWall"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Walls</designationCategory>
-                    </value>
-                </Operation>
 
 <!-- FARMING -->
                 <Operation Class="PatchOperationReplace">
