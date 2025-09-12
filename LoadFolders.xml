@@ -217,7 +217,8 @@
     <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
-    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
+    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
+	<li IfModActive="vanillaexpanded.vbookse">Mods and Shit/VE Books</li>
             <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
