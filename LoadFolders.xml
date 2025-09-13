@@ -217,7 +217,10 @@
     <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
-    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
+    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
+	<li IfModActive="mosi.VFEC.DoubleTents">Mods and Shit/Double Tents</li>
+	<li IfModActive="joeyjoejoeshabidoo.EvaporationPond">Mods and Shit/Evaporation Pond</li>
+	<li IfModActive="NoneObsidiaExpansion.LEDLightsStrip">Mods and Shit/Led Lights Strip</li>
             <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
