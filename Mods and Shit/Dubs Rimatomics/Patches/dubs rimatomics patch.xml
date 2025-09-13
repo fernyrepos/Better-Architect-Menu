@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	
+<!-- Rimatomics category to Power->Nuclear -->
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="Rimatomics"]</xpath>
+		<value>
+
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Power</parentCategory>
+			</li>
+
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="Rimatomics"]/label</xpath>
+		<value>
+			<label>Nuclear</label>
+		</value>
+	</Operation>
+
+<!-- WALLS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RadiationShielding"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- DOORS -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DU_Blastdoor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TableRimatomicsMachining"]</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+
+	<!-- Remove reference to Rimatomics -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TableRimatomicsMachining"]/label</xpath>
+		<value>
+			<label>Atomics machining table</label>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PlutoniumProcessor"]</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- RESEARCH -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NuclearResearchBench"]</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<!-- Remove reference to Rimatomics -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NuclearResearchBench"]/label</xpath>
+		<value>
+			<label>Atomics research bench</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ResearchReactor"]</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WeaponsBench"]</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="BasedWeapon"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+<!-- COMBAT INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PPC"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PPCWeaponsConsole"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RadarDish"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RimatomicsShieldGenerator"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
