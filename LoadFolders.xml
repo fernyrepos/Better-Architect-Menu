@@ -218,6 +218,7 @@
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
+	<li IfModActive="dubwise.rimefeller">Mods and Shit/Dubs Rimefeller</li>
             <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
