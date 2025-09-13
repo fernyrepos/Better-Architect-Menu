@@ -155,7 +155,7 @@
     <li IfModActive="mf.ahm">Mods and Shit/Advanced Incubator</li>
     <li IfModActive="troopersmith1.lifesupport">Mods and Shit/Life Support</li>
     <li IfModActive="nephlite.orbitaltradecolumn">Mods and Shit/Utility Columns</li>
-	  <li IfModActive="xmb.giantimperialcannonturret.mo">Mods and Shit/Giant Imperial Turret</li>
+    <li IfModActive="xmb.giantimperialcannonturret.mo">Mods and Shit/Giant Imperial Turret</li>
     <li IfModActive="aranmaho.rimsalehouse">Mods and Shit/Trading House</li>
     <li IfModActive="jalapenolabs.rimworld.electricitymeter">Mods and Shit/Electricity Meter</li>
     <li IfModActive="cruelmoose.uc">Mods and Shit/Universal Conduit</li>
@@ -198,11 +198,11 @@
     <li IfModActive="mjeiouws.outlander.continuouscontention">Mods and Shit/Outlander Solutions Continuous Contention</li>  <!-- TODO Move pipe deconstruct designator -->
     <li IfModActive="mlie.jwlatmosphericwaterprocessor">Mods and Shit/Atmospheric Water Processor</li>
     <li IfModActive="mlie.reinforcedmechanoid2">Mods and Shit/Reinforced Mechanoid 2</li>                                   <!-- Reinforced Mechanoid 2 patch split for compatibility with standalone buildings -->
-	<li IfModActive="mlie.reinforcedmechanoid2">Mods and Shit/Gestalt Engine</li>
-	<li IfModActive="mlie.reinforcedmechanoid2">Mods and Shit/Vanometric Generator</li>
-	<li IfModActive="mlie.gestaltengine">Mods and Shit/Gestalt Engine</li>
-	<li IfModActive="hlx.vanometricgenerator">Mods and Shit/Vanometric Generator</li>
-	<li IfModActive="eclair155.reinforcedmechanoid2extended">Mods and Shit/Reinforced Mechanoid 2 Extended</li>
+    <li IfModActive="mlie.reinforcedmechanoid2">Mods and Shit/Gestalt Engine</li>
+    <li IfModActive="mlie.reinforcedmechanoid2">Mods and Shit/Vanometric Generator</li>
+    <li IfModActive="mlie.gestaltengine">Mods and Shit/Gestalt Engine</li>
+    <li IfModActive="hlx.vanometricgenerator">Mods and Shit/Vanometric Generator</li>
+    <li IfModActive="eclair155.reinforcedmechanoid2extended">Mods and Shit/Reinforced Mechanoid 2 Extended</li>
     <li IfModActive="storagewindow.programmerlily.com">Mods and Shit/Storage Window</li>
     <li IfModActive="rah.rvte">Mods and Shit/Rah's Vanilla Turret Expansion</li>                                            <!-- Implicit support for Turrets Re-visited -->
     <li IfModActive="k.psitech">Mods and Shit/PsiTech</li>
@@ -211,13 +211,14 @@
     <li IfModActive="breadmo.cinders">Mods and Shit/Cinders of the Embergarden</li>
     <li IfModActive="aoba.deadmanswitch.core">Mods and Shit/DMS The Dead Man's Switch</li>                                  <!-- Implicit support for DMS AncientCorps -->
     <li IfModActive="spdskatr.projectrimfactory">Mods and Shit/Project RimFactory Revived</li>                              <!-- TODO Unpack battery, storage dropdowns -->
-	<li IfModActive="relvl.digitalstorageunit">Mods and Shit/Digital Storage Unit</li>                                      <!-- TODO Unpack dropdown -->
-	<li IfModActive="jf.royalcarpets">Mods and Shit/Royal Carpets</li>
+    <li IfModActive="relvl.digitalstorageunit">Mods and Shit/Digital Storage Unit</li>                                      <!-- TODO Unpack dropdown -->
+    <li IfModActive="jf.royalcarpets">Mods and Shit/Royal Carpets</li>
     <li IfModActive="as1aw.morehunterdrones">Mods and Shit/More Hunter Drones</li>
     <li IfModActive="redmattis.bsfurniture">Mods and Shit/Big and Small Furniture</li>
     <li IfModActive="thatthing.mycohazard">Mods and Shit/Mycohazard</li>
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
-    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>	
-            <!-- (Add new mods here ^^^^^) -->
+    <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
+    <li IfModActive="jdgg.adaptive.cargoholds">Mods and Shit/Cargo Holds</li>
+    <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

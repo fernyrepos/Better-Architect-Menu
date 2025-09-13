@@ -7,19 +7,19 @@
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
-	<modDependencies>
-		<li>
-			<packageId>brrainz.harmony</packageId>
-			<displayName>Harmony</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-		</li>
-		<li>
-			<packageId>com.bymarcin.architecticons</packageId>
-			<displayName>Architect Icons</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/1195427067</steamWorkshopUrl>
-		</li>
-	</modDependencies>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+        <li>
+            <packageId>com.bymarcin.architecticons</packageId>
+            <displayName>Architect Icons</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/1195427067</steamWorkshopUrl>
+        </li>
+    </modDependencies>
     <incompatibleWith>
         <li>ferny.floormenu</li>
         <li>ferny.animalscategory</li>
@@ -50,42 +50,42 @@
         <li>Ludeon.RimWorld.Odyssey</li>
 
 <!-- LOAD AFTER PROGRESSION -->
-		<li>ferny.progressionfantasy</li>
-		<li>ferny.progressionstorytellers</li>
-		<li>ferny.progressionwarrants</li>
-		<li>ferny.progressiontemperature</li>
-		<li>ferny.progressionverticality</li>
-		<li>ferny.progressioncore</li>
-		<li>ferny.progressiongenetics</li>
-		<li>ferny.progressionaesthetics</li>
-		<li>ferny.progressionwarfare</li>
-		<li>ferny.progressionhospitality</li>
-		<li>ferny.progressionproduction</li>
-		<li>ferny.progressionstorage</li>
-		<li>ferny.progressionscenarios</li>
-		<li>ferny.progressiongravship</li>
+        <li>ferny.progressionfantasy</li>
+        <li>ferny.progressionstorytellers</li>
+        <li>ferny.progressionwarrants</li>
+        <li>ferny.progressiontemperature</li>
+        <li>ferny.progressionverticality</li>
+        <li>ferny.progressioncore</li>
+        <li>ferny.progressiongenetics</li>
+        <li>ferny.progressionaesthetics</li>
+        <li>ferny.progressionwarfare</li>
+        <li>ferny.progressionhospitality</li>
+        <li>ferny.progressionproduction</li>
+        <li>ferny.progressionstorage</li>
+        <li>ferny.progressionscenarios</li>
+        <li>ferny.progressiongravship</li>
 
 <!-- THE REST -->
         <li>brrainz.harmony</li>
-		<li>VanillaExpanded.VFECore</li>
-		<li>VanillaExpanded.VFESpacer</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.SettlersModule</li>
-		<li>kentington.saveourship2</li>
-		<li>ferny.fuckextfurniture</li>
-		<li>oskarpotocki.vfe.empire</li>
-		<li>biomesteam.biomesfossils</li>
-		<li>rebuild.cotr.doorsandcorners</li>
-		<li>zal.lanterns</li>
-		<li>dankpyon.medieval.overhaul</li>
-		<li>Sov.BBrazier</li>
-		<li>van.dacrypts</li>
-		<li>sarg.alphapropsparks</li>
-		<li>dev.tobot.vpe.betterautocast</li>
-		<li>arquebus.stagzmerfolk</li>
-		<li>sierra.rf.medievaloverhaul</li>
-		<li>addie.housevanilla</li>
-		<li>mos.victoriandecorations</li>
-		<li>whaley.whaleysprops</li>
+        <li>VanillaExpanded.VFECore</li>
+        <li>VanillaExpanded.VFESpacer</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.SettlersModule</li>
+        <li>kentington.saveourship2</li>
+        <li>ferny.fuckextfurniture</li>
+        <li>oskarpotocki.vfe.empire</li>
+        <li>biomesteam.biomesfossils</li>
+        <li>rebuild.cotr.doorsandcorners</li>
+        <li>zal.lanterns</li>
+        <li>dankpyon.medieval.overhaul</li>
+        <li>Sov.BBrazier</li>
+        <li>van.dacrypts</li>
+        <li>sarg.alphapropsparks</li>
+        <li>dev.tobot.vpe.betterautocast</li>
+        <li>arquebus.stagzmerfolk</li>
+        <li>sierra.rf.medievaloverhaul</li>
+        <li>addie.housevanilla</li>
+        <li>mos.victoriandecorations</li>
+        <li>whaley.whaleysprops</li>
         <li>OskarPotocki.VFE.Classical</li>
         <li>zylle.clocks</li>
         <li>OskarPotocki.VFE.Medieval2</li>
@@ -100,33 +100,33 @@
         <li>vanillaexpanded.vcookestews</li>
         <li>vanillaexpanded.vcookesushi</li>
         <li>vanillaexpanded.vfeproduction</li>
-		<li>rooboid.paintings.ex</li>
-		<li>vanillaexpanded.vfemedical</li>
-		<li>hobbes.bamba.evenmorelinkables</li>
-		<li>primitiveproduction.velcroboy333</li>
-		<li>VanillaExpanded.VGeneticsE</li>
-		<li>VanillaExpanded.VGeneticsEMoreLabStuff</li>
-		<li>VanillaExpanded.VFEArchitect</li>
-		<li>ferny.xenooranimalgenetics</li>
-		<li>animal.bedsnew</li>
-		<li>sarg.alphaimplants</li>
-		<li>reel.expanded.storage</li>
-		<li>owlchemist.giddyup</li>
-		<li>mlie.runandhide</li>
-		<li>ferny.categoriesspots</li>
-		<li>zal.animalcages</li>
-		<li>neceros.animalmedicalbed</li>
-		<li>Mlie.AnimalHarvestingSpot</li>
-		<li>mn.autoAnimalFlap</li>
-		<li>cucumpear.animalbeds</li>
-		<li>Reel.TurretPipeline</li>
-		<li>oskarpotocki.vfe.pirates</li>
+        <li>rooboid.paintings.ex</li>
+        <li>vanillaexpanded.vfemedical</li>
+        <li>hobbes.bamba.evenmorelinkables</li>
+        <li>primitiveproduction.velcroboy333</li>
+        <li>VanillaExpanded.VGeneticsE</li>
+        <li>VanillaExpanded.VGeneticsEMoreLabStuff</li>
+        <li>VanillaExpanded.VFEArchitect</li>
+        <li>ferny.xenooranimalgenetics</li>
+        <li>animal.bedsnew</li>
+        <li>sarg.alphaimplants</li>
+        <li>reel.expanded.storage</li>
+        <li>owlchemist.giddyup</li>
+        <li>mlie.runandhide</li>
+        <li>ferny.categoriesspots</li>
+        <li>zal.animalcages</li>
+        <li>neceros.animalmedicalbed</li>
+        <li>Mlie.AnimalHarvestingSpot</li>
+        <li>mn.autoAnimalFlap</li>
+        <li>cucumpear.animalbeds</li>
+        <li>Reel.TurretPipeline</li>
+        <li>oskarpotocki.vfe.pirates</li>
         <li>deadmano.rimanoarchitecticons</li>
-		<li>overpl.AnimalSarcophagus</li>
-		<li>VanillaExpanded.VMemesE</li>
-		<li>pyrce.mass.graves.continued</li>
-		<li>grave.cross</li>
-		<li>inglix.widermarriagespot</li>
+        <li>overpl.AnimalSarcophagus</li>
+        <li>VanillaExpanded.VMemesE</li>
+        <li>pyrce.mass.graves.continued</li>
+        <li>grave.cross</li>
+        <li>inglix.widermarriagespot</li>
         <li>scurvyez.stevesdoors</li>
         <li>oracle.miscellania</li>
         <li>xmb.ancienturbanruins.mo</li>
@@ -227,8 +227,8 @@
         <li>cruelmoose.uc</li>
         <li>mlie.temperaturegauge</li>
         <li>mlie.reinforcedmechanoid2</li>
-		<li>mlie.gestaltengine</li>
-		<li>hlx.vanometricgenerator</li>
+        <li>mlie.gestaltengine</li>
+        <li>hlx.vanometricgenerator</li>
         <li>deadbeat.medicalcabinet</li>
         <li>side1iner.possessionsplus</li>
         <li>mlie.bioreactor</li>
@@ -269,14 +269,15 @@
         <li>mjeiouws.outlander.continuouscontention</li>
         <li>bulldog.vanillachemfuelexpandedodysseypatch</li>
         <li>aoba.deadmanswitch.core</li>
-		<li>aoba.deadmanswitch.ancientcorps</li>
+        <li>aoba.deadmanswitch.ancientcorps</li>
         <li>redmattis.bsfurniture</li>
         <li>thatthing.mycohazard</li>
         <li>as1aw.morehunterdrones</li>
         <li>tug.satyrfaun.expanded</li>
         <li>wanzi.smallgraves</li>
         <li>wanzi.biggraves</li>
-		<li>relvl.digitalstorageunit</li>
+        <li>relvl.digitalstorageunit</li>
+        <li>jdgg.adaptive.cargoholds</li>
         <!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

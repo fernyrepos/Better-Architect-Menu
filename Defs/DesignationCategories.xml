@@ -689,7 +689,7 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
-  
+
   <DesignationCategoryDef>
     <defName>Ferny_TransportInfrastructure</defName>
     <label>Infrastructure</label>
@@ -792,6 +792,24 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_VehicleStorage</defName>
+    <label>Vehicle</label>
+    <description>Build vehicle storage.</description>
+    <order>6</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+      <li>Designator_ZoneAddStockpile_Resources</li>
+      <li>Designator_ZoneAddStockpile_Dumping</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Storage</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_AmmunitionNetwork</defName>
     <label>Ammunition</label>
     <description>Manage ammunition.</description>
@@ -807,7 +825,7 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-  
+
   <DesignationCategoryDef>
     <defName>Ferny_World</defName>
     <label>World</label>
@@ -834,7 +852,7 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
-	
+
   <DesignationCategoryDef>
     <defName>Ferny_Automation</defName>
     <label>Automation</label>
@@ -869,8 +887,8 @@
 		  <li>Designator_Cancel</li>
 		  <li>Designator_Deconstruct</li>
 		</specialDesignatorClasses>
-  </DesignationCategoryDef>  
-  
+  </DesignationCategoryDef>
+
 	<DesignationCategoryDef>
 		<defName>Ferny_Market</defName>
 		<label>Market</label>
@@ -884,7 +902,7 @@
 				<parentCategory>Ferny_Hosting</parentCategory>
 			</li>
 		</modExtensions>
-  </DesignationCategoryDef>  
+  </DesignationCategoryDef>
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Museum</defName>
@@ -899,7 +917,7 @@
 				<parentCategory>Ferny_Hosting</parentCategory>
 			</li>
 		</modExtensions>
-  </DesignationCategoryDef>  
+  </DesignationCategoryDef>
 
 
 
