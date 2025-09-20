@@ -1,61 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Canopy"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="WoodenCanopy"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Teepee"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Tent"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="VikingTent"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="ModernTent"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="FoldingTent"]</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
@@ -72,5 +16,5 @@
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
-	
+
 </Patch>

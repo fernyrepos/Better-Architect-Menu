@@ -105,4 +105,14 @@
 		</value>
 	</Operation>
 	
+<!-- CONTROL -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_MemoryPylon"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Control</designationCategory>
+		</value>
+	</Operation>
+	
 </Patch>

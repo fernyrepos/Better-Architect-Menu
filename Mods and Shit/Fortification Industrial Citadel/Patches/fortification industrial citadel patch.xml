@@ -95,15 +95,13 @@
 	
 <!-- CARAVAN -->
 
-<!-- Replace with this something not using the rejected def -->
-
-	<!-- <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FTC_FieldKitchen"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_Kitchen</designationCategory>
 		</value>
-	</Operation> -->
+	</Operation>
 	
 <!-- AUXILIARIES -->
 

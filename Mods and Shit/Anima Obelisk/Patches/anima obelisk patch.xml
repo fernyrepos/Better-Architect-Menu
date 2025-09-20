@@ -5,7 +5,7 @@
         <xpath>Defs/DesignationCategoryDef[defName="Ideology"]</xpath>
         <match Class="PatchOperationReplace">
             <success>Always</success>
-            <xpath>Defs/ThingDef[@Name="AnimaObelisk"]/designationCategory</xpath>
+            <xpath>Defs/ThingDef[defName="AnimaObelisk"]/designationCategory</xpath>
             <value>
                 <designationCategory>Ideology</designationCategory>
             </value>

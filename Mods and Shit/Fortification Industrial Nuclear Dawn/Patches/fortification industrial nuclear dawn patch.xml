@@ -2,18 +2,16 @@
 <Patch>
 	
 <!-- CARAVAN -->
+	
+<!-- POWER GENERATION -->
 
-<!-- Replace this with something not using the rejected def -->
-
-	<!-- <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FT_RTG"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Caravan</designationCategory>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
 		</value>
-	</Operation> -->
-	
-<!-- POWER GENERATION -->
+	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="MoreArchotechGarbage"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Furniture</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	
+<!-- WALLS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechWall"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- DOORS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechDoor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- LIGHTING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechTorchLamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoLampThing"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoLampThingDark"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- KITCHEN -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoCookingAssistant"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_VanometricPot"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_Kitchen</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_ArchotechCheesePress"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_Kitchen</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_ArchotechCookingStove"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_Kitchen</designationCategory>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+<!-- GENERAL STORAGE -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Adaptive Storage Framework</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="MAG_ASF_BoxOne"]</xpath>
+			<value>
+				<designationCategory>Ferny_GeneralStorage</designationCategory>
+			</value>
+		</match>
+	</Operation>
+
+<!-- POWER GENERATION -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VanometricPowerCell"]</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Power</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VPE_ArchotechViolenceGenerator"]</xpath>
+					<value>
+						<designationCategory>Ferny_PowerGeneration</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VFE_SmallVanometricPowerCell"]</xpath>
+					<value>
+						<designationCategory>Ferny_PowerGeneration</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="VFE_LargeVanometricPowerCell"]</xpath>
+					<value>
+						<designationCategory>Ferny_PowerGeneration</designationCategory>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+<!-- POWER STORAGE -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechBatteryS"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- CONTROL -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PsychicEmanator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Control</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="HediffApplierBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Control</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- CULTURE -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="ArchonexusCore"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ideology</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="ArchonexusCore"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ideology</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_One"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ideology</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Two"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ideology</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Three"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ideology</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_One"]/designatorDropdown</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Two"]/designatorDropdown</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Three"]/designatorDropdown</xpath>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+<!-- FARMING -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Farming</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_VFE_ArchotechSprinkler"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_Farming</designationCategory>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+<!-- FILTH -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_GarbageBin"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_Filth</designationCategory>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+<!-- WATER -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dubs Bad Hygiene</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="MAG_ArchotechWaterThing"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Hygiene</designationCategory>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+	
+<!-- GENETICS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchoGeneExtractor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Biotech</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- HEATING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoStandardTemperatureThing"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Heating</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- COOLING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoReverseTemperatureThing"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Cooling</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- SUMMON -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoMechSummoner"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Summon</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoMeteorSummon"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Summon</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RaidorJoinorTameorManhunter"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Summon</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoPodGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Summon</designationCategory>
+		</value>
+	</Operation>
+
+<!-- PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchBench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AUXILIARIES -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoDecipherAI"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_AutoResearcher"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MINING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchiteGenepackAssembler"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MiningProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoPartAssembler"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MiningProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SexyResourceDispenser"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MiningProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchoReproductorMini"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MiningProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchoReproductor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MiningProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchoReproductorMedium"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MiningProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchoReproductorLarge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MiningProduction</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

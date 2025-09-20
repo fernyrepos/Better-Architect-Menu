@@ -26,6 +26,13 @@
                 </Operation>
 
 <!-- CULTURE -->
+	            <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_SkyBurialSpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ideology</designationCategory>
+                    </value>
+                </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_RelicSmashingAltar"]/designationCategory</xpath>

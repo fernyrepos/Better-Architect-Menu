@@ -41,13 +41,13 @@
 		</value>
 	</Operation>
 	
-<!-- MISC -->
+<!-- DECORATIONS -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BreadMoAM_ElectricalEquipment"]</xpath>
 		<value>
-			<designationCategory>Misc</designationCategory>
+			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
 	
@@ -55,7 +55,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BreadMoAM_MineralConveyor"]</xpath>
 		<value>
-			<designationCategory>Misc</designationCategory>
+			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
 	
@@ -63,7 +63,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BreadMoAM_TunnelStructuralSupport_a"]</xpath>
 		<value>
-			<designationCategory>Misc</designationCategory>
+			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
 	
@@ -71,7 +71,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BreadMoAM_TunnelStructuralSupport_b"]</xpath>
 		<value>
-			<designationCategory>Misc</designationCategory>
+			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
 		
@@ -79,7 +79,23 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BreadMoAM_MineralExports"]</xpath>
 		<value>
-			<designationCategory>Misc</designationCategory>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_Rail"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BreadMoAM_Crosstie"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
 	

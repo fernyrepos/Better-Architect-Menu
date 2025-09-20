@@ -350,8 +350,51 @@
     <li>sarg.alphamemes</li>
     <li>harkon.veaddon.vanillaexpandedextraembrasures</li>
     <li>aelanna.eccentrictech.furniture</li>
-    <li>frozensnowfox.frozensnowfoxtweaks</li>
-    <li>dd.unofficial.notfood.mendandrecycle</li>
+	<li>frozensnowfox.frozensnowfoxtweaks</li>
+	<li>dd.unofficial.notfood.mendandrecycle</li>
+	<li>garbageday.convectionalwarcrimes</li>
+  	<li>tug.terraformerpumps</li>
+  	<li>zal.morearchotechgarbage</li>
+	<li>dimonsever000.terraformingasteroids</li>
+	<li>rabbit.hovercar</li>
+    <li>oels.mapvehicles</li>
+	<li>rx97.mapvehicles</li>
+	<li>mo.technicalvehicles</li>
+	<li>mo.technicalmapvehicles</li>
+    <li>mingtuwuxiang.fishingdecorative</li>
+	<li>mingtuwuxiang.gothicdecorative</li>
+	<li>mingtuwuxiang.spacebasedecorative</li>
+	<li>mrhydralisk.voepowergrid</li>
+	<li>oels.vehiclemapframework</li>
+	<li>mlie.drawbridges</li>
+    <li>mitasamodel.preemptivestrike</li>
+  	<li>tot.celetech.sub.fbs</li>
+	<li>tot.celetech.mkiii</li>
+	<li>lingluo.pawncuter</li>
+	<li>nyar.nclvstw</li>
+	<li>rashomcree.odyssey.orbitalplatforms</li>
+	<li>deon.rimtek.docmate</li>
+	<li>trigger.building.voidextractor</li>
+	<li>jerry.boulder</li>
+	<li>jahv.spacervehicleshal.continued</li>
+	<li>tractor.therealcaptrex</li>
+	<li>badoaks.campfirestews</li>
+	<li>sbz.neatstorageworkbenchshelf</li>
+	<li>ponpeco.pfkidsroom</li>
+    <li>spesscarp.pressureplate</li>
+	<li>amch.moresleepaccelerators</li>
+	<li>lingluo.itemcuter</li>
+	<li>aoba.craftingtable</li>
+	<li>leo.decoystandee</li>
+	<li>harryrobinson.frostpunkgeneratortower</li>
+	<li>harryrobinson.frostpunkheatgeneratortower</li>
+	<li>bart.magmarefinery</li>
+	<li>esp.outdoorstuff</li>
+	<li>happywindinkg.psystorage</li>
+	<li>sdgp.minacator</li>
+	<li>xercaine.fireplace</li>
+	<li>grandyy.get</li>
+	<li>temeez.floorlights2</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

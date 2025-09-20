@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="Ideology"]</xpath>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PsychicEnergyVat"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ideology</designationCategory>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

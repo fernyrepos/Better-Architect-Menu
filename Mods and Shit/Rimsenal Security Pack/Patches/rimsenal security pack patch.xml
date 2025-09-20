@@ -101,15 +101,17 @@
 		</value>
 	</Operation>
 
-<!-- TRAPS -->
+<!-- EXPLOSIVES -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FuelBarrel"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Traps</designationCategory>
+			<designationCategory>Ferny_Explosives</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- TRAPS -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>

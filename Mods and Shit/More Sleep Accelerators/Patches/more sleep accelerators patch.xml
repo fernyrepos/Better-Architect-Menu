@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LargeSleepAccelerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Enhancement</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RangeSleepAccelerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Enhancement</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WallMountedSleepAccelerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Enhancement</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -63,13 +63,13 @@
 		</value>
 	</Operation>
 	
-<!-- TRAPS -->
+<!-- EXPLOSIVES -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Filth_NapalmTrail"]</xpath>
 		<value>
-			<designationCategory>Ferny_Traps</designationCategory>
+			<designationCategory>Ferny_Explosives</designationCategory>
 		</value>
 	</Operation>
 
@@ -77,15 +77,17 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="NapalmBomb"]</xpath>
 		<value>
-			<designationCategory>Ferny_Traps</designationCategory>
+			<designationCategory>Ferny_Explosives</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- COMBAT INFRASTRUCTURE -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SparkGrid"]</xpath>
 		<value>
-			<designationCategory>Ferny_Traps</designationCategory>
+			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
 		</value>
 	</Operation>
 	

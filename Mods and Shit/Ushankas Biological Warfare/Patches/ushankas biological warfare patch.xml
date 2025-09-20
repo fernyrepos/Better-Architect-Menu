@@ -11,25 +11,25 @@
 		</value>
 	</Operation>
 	
-<!-- TRAPS -->
-
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[@ParentName="USH_BiologicalVentBase"]</xpath>
-		<value>
-			<designationCategory>Ferny_Traps</designationCategory>
-		</value>
-	</Operation>
+<!-- EXPLOSIVES -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@ParentName="USH_BiologicalBarrelBase"]</xpath>
 		<value>
-			<designationCategory>Ferny_Traps</designationCategory>
+			<designationCategory>Ferny_Explosives</designationCategory>
 		</value>
 	</Operation>
 	
 <!-- COMBAT INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="USH_BiologicalVentBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_CombatInfrastructure</designationCategory>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
