@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+  <Operation Class="PatchOperationRemove">
+      <xpath>Defs/DesignationCategoryDef[defName="BOR"]</xpath>
+  </Operation>
+
   <!-- Joy -->
   <Operation Class="PatchOperationReplace">
     <success>Always</success>
@@ -176,9 +180,7 @@
 
   <Operation Class="PatchOperationReplace">
     <success>Always</success>
-    <xpath>
-      Defs/PipeSystem.PipeNetDef[defName="BOR_NeutroniumNet"]/designator/designationCategoryDef
-    </xpath>
+    <xpath>Defs/PipeSystem.PipeNetDef[defName="BOR_NeutroniumNet"]/designator/designationCategoryDef</xpath>
     <value>
       <designationCategoryDef>Ferny_NeutroniumNetwork</designationCategoryDef>
     </value>
