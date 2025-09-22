@@ -44,7 +44,7 @@
     <li IfModActive="rooboid.paintings.ex">Mods and Shit/Roo's Painting</li>
     <li IfModActive="vanillaexpanded.vfemedical">Mods and Shit/VFE Medical</li>
     <li IfModActive="hobbes.bamba.evenmorelinkables">Mods and Shit/Even More Linkables</li>
-	<li IfModActive="hobbes.bamba.evenmorelinkables16">Mods and Shit/Even More Linkables</li>
+	  <li IfModActive="hobbes.bamba.evenmorelinkables16">Mods and Shit/Even More Linkables</li>
     <li IfModActive="primitiveproduction.velcroboy333">Mods and Shit/Primitive Workbenches</li>
     <li IfModActive="vanillaexpanded.vfearchitect">Mods and Shit/VFE Architect</li>
     <li IfModActive="vanillaexpanded.vgeneticse">Mods and Shit/VE Genetics</li>
@@ -295,6 +295,13 @@
     <li IfModActive="tradingcontrol.tad.rimworld.core">Mods and Shit/Trading Control</li>
     <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li>
     <li IfModActive="mlie.autopsytable">Mods and Shit/AutopsyTable</li>
+    <li IfModActive="4loris4.morelinkables">Mods and Shit/More Linkables</li>
+    <li IfModActive="lts.cc">Mods and Shit/Crypto Coffins</li>
+    <li IfModActive="pal5k.reverseengineeredregionadjusters">Mods and Shit/Reverse Engineered Region Adjusters</li>
+    <li IfModActive="ogliss.thewhitecrayon.quarry">Mods and Shit/Quarry</li>
+    <li IfModActive="zal.wallvitalsmonitor">Mods and Shit/Wall Vitals Monitor</li>
+    <li IfModActive="sarg.alphabiomes">Mods and Shit/Alpha Biomes</li>
+    <li IfModActive="sbz.neatstoragefridge">Mods and Shit/Fridge</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
