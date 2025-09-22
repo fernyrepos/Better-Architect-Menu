@@ -97,20 +97,5 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
-
-<!-- MECHANOIDS -->
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>
-		Defs/ThingDef[defName="DMS_MechGestatorSmall"]/designationCategory |
-		Defs/ThingDef[defName="DMS_BandNode"]/designationCategory |
-		Defs/ThingDef[defName="DMS_Hound_Base"]/designationCategory |
-		Defs/ThingDef[defName="DMS_Recharger"]/designationCategory |
-		Defs/ThingDef[defName="DMS_TrashBin_Base"]/designationCategory
-		</xpath>
-		<value>
-			<designationCategory>Ferny_Mechanoids</designationCategory>
-		</value>
-	</Operation>
-
+	
 </Patch>
