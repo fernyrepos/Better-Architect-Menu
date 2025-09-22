@@ -2,11 +2,9 @@
 <Patch>
   <Operation Class="PatchOperationReplace">
     <success>Always</success>
-    <xpath>
-      Defs/ThingDef[@Name="HobbesLink_Base"]/designationCategory
-    </xpath>
+    <xpath>Defs/ThingDef[defName="Wall_M_VitalsMonitor"]/designationCategory</xpath>
     <value>
-      <designationCategory>Ferny_Auxiliaries</designationCategory>
+      <designationCategory>Ferny_Medical</designationCategory>
     </value>
   </Operation>
 </Patch>

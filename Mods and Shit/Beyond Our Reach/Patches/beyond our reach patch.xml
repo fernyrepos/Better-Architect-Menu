@@ -47,7 +47,9 @@
       Defs/ThingDef[defName="BOR_Research_Unlocker_IV"]/designationCategory |
       Defs/ThingDef[defName="BOR_ToolCabinet_I"]/designationCategory |
       Defs/ThingDef[defName="BOR_ToolCabinet_II"]/designationCategory |
-      Defs/ThingDef[defName="BOR_ToolCabinet_III"]/designationCategory
+      Defs/ThingDef[defName="BOR_ToolCabinet_III"]/designationCategory |
+      Defs/ThingDef[defName="BOR_PowerLinkI"]/designationCategory |
+      Defs/ThingDef[defName="BOR_PowerLinkII"]/designationCategory
     </xpath>
     <value>
       <designationCategory>Ferny_Auxiliaries</designationCategory>
@@ -137,6 +139,18 @@
     </xpath>
     <value>
       <designationCategory>Ferny_PowerStorage</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- Power Management -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>
+      Defs/ThingDef[defName="Building_RTMagneticShield_I"]/designationCategory |
+      Defs/ThingDef[defName="Building_RTMagneticShield_III"]/designationCategory
+    </xpath>
+    <value>
+      <designationCategory>Ferny_PowerManagement</designationCategory>
     </value>
   </Operation>
 

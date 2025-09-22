@@ -3,10 +3,10 @@
   <Operation Class="PatchOperationReplace">
     <success>Always</success>
     <xpath>
-      Defs/ThingDef[@Name="HobbesLink_Base"]/designationCategory
+      Defs/ThingDef[defName="CryptoCoffin"]/designationCategory
     </xpath>
     <value>
-      <designationCategory>Ferny_Auxiliaries</designationCategory>
+      <designationCategory>Ferny_Memorial</designationCategory>
     </value>
   </Operation>
 </Patch>
