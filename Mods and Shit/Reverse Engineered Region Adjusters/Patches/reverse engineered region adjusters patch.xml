@@ -3,10 +3,10 @@
   <Operation Class="PatchOperationReplace">
     <success>Always</success>
     <xpath>
-      Defs/ThingDef[@Name="HobbesLink_Base"]/designationCategory
+      Defs/ThingDef[@Name="Reverse_Engineered_ConditionCauserBase"]/designationCategory
     </xpath>
     <value>
-      <designationCategory>Ferny_Auxiliaries</designationCategory>
+      <designationCategory>Ferny_Terraforming</designationCategory>
     </value>
   </Operation>
 </Patch>
