@@ -2,23 +2,37 @@
 <Patch>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Erin_Zabuton"]</xpath>
+    <xpath>Defs/ThingDef[defName="Erin_Zabuton" or defName="Erin_Zaisu"]</xpath>
     <value>
         <designationCategory>Ferny_Seating</designationCategory>
     </value>
 </Operation>
 
     <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Erin_Zaisu" or defName="Erin_LowTable" or defName="Erin_Kotatsu"]</xpath>
+    <xpath>Defs/ThingDef[defName="Erin_LowTable" or defName="Erin_Kotatsu"]</xpath>
     <value>
         <designationCategory>Ferny_Tables</designationCategory>
     </value>
 </Operation>
 
-      <Operation Class="PatchOperationAdd">
+<Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Erin_ElectricAndon" or defName="Erin_TorchAndon"]</xpath>
     <value>
-        <designationCategory>Ferny_Tables</designationCategory>
+        <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Erin_Tatami1x1c" or defName="Erin_Tatami1x2c" or defName="Erin_Tatami1x3c"]</xpath>
+    <value>
+        <designationCategory>Ferny_Decorations</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Erin_IncenseHolder"]</xpath>
+    <value>
+        <designationCategory>Ferny_Decorations</designationCategory>
     </value>
 </Operation>
 
