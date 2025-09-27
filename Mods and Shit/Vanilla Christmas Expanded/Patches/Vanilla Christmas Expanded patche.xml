@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCE_Turret_Snowthrower" or defName="VCE_Turret_Snowcannon"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+  	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCE_SnowSpewer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Temperature</designationCategory>
+		</value>
+	</Operation>
+  
+</Patch>
