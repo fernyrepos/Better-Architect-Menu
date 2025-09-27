@@ -357,6 +357,8 @@
     <li IfModActive="tug.minotaur">Mods and Shit/Roo Minotaur</li>
     <li IfModActive="bjr1984.dubsskylights.addon">Mods and Shit/Dubs Skylights Addon</li>
     <li IfModActive="Mlie.TinyWorkbenchs">Mods and Shit/Tiny Workbenchs</li>
+    <li IfModActive="warlocksforge.fishtraps">Mods and Shit/Fish Traps</li>
+    <li IfModActive="VE.VanillaChristmasExpanded">Mods and Shit/Vanilla Christmas Expanded</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
