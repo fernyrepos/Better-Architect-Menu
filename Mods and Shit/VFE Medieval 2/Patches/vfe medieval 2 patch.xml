@@ -60,7 +60,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEM2_Palisade"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Walls</designationCategory>
+                        <designationCategory>Ferny_Barricades</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
