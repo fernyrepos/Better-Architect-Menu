@@ -2,264 +2,48 @@
 <Patch>
 	
 	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_TorchLamp"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[@Name="RR_TorchLamp"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Lighting</designationCategory>
 		</value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_RugBase"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[@Name="RR_RugBase"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_Bedroll"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_FurBed"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_FurDoubleBed"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_WoodThrone"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Seating</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_StoneThrone"]/designationCategory</xpath>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RR_WoodThrone" or defName="RR_StoneThrone" or defName="RR_StoneStool" or defName="RR_FluffPillow" or defName="RR_RoundPillow"]</xpath>
 		<value>
 			<designationCategory>Ferny_Seating</designationCategory>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_StoneStool"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Seating</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_FluffPillow"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Seating</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_RoundPillow"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Seating</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_TableBase"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Seating</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_Stump"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="RR_Stump"]</xpath>
 		<value>
 			<designationCategory>Ferny_Tables</designationCategory>
 		</value>
 	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_TallTorch"]/designationCategory</xpath>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="RR_PrimBraizer"]</xpath>
 		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_ShortTorch"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_StoneTorchOne"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_StoneTorchTwo"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_StoneTorchThree"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_StoneTorchFour"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_StoneTorchFive"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_HangingTorch"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_PotCandle"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_PrimBraizer"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_RectRugOne"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_RectRugTwo"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_FluffyRug"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_FluffyRoundRug"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_PeltRug"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_LeatherRoundRug"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_RoundRug"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_Heating</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_MatOne"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_MatTwo"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_MatThree"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_ShelfBase"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_ClosedUrn"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_HandleUrn"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="RR_OpenUrn"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="RR_ClosedUrn" or defName="RR_HandleUrn" or defName="RR_OpenUrn"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RR_DecoBones"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Decorations</designationCategory>
