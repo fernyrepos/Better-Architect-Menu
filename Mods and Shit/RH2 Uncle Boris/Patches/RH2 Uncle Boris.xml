@@ -36,8 +36,8 @@
                     </value>
 </Operation>
 
-                    <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[@Name="RH2_MainLampBase"]/designationCategory</xpath>
+<Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="RH2_Floodlight_Big" or defName="RH2_MiniFloodlight" or defName="RH2_HolmoFloorLamp"]</xpath>
                     <value>
                         <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
