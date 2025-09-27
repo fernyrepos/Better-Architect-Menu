@@ -3,27 +3,17 @@
 
 <!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Brazier"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Lighting</designationCategory>
+                        <designationCategory>Ferny_Heating</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DarklightBrazier"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Lighting</designationCategory>
+                        <designationCategory>Ferny_Heating</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="DarklightBrazier"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Lighting</designationCategory>
-                    </value>
-                </Operation>
-
 
 <!-- MEMORIAL -->
                 <Operation Class="PatchOperationReplace">
