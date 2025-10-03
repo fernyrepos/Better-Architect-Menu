@@ -367,6 +367,10 @@
     <li IfModActiveAny="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>    
     <li IfModActive="unagi.funiture.build.window">Mods and Shit/UNAGI Decorative Furniture</li>
     <li IfModActive="xercaine.wallheater">Mods and Shit/Wall Heater</li>
+    <li IfModActive="test.ford">Mods and Shit/Rim-Bronco Ford</li>
+    <li IfModActive="Killerbot.JLTV">Mods and Shit/GTEK Oshkosh LATV</li>
+    <li IfModActive="Killerbot.NavistarMaxxPro">Mods and Shit/GTEK Navistar</li>
+    <li IfModActive="Killerbot.SubaruForester">Mods and Shit/GTEK Subaru Forester</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
