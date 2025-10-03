@@ -16,5 +16,13 @@
 			<designationCategory>Temperature</designationCategory>
 		</value>
 	</Operation>
+
+  	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VCE_GrandFestiveTree" or defName="VCE_StandingFestiveTree]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
   
 </Patch>
