@@ -19,5 +19,14 @@
                     </value>
                 </Operation>
 
+  <!-- DECORATIONS -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="RBPPaintingProps"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+
 
 </Patch>
