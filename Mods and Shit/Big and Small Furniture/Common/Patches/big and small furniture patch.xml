@@ -66,12 +66,17 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_Kingsize"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
-		</value>
-	</Operation>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BS_Giant_Bed_Kingsize"]/designationCategory</xpath>
+            <value>
+                <designationCategory>Ferny_Bedroom</designationCategory>
+            </value>
+        </match>
+    </Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="BS_GiantCrib"]</xpath>
