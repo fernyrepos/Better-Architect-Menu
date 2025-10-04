@@ -367,6 +367,13 @@
     <li IfModActiveAny="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>    
     <li IfModActive="unagi.funiture.build.window">Mods and Shit/UNAGI Decorative Furniture</li>
     <li IfModActive="xercaine.wallheater">Mods and Shit/Wall Heater</li>
+    <li IfModActive="sarg.alphabiomes">Mods and Shit/Alpha Biomes</li>
+    <li IfModActive="lts.cc">Mods and Shit/Crypto Coffins</li>
+    <li IfModActive="ogliss.thewhitecrayon.quarry">Mods and Shit/Quarry</li>
+    <li IfModActive="4loris4.morelinkables">Mods and Shit/More Linkables</li>
+    <li IfModActive="sbz.neatstoragefridge">Mods and Shit/Fridge</li>
+    <li IfModActive="zal.wallvitalsmonitor">Mods and Shit/Wall Vitals Monitor</li>
+    <li IfModActive="pal5k.reverseengineeredregionadjusters">Mods and Shit/Reverse Engineered Region Adjusters</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
