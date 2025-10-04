@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="CW_CargoContainer_Base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResourcesStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Chemfuel Expanded - Unofficial Expansion</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[@Name="CW_CargoContainer_Base"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_ToxicWasteNetwork</designationCategory>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>

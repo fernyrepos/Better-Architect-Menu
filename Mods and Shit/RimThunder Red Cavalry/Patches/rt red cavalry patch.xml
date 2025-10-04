@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- GROUND TRANSPORT -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_BTR40_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MILITARY TRANSPORT -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_ZTS63_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_ZTZ59_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_BTR40A_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Type62_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Type63_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_MI24_Base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_SU25SM"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_KA52_Base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

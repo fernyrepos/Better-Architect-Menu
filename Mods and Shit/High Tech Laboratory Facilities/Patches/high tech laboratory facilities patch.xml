@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CounterTopModular"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LabStation"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LabTerminal"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

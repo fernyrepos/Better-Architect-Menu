@@ -124,14 +124,6 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[@Name="PFKRugBase"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="PFKDecoBase"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Decorations</designationCategory>
@@ -145,6 +137,16 @@
 	<Operation Class="PatchOperationRemove">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="PFKDecoWoodenToyBaseL"]/designatorDropdown</xpath>
+	</Operation>
+	
+<!-- FLOORS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="PFKRugBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Floors</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- JOY -->

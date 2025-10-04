@@ -27,6 +27,7 @@
 		</operations>
 		</match>
 	</Operation>
+	
 <!-- SUPPORTS -->
 
 	<Operation Class="PatchOperationReplace">
@@ -239,14 +240,6 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="MUS_Fishing_RattanCarpet"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishingstyle_FishTank"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Decorations</designationCategory>
@@ -258,6 +251,16 @@
 		<xpath>Defs/ThingDef[defName="MUS_Fishingstyle_SmallFishTank"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- FLOOR -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MUS_Fishing_RattanCarpet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Floors</designationCategory>
 		</value>
 	</Operation>
 

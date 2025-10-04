@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>              
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="oracle_InvisibleBase"]/designatorDropdown</xpath>
+	</Operation>
+
 <!-- WALLS -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="oracle_TireWall"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Walls</designationCategory>
-                    </value>
-                </Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Oracle_Wallcap"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+	
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="oracle_TireWall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="oracle_voidWall"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- DOORS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="oracle_voidDoor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- HUSBANDRY -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="oracle_voidFence"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Ranching</designationCategory>
+		</value>
+	</Operation>
+	
 </Patch>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- AERIAL TRANSPORT -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Fa_223_Drache"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Po_2_Polikarpov"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MILITARY TRANSPORT -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Tb_1_Tupolev"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

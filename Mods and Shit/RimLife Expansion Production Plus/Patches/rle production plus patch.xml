@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="RLE_Decoration"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Furniture</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	
+<!-- FLOORS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="RLE_Floorpaint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Floors</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="RLE_AreaNumber"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Floors</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="RLE_Floorarrow"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Floors</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- FARMING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_HydroponicsWithSunNor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Farming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_HydroponicsWithSunLow"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Farming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_HydroponicsWithSunHigh"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Farming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_HydroponicsWithSunVerSoil"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Farming</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- KITCHEN -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ElectButcher"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="RLE_KitchenTable"]/designatorDropdown</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ExpandedButcherMeatMaker"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="RLE_SmelterTable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="RLE_SmelterTable"]/designatorDropdown</xpath>
+	</Operation>
+	
+<!-- PRODUCTION INFRASTRUCTURE -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_AutomaticDeepRockMiner"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_AutomatiHybridRockMiner"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_GeyserResourceCollector"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AUXILIARIES -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_PowerStabilizer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_IntegratedManagementDevice"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ReactionAccelerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ImpurityFiltrationUnit"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_AuxiliaryCoolingUnit"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_PreReactor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_DustCollectionUnit"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_CMTCleaner"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ExpansiontypeRefiningUnit"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+	
+
+	<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_MechaScrappertable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ExpandedChemfuelRefiningReactor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ChemicalFiberProcessingMachine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_SyntheticResinProcessingMachine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ExpandedRockChunkCutter"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_AdvancedMetalSmeltingFurnaces"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ComponentMT"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-<!-- PRODUCTION -->
+<!-- PROCESSING PRODUCTION -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="TableMending"]</xpath>
 		<value>
-			<designationCategory>Ferny_Production</designationCategory>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>
 	</Operation>
 	

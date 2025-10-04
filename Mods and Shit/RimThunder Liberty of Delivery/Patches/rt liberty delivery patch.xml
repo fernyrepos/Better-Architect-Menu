@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- GROUND TRANSPORT -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_M1070_HET_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_M983_HEMTT_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_M983T_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_M1000_HET_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AERIAL TRANSPORT -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_CH54_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName=""]</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MILITARY TRANSPORT -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_TestAT_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

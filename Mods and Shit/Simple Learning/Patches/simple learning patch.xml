@@ -29,13 +29,13 @@
 		</value>
 	</Operation>
 	
-<!-- CONTROL -->
+<!-- MANAGEMENT -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Neo_Learning_Desk"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Control</designationCategory>
+			<designationCategory>Ferny_Management</designationCategory>
 		</value>
 	</Operation>
 
@@ -43,7 +43,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Mid_Learning_Desk"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Control</designationCategory>
+			<designationCategory>Ferny_Management</designationCategory>
 		</value>
 	</Operation>
 
@@ -51,7 +51,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Adv_Learning_Desk"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Control</designationCategory>
+			<designationCategory>Ferny_Management</designationCategory>
 		</value>
 	</Operation>
 
@@ -59,7 +59,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Spacer_Learning_Desk"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Control</designationCategory>
+			<designationCategory>Ferny_Management</designationCategory>
 		</value>
 	</Operation>
 
@@ -67,7 +67,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Neo_Board"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Control</designationCategory>
+			<designationCategory>Ferny_Management</designationCategory>
 		</value>
 	</Operation>
 
@@ -75,7 +75,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Board"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Control</designationCategory>
+			<designationCategory>Ferny_Management</designationCategory>
 		</value>
 	</Operation>
 
@@ -83,7 +83,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Spacer_Board"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Control</designationCategory>
+			<designationCategory>Ferny_Management</designationCategory>
 		</value>
 	</Operation>
 

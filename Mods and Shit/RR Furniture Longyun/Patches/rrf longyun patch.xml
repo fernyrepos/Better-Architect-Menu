@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- BEDROOM -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRLincangDresser"]</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRDalianWardrobe"]</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- SEATING -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRHefeiChair"]</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRShanghaiSofa"]</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRShanghaiSofaLong"]</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRNanjingSofa"]</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- RECREATION -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRGoTable"]</xpath>
+		<value>
+			<designationCategory>Joy</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- LIGHTING -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRDandongLamp"]</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRJinzhouLamp"]</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- DECORATIONS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRJinanCupboard"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRLixiaCupboard"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRQujingScreen"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RRBaoshanScreen"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

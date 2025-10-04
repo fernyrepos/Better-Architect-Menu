@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AquafaunaRegulator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Ranching</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FishBay"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Ranching</designationCategory>
+		</value>
+	</Operation>	
+	
+</Patch>

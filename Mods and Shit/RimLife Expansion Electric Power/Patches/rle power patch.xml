@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- POWER GENERATION -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_CustomWFGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_ChemPGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_PortableFuelGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_GaiaFuelGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_SolarGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_AdvSolarGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_AdvWatermillGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_GeothermalHighSpec"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_GaiaAccessGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_WindTurbine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_UltraGradeWindTurbine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_FineReactor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_AntiMatPowerPlant"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_GenerateReactorLand"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_GenerateReactorWater"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_GenerateReactOmega"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER STORAGE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_NorUnderGroundBattery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_UpgradeBattery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_UnderGroundBattery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_HighSpecBattery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

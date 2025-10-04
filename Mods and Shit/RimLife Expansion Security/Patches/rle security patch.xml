@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLETurret_Mortar"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLETurret_Military"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLETurret_MiniTurret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLETurret_FBGunner"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLETurret_Sniper"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLETripleTurret_Sniper"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLETurret_CenturyGun"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- TRAPS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_TrapSpike"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_TrapHammer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_TrapHammerSt"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLETrapIED_EMP"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLETrapIED_GreatEx"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- BARRICADES -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RLE_Barricade"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Lighting_CeilingLamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Lighting_CeilingLampF"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Lighting_CeilingLampT"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Lighting_CeilingLampTable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Lighting_CornerFloorLamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Lighting_InvCornerFloorLamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Lighting_SqWallLamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

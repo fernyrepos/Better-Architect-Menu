@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BunX_HeliumExtractor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerManagement</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BunX_CompressionChamber"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerManagement</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BunX_DecayChamber"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerManagement</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

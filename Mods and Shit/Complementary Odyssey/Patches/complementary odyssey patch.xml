@@ -11,13 +11,13 @@
 		</value>
 	</Operation>
 
-<!-- MINING -->
+<!-- RESEARCH PRODUCTION -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="CO_TerrainScanner"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
 		</value>
 	</Operation>
 	

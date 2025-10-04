@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="CNW_Coyote_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="CNW_Javelina_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="CNW_LittleMule_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="CNW_Sidewinder_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>

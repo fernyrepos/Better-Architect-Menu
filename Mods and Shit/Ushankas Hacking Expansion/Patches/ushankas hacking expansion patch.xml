@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	
-<!-- COMBAT EQUIPMENT -->
+<!-- HACKING -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
@@ -34,6 +34,14 @@
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="USH_DataServer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_DataCenter"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Auxiliaries</designationCategory>
 		</value>

@@ -268,28 +268,28 @@
 	</Operation>
 				
 <!-- Aerocraft Framework -->
+<!-- Untested! Base mod does not activate this content in Rimworld 1.6 -->
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Aerocraft Framework</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Normal</success>
 			<operations>
 
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="MYDE_CMC_J50X"]/designationCategory</xpath>
 					<value>
-						<designationCategory>Ferny_AerialTransport</designationCategory>
+						<designationCategory>Ferny_MilitaryTransport</designationCategory>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="MYDE_CMC_WJ50X"]/designationCategory</xpath>
-					<value>MYDE_CMC_WJ50X
-						<designationCategory>Ferny_AerialTransport</designationCategory>
+					<value>
+						<designationCategory>Ferny_MilitaryTransport</designationCategory>
 					</value>
 				</li>
 
@@ -297,7 +297,7 @@
 					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="MYDE_CMC_Y50X"]/designationCategory</xpath>
 					<value>
-						<designationCategory>Ferny_AerialTransport</designationCategory>
+						<designationCategory>Ferny_MilitaryTransport</designationCategory>
 					</value>
 				</li>
 

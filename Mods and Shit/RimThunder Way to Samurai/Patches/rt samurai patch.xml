@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- GROUND TRANSPORT -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_IsuzuSKW_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_ToyotaHMV_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MILITARY TRANSPORT -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Type61_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Type73_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Type74_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Type75_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Type87_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Type99_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

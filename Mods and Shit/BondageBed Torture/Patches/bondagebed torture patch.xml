@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- BEDROOM -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SR_Building_BondageBed"]</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SR_Building_AdvancedBondageBed"]</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SR_Building_Mattress"]</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SR_SimpleBed"]</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SR_NiceBed"]</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SR_DoubleNiceBed"]</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MANAGEMENT -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SR_Building_ElectricChair"]</xpath>
+		<value>
+			<designationCategory>Ferny_Management</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>
