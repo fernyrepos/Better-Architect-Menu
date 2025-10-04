@@ -45,7 +45,16 @@
                     </value>
                 </Operation>
 
+  <!-- SEATING -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="StoolBar"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Seating</designationCategory>
+                    </value>
+                </Operation>
 
+ 
 <!-- SUPPORTS -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
