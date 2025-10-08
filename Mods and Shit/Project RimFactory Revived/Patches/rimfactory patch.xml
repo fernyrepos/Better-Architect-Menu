@@ -29,14 +29,12 @@
 			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
-
-<!-- LOGISTICS -->
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PRF_DigitalStorageUnit_I"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 	
@@ -44,7 +42,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PRF_ColdStorageUnit_I"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -52,7 +50,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PRF_IOPort_I"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -60,15 +58,17 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PRF_IOPort_II"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- Industrial -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PRF_IOPPusher_I"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Industrial</designationCategory>
 		</value>
 	</Operation>
 
@@ -76,7 +76,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PRF_FuelingMachine"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Industrial</designationCategory>
 		</value>
 	</Operation>
 
@@ -84,7 +84,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PRF_SmartHopper"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Industrial</designationCategory>
 		</value>
 	</Operation>
 
@@ -92,7 +92,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@ParentName="PRF_Conveyor_Base"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Industrial</designationCategory>
 		</value>
 	</Operation>
 
@@ -100,7 +100,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@ParentName="PRF_Puller_Base"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Industrial</designationCategory>
 		</value>
 	</Operation>PRF_Puller_Base
 	
@@ -108,7 +108,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@ParentName="PRF_MiniDroneStation"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Industrial</designationCategory>
 		</value>
 	</Operation>
 

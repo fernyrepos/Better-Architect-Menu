@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- TRANSPORT INFRASTRUCTURE -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="RT_GarageDoorAbstract"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Small_Lathe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Large_Lathe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_CNC_machine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Grinding_Machine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Milling"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Air_Compressors"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_4Wheel_alignment_machine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Engine_Oil_Extractor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Hydraulic_Lifting_Jack_red"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Hydraulic_Lifting_Jack_yellow"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- SEATING -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Removed_car_seats"]</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+<!-- FIREFOAM -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Mobile_Extinguisher"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Firefoam</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- DECORATIONS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_2_Post_Hoist"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_4_Post_Hoist_POne"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_4_Post_Hoist_PTwo"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Mobile_Ladder"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Car_Ramp"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AIRFLOW -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Mobile_Blowe"]</xpath>
+		<value>
+			<designationCategory>Ferny_AirManagement</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- GENERAL STORAGE -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Sideboard"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Iron_Armoire"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Tin_Bedside_cabinetA"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Tin_Bedside_cabinetB"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Drum"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Iron_Shelves"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RT_Lockers"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

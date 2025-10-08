@@ -1,50 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>   
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="WallMountedFirefoamPopperBase"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Firefoam</designationCategory>
-                    </value>
-                </Operation>
-
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="WallMountedFirefoamPopperRed"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Firefoam</designationCategory>
-                    </value>
-                </Operation>
-
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="WallMountedFirefoamPopperYellow"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Firefoam</designationCategory>
-                    </value>
-                </Operation>
-
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="WallMountedFirefoamPopperGreen"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Firefoam</designationCategory>
-                    </value>
-                </Operation>
-
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="WallMountedFirefoamPopperBlue"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Firefoam</designationCategory>
-                    </value>
-                </Operation>
-
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="WallMountedFirefoamPopperWhite"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Firefoam</designationCategory>
-                    </value>
-                </Operation>
+	
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[@Name="WallMountedFirefoamPopperBase"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Firefoam</designationCategory>
+        </value>
+    </Operation>
+	
 </Patch>

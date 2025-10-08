@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- BARRICADES -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ToplessTinWall"]</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- LIGHTING -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NotSunLamp"]</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HellsphereCrematorium"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+<!-- KITCHEN -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SuspiciousStove"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+
+<!-- PRODUCTION INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DeepDrillInsect"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- RANCHING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WatermillGeneratorFish"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Ranching</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER GENERATION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WildTurbine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- TRAPS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TrapIED_Catalyst"]</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TrapHopper"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- EXPLOSIVES -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PowerConduitNotSoInsulated"]</xpath>
+		<value>
+			<designationCategory>Ferny_Explosives</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TransportPodHE"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Explosives</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RemoteShutdownSwitch"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Explosives</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VeryRE_ChemfuelPump"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Explosives</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BombTelevision"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Explosives</designationCategory>
+		</value>
+	</Operation>
+
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_MiniBombTurret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_EMPswarmLauncher"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_MortarBarrel"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_Gauss"]</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

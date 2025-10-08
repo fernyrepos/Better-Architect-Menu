@@ -1,99 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Furniture Expanded - Architect</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="HRK_ArmoredEmbrasure"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Walls</designationCategory>
-					</value>
-				</li>
-
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Royalty</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-
-							<li Class="PatchOperationReplace">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="HRK_FineEmbrasure"]/designationCategory</xpath>
-								<value>
-									<designationCategory>Ferny_Walls</designationCategory>
-								</value>
-							</li>
-
-						</operations>
-					</match>
-				</li>
-
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Combat Extended</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
-
-							<li Class="PatchOperationReplace">
-								<success>Always</success>
-								<xpath>Defs/ThingDef[defName="CE_Embrasure"]/designationCategory</xpath>
-								<value>
-									<designationCategory>Ferny_Walls</designationCategory>
-								</value>
-							</li>
-
-						</operations>
-					</match>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HRK_ArmoredEmbrasure"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Factions Expanded - Medieval 2</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="HRK_CastleWallEmbrasure"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Walls</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HRK_FineEmbrasure"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>ReBuild: Doors and Corners</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="HRK_RusticEmbrasure"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Walls</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CE_Embrasure"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
 	</Operation>
-	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HRK_CastleWallEmbrasure"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HRK_RusticEmbrasure"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+
 </Patch>

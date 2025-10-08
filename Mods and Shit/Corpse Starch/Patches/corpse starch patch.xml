@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- KITCHEN -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CS_CorpseStarchDispenser"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CS_CanDispenser"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CS_CorpseHopper"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

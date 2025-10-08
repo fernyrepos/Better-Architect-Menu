@@ -5,7 +5,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="StorageWindow"]</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 	

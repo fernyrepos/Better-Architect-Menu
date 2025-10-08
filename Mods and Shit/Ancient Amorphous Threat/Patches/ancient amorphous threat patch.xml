@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- SUMMON -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AT_ErodedSignal"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Summon</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- TRAPS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AAT_WalkerIEDTrap"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AAT_WalkerBombTrap"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="AT_AutocannonTurret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>

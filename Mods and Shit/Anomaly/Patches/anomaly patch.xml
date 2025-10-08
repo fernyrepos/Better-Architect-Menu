@@ -33,5 +33,14 @@
                     </value>
                 </Operation>
 
+<!-- TERRAFORMING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AtmosphericHeater"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
 
 </Patch>

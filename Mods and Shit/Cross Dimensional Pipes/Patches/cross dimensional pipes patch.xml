@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- CHEMFUEL NETWORK -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_ChemfuelNetwork"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="TeleporterInput"]</xpath>
+					<value>
+						<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="TeleporterOutput"]</xpath>
+					<value>
+						<designationCategory>Ferny_ChemfuelNetwork</designationCategory>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- NUTRIENT PASTE NETWORK -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_NutrientPasteNetwork"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="NutrientTeleporterInputt"]</xpath>
+					<value>
+						<designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="NutrientTeleporterOutput"]</xpath>
+					<value>
+						<designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+	
+</Patch>

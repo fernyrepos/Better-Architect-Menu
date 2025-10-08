@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- FLOORS -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="LogoPropBuildingBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Floors</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="LogoPropBuildingBase"]/designatorDropdown</xpath>
+	</Operation>
+	
+<!-- DECORATIONS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="PropBuildingBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="PropBuildingBase"]/designatorDropdown</xpath>
+	</Operation>
+	
+</Patch>

@@ -75,12 +75,20 @@
 		</value>
 	</Operation>
 	
-<!-- LOGISTICS -->
+<!-- GENERAL STORAGE -->
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/DesignationCategoryDef[defName="Ferny_Logistics"]/specialDesignatorClasses</xpath>
+		<xpath>Defs/DesignationCategoryDef[defName="Ferny_GeneralStorage"]/specialDesignatorClasses</xpath>
 		<value>
 			<li>EccentricFurniture.Designator_DeconstructConduit</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EccentricFurniture_BasicShelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 	
@@ -88,23 +96,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Eccentric_Autoloader"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="EccentricFurniture_RepairShelf"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="EccentricFurniture_RepairCabinet"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -112,7 +104,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="EccentricFurniture_SupplyShelf"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -120,7 +112,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Eccentric_SupplyConduit"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -128,7 +120,16 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Eccentric_SupplyConduitUnderground"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Ferny_Production"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricFurniture.Designator_DeconstructConduit</li>
 		</value>
 	</Operation>
 
@@ -136,27 +137,68 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="EccentricFurniture_AutofabricatorBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Logistics</designationCategory>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Ferny_ProcessingProduction"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricFurniture.Designator_DeconstructConduit</li>
 		</value>
 	</Operation>
 
-	<!-- FOOD STORAGE -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EccentricFurniture_Autorefinery"]</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- BEDROOM -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Ferny_Bedroom"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricFurniture.Designator_DeconstructConduit</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EccentricFurniture_RepairCabinet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- GEAR STORAGE -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/DesignationCategoryDef[defName="Ferny_GearStorage"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>EccentricFurniture.Designator_DeconstructConduit</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EccentricFurniture_RepairShelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GearStorage</designationCategory>
+		</value>
+	</Operation>
+
+<!-- FOOD STORAGE -->
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="EccentricFurniture_SingleRefrigeratorBase"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_FoodStorage</designationCategory>
-		</value>
-	</Operation>
-
-<!-- GENERAL STORAGE -->
-	
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="EccentricFurniture_BasicShelf"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
 

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- KITCHEN -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MThingsGeysersStonekettle"]</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MThingsGeysersStonebrewery"]</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MThingsGeysersSmokeforge"]</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MThingsGeysersCharforge"]</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AUXILIARIES -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MThingsGeysersCore"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- CULTURE -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="Ideology"]</xpath>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="MThingsGeysersPsyfocusBooster"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ideology</designationCategory>
+			</value>
+		</match>
+	</Operation>
+
+<!-- PRODUCTION INFRASTRUCTURE -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MThingsGeysersMagicyteHarvester"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

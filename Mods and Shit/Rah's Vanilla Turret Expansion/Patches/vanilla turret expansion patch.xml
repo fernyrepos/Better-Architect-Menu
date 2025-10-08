@@ -19,16 +19,12 @@
 		</value>
 	</Operation>
 
-	<!-- These ThingDefs are removed by Turrets: Re-Examined, so only operate if they are present. -->
-
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="VulcanCannonManned"]</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="VulcanCannonManned"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_Weapons</designationCategory>
-			</value>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VulcanCannonManned"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- DEPLOYABLE -->
@@ -91,44 +87,36 @@
 
 	<!-- These ThingDefs are removed by Turrets: Re-Examined, so only operate if they are present. -->
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="MilitaryTurretGunManned"]</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="MilitaryTurretGunManned"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_Weapons</designationCategory>
-			</value>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MilitaryTurretGunManned"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="ShredderTurretGunManned"]</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="ShredderTurretGunManned"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_Weapons</designationCategory>
-			</value>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShredderTurretGunManned"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="PrecisionTurretGunManned"]</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="PrecisionTurretGunManned"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_Weapons</designationCategory>
-			</value>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PrecisionTurretGunManned"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/ThingDef[defName="BlastTurretGunManned"]</xpath>
-		<match Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="BlastTurretGunManned"]/designationCategory</xpath>
-			<value>
-				<designationCategory>Ferny_Weapons</designationCategory>
-			</value>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BlastTurretGunManned"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
 	</Operation>
-	
+
 </Patch>

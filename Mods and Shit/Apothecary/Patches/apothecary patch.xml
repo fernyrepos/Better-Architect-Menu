@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- PRODUCTION -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYApothecaryTable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYCharcoalSmithy"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+
+<!-- KITCHEN -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYCharcoalStove"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- HEATING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYBrazier"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Heating</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- COOLING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYPassiveCooler"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Cooling</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYCandle"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYCastArtTable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYLargeCastArtTable"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYCharcoalKiln"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYCompostBarrel"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYCharcoalCrematorium"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- FARMING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYHerbBox"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Farming</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYWaterGrower"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Farming</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYPotashBarrel"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- FOOD STORAGE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYPreserveBarrel"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_FoodStorage</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER GENERATION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AYCharcoalFiredGenerator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- HYGIENE or PROCESSING PRODUCTION -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="Hygiene"]</xpath>
+
+		<!-- Dubs Bad Hygiene category -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AYApparelWashingTub"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Hygiene</designationCategory>
+			</value>
+		</match>
+		
+		<!-- Fallback category -->
+		<nomatch Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AYApparelWashingTub"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_ProcessingProduction</designationCategory>
+			</value>
+		</nomatch>
+		
+	</Operation>
+	
+</Patch>

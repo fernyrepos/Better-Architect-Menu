@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- AUXILIARIES -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Tool_Cabinet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Multi_Analyzer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- LIGHTING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Tritium_Wall_Lamp"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+
+<!-- FIREFOAM -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Foam_Turret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Firefoam</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MEDICAL -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Vitals_Monitor"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Medical</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- OUTREACH -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Comms_Console"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Outreach</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_OrbitalTradeBeacon"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Outreach</designationCategory>
+		</value>
+	</Operation>
+
+	<!-- WEAPONS -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Rocket_Turret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Emp_Turret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Emp_Turret_Ship"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_FireShotgun_Turret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_LightMachinegun_Turret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_MachineCannon_Turret_Ship"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Minigun_Turret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Minigun_Turret_Ship"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Emp_Turret"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Emp_Turret_Ship"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Minigun_Turret"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HMC_Wall_Minigun_Turret_Ship"]/designatorDropdown</xpath>
+	</Operation>
+	
+</Patch>

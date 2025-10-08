@@ -14,14 +14,6 @@
 
 		</value>
 	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/DesignationCategoryDef[defName="Rimatomics"]/label</xpath>
-		<value>
-			<label>Nuclear</label>
-		</value>
-	</Operation>
 	
 <!-- Add pipe designators -->
 

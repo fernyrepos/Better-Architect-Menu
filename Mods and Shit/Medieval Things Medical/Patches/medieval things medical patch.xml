@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- MEDICAL -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MThingsMedicalHealerStand"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Medical</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MThingsGeysersCoreHealingCot"]</xpath>
+		<value>
+			<designationCategory>Ferny_Medical</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -72,31 +72,33 @@
                     </value>
                 </Operation>
 	
-<!-- CONTROL -->
+<!-- MANAGEMENT -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="StylingStation"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Management</designationCategory>
+		</value>
+	</Operation>
 	
-	            <Operation Class="PatchOperationReplace">
-		            <success>Always</success>
-		            <xpath>Defs/ThingDef[defName="StylingStation"]/designationCategory</xpath>
-		            <value>
-			            <designationCategory>Ferny_Control</designationCategory>
-		            </value>
-				</Operation>
-					
-		        <Operation Class="PatchOperationReplace">
-		            <success>Always</success>
-		            <xpath>Defs/ThingDef[defName="Skullspike"]/designationCategory</xpath>
-		            <value>
-			            <designationCategory>Ferny_Control</designationCategory>
-		            </value>
-						
-	            </Operation>
-		            <Operation Class="PatchOperationReplace">
-		            <success>Always</success>
-		            <xpath>Defs/ThingDef[defName="GibbetCage"]/designationCategory</xpath>
-		            <value>
-			            <designationCategory>Ferny_Control</designationCategory>
-		            </value>
-	            </Operation>
+<!-- CONTROL -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Skullspike"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Control</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GibbetCage"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Control</designationCategory>
+		</value>
+	</Operation>
 
 <!-- CULTURE -->
                 <Operation Class="PatchOperationReplace">

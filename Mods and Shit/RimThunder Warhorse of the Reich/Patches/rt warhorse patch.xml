@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- GROUND TRANSPORT -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_Kubelwagen_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_ObelBlitzA_Truck_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_ObelBlitzC_Truck_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_ObelBlitzP_Truck_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_SdKfz6_Truck_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_GroundTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- MILITARY TRANSPORT -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_SdKfz251_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

@@ -10,6 +10,14 @@
 			<designationCategory>Ferny_Mechanoids</designationCategory>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Cybernethic_Arbo"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Mechanoids</designationCategory>
+		</value>
+	</Operation>
 	
 <!-- OUTREACH -->
 
@@ -19,17 +27,7 @@
 		<value>
 			<designationCategory>Ferny_Outreach</designationCategory>
 		</value>
-	</Operation>
-	
-<!-- CONTROL -->
-
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="Cybernethic_Arbo"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Control</designationCategory>
-		</value>
-	</Operation>
+	</Operation> 
 	
 <!-- SUMMON -->
 

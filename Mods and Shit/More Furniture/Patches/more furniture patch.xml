@@ -79,6 +79,4 @@
         <success>Always</success>
 		<xpath>Defs/DesignationCategoryDef[defName="ANON2MF"]</xpath>
 	</Operation>
-
-
 </Patch>

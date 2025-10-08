@@ -1,94 +1,279 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-<!-- KITCHEN -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_RumBurialSpot"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Kitchen</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_GrogDispenser"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Kitchen</designationCategory>
-                    </value>
-                </Operation>
 
-<!-- ANIMALS -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_AnimalDatabase"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Animals</designationCategory>
-                    </value>
-                </Operation>
+  <!-- KITCHEN -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_GrogDispenser"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Kitchen</designationCategory>
+    </value>
+  </Operation>
 
-<!-- CULTURE -->
-	            <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_SkyBurialSpot"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Memorial</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_RelicSmashingAltar"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_FuturisticObelisk"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_FuturisticStele"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_FuturisticPyramid"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_GreatPyramid"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_Sphynx"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_Megalith"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ideology</designationCategory>
-                    </value>
-                </Operation>
+  <!-- ANIMALS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_AnimalDatabase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Animals</designationCategory>
+    </value>
+  </Operation>
 
-<!-- MEDICAL -->
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="AM_AncientOperatingTable"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_Medical</designationCategory>
-                    </value>
-                </Operation>
+  <!-- CULTURE -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_RelicSmashingAltar"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_FuturisticObelisk"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_FuturisticStele"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_FuturisticPyramid"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_GreatPyramid"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Sphynx"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Pyramid"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Megalith"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_BaptismalFont"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_TeaCeremonyTable"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ideology</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- DOORS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_GrandGate"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Doors</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- RANCHING -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_AncientFence"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Ranching</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- BEDROOM -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_AncientLockerBank"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- TABLES -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Neolithic_StoneTable_1x2c"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Neolithic_StoneTable_2x2c"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Neolithic_StoneTable_2x4c"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Neolithic_StoneTable_3x3c"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Neolithic_WoodenTable_1x2c"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Neolithic_WoodenTable_2x2c"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Neolithic_WoodenTable_2x4c"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_Neolithic_WoodenTable_3x3c"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- BEDROOM -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_StoneBedroll"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_DoubleStoneBedroll"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_AncientBed"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_AncientDoubleBed"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- MEDICAL -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_AncientOperatingTable"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Medical</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- BARRICADES -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_AncientRazorwire"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Barricades</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- TRAPS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_TrapBlunt"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Traps</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- MISC -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_CorruptedGaumakerCocoon"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Misc</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- RESEARCH -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_AnimalDatabase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ResearchProduction</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- SUMMON -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_RaidSpawner"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Summon</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- MEMORIAL -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_RumBurialSpot"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Memorial</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_SkyBurialSpot"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Memorial</designationCategory>
+    </value>
+  </Operation>
+
 </Patch>

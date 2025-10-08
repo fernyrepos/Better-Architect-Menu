@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	
+	<!-- Resources category -->
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
+		
 		<match Class="PatchOperationSequence">
 			<operations>
 				
@@ -32,6 +34,38 @@
 				
 			</operations>
 		</match>
+
+		<!-- Fallback category -->
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[@Name="PowerConduit"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_PowerManagement</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[@ParentName="PowerConduit"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_PowerManagement</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>/Defs/DesignationCategoryDef[defName="Ferny_PowerManagement"]/specialDesignatorClasses</xpath>
+					<value>
+						<li>Designator_DeconstructConduit</li>
+					</value>
+				</li>
+
+			</operations>
+		</nomatch>
+	
 	</Operation>
 	
 </Patch>

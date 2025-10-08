@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- WALLS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AlloyWall"]</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- DOORS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AlloyDoor"]</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AlloyDoorBig"]</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- SEATING -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GArmchair"]</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+
+<!-- TABLES -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="GTableBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_Tables</designationCategory>
+		</value>
+	</Operation>
+
+<!-- BEDROOM -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="GSansComfortBedBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+
+<!-- LIGHTING -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GrineerWallLamp"]</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- FILTH -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GrineerDumpster"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Filth</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- GENERAL STORAGE -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="GShelfBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- RESOURCES STORAGE -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GrineerAlloyBarrel"]</xpath>
+		<value>
+			<designationCategory>Ferny_ResourcesStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GrineerGrokdrulDrum"]</xpath>
+		<value>
+			<designationCategory>Ferny_ResourcesStorage</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

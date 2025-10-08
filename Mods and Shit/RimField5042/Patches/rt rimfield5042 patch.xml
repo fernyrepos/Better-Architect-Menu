@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="MO_Vehicles"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Transport</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	
+<!-- MILITARY TRANSPORT -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="M1A5_MainBattleTank_Blueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="EMKV90-TOR_Tank_Blueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+<!-- Aerocraft Framework -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_F35e"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_RotorCraft_MV-38_Base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_RotorCraft_RAH-68_Base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_SU57e"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

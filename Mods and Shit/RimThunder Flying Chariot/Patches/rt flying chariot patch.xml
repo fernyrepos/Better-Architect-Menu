@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- AERIAL TRANSPORT -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_C130_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_CH53E_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_UH60_Vehicle_Blueprint"]</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

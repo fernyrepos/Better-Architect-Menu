@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="EternalScience_LostS1ght"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Furniture</parentCategory>
+			</li>
+		</value>
+	</Operation>
+
+<!-- BIOTECH -->
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GeneBank80_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Biotech</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SkyprismGeneProcessor_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Biotech</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- ODYSSEY -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="OxygenPump_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Odyssey</designationCategory>
+		</value>
+	</Operation>
+
+	<!-- Compatible with VE Chemfuel - Odyssey Patch -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ChemfuelTank1m3_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Odyssey</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Skyprism_GravFieldExtender_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Odyssey</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SkyprismThruster_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Odyssey</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="ShuttleBase_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Odyssey</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- TERRAFORMING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AtmosphereConditioner_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Terraforming</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AIRFLOW -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="UniversalTempConditioner_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AirManagement</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- LIGHTING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArtificialSun0_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- DECORATIONS -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SculptureSkyprism1_LostS1ght"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SculptureSkyprism2_LostS1ght"]</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- FARMING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BasinBase_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Farming</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- AUXILIARIES -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FurnaceOverclockingCore_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MachineOverclockingCore_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="AIProcessorBase_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Auxiliaries</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- GENERAL STORAGE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="aaa4DStorageBox_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+
+<!-- OUTREACH -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SkyprismOLJobPlatformClient_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Outreach</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SkyprismCPSNShoppingClient_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Outreach</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER GENERATION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LiquidHydrogenFuelPoweredGenerator_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FusionFuelPoweredGenerator_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AnnihilationFuelPoweredGenerator_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ReinforcedVanometricPowerCell_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ReinforcedVanometricPowerCell2_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CompactGenerator114514_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- POWER STORAGE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HighDensityBattery_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="QuantumCapacitorBattery_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AntimatterBattery_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_PowerStorage</designationCategory>
+		</value>
+	</Operation>
+
+<!-- WEAPONS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="Turret_Base_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- TRAPS -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="TrapIEDBase_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BenchBase_LostS1ght"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- KITCHEN -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="OrganicSynthesisMachine_LostS1ght"]</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PROCESSING PRODUCTION -->
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AtomicReactionFurnace_LostS1ght"]</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MaterialPrinterN_LostS1ght"]</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MaterialPrinterA_LostS1ght"]</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GeyserHeliumSeparator_LostS1ght"]</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>

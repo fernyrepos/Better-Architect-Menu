@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="BigAndSmall.PatchOp_RobotsEnabled">
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BS_AndroidFuelRefinery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Androids"]</xpath>
+		
+		<!-- VRE Androids category -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="BS_AndroidFuelRefinery"]/designationCategory</xpath>
+			<xpath>Defs/ThingDef[defName="BS_AndroidChargingStation"]/designationCategory</xpath>
 			<value>
-				<designationCategory>Ferny_Kitchen</designationCategory>
+				<designationCategory>Ferny_Androids</designationCategory>
 			</value>
 		</match>
+
+		<!-- Fallback category -->
+		<nomatch Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BS_AndroidChargingStation"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_PowerManagement</designationCategory>
+			</value>
+		</nomatch>
+
 	</Operation>
-	
+
 </Patch>

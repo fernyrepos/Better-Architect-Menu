@@ -67,55 +67,38 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Cooking Expanded</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<success>Normal</success>
-			<operations>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_VanometricPot"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_VanometricPot"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Kitchen</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechCheesePress"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_ArchotechCheesePress"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Kitchen</designationCategory>
-					</value>
-				</li>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_ArchotechCookingStove"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Kitchen</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechCookingStove"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- GENERAL STORAGE -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Adaptive Storage Framework</li>
-		</mods>
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>Defs/ThingDef[defName="MAG_ASF_BoxOne"]</xpath>
-			<value>
-				<designationCategory>Ferny_GeneralStorage</designationCategory>
-			</value>
-		</match>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ASF_BoxOne"]</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
 	</Operation>
 
 <!-- POWER GENERATION -->
@@ -127,40 +110,29 @@
 			<designationCategory>Ferny_PowerGeneration</designationCategory>
 		</value>
 	</Operation>
-	
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Furniture Expanded - Power</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
 
-				<li Class="PatchOperationAdd">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="VPE_ArchotechViolenceGenerator"]</xpath>
-					<value>
-						<designationCategory>Ferny_PowerGeneration</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VPE_ArchotechViolenceGenerator"]</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationAdd">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="VFE_SmallVanometricPowerCell"]</xpath>
-					<value>
-						<designationCategory>Ferny_PowerGeneration</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFE_SmallVanometricPowerCell"]</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationAdd">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="VFE_LargeVanometricPowerCell"]</xpath>
-					<value>
-						<designationCategory>Ferny_PowerGeneration</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFE_LargeVanometricPowerCell"]</xpath>
+		<value>
+			<designationCategory>Ferny_PowerGeneration</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- POWER STORAGE -->
@@ -193,131 +165,87 @@
 	
 <!-- CULTURE -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Ideology</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchonexusCore"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ideology</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="ArchonexusCore"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ideology</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchonexusCore"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ideology</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="ArchonexusCore"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ideology</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_One"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ideology</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_One"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ideology</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Two"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ideology</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Two"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ideology</designationCategory>
-					</value>
-				</li>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Three"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ideology</designationCategory>
+		</value>
+	</Operation>
 
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Three"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ideology</designationCategory>
-					</value>
-				</li>
-
-				<li Class="PatchOperationRemove">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_One"]/designatorDropdown</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Two"]/designatorDropdown</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Three"]/designatorDropdown</xpath>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_One"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Two"]/designatorDropdown</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechTranscendenceThing_Three"]/designatorDropdown</xpath>
 	</Operation>
 	
 <!-- FARMING -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Furniture Expanded - Farming</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_VFE_ArchotechSprinkler"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Farming</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_VFE_ArchotechSprinkler"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Farming</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- FILTH -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Furniture Expanded</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_GarbageBin"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Ferny_Filth</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_GarbageBin"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Filth</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- WATER -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Dubs Bad Hygiene</li>
-		</mods>
-		<match Class="PatchOperationSequence">
-			<operations>
-
-				<li Class="PatchOperationReplace">
-					<success>Always</success>
-					<xpath>Defs/ThingDef[defName="MAG_ArchotechWaterThing"]/designationCategory</xpath>
-					<value>
-						<designationCategory>Hygiene</designationCategory>
-					</value>
-				</li>
-
-			</operations>
-		</match>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MAG_ArchotechWaterThing"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Hygiene</designationCategory>
+		</value>
 	</Operation>
 	
 <!-- GENETICS -->
@@ -469,5 +397,5 @@
 			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
 		</value>
 	</Operation>
-	
+
 </Patch>

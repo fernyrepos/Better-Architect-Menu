@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="HID_Navistar_Blueprint_M2HB"]</xpath>
+    <value>
+      <designationCategory>Ferny_GroundTransport</designationCategory>
+    </value>
+  </Operation>
+</Patch>

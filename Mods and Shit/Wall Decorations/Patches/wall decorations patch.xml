@@ -171,10 +171,33 @@
 	
 <!-- DECORATIONS or HYGIENE -->
 
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Dubs Bad Hygiene</li>
-		</mods>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_toiletpaper"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_mirror"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+
+	<!--Fallback category -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="Hygiene"]</xpath>
 		<nomatch Class="PatchOperationSequence">
 			<operations>
 				
@@ -216,4 +239,6 @@
 		<xpath>Defs/ThingDef[defName="ucp_mirrorlight"]/designatorDropdown</xpath>
 	</Operation>
 	
+
+
 </Patch>

@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-<!-- Rename category and move under Resources. -->
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/DesignationCategoryDef[defName="Rimefeller"]/label</xpath>
-		<value>
-			<label>Petrochem</label>
-		</value>
-	</Operation>
+<!-- Move under Resources. -->
 	
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>

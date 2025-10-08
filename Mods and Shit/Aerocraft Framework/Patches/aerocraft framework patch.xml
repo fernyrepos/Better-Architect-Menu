@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="MYDE_AerocraftFramework_DesignationCategory"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Transport</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	
+<!-- AERIAL TRANSPORT -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_FWCraft_Bombardment"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_FWCraft_AerocraftCarrier"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_RotorCraft_FourPropeller_Base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_RotorCraft_TwinPropeller_Base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MYDE_AF_RotorCraft_AssistiveCraft_Base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_MilitaryTransport</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- TRANSPORT INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="MYDE_AerocraftFramework_AddableWeapon_XmlParent"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
