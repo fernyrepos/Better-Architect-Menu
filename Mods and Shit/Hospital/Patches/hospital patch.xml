@@ -11,7 +11,7 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="PatientLandingSpot"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Hosting</designationCategory>
+                        <designationCategory>Joy</designationCategory>
                     </value>
                 </Operation>
 </Patch>

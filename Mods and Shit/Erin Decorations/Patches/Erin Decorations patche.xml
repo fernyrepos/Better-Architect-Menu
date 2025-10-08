@@ -60,7 +60,7 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ED_SmallPlant"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoPlants</designationCategory>
                     </value>
                 </Operation>
 

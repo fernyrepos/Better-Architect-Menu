@@ -191,7 +191,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_Window"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
+			<designationCategory>Ferny_Windows</designationCategory>
 		</value>
 	</Operation>
 
@@ -199,7 +199,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_WindowModule"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
+			<designationCategory>Ferny_Windows</designationCategory>
 		</value>
 	</Operation>
 
@@ -419,7 +419,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_TropicalPotted"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 
@@ -435,7 +435,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_RockOrnament"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -443,7 +443,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_Carpet"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
 
@@ -451,7 +451,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_SmallCarpet"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
 
@@ -459,7 +459,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_WallDecorPlants"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 
@@ -467,7 +467,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_WallDecorplantV"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 
@@ -491,7 +491,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_WallDecorCoral"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 
@@ -499,7 +499,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_WallDecorCoralV"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 

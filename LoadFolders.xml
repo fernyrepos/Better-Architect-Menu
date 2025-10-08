@@ -256,6 +256,7 @@
     <li IfModActive="drilledhead.MyDogsHouse">Mods and Shit/MyDogsHouse</li>
     <li IfModActive="JTCsBonereapers.FormerlyPPHHYY">Mods and Shit/BoneReapers Remarrowed</li>
     <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blue Archive Furniture</li>
+    <li IfModActive="mlmlmlm.bluearchivefurniture2">Mods and Shit/Blue Archive Furniture 2</li>
     <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
     <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
     <li IfModActive="Xercaine.SmallBiofuelRefinery">Mods and Shit/Small Biofuel Refinery</li>
@@ -367,6 +368,22 @@
     <li IfModActiveAny="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>    
     <li IfModActive="unagi.funiture.build.window">Mods and Shit/UNAGI Decorative Furniture</li>
     <li IfModActive="xercaine.wallheater">Mods and Shit/Wall Heater</li>
+    <li IfModActive="mgatwood.housedecor">Mods and Shit/ATW House Decor</li>
+    <li IfModActive="gloomy.furniture.continued.fix">Mods and Shit/Gloomy Furniture</li>
+    <li IfModActive="zal.gloomyextrakitchen">Mods and Shit/Gloomy Furniture Extra Kitchen</li>
+    <li IfModActive="chv.diagonalwalls2">Mods and Shit/Diagonal Walls 2</li>
+    <li IfModActive="jpt.openthewindows">Mods and Shit/JPT Open the Windows</li>
+    <li IfModActive="mlie.decorativetrees">Mods and Shit/Decorative Trees</li>
+    <li IfModActive="zal.rimkea">Mods and Shit/RIMkea</li>
+    <li IfModActive="lat.rimstro">Mods and Shit/Rimstro</li>
+    <li IfModActive="mlie.morefurniture">Mods and Shit/More Furniture</li>
+    <li IfModActive="mlie.zengarden">Mods and Shit/Zen Garden</li>
+    <li IfModActive="resurrectionem.furniture">Mods and Shit/RR Furniture Pack Longyun</li>
+    <li IfModActive="resurrectionem.furnitureasia">Mods and Shit/RR Furniture Pack Rapture</li>
+    <li IfModActive="mlie.tobesdiningroom">Mods and Shit/Tobes Dining Room</li>
+    <li IfModActive="telkir.tmods.morefloors">Mods and Shit/More Floors</li>
+    <li IfModActive="zal.fishprops">Mods and Shit/Fishing Village Decor and Props</li>
+    <li IfModActive="4loris4.morelinkables">Mods and Shit/More Linkables</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

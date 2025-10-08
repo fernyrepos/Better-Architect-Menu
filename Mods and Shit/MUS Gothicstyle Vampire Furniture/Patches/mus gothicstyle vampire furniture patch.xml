@@ -193,7 +193,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_Fireplace"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
+			<designationCategory>Ferny_Heating</designationCategory>
 		</value>
 	</Operation>
 
@@ -201,7 +201,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_Window"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Lighting</designationCategory>
+			<designationCategory>Ferny_Windows</designationCategory>
 		</value>
 	</Operation>
 	
@@ -265,7 +265,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_Cupboard"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -273,7 +273,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_BloodCoffins"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -281,7 +281,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_ProfaneBloodCoffins"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -289,7 +289,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_TombStatue"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -297,7 +297,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_DecorativeArmor"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -305,7 +305,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_MonsterStatueSmall"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -313,7 +313,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_MonsterStatueLarge"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -321,7 +321,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_HeavyCurtain"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoCurtains</designationCategory>
 		</value>
 	</Operation>
 
@@ -329,7 +329,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_ThinCurtain"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoCurtains</designationCategory>
 		</value>
 	</Operation>
 
@@ -337,7 +337,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_Flowerpot"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 
@@ -353,7 +353,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_GrandfatherClock"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -361,7 +361,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_OilPainting"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -369,7 +369,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_EerieOilPainting"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -377,7 +377,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_PottedPlants"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 
@@ -385,7 +385,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_SmallRoundTable"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -393,7 +393,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_BookDecoration"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -401,7 +401,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_WallColumn"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -409,7 +409,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_WallColumnFront"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -417,7 +417,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_Arch"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_Doors</designationCategory>
 		</value>
 	</Operation>
 
@@ -425,7 +425,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_SmallArch"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_Doors</designationCategory>
 		</value>
 	</Operation>
 
@@ -433,7 +433,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_CourtyardArch"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_Doors</designationCategory>
 		</value>
 	</Operation>
 

@@ -1,32 +1,150 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
+  <!-- ========== FLOORS ========== -->
 
 
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="UNAGI_Furniture"]/order</xpath>
-                    <value>
-                        <order>2</order>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="UNAGI_Furniture"]/label</xpath>
-                    <value>
-                        <label>UNA Decor</label>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="UNAGI_Furniture"]</xpath>
-                    <value>
-                        <modExtensions>
-                        <li Class="BetterArchitect.NestedCategoryExtension">
-                            <parentCategory>Furniture</parentCategory>
-                        </li>
-                        </modExtensions>
-                    </value>
-                </Operation>
+    <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TerrainDef[
+            @ParentName="UNA_OsakanaTile" or 
+            @ParentName="UNA_AoitairuATile" or
+            @ParentName="UNA_FloreChairoTile"
+        ]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/TerrainDef[defName="UNA_steeredwheel"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="UNA_WallMadonew"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Windows</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Tables -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="UNA_RoundTable1x1c"]/designationCategory |
+            Defs/ThingDef[defName="UNA_RoundTable2x2c"]/designationCategory |
+            Defs/ThingDef[defName="UNATable3x3c"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Seating -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="UNA_LaceDiningChair"]/designationCategory |
+            Defs/ThingDef[defName="UNA_Couch"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Seating</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Lighting -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+           
+            Defs/ThingDef[defName="UNA_chandelier"]/designationCategory |
+            Defs/ThingDef[defName="UNAB_StandLight"]/designationCategory |
+            Defs/ThingDef[defName="UNA_FloodLight"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Windows -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="UNAstainedglass_A"]/designationCategory |
+            Defs/ThingDef[defName="UNABlackWindow"]/designationCategory |
+            Defs/ThingDef[defName="UNAstainedglass_Rose"]/designationCategory |
+            Defs/ThingDef[defName="UNAstainedglass_Maru"]/designationCategory |
+            Defs/ThingDef[defName="UNA_Deco_WindowA"]/designationCategory |
+            Defs/ThingDef[defName="UNAstainedglass_Tate"]/designationCategory 
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Windows</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Curtains Decorations -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="UNA_TengaiMuzi"]/designationCategory |
+            Defs/ThingDef[defName="UNA_TengaiA"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_DecoCurtains</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Curtains/Fabric Decorations -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="UNA_Vail2x4c"]/designationCategory |
+            Defs/ThingDef[defName="UNA_Umbrellaroof"]/designationCategory |
+            Defs/ThingDef[defName="UNA_thewashing"]/designationCategory 
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Decorative Furniture -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="UNA_mantlepiece"]/designationCategory |
+            Defs/ThingDef[defName="UNA_YukadecoKaigara"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Outside Decorations -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="UNA_RoofofRoses"]/designationCategory |
+            Defs/ThingDef[defName="UNA_gazebo"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Rugs - using parent name since they inherit -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="UNA_RagMat"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoRugs</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Rugs - also patch the concrete defs to be safe -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[@ParentName="UNA_RagMat"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoRugs</designationCategory>
+        </value>
+    </Operation>
+
+
+    <!-- Remove the original BS category -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="UNAGI_Furniture"]</xpath>
+	</Operation>
 
 </Patch>

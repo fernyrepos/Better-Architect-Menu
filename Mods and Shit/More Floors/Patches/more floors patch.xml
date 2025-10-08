@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Stone base -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStone"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone slabs -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneSlabs"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone staggered -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneStaggered"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone rough -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneRough"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone alternating -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneAlternating"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone chequered single -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneChequeredSingle"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone herringbone -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneHerringbone"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone hex -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneHex"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone digital -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneDigital"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone mosaic -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneMosaic"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone random -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneRandom"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone diamond -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneDiamond"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone arabesque -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneArabesque"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Stone chequered -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseStoneChequered"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Wood floors -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseWood"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Check carpets -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseCarpetCheck"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Wool carpets -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseCarpetWool"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Gemstone floors -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="TFloorBaseGemstone"]</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Standalone concrete defs with @Name -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/TerrainDef[@Name="FloorPlasteel"]/designationCategory |
+            Defs/TerrainDef[@Name="FloorStraw"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+  <!-- Remove the original BS category -->
+	<Operation Class="PatchOperationRemove">
+        <success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="MoreFloors"]</xpath>
+	</Operation>
+
+</Patch>

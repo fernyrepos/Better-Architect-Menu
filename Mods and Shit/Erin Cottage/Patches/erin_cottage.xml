@@ -27,25 +27,25 @@
                     <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="CCol_PottedPlantA"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoPlants</designationCategory>
                     </value>
                 </Operation>
                     <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="CCol_PottedPlantB"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoPlants</designationCategory>
                     </value>
                 </Operation>
                       <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="CCol_PottedPlantC"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoPlants</designationCategory>
                     </value>
                 </Operation>
                       <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="CCol_PottedPlantD"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoPlants</designationCategory>
                     </value>  
                 </Operation>
                 <Operation Class="PatchOperationAdd">
@@ -75,7 +75,7 @@
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="CCot_SmallBookshelf"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoFurniture</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">

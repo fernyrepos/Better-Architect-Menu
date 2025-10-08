@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ========== BEDROOM ITEMS ========== -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      Defs/ThingDef[defName="Anon2Dresser"]/designationCategory |
+      Defs/ThingDef[defName="Anon2EndTable"]/designationCategory |
+      Defs/ThingDef[defName="Anon2RoyalEndTable"]/designationCategory |
+      Defs/ThingDef[defName="Anon2EndTableLight"]/designationCategory |
+      Defs/ThingDef[defName="Anon2RoyalEndTableLight"]/designationCategory
+    </xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- ========== AUXILIARIES (Production Boosters) ========== -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Anon2FileCabinet"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Auxiliaries</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- ========== SEATING ========== -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      Defs/ThingDef[defName="Anon2SquareDiningChair"]/designationCategory |
+      Defs/ThingDef[defName="Anon2CushionedChair"]/designationCategory |
+      Defs/ThingDef[defName="Anon2CouchRight"]/designationCategory |
+      Defs/ThingDef[defName="Anon2CouchCenter"]/designationCategory |
+      Defs/ThingDef[defName="Anon2CouchLeft"]/designationCategory |
+      Defs/ThingDef[defName="Anon2CouchCorner"]/designationCategory |
+      Defs/ThingDef[defName="Anon2CouchCornerInv"]/designationCategory
+    </xpath>
+    <value>
+      <designationCategory>Ferny_Seating</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- ========== TABLES ========== -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>
+      Defs/ThingDef[defName="Anon2TableTiny"]/designationCategory |
+      Defs/ThingDef[defName="Anon2CounterA"]/designationCategory |
+      Defs/ThingDef[defName="Anon2CounterAFull"]/designationCategory
+    </xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- ========== PLANTS (Decorations) ========== -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>
+      Defs/ThingDef[defName="Anon2SquarePlantPot"]/designationCategory |
+      Defs/ThingDef[defName="Anon2PlantSpot"]/designationCategory 
+    </xpath>
+    <value>
+      <designationCategory>Ferny_DecoPlants</designationCategory>
+    </value>
+  </Operation>
+
+      <!-- Chairs/Couches -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[
+            defName="Anon2OrnatePlantPot" or 
+            defName="Anon2OrnateSquarePlantPot"
+        ]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Remove the original BS category -->
+	<Operation Class="PatchOperationRemove">
+        <success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="ANON2MF"]</xpath>
+	</Operation>
+
+
+</Patch>

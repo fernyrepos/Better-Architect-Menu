@@ -113,7 +113,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeA"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -121,7 +121,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeB"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -129,7 +129,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeC"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -137,7 +137,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeD"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -145,7 +145,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeE"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -153,7 +153,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeF"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -161,7 +161,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeG"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -169,7 +169,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeH"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -177,7 +177,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeI"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -185,7 +185,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeJ"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -193,7 +193,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeK"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -201,7 +201,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeL"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -209,7 +209,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeM"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -217,7 +217,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_DecorativeN"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -233,7 +233,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_Potting"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 
@@ -241,7 +241,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_RattanCarpet"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
 

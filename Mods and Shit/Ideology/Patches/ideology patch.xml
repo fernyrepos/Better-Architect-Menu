@@ -46,12 +46,29 @@
                     </value>
                 </Operation>
 
-<!-- DECORATIONS -->
+<!-- DECORATIONS - RUGS -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="RusticRug_Medium"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_DecoRugs</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="RusticRug_Broad"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_DecoRugs</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- DECORATIONS - PLANTS -->
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PlantPot_Bonsai"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoPlants</designationCategory>
                     </value>
                 </Operation>
 	

@@ -55,7 +55,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Fountain"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -63,7 +63,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BirdHouse"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -71,7 +71,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BirdBath"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 	

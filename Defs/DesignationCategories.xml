@@ -72,22 +72,6 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
-    <defName>Ferny_Decorations</defName>
-    <label>Decorations</label>
-    <description>Things that decorate.</description>
-    <order>456</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Furniture</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
-
-  <DesignationCategoryDef>
     <defName>Ferny_Production</defName>
     <label>Produce</label>
     <description>Make stuff.</description>
@@ -311,6 +295,22 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_Windows</defName>
+		<label>Windows</label>
+		<description>Windows for walls</description>
+		<order>850</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Structure</parentCategory>
+			</li>
+		</modExtensions>
+  	</DesignationCategoryDef>
 
   <DesignationCategoryDef>
     <defName>Ferny_Foundations</defName>
@@ -1097,5 +1097,114 @@
 			</li>
 		</modExtensions>
 	</DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Decorations</defName>
+    <label>Decorations</label>
+    <description>Things that decorate.</description>
+    <order>15</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+		<defName>Ferny_DecoPlants</defName>
+		<label>Plants</label>
+		<description>Manage Plant Decorations.</description>
+		<order>900</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+		<defName>Ferny_DecoRugs</defName>
+		<label>Rugs</label>
+		<description>Manage Rug Decorations.</description>
+		<order>800</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+		<defName>Ferny_DecoCurtains</defName>
+		<label>Curtains</label>
+		<description>Manage Curtains Decorations.</description>
+		<order>700</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+		<defName>Ferny_DecoArt</defName>
+		<label>Art</label>
+		<description>Manage Art Decorations.</description>
+		<order>700</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+		<defName>Ferny_DecoFurniture</defName>
+		<label>Furniture</label>
+		<description>Manage Furniture Decorations.</description>
+		<order>700</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+		<defName>Ferny_DecoOutside</defName>
+		<label>Outside</label>
+		<description>Manage Outside Decorations.</description>
+		<order>600</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+
 
 </Defs>

@@ -10,7 +10,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="RR_RugBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
 

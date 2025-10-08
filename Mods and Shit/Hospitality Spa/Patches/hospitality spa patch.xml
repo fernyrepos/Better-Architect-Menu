@@ -3,31 +3,31 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DBHSwimmingPool"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Hosting</designationCategory>
+                        <designationCategory>Joy</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="HotTub"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Hosting</designationCategory>
+                        <designationCategory>Joy</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DBHSaunaHeaterElec"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Hosting</designationCategory>
+                        <designationCategory>Joy</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DBHSaunaHeaterLog"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Hosting</designationCategory>
+                        <designationCategory>Joy</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="DBHSaunaSeating"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Hosting</designationCategory>
+                        <designationCategory>Joy</designationCategory>
                     </value>
                 </Operation>
 </Patch>

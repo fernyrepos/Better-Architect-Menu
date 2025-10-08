@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Bedroom -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_bedSingle"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_bedSingleB"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_bedDouble"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_bedDoubleB"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_ClassyDoubleBed"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Dresser"]</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_EndTable"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_EndTableWithLamp"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_EndTableWithLampE"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Decorations -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_bucketr"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_orc"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Flower"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Teaset"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Teddy"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_BoundaryWood"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_BoundaryStone"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_BoundaryWoodCorner"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_BoundaryStoneCorner"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Seating -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_SimpleChair"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Seating</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Chair"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Seating</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGKDiningChair"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Seating</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Bench"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Seating</designationCategory>
+        </value>
+    </Operation>
+
+     <!-- Table -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_TableA"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_TableC"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_TableB"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_TableD"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_TableE"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_TableF"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_TableG"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_TableH"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_MiniTableA"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_MiniTableB"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+  
+    <!-- Food Storage -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RKGWineRackB"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
+        </value>
+    </Operation>
+
+
+    <!-- Gear Storage -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="WardrobeA"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_GearStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="WardrobeB"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_GearStorage</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Information Storage -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Bookshelf"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_InformationStorage</designationCategory>
+        </value>
+    </Operation>
+
+     <!-- Auxiliaries -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Cupboard"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Auxiliaries</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_TablewareShelf"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Auxiliaries</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Animal - Ranching -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Manger"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_DogBowl"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_WoodFence"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_DogBowl"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Ranching</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- General Storage -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Shelf"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Small_Shelf"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Locker"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+
+
+    <!-- Walls -->
+     <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="RGK_Wall"]/label</xpath>
+        <value>
+            <label>Gloomy Wall</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Wall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="GL_Wall"]/label</xpath>
+        <value>
+            <label>Gloomy Walls</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Wall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_VentWall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_VentWall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_window"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_WindowWall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_WindowWall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_FlowerWall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Doors -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_DoorOld"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Doors</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Door"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Doors</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_AutodoorOld"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Doors</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_DoorFrame"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Doors</designationCategory>
+        </value>
+    </Operation>
+
+     <!-- Entertain -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_ChessTable"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Joy</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_PokerTable"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Joy</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_BilliardsTable"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Joy</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_TubeTelevision"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Joy</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Lighting -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Fireplace"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Heating</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_FireplaceE"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Heating</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_lamp"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_LampM"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_lampE"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_lamp_White"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_LampM_White"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_lampE_White"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Street_Lamp_L"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Street_Lamp"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Street_Lamp_Seven"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_Street_Lamp_SevenE"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Street_Lamp_L_White"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Street_Lamp_White"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Street_Lamp_Seven_White"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Street_Lamp_SevenE_White"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[@ParentName="WallLightBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Ferny_DecoRugs -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[@ParentName="RGKRugBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoRugs</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Ferny_ResearchProduction -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_SimpleResearchBench"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_ResearchProduction</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Ferny_Kitchen -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_TableButcher"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RGK_FueledStove"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_ElectricStove"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Ferny_Heating -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_Bonfire"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Heating</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Ferny_Production -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_HandTailoringBench"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_ElectricTailoringBench"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_FueledSmithy"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GL_ElectricSmithy"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Remove categories -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="OldStyleFurniture"]</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="OldStyleDeco"]</xpath>
+    </Operation>
+</Patch>

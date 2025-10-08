@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
+
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Trinity_Teaching_Desk"]/designationCategory</xpath>
@@ -141,7 +141,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="BAWall_Clock"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -149,7 +149,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Gramophone"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -157,7 +157,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Classic_Book_Wagon"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -165,7 +165,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Tea_Time_Tea_Cart"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -177,11 +177,12 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
+	<!-- ========== RUGS (All carpets use same parent) ========== -->
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="TrinityCarpetBase"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[@ParentName="TrinityCarpetBase"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
 
@@ -189,7 +190,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Trinity_Hexagonal_Carpet"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
 
@@ -197,7 +198,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Classic_Pattern_Carpet"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
 
@@ -205,7 +206,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Tea_Party_Geometric_Pattern_Carpet"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
 
@@ -335,5 +336,24 @@
 		<value>
 			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>
+			Defs/ThingDef[defName="TeapartyChessTable"]/designationCategory |
+			Defs/ThingDef[defName="Trinity_Organ"]/designationCategory |
+			Defs/ThingDef[defName="Board_Game_Table"]/designationCategory 
+		</xpath>
+		<value>
+			<designationCategory>Joy</designationCategory>
+		</value>
+	</Operation>
+
+		
+    <!-- Remove the original BS category -->
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="Trinity_Decoration"]</xpath>
 	</Operation>
 </Patch>

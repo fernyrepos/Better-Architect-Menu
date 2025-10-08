@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Replace Decor buildables with Ferny_DecoPlants -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletA"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodAfricanVioletB"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodHousePlant"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodWaterPlant"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Replace Decor buildables with Ferny_Windows -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodWindow"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Windows</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodDoubleWindow"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Windows</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Replace Decor buildables with Ferny_DecoCurtains -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodCurtains"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoCurtains</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodDoubleCurtains"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_DecoCurtains</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Replace Decor buildables with Ferny_DecoArt -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodCandles"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodCandlesB"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Replace Decor buildables with Ferny_Decorations -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodAquarium"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="AtwoodAquariumBasic"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Remove the original BS_Furniture category -->
+	<Operation Class="PatchOperationRemove">
+        <success>Always</success>
+		<xpath>Defs/designationCategoryDef[defName="Decor"]</xpath>
+	</Operation>
+</Patch>

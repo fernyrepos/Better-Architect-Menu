@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- ========== SEATING ========== -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="Classic_Large_Sofa"]/designationCategory |
+            Defs/ThingDef[defName="Classic_SofaA"]/designationCategory |
+            Defs/ThingDef[defName="Classic_SofaB"]/designationCategory |
+            Defs/ThingDef[defName="Grand_Desk_Chair"]/designationCategory |
+            Defs/ThingDef[defName="Calligraphers_chair"]/designationCategory |
+            Defs/ThingDef[defName="Violet_Party_chair"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Seating</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- ========== TABLES ========== -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="Classic_Table_Set"]/designationCategory |
+            Defs/ThingDef[defName="Calligraphers_desk"]/designationCategory |
+            Defs/ThingDef[defName="Violet_Party_Table"]/designationCategory |
+            Defs/ThingDef[defName="Floral_Lunch_Set"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- ========== LIGHTING ========== -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="Classic_Light_Table"]/designationCategory |
+            Defs/ThingDef[defName="Elegant_Candle_Set"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- ========== AUXILIARIES (Research Boost) ========== -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Masterpiece_Bookshelf"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Auxiliaries</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- ========== RESEARCH PRODUCTION ========== -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Grand_Desk"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_ResearchProduction</designationCategory>
+        </value>
+    </Operation>
+
+	<!-- ========== RUGS (All carpets use same parent) ========== -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="GehennaCarpetBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
+		</value>
+	</Operation>
+
+    <!-- ========== PLANTS (Decorative) ========== -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="Violet_Garden_Vase"]/designationCategory |
+            Defs/ThingDef[defName="White_Stone_Flowerpot"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- ========== DECORATIONS ========== -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="Gehenna_Stone_Fence"]/designationCategory |
+            Defs/ThingDef[defName="Gehenna_Flag"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Decorations</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="Grand_Fountain"]/designationCategory |
+            Defs/ThingDef[defName="Floral_Fountain"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="Classic_2tier_Cart"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_DecoFurniture</designationCategory>
+        </value>
+    </Operation>
+
+	
+    <!-- Remove the original BS category -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="Gehenna_Decoration"]</xpath>
+	</Operation>
+
+</Patch>

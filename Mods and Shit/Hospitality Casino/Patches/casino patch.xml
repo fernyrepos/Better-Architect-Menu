@@ -3,7 +3,7 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[@Name="HC_SlotMachineBase"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Hosting</designationCategory>
+                        <designationCategory>Joy</designationCategory>
                     </value>
                 </Operation>
 </Patch>

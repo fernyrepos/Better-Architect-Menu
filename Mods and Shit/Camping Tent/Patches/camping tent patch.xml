@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="CampingLuggages"]</xpath>
 		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
+			<designationCategory>Ferny_Tents</designationCategory>
 		</value>
 	</Operation>
 
@@ -13,7 +12,23 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WoodPile"]</xpath>
 		<value>
-			<designationCategory>Ferny_Bedroom</designationCategory>
+			<designationCategory>Ferny_Tents</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>
+			Defs/ThingDef[defName="Canopy"] |
+      		Defs/ThingDef[defName="WoodenCanopy"] |
+      		Defs/ThingDef[defName="Teepee"] |
+			Defs/ThingDef[defName="Tent"] |
+			Defs/ThingDef[defName="VikingTent"] |
+			Defs/ThingDef[defName="ModernTent"] |
+			Defs/ThingDef[defName="FoldingTent"]
+		 </xpath>
+		<value>
+			<designationCategory>Ferny_Tents</designationCategory>
 		</value>
 	</Operation>
 

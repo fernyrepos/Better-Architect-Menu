@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DesignationCategoryDef>
+		<defName>Ferny_Tents</defName>
+		<label>Tents</label>
+		<description>Outdoor Tents</description>
+		<order>100</order>
+		<specialDesignatorClasses>
+		<li>Designator_Cancel</li>
+		<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+		<li Class="BetterArchitect.NestedCategoryExtension">
+			<parentCategory>Furniture</parentCategory>
+		</li>
+		</modExtensions>
+  	</DesignationCategoryDef>
+</Defs>

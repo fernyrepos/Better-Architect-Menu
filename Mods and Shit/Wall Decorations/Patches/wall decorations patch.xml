@@ -15,7 +15,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleaves"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -23,7 +23,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavescorner"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -31,7 +31,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavesinner"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -39,7 +39,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavespatternA"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -47,7 +47,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavespatternB"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -55,7 +55,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavespatternC"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -63,7 +63,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavespatternD"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -71,7 +71,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavesorange"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -79,7 +79,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavescornerorange"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -87,7 +87,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavesinnerorange"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -95,7 +95,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavespatternAorange"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -103,7 +103,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavespatternBorange"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -111,7 +111,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavespatternCorange"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 
@@ -119,7 +119,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_ivyleavespatternDorange"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoOutside</designationCategory>
 		</value>
 	</Operation>
 	

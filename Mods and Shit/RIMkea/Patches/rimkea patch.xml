@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Floors -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@Name="RIKStoneFloorBase"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@Name="RIKWoodFloorBase"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Rugs -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[contains(defName, 'RUG') or contains(defName, 'Rug')]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoRugs</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Chairs/Couches -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[
+            defName="REGSITStool" or 
+            defName="SITTSLABChair" or 
+            defName="STAMMRESTChair" or 
+            defName="PILREKLINCouch" or 
+            defName="BUTTEKUSHPillow" or 
+            defName="BULDRESTStool" or 
+            defName="BUMRESTStool" or 
+            defName="SITEGGArmchair" or 
+            defName="CHILLEGGCouch"
+        ]</xpath>
+        <value>
+            <designationCategory>Ferny_Seating</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Lighting -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[
+            defName="BOLTASKLamp" or 
+            defName="FEERSTELL" or 
+            defName="KAGESHAINLamp" or 
+            defName="LAMPONLamp" or 
+            defName="SHAINBRAITLamp"
+        ]</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Lighting -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="FEERSTELL"]</xpath>
+        <value>
+            <designationCategory>Ferny_Heating</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Table -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[
+            defName="STAMMFLATTTable" or 
+            defName="SLABFLATTTable" or 
+            defName="WODENTable" or 
+            defName="EATFLATTTable"
+        ]</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Bed -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[
+            defName="KRUDNEPPSingle" or 
+            defName="SLABNEPPDouble" or 
+            defName="PILFURBed" or 
+            defName="SNOREGGSingle" or 
+            defName="SNOREGGDouble"
+        ]</xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Ranching -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[
+            defName="SNORHOI" or 
+            defName="PETSNORR"
+        ]</xpath>
+        <value>
+            <designationCategory>Ferny_AnimalBedding</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Plants -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[
+            defName="BLUMTASK" or 
+            defName="POTBLUM"
+        ]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+    
+    <!-- Remove the original BS category -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/designationCategoryDef[defName="RIMkea"]</xpath>
+	</Operation>
+
+</Patch>

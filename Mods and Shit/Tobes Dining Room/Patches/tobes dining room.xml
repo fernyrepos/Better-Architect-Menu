@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- ========== TABLES ========== -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[
+            defName="T_Tablecloth_table" or
+            defName="T_FTablecloth_table"
+        ]</xpath>
+        <value>
+            <designationCategory>Ferny_Tables</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- ========== SEATING ========== -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[
+            defName="T_Sofa" or
+            defName="T_DiningChair" or
+            defName="T_Cushionchair" or
+            defName="T_ModernChair"
+        ]</xpath>
+        <value>
+            <designationCategory>Ferny_Seating</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- ========== STORAGE (General) ========== -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="T_Drawer"]</xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- ========== STORAGE (General) ========== -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="TobesFountain"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+</Patch>

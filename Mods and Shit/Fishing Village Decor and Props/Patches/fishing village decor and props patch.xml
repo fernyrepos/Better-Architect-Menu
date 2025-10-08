@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ========== DECORATION ITEMS ========== -->
+  <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+    <xpath>
+      Defs/ThingDef[defName="WashingBoard"]/designationCategory |
+      Defs/ThingDef[defName="WashingBoardDirt"]/designationCategory |
+      Defs/ThingDef[defName="ClothingRack"]/designationCategory |
+      Defs/ThingDef[defName="Crane"]/designationCategory |
+      Defs/ThingDef[defName="FishRack"]/designationCategory |
+      Defs/ThingDef[defName="FishGear"]/designationCategory
+    </xpath>
+    <value>
+      <designationCategory>Ferny_DecoOutside</designationCategory>
+    </value>
+  </Operation>
+</Patch>

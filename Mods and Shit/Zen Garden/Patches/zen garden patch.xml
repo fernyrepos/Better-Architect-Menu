@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>
+            Defs/ThingDef[defName="ZEN_FlowerArch"]/designationCategory |
+            Defs/ThingDef[defName="ZEN_ScenicBench"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="ZenBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="RakedBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="Zen_HalfWallParent"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="ZenFountainBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="ZEN_RoughBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[@ParentName="ZEN_NormalBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_DecoOutside</designationCategory>
+        </value>
+    </Operation>
+
+	<!-- Remove the original BS category -->
+	<Operation Class="PatchOperationRemove">
+        <success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="ZEN_Decoration"]</xpath>
+	</Operation>
+</Patch>

@@ -886,7 +886,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PlantPot"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoPlants</designationCategory>
                     </value>
                 </Operation>
 

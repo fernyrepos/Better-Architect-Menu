@@ -49,7 +49,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Drape"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoCurtains</designationCategory>
                     </value>
                 </Operation>
 

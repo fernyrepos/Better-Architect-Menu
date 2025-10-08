@@ -7,7 +7,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@ParentName="FFE_FurnitureWithQualityBase"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 

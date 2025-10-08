@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ========== AUXILIARIES ========== -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>
+      Defs/ThingDef[defName="AdvancedMultiAnalyzer"]/designationCategory |
+      Defs/ThingDef[defName="ToolCabinetA"]/designationCategory |
+      Defs/ThingDef[defName="ToolCabinetB"]/designationCategory |
+      Defs/ThingDef[defName="ToolCabinetC"]/designationCategory |
+      Defs/ThingDef[defName="SurgicalLamp"]/designationCategory |
+      Defs/ThingDef[defName="SurgicalInstruments"]/designationCategory |
+      Defs/ThingDef[defName="KitchenCupboard"]/designationCategory
+    </xpath>
+    <value>
+      <designationCategory>Ferny_Auxiliaries</designationCategory>
+    </value>
+  </Operation>
+</Patch>
