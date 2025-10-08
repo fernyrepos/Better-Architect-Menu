@@ -35,12 +35,27 @@
         </value>
     </Operation>
 
-    <!-- ========== STORAGE (General) ========== -->
-    <Operation Class="PatchOperationAdd">
-        <success>Always</success>
-        <xpath>Defs/ThingDef[defName="TobesFountain"]</xpath>
-        <value>
-            <designationCategory>Ferny_DecoOutside</designationCategory>
-        </value>
-    </Operation>
+    <!-- ========== HYGIENE OR OUTSIDE ========== -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/DesignationCategoryDef[defName="Hygiene"]</xpath>
+
+		<!-- Dubs Bad Hygiene category -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="TobesFountain"]</xpath>
+			<value>
+				<designationCategory>Hygiene</designationCategory>
+			</value>
+		</match>
+		
+		<!-- Fallback category -->
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Fountain"]</xpath>
+			<value>
+				<designationCategory>Ferny_DecoOutside</designationCategory>
+			</value>
+		</nomatch>
+	</Operation>
 </Patch>

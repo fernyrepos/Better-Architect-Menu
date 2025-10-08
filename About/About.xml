@@ -578,8 +578,9 @@
     <li>resurrectionem.furniture</li>
     <li>resurrectionem.furnitureasia</li>
     <li>mlie.tobesdiningroom</li>
-    <li>telkir.tmods.morefloors</li>
     <li>zal.fishprops</li>
+    <li>mlie.barnstall</li>
+    <li>karvinen.tablesplus</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

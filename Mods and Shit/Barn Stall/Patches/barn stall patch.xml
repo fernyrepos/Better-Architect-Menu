@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- ========== RANCHING ========== -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+        Defs/ThingDef[defName="BarnStall"]/designationCategory |
+        Defs/ThingDef[defName="BarnStallLarge"]/designationCategory 
+        </xpath>
+        <value>
+        <designationCategory>Ferny_DecoPlants</designationCategory>
+        </value>
+    </Operation>
+</Patch>
