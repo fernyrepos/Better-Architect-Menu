@@ -111,7 +111,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RRBaoshanScreen"]</xpath>
 		<value>
-			<designationCategory>Ferny_DecoFurniture</designationCategory>
+			<designationCategory>Ferny_DecoCurtains</designationCategory>
 		</value>
 	</Operation>
 	
