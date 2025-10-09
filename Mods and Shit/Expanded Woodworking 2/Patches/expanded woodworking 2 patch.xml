@@ -5,17 +5,26 @@
 	
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/TerrainDef[@Name="EW2BridgeBase"]/designationCategory</xpath>
+		<xpath>Defs/TerrainDef[@Name="EW2_BridgeBase"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Foundations</designationCategory>
 		</value>
+	</Operation>
+
+	<!--
+	Revert patch from mod adding vanilla and ALL children foundations to the same dropdown.
+	They have different stats, so I am breakin them apart again.
+	TODO check if this is required in the future or notify author.
+	-->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TerrainDef[@Name="BridgeBase"]/designatorDropdown</xpath>
 	</Operation>
 	
 <!-- PROCESSING PRODUCTION -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="LumberDryingSpot"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="EW2_LumberDryingSpot"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>
@@ -23,7 +32,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="LumberDryingRack"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="EW2_LumberDryingRack"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>
@@ -31,7 +40,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="TableWoodworking"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="EW2_TableWoodworking"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>
@@ -39,7 +48,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="ElectricTableWoodworking"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="EW2_ElectricTableWoodworking"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>
@@ -47,7 +56,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="FueledTableWoodworking"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="EW2_FueledTableWoodworking"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_ProcessingProduction</designationCategory>
 		</value>

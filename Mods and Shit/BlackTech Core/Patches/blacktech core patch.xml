@@ -247,15 +247,17 @@
 		</value>
 	</Operation>
 
-<!-- MEDICAL -->
+<!-- ENHANCEMENT -->
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="HKJ_ResurrectBeacon"]</xpath>
 		<value>
-			<designationCategory>Ferny_Medical</designationCategory>
+			<designationCategory>Ferny_Enhancement</designationCategory>
 		</value>
 	</Operation>
+	
+<!-- MEDICAL -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>

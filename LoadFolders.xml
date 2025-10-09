@@ -535,6 +535,27 @@
     <li IfModActive="zal.fishprops">Mods and Shit/Fishing Village Decor and Props</li>
     <li IfModActive="mlie.barnstall">Mods and Shit/Barn Stall</li>
     <li IfModActive="karvinen.tablesplus">Mods and Shit/Tables Plus</li>
+    <li IfModActive="acutus.electrofishing">Mods and Shit/Electrofishing</li>
+    <li IfModActive="kearril.fishingspotsandanglerkits">Mods and Shit/Fishing Spots and Angler Kits</li>
+    <li IfModActive="xercaine.smallhydroponicsbasins">Mods and Shit/Small Hydroponics Basins</li>
+    <li IfModActive="nalzurin.autoimplanter">Mods and Shit/Bionix Automator</li>
+    <li IfModActive="xercaine.medieval.cannon">Mods and Shit/Cannon</li>
+    <li IfModActive="xercaine.smallstoves">Mods and Shit/Small Stoves</li>
+    <li IfModActive="xercaine.medieval.catapult">Mods and Shit/Catapult</li>
+    <li IfModActive="xercaine.fueledcrematorium">Mods and Shit/Fueled Crematoriums</li>
+    <li IfModActive="xercaine.fueledsmelter">Mods and Shit/Fueled Smelters</li>
+    <li IfModActive="xercaine.smalltable">Mods and Shit/Small Table</li>
+    <li IfModActive="xercaine.smalldresser">Mods and Shit/Small Dresser</li>
+    <li IfModActive="xercaine.smallsleepingspot">Mods and Shit/Small Sleeping Slot</li>
+    <li IfModActive="xercaine.wallsunlamp">Mods and Shit/Wall Sun Lamp</li>
+    <li IfModActive="xercaine.industrialage.artillery">Mods and Shit/Artillery Gun</li>
+    <li IfModActive="unofficialstatus.hlcombineoverwatch">Mods and Shit/Combine Overwatch Rim Sector</li>
+    <li IfModActive="wvc.sergkart.ultraexpansion">Mods and Shit/WVC Ultra Expansion II</li>
+    <li IfModActive="ponpeco.kidsclothes">Mods and Shit/Ponpeco Kids Clothes</li>
+    <li IfModActive="alma.richsoilpump">Mods and Shit/Enrichment Toxifier</li>
+    <li IfModActive="hyousol.grasslighting">Mods and Shit/Grasslighting</li>
+    <li IfModActive="hyousol.crunglegenerator">Mods and Shit/Fissionsalt Generator</li>
+    <li IfModActive="vanillaexpanded.gravship">Mods and Shit/VE Gravship</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
