@@ -21,7 +21,18 @@
     <!-- Rugs -->
     <Operation Class="PatchOperationAdd">
         <success>Always</success>
-        <xpath>Defs/ThingDef[contains(defName, 'RUG') or contains(defName, 'Rug')]</xpath>
+        <xpath>Defs/ThingDef[
+            defName="RUGUN" or
+            defName="RUGDWA" or
+            defName="RUGTRE" or
+            defName="RUGFIR" or
+            defName="FUTSTENTRug" or
+            defName="STEPFUTRug" or
+            defName="aFLIKFUTRug" or
+            defName="MATIPESSIRug" or
+            defName="MISKANTAARug" or
+            defName="HOISTEPRUG"
+        ]</xpath>
         <value>
             <designationCategory>Ferny_DecoRugs</designationCategory>
         </value>

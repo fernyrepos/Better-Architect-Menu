@@ -87,7 +87,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RRJinanCupboard"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -95,7 +95,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RRLixiaCupboard"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 
@@ -103,7 +103,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RRQujingScreen"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoCurtains</designationCategory>
 		</value>
 	</Operation>
 
@@ -111,7 +111,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RRBaoshanScreen"]</xpath>
 		<value>
-			<designationCategory>Ferny_Decorations</designationCategory>
+			<designationCategory>Ferny_DecoFurniture</designationCategory>
 		</value>
 	</Operation>
 	

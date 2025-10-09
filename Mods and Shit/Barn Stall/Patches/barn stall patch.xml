@@ -8,7 +8,7 @@
         Defs/ThingDef[defName="BarnStallLarge"]/designationCategory 
         </xpath>
         <value>
-        <designationCategory>Ferny_DecoPlants</designationCategory>
+        <designationCategory>Ferny_Ranching</designationCategory>
         </value>
     </Operation>
 </Patch>

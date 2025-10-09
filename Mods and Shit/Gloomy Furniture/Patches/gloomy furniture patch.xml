@@ -242,6 +242,14 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="RKGWineRackTall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
+        </value>
+    </Operation>
+
 
     <!-- Gear Storage -->
     <Operation Class="PatchOperationReplace">

@@ -263,7 +263,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Fishing_RattanCarpet"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Floors</designationCategory>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
 
