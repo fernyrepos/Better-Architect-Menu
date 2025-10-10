@@ -599,6 +599,14 @@
     <li IfModActive="he.agmnne">Mods and Shit/HE-Vehicles/HE-AM General M998 '92</li>
     <li IfModActive="he.bfot">Mods and Shit/HE-Vehicles/HE-Bell 412 Helicopter '81</li>
     <li IfModActive="he.mstat">Mods and Shit/HE-Vehicles/HE-M60A3 Patton Medium Tank '78</li>
+    <li IfModActive="dismarzero.vgp.vgpgardenfabrics">Mods and Shit/VGP Garden Fabrics</li>
+    <li IfModActive="dismarzero.vgp.vgpgardencanning">Mods and Shit/VGP Garden Canning</li>
+    <li IfModActive="dismarzero.vgp.vgpvegetablegarden">Mods and Shit/VGP Vegetable Garden</li>
+    <li IfModActive="dismarzero.vgp.vgpgardendrinks">Mods and Shit/VGP Garden Drinks</li>
+    <li IfModActive="dismarzero.vgp.vgpgardengourmet">Mods and Shit/VGP Garden Gourmet</li>
+    <li IfModActive="sarg.rimbees">Mods and Shit/Alpha Bees</li>
+    <li IfModActive="eeg.architecture">Mods and Shit/Architecture of the Rim Corners</li>
+    <li IfModActive="adaptive.simplestorage">Mods and Shit/Adaptive Simple Storage</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

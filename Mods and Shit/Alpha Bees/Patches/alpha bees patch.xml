@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/DesignationCategoryDef[defName="RB_Bees"]</xpath>
+        <value>
+            <li Class="BetterArchitect.NestedCategoryExtension">
+                <parentCategory>Ferny_Animals</parentCategory>
+            </li>
+        </value>
+    </Operation>
+</Patch>

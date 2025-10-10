@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Lighting -->          
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="TableLoom"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="TableElecLoom"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Production</designationCategory>
+        </value>
+    </Operation>
+</Patch>

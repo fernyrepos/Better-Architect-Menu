@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Kitchen -->          
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="VG_SaltMine"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Oven"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+   <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="ElectricOven"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+   <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="HandCanningstove"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+   <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="Canningstove"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="FueledCandyTable"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="CandyTable"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+       <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="CookingTools"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+   <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="GrindStone"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="ElectricGrindStone"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="VG_PickleBarrel"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="VG_CheesePress"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="VG_Fruitdryer"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="VGP_ElectricGrindStone"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Kitchen</designationCategory>
+        </value>
+    </Operation>
+</Patch>

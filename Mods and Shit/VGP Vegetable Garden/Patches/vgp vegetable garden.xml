@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Lighting -->          
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="VG_TorchLamp"]</xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Heating -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="VG_Campfire"]</xpath>
+        <value>
+            <designationCategory>Ferny_Heating</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Decoration -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="PlantPot_BambooBonsai"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <!-- Food Storage -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VG_FoodShelf"]</xpath>
+        <value>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Farming -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="VG_JellyFarm"]</xpath>
+        <value>
+            <designationCategory>Ferny_Farming</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="VG_FishTrap"]</xpath>
+        <value>
+            <designationCategory>Ferny_Farming</designationCategory>
+        </value>
+    </Operation>
+</Patch>
