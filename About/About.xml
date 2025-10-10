@@ -640,7 +640,8 @@
     <li>mlie.thermalpowerreactor</li>
     <li>mlie.tranquilizerturret</li>
     <li>mlie.xndteturretexpansion</li>
-    <li>shadowron.ogliss.bishop.smokeleafindustryreborn</li>	
+    <li>shadowron.ogliss.bishop.smokeleafindustryreborn</li>
+    <li>zal.FishingBoats</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

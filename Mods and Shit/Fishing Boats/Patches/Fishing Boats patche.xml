@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>   
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="FishingBoat"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Decorations</designationCategory>
+    </value>
+</Operation>
+
+<Operation MayRequire="SmashPhil.VehicleFramework" Class="PatchOperationReplace">
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="FB_SailboatG_Blueprint"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_NavalTransport</designationCategory>
+    </value>
+</Operation>
+
+<Operation MayRequire="SmashPhil.VehicleFramework" Class="PatchOperationReplace">
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="FB_LaunchC_Blueprint"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_NavalTransport</designationCategory>
+    </value>
+</Operation>
+
+  </Patch>

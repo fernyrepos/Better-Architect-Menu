@@ -17,10 +17,57 @@
                     </value>
                 </Operation>
 
-  <!-- DECORATIONS -->
+  <!-- DECORATION -->
+               <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="RBPPaintingProps"]/designatorDropdown</xpath>
+                </Operation>
+
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="RBPPaintSpills"]/designatorDropdown</xpath>
+                </Operation>
+
+               <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="RBPPaintMat"]/designatorDropdown</xpath>
+                </Operation>
+
+               <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="RBPPaintTins"]/designatorDropdown</xpath>
+                </Operation>
+
+                <Operation Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="RBPCanvases"]/designatorDropdown</xpath>
+                </Operation>
+  
                 <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
                     <xpath>Defs/ThingDef[defName="RBPPaintingProps"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+
+                 <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RBPPaintSpills"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+
+                 <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RBPPaintMat"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RBPPaintTins"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RBPCanvases"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Decorations</designationCategory>
                     </value>

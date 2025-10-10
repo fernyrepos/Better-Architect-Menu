@@ -599,6 +599,7 @@
     <li IfModActive="he.agmnne">Mods and Shit/HE-Vehicles/HE-AM General M998 '92</li>
     <li IfModActive="he.bfot">Mods and Shit/HE-Vehicles/HE-Bell 412 Helicopter '81</li>
     <li IfModActive="he.mstat">Mods and Shit/HE-Vehicles/HE-M60A3 Patton Medium Tank '78</li>
+    <li IfModActive="zal.FishingBoats">Mods and Shit/Fishing Boats</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
