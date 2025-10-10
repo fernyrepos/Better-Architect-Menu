@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="ASNeolithicBasketThingBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="ASNeolithicChunkStorageBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASNeolithicHayPile"]</xpath>
+        <value>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="ASNeolithicLargePotThingBase" or defName="ASNeolithicMealShelf"]</xpath>
+        <value>
+            <designationCategory>Ferny_FoodStorage</designationCategory>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="ASNeolithicPlinthBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@ParentName="ASNeolithicTextileBundleBase"]</xpath>
+        <value>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="ASNeolithicWoodPile"]</xpath>
+        <value>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>

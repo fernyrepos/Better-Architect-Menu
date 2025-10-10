@@ -37,6 +37,8 @@
     <li IfModActive="rimthunderteams.rimthunder.warhorseofreich">Mods and Shit/RimThunder Warhorse of the Reich</li>
     <li IfModActive="rimthunderteams.rimthunder.waytosamurai">Mods and Shit/RimThunder Way to Samurai</li>
     <li IfModActive="myde.aerocraftframework">Mods and Shit/Aerocraft Framework</li>
+    <li IfModActive="Adaptive.Storage.Neolithic">Mods and Shit/Adaptive Storage Neolithic</li>
+    
 
     
 <!-- BATCH PATCHES  -->
