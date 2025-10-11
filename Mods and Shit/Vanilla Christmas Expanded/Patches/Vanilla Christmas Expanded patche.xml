@@ -11,7 +11,7 @@
   	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VCE_SnowSpewer"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Temperature</designationCategory>
+			<designationCategory>Ferny_Terraforming</designationCategory>
 		</value>
 	</Operation>
 
