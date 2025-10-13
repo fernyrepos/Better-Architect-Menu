@@ -162,6 +162,13 @@
                         <designationCategory>Ferny_Decorations</designationCategory>
                     </value>
                 </Operation>
+	
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[@Name="HeraldicRugBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_DecoRugs</designationCategory>
+                    </value>
+                </Operation>
 
 <!-- GENERAL STORAGE -->
                 <Operation Class="PatchOperationAdd">

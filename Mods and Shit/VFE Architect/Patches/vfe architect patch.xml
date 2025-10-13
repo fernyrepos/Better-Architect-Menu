@@ -60,7 +60,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEArch_HedgeWall"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Walls</designationCategory>
+                        <designationCategory>Ferny_DecoOutdoor</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">

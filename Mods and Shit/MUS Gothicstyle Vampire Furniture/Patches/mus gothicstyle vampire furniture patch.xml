@@ -39,13 +39,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_Hedge"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Walls</designationCategory>
-		</value>
-	</Operation>
 	
 <!-- SUPPORTS -->
 
@@ -221,14 +214,6 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_RoseHedge"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_Barricades</designationCategory>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_Barricade"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Barricades</designationCategory>
@@ -359,11 +344,11 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_PottedPlants"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_PottedPlants"]</xpath>
 		<value>
-			<designationCategory>Furniture</designationCategory>
+			<designationCategory>Ferny_DecoPlants</designationCategory>
 		</value>
 	</Operation>
 
@@ -403,7 +388,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_Arch"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Doors</designationCategory>
+			<designationCategory>Ferny_DecoOutdoor</designationCategory>
 		</value>
 	</Operation>
 
@@ -411,7 +396,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_SmallArch"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Doors</designationCategory>
+			<designationCategory>Ferny_DecoOutdoor</designationCategory>
 		</value>
 	</Operation>
 
@@ -419,7 +404,23 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_CourtyardArch"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Doors</designationCategory>
+			<designationCategory>Ferny_DecoOutdoor</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_Hedge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoOutdoor</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MUS_Gothicstyle_RoseHedge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoOutdoor</designationCategory>
 		</value>
 	</Operation>
 

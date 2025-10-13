@@ -3,7 +3,7 @@
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="CCol_BucketPlantPot"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoPlants</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
@@ -21,7 +21,7 @@
                   <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="CCol_WheelBarrow"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoOutdoor</designationCategory>
                     </value>
                 </Operation>
                     <Operation Class="PatchOperationAdd">

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+
+      <!-- REMOVE CATEGORY -->
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[designationCategory="KCB_Deco"]/designationCategory</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[designationCategory="KCB_Deco"]/designationCategory</xpath>
+          <value>
+            <designationCategory>Ferny_DecoPlants</designationCategory>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="KCB_Deco"]</xpath>
+      </li>
+
+    </operations>
+  </Operation>
+</Patch>

@@ -25,7 +25,7 @@
 <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Erin_Tatami1x1c" or defName="Erin_Tatami1x2c" or defName="Erin_Tatami1x3c"]</xpath>
     <value>
-        <designationCategory>Ferny_Decorations</designationCategory>
+        <designationCategory>Ferny_Rugs</designationCategory>
     </value>
 </Operation>
 

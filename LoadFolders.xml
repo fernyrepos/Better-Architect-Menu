@@ -803,6 +803,7 @@
     <li IfModActive="mlie.zengarden">Mods and Shit/Zen Garden</li>
     <li IfModActive="zal.fishprops">Mods and Shit/Fishing Village Decor and Props</li>
     <li IfModActive="mlie.barnstall">Mods and Shit/Barn Stall</li>
+	<li IfModActive="kcb.pottingdeco">Mods and Shit/Plant Pot Deco</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

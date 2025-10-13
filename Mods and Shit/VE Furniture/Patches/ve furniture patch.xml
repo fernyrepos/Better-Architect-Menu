@@ -274,9 +274,16 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_LongPlantPot"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoPlants</designationCategory>
                     </value>
                 </Operation>
+
+	                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="VFE_Lounger"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_DecoOutdoor</designationCategory>
+                    </value>
+                </Operation>     
 
 
 <!-- GEAR STORAGE -->

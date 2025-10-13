@@ -766,6 +766,7 @@
     <li>mlie.zengarden</li>
     <li>zal.fishprops</li>
     <li>mlie.barnstall</li>
+	<li>kcb.pottingdeco</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
