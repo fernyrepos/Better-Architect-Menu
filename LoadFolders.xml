@@ -2,23 +2,23 @@
   <v1.6>
     <li>/</li>
     <li>1.6</li>
-  
-<!--   !!! Welcome contributors! If you are here to add support for a mod just scroll to the very bottom and put it there.   -->
-    
 
-<!-- PROGRESSION EDUCATION (To override Odyssey's stuff) -->
+    <!--   !!! Welcome contributors! If you are here to add support for a mod just scroll to the very bottom and put it there.   -->
+
+
+    <!-- PROGRESSION EDUCATION (To override Odyssey's stuff) -->
     <li IfModActive="ferny.progressioneducation">Mods and Shit/Progression Education</li>
 
-  <!-- CORE + DLCS -->
+    <!-- CORE + DLCS -->
     <li IfModActive="Ludeon.Rimworld.Royalty">Mods and Shit/Royalty</li>
     <li IfModActive="Ludeon.Rimworld.Ideology">Mods and Shit/Ideology</li>
     <li IfModActive="Ludeon.Rimworld.Biotech">Mods and Shit/Biotech</li>
     <li IfModActive="Ludeon.Rimworld.Anomaly">Mods and Shit/Anomaly</li>
     <li IfModActive="Ludeon.Rimworld.Odyssey">Mods and Shit/Odyssey</li>
 
-<!-- PROVISIONAL PATCHES (Currently primarily managed by Pillbug) -->
-<!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
-	<li IfModActive="happycam.ornithopter">Mods and Shit/Ornithopter</li>
+    <!-- PROVISIONAL PATCHES (Currently primarily managed by Pillbug) -->
+    <!-- These mods have not been updated to 1.6. Support has been tested to work but is provisional. -->
+    <li IfModActive="happycam.ornithopter">Mods and Shit/Ornithopter</li>
     <li IfModActive="rimthunder.furniture">Mods and Shit/RimThunder Functional Furniture Expanded</li>
     <li IfModActive="mo.rimfield5042">Mods and Shit/RimField5042</li>
     <li IfModActive="rimthunderteams.rimthunder.breakthrough">Mods and Shit/RimThunder Breakthrough</li>
@@ -38,20 +38,19 @@
     <li IfModActive="rimthunderteams.rimthunder.waytosamurai">Mods and Shit/RimThunder Way to Samurai</li>
     <li IfModActive="myde.aerocraftframework">Mods and Shit/Aerocraft Framework</li>
     <li IfModActive="Adaptive.Storage.Neolithic">Mods and Shit/Adaptive Storage Neolithic</li>
-    
 
-    
-<!-- BATCH PATCHES  -->
-	  <!-- Note that these may only be partial patches: E.g., moving categories. -->
-	  <!-- AUTHORS: Please check if your mod needs to be added in one of these strings as well. -->
-	  
+
+    <!-- BATCH PATCHES  -->
+    <!-- Note that these may only be partial patches: E.g., moving categories. -->
+    <!-- AUTHORS: Please check if your mod needs to be added in one of these strings as well. -->
+
     <li IfModActiveAny="mingtuwuxiang.fishingdecorative,mingtuwuxiang.gothicdecorative,mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Common Patch</li>
-    
+
     <li IfModActiveAny="he.rrs,he.agmtfat,he.agmnne,he.bfot,he.ct,he.fbbus,he.fcvpi,he.fe,he.f350a,he.fltdcv,he.bearcatg3,he.mstat,he.pa">Mods and Shit/HE-Vehicles/Common</li>
-    
-	<li IfModActiveAny="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
-    
-<!-- THE REST (Add whatever you'd like here)-->
+
+    <li IfModActiveAny="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
+
+    <!-- THE REST (Add whatever you'd like here)-->
     <li IfModActive="smashphil.vehicleframework">Mods and Shit/Vehicle Framework</li>
     <li IfModActive="VanillaExpanded.VFECore">Mods and Shit/VE Furniture</li>
     <li IfModActive="VanillaExpanded.VFESpacer">Mods and Shit/VFE Spacer</li>
@@ -270,7 +269,7 @@
     <li IfModActive="wanzi.smallgraves">Mods and Shit/Small Graves and Sarcophaguses</li>
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
     <li IfModActive="jdgg.adaptive.cargoholds">Mods and Shit/Cargo Holds</li>
-    <li IfModActive="Erin.CottageCollection">Mods and Shit/Erin Cottage</li>	  
+    <li IfModActive="Erin.CottageCollection">Mods and Shit/Erin Cottage</li>
     <li IfModActive="mosi.VFEC.DoubleTents">Mods and Shit/Double Tents</li>
     <li IfModActive="joeyjoejoeshabidoo.EvaporationPond">Mods and Shit/Evaporation Pond</li>
     <li IfModActive="NoneObsidiaExpansion.LEDLightsStrip">Mods and Shit/Led Lights Strip</li>
@@ -386,7 +385,7 @@
     <li IfModActive="temeez.floorlights2">Mods and Shit/Floor Lights 2</li>
     <li IfModActive="ushanka.hackingexpansion">Mods and Shit/Ushankas Hacking Expansion</li>
     <li IfModActive="ceteam.combatextended">Mods and Shit/Combat Extended</li>
-    <li IfModActive="ceteam.combatextendedarmory">Mods and Shit/Combat Extended Armory</li>    
+    <li IfModActive="ceteam.combatextendedarmory">Mods and Shit/Combat Extended Armory</li>
     <li IfModActive="xale86.smallbedroomfurniture">Mods and Shit/Small Bedroom Furniture</li>
     <li IfModActive="limetreesnake.furnishing">Mods and Shit/LTS Furnishing</li>
     <li IfModActive="phaneron.basic.storage">Mods and Shit/Phaneron Basic Storage</li>
@@ -400,7 +399,7 @@
     <li IfModActive="sarg.alphavehiclesageofsail">Mods and Shit/Alpha Vehicles Age of Sail</li>
     <li IfModActive="warlocksforge.fishtraps">Mods and Shit/Fish Traps</li>
     <li IfModActive="VE.VanillaChristmasExpanded">Mods and Shit/Vanilla Christmas Expanded</li>
-    <li IfModActiveAny="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>    
+    <li IfModActiveAny="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>
     <li IfModActive="unagi.funiture.build.window">Mods and Shit/UNAGI Decorative Furniture</li>
     <li IfModActive="xercaine.wallheater">Mods and Shit/Wall Heater</li>
     <li IfModActive="test.ford">Mods and Shit/Rim-Bronco Ford</li>
@@ -803,6 +802,7 @@
     <li IfModActive="mlie.zengarden">Mods and Shit/Zen Garden</li>
     <li IfModActive="zal.fishprops">Mods and Shit/Fishing Village Decor and Props</li>
     <li IfModActive="mlie.barnstall">Mods and Shit/Barn Stall</li>
+    <li IfModActive="PeteTimesSix.ResearchReinvented.Steppingstones">Mods and Shit/Research Reinvented Stepping Stones</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
