@@ -28,5 +28,12 @@
 			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="VCE_BuildingFloorCoveringBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
+		</value>
+	</Operation>
   
 </Patch>
