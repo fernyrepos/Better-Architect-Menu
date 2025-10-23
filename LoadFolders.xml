@@ -340,6 +340,7 @@
     <li IfModActive="tradingcontrol.tad.rimworld.core">Mods and Shit/Trading Control</li>
     <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li>
     <li IfModActive="mlie.autopsytable">Mods and Shit/AutopsyTable</li>
+    <li IfModActive="slimesenpai.autovents">Mods and Shit/AutoVents</li>
     <li IfModActive="princeofpluto.vehicles.trains">Mods and Shit/Trains of the Rim</li>
     <li IfModActive="garbageday.convectionalwarcrimes">Mods and Shit/Convectional War Crimes</li>
     <li IfModActive="tug.terraformerpumps">Mods and Shit/Terraforming Devices</li>

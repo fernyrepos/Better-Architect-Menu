@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>
+        Defs/ThingDef[defName="SLS_AutoVents"]/designationCategory |
+        Defs/ThingDef[defName="SLS_AutoVents_OW"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_AirManagement</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>
