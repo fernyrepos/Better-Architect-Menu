@@ -865,6 +865,8 @@
 	<li IfModActive="phobos.buildablegravshipupgrades">Mods and Shit/Buildable Gravship Upgrades</li>
 	<li IfModActive="onyxae.dragonsdescent">Mods and Shit/Dragons Descent</li>
 	<li IfModActive="ottersholdhands.villageshomes">Mods and Shit/Villages Homes</li>
+	<li IfModActive="ucp.invisiblewalls">Mods and Shit/Ollie's Invisible Walls</li>
+	<li IfModActive="ucp.generatorthing">Mods and Shit/Primary Generators Lite</li>
 	<!-- TODO Complete and test these patches once shuttles get sorted --> <!--
 	<li IfModActive="antediluvian.odyssey.transport.shuttle">Mods and Shit/UFO</li>
 	<li IfModActive="blackmarket420.xenotype.doberkin">Mods and Shit/BM's Races Doberkins</li>
