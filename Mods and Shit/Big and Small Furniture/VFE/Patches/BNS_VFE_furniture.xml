@@ -3,7 +3,11 @@
 	<!-- Big and Small Furniture -->
 	<!-- Package ID: redmattis.bsfurniture -->
 	<!-- Author: 3024478368 -->
-	<Operation Class="PatchOperationReplace">
+
+
+	<!-- Ferny here, disabled these for new update -->
+
+	<!-- <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="BS_Giant_Bed_DoubleErgonomic"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Bedroom</designationCategory>
@@ -14,5 +18,5 @@
 		<value>
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
-	</Operation>
+	</Operation> -->
 </Patch>

@@ -5,7 +5,13 @@
 	<!-- Package ID: redmattis.bsfurniture -->
 	<!-- Author: 3024478368 -->
 	<!-- Since Original Patch removed the DesignationCategoryDef we need to replace the existance of this as well for MO beds in BNS-->
-	<Operation Class="PatchOperationReplace">
+
+
+
+	<!-- Ferny here, disabled these for new update -->
+
+
+	<!-- <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="DankPyon_BS_BedLog"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Bedroom</designationCategory>
@@ -64,5 +70,5 @@
 		<value>
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
-	</Operation>
+	</Operation> -->
 </Patch>
