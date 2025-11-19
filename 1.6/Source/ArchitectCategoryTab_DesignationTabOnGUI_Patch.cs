@@ -246,9 +246,10 @@ namespace BetterArchitect
                 selectedCategory.TryGetValue(mainCat, out currentSelection);
             }
             string currentSearchText = currentArchitectCategoryTab?.quickSearchFilter?.Active == true ? currentArchitectCategoryTab.quickSearchFilter.Text : "";
-            if (currentSearchText != lastSearchText)
+            if (currentSearchText != lastSearchText || lastMainCategory != mainCat)
             {
                 lastSearchText = currentSearchText;
+                lastMainCategory = mainCat;
                 categorySearchMatches.Clear();
                 foreach (var cat in allCategories)
                 {
@@ -353,7 +354,6 @@ namespace BetterArchitect
                 {
                     categorySearchMatches.TryGetValue(cat, out categoryHasSearchMatches);
                 }
-
                 DrawOptionBackground(rowRect, isSelected, categoryHasSearchMatches, !categoryHasSearchMatches && currentArchitectCategoryTab?.quickSearchFilter?.Active == true);
                 if (Widgets.ButtonInvisible(rowRect))
                 {
