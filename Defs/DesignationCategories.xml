@@ -188,7 +188,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_ProcessingProduction</defName>
-    <label>Process</label>
+    <label>Refine</label>
     <description>Processing production methods.</description>
     <order>652</order>
     <specialDesignatorClasses>
