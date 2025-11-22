@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<DesignationCategoryDef>
+	<!-- <DesignationCategoryDef>
 		<defName>VCHE_PipeNetworks</defName>
 		<label>Resources</label>
 		<order>350</order>
@@ -9,9 +9,9 @@
 		<li>Designator_Cancel</li>
 		<li>Designator_Deconstruct</li>
 		</specialDesignatorClasses>
-	</DesignationCategoryDef>
+	</DesignationCategoryDef> -->
 
-	<DesignationCategoryDef>
+	<!-- <DesignationCategoryDef>
 		<defName>Ferny_OxygenNetwork</defName>
 		<label>Oxygen</label>
 		<description>Manage oxygen.</description>
@@ -25,7 +25,7 @@
 				<parentCategory>VCHE_PipeNetworks</parentCategory>
 			</li>
 		</modExtensions>
-	</DesignationCategoryDef>
+	</DesignationCategoryDef> -->
 
 	<DesignationCategoryDef>
 		<defName>Ferny_AstrofuelNetwork</defName>

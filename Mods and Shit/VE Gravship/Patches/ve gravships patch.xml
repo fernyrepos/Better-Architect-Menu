@@ -368,7 +368,7 @@
 		<success>Always</success>
 		<xpath>Defs/PipeSystem.PipeNetDef[defName="VGE_OxygenNet"]/designator/designationCategoryDef</xpath>
 		<value>
-			<designationCategoryDef>Ferny_OxygenNetwork</designationCategoryDef>
+			<designationCategoryDef>Ferny_SpaceVacuum</designationCategoryDef>
 		</value>
 	</Operation>
 
@@ -376,77 +376,77 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="OxygenPump"]</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_OxygenPipe"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_HiddenOxygenPipe"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_OxygenValve"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_SmallOxygenTank"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_LargeOxygenTank"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_OxygenCanisterFiller"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_OxygenCanisterEmptier"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_OxygenHarvester"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_LifeSupportSystem"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_IndustrialOxygenPump"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_OxygenNetwork</designationCategory>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
 		</value>
 	</Operation>
 
