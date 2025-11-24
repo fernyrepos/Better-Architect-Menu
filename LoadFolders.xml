@@ -989,6 +989,11 @@
     <li IfModActive="emitbreaker.mim.wh40k.as.core">Mods and Shit/MIM Warhammer 40k/Adepta Sororitas Core</li>
     <li IfModActive="emitbreaker.mim.wh40k.ch.core">Mods and Shit/MIM Warhammer 40k/Chaos Core</li>
     <li IfModActive="emitbreaker.mim.wh40k.nc.core">Mods and Shit/MIM Warhammer 40k/Necron Core</li>
+    <li IfModActive="unagi.ap.dress">Mods and Shit/UNAGI Royalty Apparel</li>
+    <li IfModActive="det.epochsgolems">Mods and Shit/Epochs Golems</li>
+    <li IfModActive="trickity.samurai.faction">Mods and Shit/T Samurai Faction</li>
+    <li IfModActive="sgtbruce.barbsandmoats">Mods and Shit/Barbs and Moats</li>
+    <li IfModActive="o.inf.reinforce">Mods and Shit/Infinite Reinforce</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

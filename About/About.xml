@@ -943,6 +943,11 @@
 	<li>misstalls.vrshuttle</li>
 	<li>turbopickle.gravshuttle</li>
 	<li>mrwireman.stealthshuttle</li>
+    <li>unagi.ap.dress</li>
+    <li>det.epochsgolems</li>
+    <li>trickity.samurai.faction</li>
+    <li>sgtbruce.barbsandmoats</li>
+    <li>o.inf.reinforce</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

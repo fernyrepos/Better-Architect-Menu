@@ -52,7 +52,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="VFEE_StellicThrone"]</xpath>
         <value>
-            <designationCategory>Ferny_Seating</designationCategory>
+            <designationCategory>Ferny_Meditation</designationCategory>
         </value>
     </Operation>
 

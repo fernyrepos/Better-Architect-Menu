@@ -1258,7 +1258,14 @@
                     </match>
                 </Operation>
 
-
+<!-- DECORATION -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Lecturn"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
 
 
 <!-- AMENITIES -->

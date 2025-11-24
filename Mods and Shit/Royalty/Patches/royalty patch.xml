@@ -47,7 +47,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[@Name="NatureShrineBase"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_Memorial</designationCategory>
+            <designationCategory>Ferny_Meditation</designationCategory>
         </value>
     </Operation>
 
@@ -75,7 +75,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[@Name="ThroneBase"]</xpath>
         <value>
-            <designationCategory>Ferny_Seating</designationCategory>
+            <designationCategory>Ferny_Meditation</designationCategory>
         </value>
     </Operation>
 
@@ -84,7 +84,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="MeditationSpot"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_ColonyLocations</designationCategory>
+            <designationCategory>Ferny_Meditation</designationCategory>
         </value>
     </Operation>
 </Patch>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- KITCHEN -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TSF_PitHearth"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TSF_SakeBarrel"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
+
+<!-- MEDITATION -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="TSFNatureShrineBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Meditation</designationCategory>
+		</value>
+	</Operation>
+
+<!-- BARRICADES -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Standing_Shield"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+
+</Patch>

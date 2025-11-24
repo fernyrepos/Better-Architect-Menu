@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- BARRICADES -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RazorWire"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RazorWireGate"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TrenchWalls"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="TinyShallowMarsh"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="TinyShallowMoat"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="TinyDeepMoat"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+
+
+</Patch>

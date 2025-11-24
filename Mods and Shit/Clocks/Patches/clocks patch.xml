@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+
+<!-- DECORATION -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ZCL_CuckooClock"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ZCL_GrandfatherClock"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="ZCL_ModernGrandfatherClock"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Decorations</designationCategory>
+                    </value>
+                </Operation>
+
+
+<!-- BEDROOM -->
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ZCL_AlarmClock"]</xpath>
@@ -14,4 +40,9 @@
                         <designationCategory>Ferny_Bedroom</designationCategory>
                     </value>
                 </Operation>
+
+
+
+
+
 </Patch>

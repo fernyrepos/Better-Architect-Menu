@@ -1,6 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Production"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_ProcessingProduction"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Kitchen"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_ResearchProduction"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Auxiliaries"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_ProductionInfrastructure"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Production"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Weapons"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Explosives"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Barricades"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Traps"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+		<Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_CombatInfrastructure"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+    <Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_CombatEquipment"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+    <Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Ferny_AmmunitionNetwork"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+    <Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Security"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+    <Operation Class="PatchOperationAdd">
+			<xpath>/Defs/DesignationCategoryDef[defName="Floors"]/specialDesignatorClasses</xpath>
+			<value>
+				<li>AlphaBiomes.Designator_AlphaBiomes</li>
+			</value>
+		</Operation>
+
+
   <!-- WALLS -->
   <Operation Class="PatchOperationReplace">
     <success>Always</success>

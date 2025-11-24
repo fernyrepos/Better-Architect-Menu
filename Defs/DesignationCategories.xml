@@ -773,6 +773,22 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_Meditation</defName>
+    <label>Meditation</label>
+    <description>Places for colonists to meditate.</description>
+    <order>2</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Life</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_ColonyLocations</defName>
     <label>Locations</label>
     <description>Manage relevant colony locations.</description>
@@ -1095,7 +1111,7 @@
     <defName>Ferny_SpaceCombat</defName>
     <label>Combat</label>
     <description>Build space combat buildings.</description>
-    <order>6</order>
+    <order>4</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -1112,7 +1128,7 @@
     <defName>Ferny_SpaceFurniture</defName>
     <label>Furniture</label>
     <description>Build space furniture.</description>
-    <order>6</order>
+    <order>4</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -1128,7 +1144,7 @@
     <defName>Ferny_VehicleStorage</defName>
     <label>Storage</label>
     <description>Build vehicle storage.</description>
-    <order>6</order>
+    <order>4</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -1147,7 +1163,7 @@
     <defName>Ferny_SpaceProduction</defName>
     <label>Production</label>
     <description>Build space production benches.</description>
-    <order>6</order>
+    <order>4</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -1164,7 +1180,7 @@
     <defName>Ferny_SpacePower</defName>
     <label>Power</label>
     <description>Build space power buildings.</description>
-    <order>6</order>
+    <order>4</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
