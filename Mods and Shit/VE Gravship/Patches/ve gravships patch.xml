@@ -580,7 +580,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_AstrofuelGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
 
