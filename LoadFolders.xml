@@ -994,6 +994,8 @@
     <li IfModActive="trickity.samurai.faction">Mods and Shit/T Samurai Faction</li>
     <li IfModActive="sgtbruce.barbsandmoats">Mods and Shit/Barbs and Moats</li>
     <li IfModActive="o.inf.reinforce">Mods and Shit/Infinite Reinforce</li>
+    <li IfModActive="ellit.ilkoftheoldones">Mods and Shit/El's Ilk of the Old Gods</li>
+    <li IfModActive="lambda.smugglersrun">Mods and Shit/Smuggler's Run</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

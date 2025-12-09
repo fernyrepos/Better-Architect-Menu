@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- MEDITATION -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="PeltThrone"]</xpath>
+        <value>
+            <designationCategory>Ferny_Meditation</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- CONTROL -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DreamthornBurner"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Control</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- CULTURE -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="BloodChalice"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ideology</designationCategory>
+        </value>
+    </Operation>
+
+
+</Patch>

@@ -57,4 +57,21 @@
     </value>
 </Operation>
 
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Gravship Expanded - Chapter 1</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+        <operations>
+        <li Class="PatchOperationReplace">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="AC_CompactNeuralEditor"]/designationCategory</xpath>
+            <value>
+            <designationCategory>Ferny_SpaceProduction</designationCategory>
+            </value>
+        </li>
+        </operations>
+    </match>
+    </Operation>
+
 </Patch>

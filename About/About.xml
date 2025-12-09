@@ -948,6 +948,8 @@
     <li>trickity.samurai.faction</li>
     <li>sgtbruce.barbsandmoats</li>
     <li>o.inf.reinforce</li>
+    <li>ellit.ilkoftheoldones</li>
+    <li>lambda.smugglersrun</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

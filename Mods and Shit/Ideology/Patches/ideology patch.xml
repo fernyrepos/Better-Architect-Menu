@@ -142,6 +142,16 @@
         </value>
     </Operation>
 
+    <!-- FARMING -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="FungalGravel"]</xpath>
+        <value>
+            <designationCategory>Ferny_Farming</designationCategory>
+        </value>
+    </Operation>
+
+<!-- Kobe's floor menu stuff -->
     <!-- Floors -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="Boards_Totemic"]</xpath>
