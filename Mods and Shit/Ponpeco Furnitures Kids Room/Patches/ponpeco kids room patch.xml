@@ -158,8 +158,26 @@
 					<designationCategory>Ferny_DecoHanging</designationCategory>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="PFK_Curtain"]/designationCategory</xpath>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PFK_BuntingAb"]</xpath>
+				<value>
+					<designationCategory>Ferny_DecoHanging</designationCategory>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PFK_Bunting"]</xpath>
+				<value>
+					<designationCategory>Ferny_DecoHanging</designationCategory>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PFK_BuntingB"]</xpath>
+				<value>
+					<designationCategory>Ferny_DecoHanging</designationCategory>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="PFK_Mobile"]</xpath>
 				<value>
 					<designationCategory>Ferny_DecoHanging</designationCategory>
 				</value>

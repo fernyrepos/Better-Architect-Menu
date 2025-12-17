@@ -996,6 +996,7 @@
     <li IfModActive="o.inf.reinforce">Mods and Shit/Infinite Reinforce</li>
     <li IfModActive="ellit.ilkoftheoldones">Mods and Shit/El's Ilk of the Old Gods</li>
     <li IfModActive="lambda.smugglersrun">Mods and Shit/Smuggler's Run</li>
+    <li IfModActive="ferny.progressionattire">Mods and Shit/Progression Attire</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

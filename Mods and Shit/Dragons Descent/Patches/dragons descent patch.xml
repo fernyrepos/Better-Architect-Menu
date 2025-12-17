@@ -43,7 +43,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Altar"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Memorial</designationCategory>
+			<designationCategory>Ideology</designationCategory>
 		</value>
 	</Operation>
 
