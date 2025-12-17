@@ -37,14 +37,33 @@
 		</value>
 	</Operation>
 	
-<!-- MEMORIAL -->
-
-	<Operation Class="PatchOperationReplace">
+	<!-- If Ideology IS loaded -->
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Ideology</li>
+	</mods>
+	<match Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Altar"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ideology</designationCategory>
+		<designationCategory>Ideology</designationCategory>
 		</value>
+	</match>
+	</Operation>
+
+	<!-- If Ideology is NOT loaded -->
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Ideology</li>
+	</mods>
+	<invert>true</invert>
+	<match Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Altar"]/designationCategory</xpath>
+		<value>
+		<designationCategory>Ferny_Memorial</designationCategory>
+		</value>
+	</match>
 	</Operation>
 
 </Patch>
