@@ -57,26 +57,31 @@
 	
 	<!--
 	Designator_BuildVacRoof and CO_VacRoofFraming's designator seem to show up as duplicates in BAM.
-	The below appears to fix this.
+	Moving both to Ferny_SpacePlatform as removing one may cause issues.
+	Removing CO_VacRoofFraming's designator has been reported to cause the roof to be non-buildable for at least one user.
 	-->
-	
+
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="CO_VacRoofFraming"]/designationCategory</xpath>
 		<value>
-			<designationCategory/>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
 		</value>
 	</Operation>
-
+	
 	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
 		<xpath>/Defs/DesignationCategoryDef[defName="Odyssey"]/specialDesignatorClasses/li[text()="ComplementaryOdyssey.Designator_BuildVacRoof"]</xpath>
 	</Operation>
 
+	<!--
 	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_SpacePlatform"]/specialDesignatorClasses</xpath>
 		<value>
 			<li>ComplementaryOdyssey.Designator_BuildVacRoof</li>
 		</value>
 	</Operation>
+	-->
 	
 </Patch>

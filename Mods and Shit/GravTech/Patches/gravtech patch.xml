@@ -11,6 +11,14 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravBattery"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePower</designationCategory>
+		</value>
+	</Operation>
+
 <!-- PRODUCTION -->
 
 	<Operation Class="PatchOperationReplace">
@@ -52,12 +60,13 @@
 	</Operation>
 
 <!-- WEAPONS -->
+<!-- Formerly in Ferny_SpaceCombat. Moved as they do not require substructure. -->
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Turret_GravBlaster"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_SpaceCombat</designationCategory>
+			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
 
@@ -65,7 +74,45 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Turret_BeamRepeater"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_SpaceCombat</designationCategory>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- BARRICADES -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShieldPylon_GT"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- CONTROL -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravIncreasePylon_GT"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Control</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravDecreasePylon_GT"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Control</designationCategory>
+		</value>
+	</Operation>
+	
+<!-- PRODUCTION INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravChemreactor_GT"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProductionInfrastructure</designationCategory>
 		</value>
 	</Operation>
 	
@@ -108,6 +155,26 @@
 		<xpath>Defs/ThingDef[defName="AdvShip_ComputerCore"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+
+<!-- HEATING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HeaterPylon_GT"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Heating</designationCategory>
+		</value>
+	</Operation>
+
+<!-- COOLING -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CoolerPylon_GT"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Cooling</designationCategory>
 		</value>
 	</Operation>
 	
