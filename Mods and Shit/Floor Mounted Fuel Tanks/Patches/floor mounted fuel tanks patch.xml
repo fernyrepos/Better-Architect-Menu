@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- GROUND VEHICLES -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="UFST_ChemfuelTank"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_VehicleStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="UFST_ChemfuelTankLarge"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_VehicleStorage</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Vanilla Gravship Expanded - Chapter 1</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+        <operations>
+
+        <li Class="PatchOperationReplace">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="UFST_AstrofuelTank"]/designationCategory</xpath>
+            <value>
+            <designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+            </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+            <success>Always</success>
+            <xpath>Defs/ThingDef[defName="UFST_AstrofuelTankLarge"]/designationCategory</xpath>
+            <value>
+            <designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+            </value>
+        </li>
+
+        </operations>
+    </match>
+    </Operation>
+
+
+
+
+
+
+</Patch>

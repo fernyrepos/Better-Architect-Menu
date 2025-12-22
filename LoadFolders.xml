@@ -997,6 +997,8 @@
     <li IfModActive="ellit.ilkoftheoldones">Mods and Shit/El's Ilk of the Old Gods</li>
     <li IfModActive="lambda.smugglersrun">Mods and Shit/Smuggler's Run</li>
     <li IfModActive="ferny.progressionattire">Mods and Shit/Progression Attire</li>
+    <li IfModActive="uv.lunartika">Mods and Shit/Utility Vehicle</li>
+    <li IfModActive="quartz.floorstoragetanks">Mods and Shit/Floor Mounted Fuel Tanks</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- GROUND VEHICLES -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/Vehicles.VehicleBuildDef[defName="UV_Blueprint"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_GroundTransport</designationCategory>
+        </value>
+    </Operation>
+
+</Patch>
