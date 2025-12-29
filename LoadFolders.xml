@@ -999,6 +999,7 @@
     <li IfModActive="ferny.progressionattire">Mods and Shit/Progression Attire</li>
     <li IfModActive="uv.lunartika">Mods and Shit/Utility Vehicle</li>
     <li IfModActive="quartz.floorstoragetanks">Mods and Shit/Floor Mounted Fuel Tanks</li>
+    <li IfModActive="vr.fantasy.biotech">Mods and Shit/Fantasy Biotech</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>        
+
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/DesignationCategoryDef[defName="VR_Artifice"]/label</xpath>
+    <value>
+        <label>Steam</label>
+    </value>
+</Operation>
+
+
+<Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/DesignationCategoryDef[defName="VR_Artifice"]</xpath>
+    <value>
+        <modExtensions>
+        <li Class="BetterArchitect.NestedCategoryExtension">
+            <parentCategory>VCHE_PipeNetworks</parentCategory>
+        </li>
+        </modExtensions>
+    </value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="VR_MechGestatorBase"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_SteamConstructs</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VR_SubcoreEncoder_Steam"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_SteamConstructs</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="VR_SubcoreScannerSteamBase"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_SteamConstructs</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VR_ConstructBandNode"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_SteamConstructs</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VR_MechBooster_Steam"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_SteamConstructs</designationCategory>
+    </value>
+</Operation>
+
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="VR_BaseMechCharger"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_SteamConstructs</designationCategory>
+    </value>
+</Operation>
+
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VR_BurnoutConstructLinkBooster_Large"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Summon</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VR_BurnoutConstructLinkBooster"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Summon</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VR_ConstructBandDish"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Summon</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="VRSteam_LampBase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>VR_Artifice</designationCategory>
+    </value>
+  </Operation>
+
+</Patch>

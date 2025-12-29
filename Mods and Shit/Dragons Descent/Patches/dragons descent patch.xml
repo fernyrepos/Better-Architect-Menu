@@ -51,19 +51,17 @@
 	</match>
 	</Operation>
 
-	<!-- If Ideology is NOT loaded -->
 	<Operation Class="PatchOperationFindMod">
 	<mods>
 		<li>Ideology</li>
 	</mods>
-	<invert>true</invert>
-	<match Class="PatchOperationReplace">
+	<nomatch Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Altar"]/designationCategory</xpath>
 		<value>
 		<designationCategory>Ferny_Memorial</designationCategory>
 		</value>
-	</match>
+	</nomatch>
 	</Operation>
 
 </Patch>

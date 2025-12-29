@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_SteamConstructs</defName>
+    <label>Constructs</label>
+    <description>Manage constructs.</description>
+    <order>960</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Automation</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+</Defs>
