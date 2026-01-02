@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Weapons"]/specialDesignatorClasses/li[last()]</xpath>
+		<value>
+			<li>NoAttackZone.Designator_AreaNoAttackZoneClear</li>
+			<li>NoAttackZone.Designator_AreaNoAttackZoneExpand</li>
+			<li>NoAttackZone.Designator_AreaNoAttackZone_ExplosionOnlyExpand</li>
+		</value>
+	</Operation>
+
+</Patch>

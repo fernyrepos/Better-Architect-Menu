@@ -955,6 +955,7 @@
     <li>quartz.floorstoragetanks</li>
     <li>vr.fantasy.biotech</li>
     <li>zarii.whitenoise</li>
+    <li>sunsetmoderteam.turretnoattackzone</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

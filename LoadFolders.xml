@@ -1001,6 +1001,7 @@
     <li IfModActive="quartz.floorstoragetanks">Mods and Shit/Floor Mounted Fuel Tanks</li>
     <li IfModActive="vr.fantasy.biotech">Mods and Shit/Fantasy Biotech</li>
     <li IfModActive="zarii.whitenoise">Mods and Shit/White Noise</li>
+    <li IfModActive="sunsetmoderteam.turretnoattackzone">Mods and Shit/Turret Exclusion Area</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
