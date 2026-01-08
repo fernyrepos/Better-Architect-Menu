@@ -221,7 +221,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_Kitchen</defName>
-    <label>Kitchen</label>
+    <label>Feed</label>
     <description>Things that relate to food.</description>
     <order>640</order>
     <specialDesignatorClasses>
@@ -238,7 +238,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_Farming</defName>
-    <label>Farming</label>
+    <label>Farm</label>
     <description>Things that relate to agriculture.</description>
     <order>640</order>
     <specialDesignatorClasses>
