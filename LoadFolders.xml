@@ -462,7 +462,7 @@
     <li IfModActive="silkcircuit.resistancerestraintsmod">Mods and Shit/Prisoner Restraints</li>
     <li IfModActive="tsa.torturepod">Mods and Shit/Torture Pod</li>
     <li IfModActive="mlie.bondagebedtorture">Mods and Shit/BondageBed Torture</li>
-    <li IfModActive="tsa.archotechresistancebreaker">Mods and Shit/Archotech Resistance Breaker</li>
+    <!-- <li IfModActive="tsa.archotechresistancebreaker">Mods and Shit/Archotech Resistance Breaker</li> -->
     <li IfModActive="paranautic.cyberpunknomadsworkshop">Mods and Shit/Cyberpunk Nomads Workshop</li>
     <li IfModActive="drilledhead.preservationsarcophagus">Mods and Shit/Preservation Sarcophagus</li>
     <li IfModActive="drilledhead.zipline">Mods and Shit/ZiplineMod</li>
