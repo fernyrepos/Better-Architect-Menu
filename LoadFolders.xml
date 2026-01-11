@@ -1005,6 +1005,7 @@
     <li IfModActive="3HSTltd.Weapons.Base">Mods and Shit/Bill Doors' Glitterworld Weapon Pack</li>
     <li IfModActive="3HSTltd.Weapons.Plasma">Mods and Shit/Bill Doors' Plasma Weapons</li>
     <li IfModActive="CETeam.CombatExtendedGuns">Mods and Shit/Combat Extended Guns</li>
+    <li IfModActive="scurvyez.steveswalls">Mods and Shit/Steve's Walls</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

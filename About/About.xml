@@ -959,6 +959,7 @@
 	<li>3HSTltd.Weapons.Base</li>
     <li>3HSTltd.Weapons.Plasma</li>
     <li>CETeam.CombatExtendedGuns</li>
+    <li>scurvyez.steveswalls</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
