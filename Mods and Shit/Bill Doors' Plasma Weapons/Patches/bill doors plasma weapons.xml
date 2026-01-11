@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/DesignationCategoryDef[defName="BDP_Lizion"]</xpath>
+	</Operation>
+
+	<!-- ============================= SECURITY ============================= -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDP_Turret_PlasmaSmall"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDP_Turret_PlasmaSmallManned"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDP_Turret_PlasmaHuge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDP_Turret_Plasma"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDP_Turret_Extinguisher"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Firefoam</designationCategory>
+		</value>
+	</Operation>
+	
+	<!-- ============================= MISC ============================= -->
+
+	<!-- LIZION NET -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="BDP_AirNetwork"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_LizionNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PipeSystem.PipeNetDef[defName="BDP_LizionNetwork"]/designator/designationCategoryDef</xpath>
+		<value>
+			<designationCategoryDef>Ferny_LizionNetwork</designationCategoryDef>
+		</value>
+	</Operation>
+	
+	<!-- LIZION BUILDINGS-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionRefinerySmall"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionRefineryLarge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_PrimitiveGeyserCollector"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionFillerLarge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionCooler"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionValve"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionFirePopper"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_AirTankSmall"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_AirInlet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionTankSmall"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionTankLarge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_GeyserIntake"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionFillerSmall"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+	<!-- EXTINGUISHER SHELF -->
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="BDP_ExtinguisherShelf"]/designationCategory</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="BDP_ExtinguisherShelf"]</xpath>
+			<value>
+				<designationCategory>Ferny_LizionNetwork</designationCategory>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<!-- LIZION PIPES  -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_AirPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_AirPipeUnderground"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionPipe"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="BDP_LizionPipeUnderground"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_LizionNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+	
+</Patch>
