@@ -958,7 +958,6 @@
     <li>sunsetmoderteam.turretnoattackzone</li>
 	<li>3HSTltd.Weapons.Base</li>
     <li>3HSTltd.Weapons.Plasma</li>
-    <li>CETeam.CombatExtendedArmory</li>
     <li>CETeam.CombatExtendedGuns</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
