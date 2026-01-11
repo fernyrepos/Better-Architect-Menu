@@ -11,4 +11,34 @@
 		</value>
 	</Operation>
 
+<!-- For the sake of people's sanity -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Turret_PortableMortar"]/designatorDropdown</xpath>
+		<value>
+			<designatorDropdown	Inherit="False"></designatorDropdown>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Turret_SPGNine"]/designatorDropdown</xpath>
+		<value>
+			<designatorDropdown	Inherit="False"></designatorDropdown>
+		</value>
+	</Operation>
+<!-- =============================== -->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Turret_PortableMortar"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+  
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="CE_Turret_SPGNine"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Weapons</designationCategory>
+		</value>
+	</Operation>
+		
 </Patch>

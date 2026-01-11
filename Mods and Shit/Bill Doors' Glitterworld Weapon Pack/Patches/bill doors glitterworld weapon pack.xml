@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+		<!-- 5mm railguns -->
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST5mmLMGmanned"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST5mmLMGAuto"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST5mmLMGAutoMoveable"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+		
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST5mmLMGQuad"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+		
+		<!-- 9mm railguns -->
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST9mmHMGmanned"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST9mmHMGAuto"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST9mmHMGDual"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST9mmSniperManned"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST9mmSniperAuto"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST9mmHMGAutoMoveable"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST9mmSniperAutoMoveable"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+		
+		<!-- 20mm railguns -->
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST20mmACmanned"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST20mmHMGAuto"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HST20mmHMGAutoMoveable"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+		
+		<!-- 76mm railgun -->
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_76mmCorvette"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+		
+		<!-- AIGS -->
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HSTAIGSmanned"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_3HSTAIGSAuto"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+		
+		<!-- LGIS -->
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_MLGIS"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_HLGIS"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_DualLGIS_ID"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Weapons</designationCategory>
+				</value>
+		</Operation>
+		
+		<!-- CE Exclusive Stuff -->
+		
+		<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Combat Extended</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Turret_TTLGIS"]/designationCategory</xpath>
+							<value>
+								<designationCategory>Ferny_Weapons</designationCategory>
+							</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Turret_3HSTScatterManned"]/designationCategory</xpath>
+							<value>
+								<designationCategory>Ferny_Weapons</designationCategory>
+							</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Turret_3HSTScatterAuto"]/designationCategory</xpath>
+							<value>
+								<designationCategory>Ferny_Weapons</designationCategory>
+							</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Turret_3HSTScatterLarge"]/designationCategory</xpath>
+							<value>
+								<designationCategory>Ferny_Weapons</designationCategory>
+							</value>
+					</li>
+				</operations>
+			</match>
+		</Operation>
+
+</Patch>
