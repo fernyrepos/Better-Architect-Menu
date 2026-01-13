@@ -130,7 +130,7 @@ namespace BetterArchitect
             {
                 if (Find.DesignatorManager.SelectedDesignator != null)
                 {
-                    Find.DesignatorManager.SelectedDesignator.DoExtraGuiControls(0f, (float)(UI.screenHeight - 35) - ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).WinHeight - 270f);
+                    Find.DesignatorManager.SelectedDesignator.DoExtraGuiControls(ExtensionMethods.leftUIEdge, (float)(UI.screenHeight - 35) - ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).WinHeight - 270f);
                 }
                 DoInfoBox(Find.DesignatorManager.SelectedDesignator);
                 return false;
@@ -148,18 +148,18 @@ namespace BetterArchitect
         {
             if (Find.DesignatorManager.SelectedDesignator != null)
             {
-                Find.DesignatorManager.SelectedDesignator.DoExtraGuiControls(0f, (float)(UI.screenHeight - 35) - ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).WinHeight - 270f);
+                Find.DesignatorManager.SelectedDesignator.DoExtraGuiControls(ExtensionMethods.leftUIEdge, (float)(UI.screenHeight - 35) - ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).WinHeight - 270f);
             }
             var menuHeight = BetterArchitectSettings.menuHeight;
             var leftWidth = 200f;
             var ordersWidth = 175f;
             var gizmoSize = 75f;
             var gizmoSpacing = 5f;
-            var availableWidth = UI.screenWidth - 195f - (((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f) - leftWidth - ordersWidth;
+            var availableWidth = ExtensionMethods.uiWidth - 195f - (((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f) - leftWidth - ordersWidth;
             var gizmosPerRow = Mathf.Max(1, Mathf.FloorToInt(availableWidth / (gizmoSize + gizmoSpacing)));
             var gridWidth = gizmosPerRow * (gizmoSize + gizmoSpacing) + gizmoSpacing + 11;
             var mainRect = new Rect(
-                ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f,
+                ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f + ExtensionMethods.leftUIEdge,
                 UI.screenHeight - menuHeight - 35f,
                 leftWidth + gridWidth + ordersWidth,
                 menuHeight);
@@ -781,10 +781,12 @@ namespace BetterArchitect
 
         private static void DoInfoBox(Designator designator)
         {
-            Find.WindowStack.ImmediateWindow(32520, ArchitectCategoryTab.InfoRect, WindowLayer.GameUI, delegate
+            Rect infoBoxRect = ArchitectCategoryTab.InfoRect;
+            infoBoxRect.x += ExtensionMethods.leftUIEdge;
+            Find.WindowStack.ImmediateWindow(32520, infoBoxRect, WindowLayer.GameUI, delegate
             {
                 if (designator == null) return;
-                Rect rect = ArchitectCategoryTab.InfoRect.AtZero().ContractedBy(7f);
+                Rect rect = infoBoxRect.AtZero().ContractedBy(7f);
                 Widgets.BeginGroup(rect);
                 Rect titleRect = new Rect(0f, 0f, rect.width - designator.PanelReadoutTitleExtraRightMargin, 999f);
                 Text.Font = GameFont.Small;
