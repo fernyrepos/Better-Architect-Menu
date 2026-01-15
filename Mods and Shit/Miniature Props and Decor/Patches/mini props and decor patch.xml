@@ -7,7 +7,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="LogoPropBuildingBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Floors</designationCategory>
+			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
 	</Operation>
 
@@ -18,13 +18,26 @@
 	
 <!-- DECORATIONS -->
 
-	<Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="MiniatureProps_Decoration"]</xpath>
+		<value>
+			<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+			</modExtensions>
+		</value>
+	</Operation>
+
+
+	<!-- <Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="PropBuildingBase"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Decorations</designationCategory>
 		</value>
-	</Operation>
+	</Operation> -->
 
 	<Operation Class="PatchOperationRemove">
 		<success>Always</success>
