@@ -93,7 +93,7 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="CCol_WoodStove" or defName="CCol_ChemfuelStove" or defName="CCol_ElectricStove"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Heating</designationCategory>
+                        <designationCategory>Ferny_Kitchen</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>     
+
+<!-- new shit, renaming the stuff -->
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DoorFrameX1Seamlessly"]/label</xpath>
+        <value>
+            <label>angular door frame</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DoorFrameX2Old"]/label</xpath>
+        <value>
+            <label>large door frame</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="DoorFrameX1Old"]/label</xpath>
+        <value>
+            <label>door frame</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="KK_DoorPanels"]/label</xpath>
+        <value>
+            <label>door panel</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="KK_DoorCenterPanel"]/label</xpath>
+        <value>
+            <label>door panel</label>
+        </value>
+    </Operation>
+
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="KKPanelsStraight"]/label</xpath>
+        <value>
+            <label>straight panel</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="KKPanelsCorner"]/label</xpath>
+        <value>
+            <label>corner panel</label>
+        </value>
+    </Operation>
+
+
+
+
+
+
+<!-- alright heres the old patches -->
+
+                <!-- <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_NormalPanel_Straight"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_NormalPanel_Corner"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_CarvedPanel_Straight"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_CarvedPanel_Corner"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory></designationCategory>
+                    </value>
+                </Operation> -->
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_SimpleFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_CommonFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_TechFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_SimpleDoubleFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_CommonDoubleFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_TechDoubleFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_DoorPanels"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_SimpleFlatFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_CommonFlatFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_TechFlatFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_SimpleFlatDoubleFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_CommonFlatDoubleFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_TechFlatDoubleFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_SimpleOrnateFrame"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_StairsSingle"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_StairsDouble"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_DoorCenterPanel"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_NormalPanel_Straight"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_NormalPanel_Corner"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_CarvedPanel_Straight"]/researchPrerequisites</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="KK_CarvedPanel_Corner"]/researchPrerequisites</xpath>
+                </Operation>
+
+
+  <!--=========================Fixed Code============================-->
+  
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ResearchProjectDef[defName="PenelsFramesResearch"]</xpath>
+                </Operation>
+
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ResearchProjectDef[defName="DoubleFramesResearch"]</xpath>
+                </Operation>
+</Patch>

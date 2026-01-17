@@ -89,10 +89,26 @@
     </modExtensions> -->
   </DesignationCategoryDef>
 
-    <DesignationCategoryDef>
+  <DesignationCategoryDef>
 		<defName>Ferny_DecoPlants</defName>
 		<label>Plants</label>
 		<description>Manage plant decorations.</description>
+		<order>900</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+		<defName>Ferny_DecoFrames</defName>
+		<label>Frames</label>
+		<description>Manage frame decorations.</description>
 		<order>900</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>

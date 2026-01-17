@@ -739,7 +739,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DankPyon_WallBanner1x2c"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoHanging</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
