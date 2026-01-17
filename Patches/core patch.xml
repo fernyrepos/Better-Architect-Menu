@@ -334,7 +334,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="MultiAnalyzer"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_Auxiliaries</designationCategory>
+            <designationCategory>Ferny_ResearchProduction</designationCategory>
         </value>
     </Operation>
 
