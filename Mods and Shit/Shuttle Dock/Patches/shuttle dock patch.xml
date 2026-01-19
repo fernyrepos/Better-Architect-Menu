@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+<!-- TRANSPORT INFRASTRUCTURE -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BaseShuttleDock"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_TransportInfrastructure</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>
