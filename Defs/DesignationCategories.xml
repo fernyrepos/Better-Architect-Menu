@@ -286,7 +286,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_Auxiliaries</defName>
-    <label>Auxiliaries</label>
+    <label>Linkables</label>
     <description>Things that boost workspeed.</description>
     <order>2</order>
     <specialDesignatorClasses>

@@ -1000,13 +1000,6 @@
                         <designationCategory>Ferny_Auxiliaries</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="MultiAnalyzer"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Auxiliaries</designationCategory>
-                    </value>
-                </Operation>
 
 
 <!-- POWER MANAGEMENT -->
