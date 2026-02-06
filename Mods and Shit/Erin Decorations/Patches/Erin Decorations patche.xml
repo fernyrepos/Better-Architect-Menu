@@ -79,9 +79,9 @@
                 </Operation>
 
                 <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="ED_CatTower" or defName="ED_DogHouse"]</xpath>
+                    <xpath>Defs/ThingDef[defName="ED_CatTower"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Ranching</designationCategory>
+                        <designationCategory>Ferny_AnimalBedding</designationCategory>
                     </value>
                 </Operation>
 

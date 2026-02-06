@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- <VEF.Buildings.HiddenDesignatorsDef>
+		<defName>FernyFrames_HiddenDesignators</defName>
+		<hiddenDesignators>			
+			<li>KK_SimpleFrame</li>
+			<li>KK_CommonFrame</li>
+			<li>KK_TechFrame</li>
+			<li>KK_SimpleDoubleFrame</li>
+			<li>KK_CommonDoubleFrame</li>
+			<li>KK_TechDoubleFrame</li>
+			<li>KK_DoorPanels</li>
+			<li>KK_SimpleFlatFrame</li>
+			<li>KK_CommonFlatFrame</li>
+			<li>KK_TechFlatFrame</li>
+			<li>KK_SimpleFlatDoubleFrame</li>
+			<li>KK_CommonFlatDoubleFrame</li>
+			<li>KK_TechFlatDoubleFrame</li>
+			<li>KK_SimpleOrnateFrame</li>
+			<li>KK_StairsSingle</li>
+			<li>KK_StairsDouble</li>
+			<li>KK_DoorCenterPanel</li>
+
+
+			<li>DoorFrameX1Seamlessly</li>
+			<li>KKOrnateDoorFrame</li>
+			<li>TechFlat_x1Seamlessly</li>
+			<li>TechFlat_x2Seamlessly</li>
+			<li>KKDoorPanels</li>
+			<li>KKPanelsStraight</li>
+			<li>KKPanelsCorner</li>
+			<li>DoorFrameX2Old</li>
+			<li>DoorFrameX1Old</li>
+		</hiddenDesignators>							
+	</VEF.Buildings.HiddenDesignatorsDef> -->
+</Defs>
