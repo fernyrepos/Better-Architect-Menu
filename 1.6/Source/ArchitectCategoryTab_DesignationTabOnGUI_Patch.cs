@@ -100,11 +100,32 @@ namespace BetterArchitect
             return cat == DefsOf.Orders || cat == DesignationCategoryDefOf.Zone || cat.defName == "Blueprints" || cat.GetModExtension<SpecialCategoryExtension>() != null;
         }
 
+        private static List<Designator> GetUniqueDesignators(IEnumerable<Designator> source)
+        {
+            var unique = new List<Designator>();
+            foreach (var d in source)
+            {
+                var existing = unique.FirstOrDefault(u => u.GroupsWith(d));
+                if (existing != null)
+                {
+                    existing.MergeWith(d);
+                }
+                else
+                {
+                    unique.Add(d);
+                }
+            }
+            return unique;
+        }
+
         private static (List<Designator> buildables, List<Designator> orders) SeparateDesignatorsByType(IEnumerable<Designator> allDesignators, DesignationCategoryDef category)
         {
             var buildables = new List<Designator>();
             var orders = new List<Designator>();
-            foreach (var designator in allDesignators)
+            
+            var uniqueDesignators = GetUniqueDesignators(allDesignators);
+
+            foreach (var designator in uniqueDesignators)
             {
                 if (designator is Designator_Build || (designator is Designator_Dropdown dd && dd.Elements.Any(e => e is Designator_Build)))
                 {
@@ -189,12 +210,22 @@ namespace BetterArchitect
                 var floorSpecificDesignators = new List<Designator>();
                 var orderSpecificDesignators = new List<Designator>();
 
-                HashSet<Designator> allFloorDesignators = new HashSet<Designator>();
-                allFloorDesignators.UnionWith(designatorDataList.FirstOrDefault(d => d.def == DesignationCategoryDefOf.Floors).allDesignators);
+                var rawFloorDesignators = new List<Designator>();
+                var floorsCatData = designatorDataList.FirstOrDefault(d => d.def == DesignationCategoryDefOf.Floors);
+                if (floorsCatData != null)
+                {
+                    rawFloorDesignators.AddRange(floorsCatData.allDesignators);
+                }
+                
                 foreach (DesignatorCategoryData designatorCategoryData in designatorDataList)
-                    allFloorDesignators.UnionWith(designatorCategoryData.allDesignators.Except(designatorCategoryData.orders));
+                {
+                    if (designatorCategoryData.def == DesignationCategoryDefOf.Floors) continue;
+                    rawFloorDesignators.AddRange(designatorCategoryData.allDesignators.Except(designatorCategoryData.orders));
+                }
 
-                foreach (var designator in allFloorDesignators)
+                var uniqueFloorDesignators = GetUniqueDesignators(rawFloorDesignators);
+
+                foreach (var designator in uniqueFloorDesignators)
                 {
                     if (designator is Designator_Dropdown dropdown)
                     {
@@ -422,6 +453,7 @@ namespace BetterArchitect
                 if (Widgets.ButtonInvisible(rowRect))
                 {
                     selectedMaterial = material;
+                    ClearSortCache();
                 }
                 curY += rowRect.height + 5;
             }
@@ -694,35 +726,40 @@ namespace BetterArchitect
             if (buildable == null) return null;
             return sortBy switch
             {
-                SortBy.Beauty => GetStatValueIfDefined(buildable, StatDefOf.Beauty),
-                SortBy.Comfort => GetStatValueIfDefined(buildable, StatDefOf.Comfort),
-                SortBy.Value => GetStatValueIfDefined(buildable, StatDefOf.MarketValue),
-                SortBy.WorkToBuild => GetStatValueIfDefined(buildable, StatDefOf.WorkToBuild),
-                SortBy.Health => GetStatValueIfDefined(buildable, StatDefOf.MaxHitPoints),
-                SortBy.Cleanliness => GetStatValueIfDefined(buildable, StatDefOf.Cleanliness),
-                SortBy.Flammability => GetStatValueIfDefined(buildable, StatDefOf.Flammability),
+                SortBy.Beauty => GetStatValueIfDefined(buildable, StatDefOf.Beauty, d),
+                SortBy.Comfort => GetStatValueIfDefined(buildable, StatDefOf.Comfort, d),
+                SortBy.Value => GetStatValueIfDefined(buildable, StatDefOf.MarketValue, d),
+                SortBy.WorkToBuild => GetStatValueIfDefined(buildable, StatDefOf.WorkToBuild, d),
+                SortBy.Health => GetStatValueIfDefined(buildable, StatDefOf.MaxHitPoints, d),
+                SortBy.Cleanliness => GetStatValueIfDefined(buildable, StatDefOf.Cleanliness, d),
+                SortBy.Flammability => GetStatValueIfDefined(buildable, StatDefOf.Flammability, d),
                 SortBy.SkillRequired => buildable.constructionSkillPrerequisite,
                 SortBy.CoverEffectiveness => buildable is ThingDef thingDef ? thingDef.fillPercent : (float?)null,
                 SortBy.MaxPowerOutput => GetMaxPowerOutput(buildable),
                 SortBy.PowerConsumption => GetPowerConsumption(buildable),
-                SortBy.RecreationPower => GetStatValueIfDefined(buildable, StatDefOf.JoyGainFactor),
+                SortBy.RecreationPower => GetStatValueIfDefined(buildable, StatDefOf.JoyGainFactor, d),
                 SortBy.MoveSpeed => GetMoveSpeed(buildable),
                 SortBy.TotalStorageCapacity => GetTotalStorageCapacity(buildable),
-                SortBy.DoorOpeningSpeed => GetStatValueIfDefined(buildable, StatDefOf.DoorOpenSpeed),
-                SortBy.WorkSpeedFactor => GetStatValueIfDefined(buildable, StatDefOf.WorkTableWorkSpeedFactor),
+                SortBy.DoorOpeningSpeed => GetStatValueIfDefined(buildable, StatDefOf.DoorOpenSpeed, d),
+                SortBy.WorkSpeedFactor => GetStatValueIfDefined(buildable, StatDefOf.WorkTableWorkSpeedFactor, d),
                 _ => null
             };
         }
 
-        private static ThingDef GetStuffFrom(BuildableDef buildable)
+        private static ThingDef GetStuffFrom(BuildableDef buildable, Designator d = null)
         {
             if (buildable is not ThingDef thingDef || thingDef.MadeFromStuff is false) return null;
 
+            if (d is Designator_Build db && db.StuffDefRaw != null)
+            {
+                return db.StuffDefRaw;
+            }
+
             if (Find.CurrentMap == null) return null;
 
-            foreach (ThingDef item in from d in Find.CurrentMap.resourceCounter.AllCountedAmounts.Keys
-                                      orderby d.stuffProps?.commonality ?? float.PositiveInfinity descending, d.BaseMarketValue
-                                      select d)
+            foreach (ThingDef item in from stuff in Find.CurrentMap.resourceCounter.AllCountedAmounts.Keys
+                                      orderby stuff.stuffProps?.commonality ?? float.PositiveInfinity descending, stuff.BaseMarketValue
+                                      select stuff)
             {
                 if (item.IsStuff && item.stuffProps.CanMake(thingDef) && (DebugSettings.godMode || Find.CurrentMap.listerThings.ThingsOfDef(item).Count > 0))
                 {
@@ -1007,13 +1044,13 @@ namespace BetterArchitect
             return null;
         }
 
-        private static float? GetStatValueIfDefined(BuildableDef buildable, StatDef statDef)
+        private static float? GetStatValueIfDefined(BuildableDef buildable, StatDef statDef, Designator d = null)
         {
             if (statDef.showIfUndefined is false && buildable.StatBaseDefined(statDef) is false)
             {
                 return null;
             }
-            var stuff = GetStuffFrom(buildable);
+            var stuff = GetStuffFrom(buildable, d);
             var value = buildable.GetStatValueAbstract(statDef, stuff);
             return value;
         }

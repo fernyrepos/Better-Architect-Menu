@@ -1006,6 +1006,9 @@
     <li IfModActive="3HSTltd.Weapons.Plasma">Mods and Shit/Bill Doors' Plasma Weapons</li>
     <li IfModActive="CETeam.CombatExtendedGuns">Mods and Shit/Combat Extended Guns</li>
     <li IfModActive="scurvyez.steveswalls">Mods and Shit/Steve's Walls</li>
+    <li IfModActive="Salvador143.ShuttleDock">Mods and Shit/Shuttle Dock</li>
+    <li IfModActive="vanillaexpanded.vfesecurity">Mods and Shit/VFE Security</li>
+    <li IfModActive="cyco.WorshipOfMoloch">Mods and Shit/Worship of Moloch</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

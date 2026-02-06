@@ -334,7 +334,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="MultiAnalyzer"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_Auxiliaries</designationCategory>
+            <designationCategory>Ferny_ResearchProduction</designationCategory>
         </value>
     </Operation>
 
@@ -996,13 +996,6 @@
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ToolCabinet"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Auxiliaries</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="MultiAnalyzer"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_Auxiliaries</designationCategory>
                     </value>

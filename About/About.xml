@@ -960,6 +960,9 @@
     <li>3HSTltd.Weapons.Plasma</li>
     <li>CETeam.CombatExtendedGuns</li>
     <li>scurvyez.steveswalls</li>
+    <li>Salvador143.ShuttleDock</li>
+    <li>vanillaexpanded.vfesecurity</li>
+    <li>cyco.WorshipOfMoloch</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
