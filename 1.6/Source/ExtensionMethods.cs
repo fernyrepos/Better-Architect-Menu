@@ -27,5 +27,8 @@ namespace BetterArchitect
             return ("BA." + sortBy.ToString()).Translate();
         }
 
+        // Overridden by patch
+       public static float uiWidth { get { return UI.screenWidth; } }
+       public static float leftUIEdge { get { return 0f; } }
     }
 }
