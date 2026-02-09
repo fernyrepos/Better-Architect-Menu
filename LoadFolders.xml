@@ -1015,6 +1015,7 @@
 	<li IfModActive="mlmlmlm.bluearchivefurniture3">Mods and Shit/Blue Archive Furniture 3</li>
 	<li IfModActive="AzzyH.UniversalMechCharger">Mods and Shit/Universal Mech Chargers</li>
 	<li IfModActive="als.gravtech.bc">Mods and Shit/GravTech Big Cannons</li>
+	<li IfModActive="Owlchemist.FridgeUtilities">Mods and Shit/Simple Utilities Fridge</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
