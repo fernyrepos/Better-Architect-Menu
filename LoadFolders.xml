@@ -316,6 +316,7 @@
     <li IfModActive="JTCsBonereapers.FormerlyPPHHYY">Mods and Shit/BoneReapers Remarrowed</li>
     <li IfModActive="mlmlmlm.bluearchivefurniture">Mods and Shit/Blue Archive Furniture</li>
     <li IfModActive="mlmlmlm.bluearchivefurniture2">Mods and Shit/Blue Archive Furniture 2</li>
+	<li IfModActive="mlmlmlm.bluearchivefurniture3">Mods and Shit/Blue Archive Furniture 3</li>
     <!-- TODO move mod category under Furniture -->
     <li IfModActive="BuhGunGer.WallMountedFireFoamPopper">Mods and Shit/Wall Mounted Firefoam</li>
     <li IfModActive="notdvd.fraymod">Mods and Shit/Fray of the Fog</li>
@@ -1009,6 +1010,7 @@
     <li IfModActive="Salvador143.ShuttleDock">Mods and Shit/Shuttle Dock</li>
     <li IfModActive="vanillaexpanded.vfesecurity">Mods and Shit/VFE Security</li>
     <li IfModActive="cyco.WorshipOfMoloch">Mods and Shit/Worship of Moloch</li>
+    <li IfModActive="mumei.signs">Mods and Shit/Signs and Comments</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
