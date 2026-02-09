@@ -178,4 +178,19 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="VGE_Power_GT"]</xpath>
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="VGE_Power_GT"]</xpath>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="VGE_Workbenches_GT"]</xpath>
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="VGE_Workbenches_GT"]</xpath>
+		</match>
+	</Operation>
+	
 </Patch>
