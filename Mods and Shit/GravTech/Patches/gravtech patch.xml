@@ -19,8 +19,11 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="AdvShip_GravChemfuelTank"]/designationCategory</xpath>
+
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="FuelTankBase"]</xpath>
 		<value>
 			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
 		</value>
