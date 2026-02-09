@@ -19,6 +19,13 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AdvShip_GravChemfuelTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+		</value>
+	</Operation>
+
 <!-- PRODUCTION -->
 
 	<Operation Class="PatchOperationReplace">
