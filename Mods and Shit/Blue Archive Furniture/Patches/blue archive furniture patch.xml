@@ -40,6 +40,22 @@
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>	
+	
+		<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_party_Bed"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tea_party_Bed_curtains"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>	
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
@@ -214,7 +230,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Trinity_Large_Bookshelf"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_InformationStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -222,7 +238,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Trinity_Large_Bookshelf_Graphics"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_InformationStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -230,7 +246,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Trinity_Medium_Bookshelf"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_InformationStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -238,7 +254,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Trinity_Medium_Bookshelf_Graphics"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_InformationStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -262,7 +278,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Mahogany_Three_Tier_Bookshelf"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_InformationStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -270,7 +286,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Mahogany_Three_Tier_Bookshelf_Graphics"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_InformationStorage</designationCategory>
 		</value>
 	</Operation>
 
@@ -352,8 +368,11 @@
 
 		
     <!-- Remove the original BS category -->
-	<Operation Class="PatchOperationRemove">
-		<success>Always</success>
-		<xpath>Defs/DesignationCategoryDef[defName="Trinity_Decoration"]</xpath>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="BA_Decoration"]</xpath>
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="BA_Decoration"]</xpath>
+		</match>
 	</Operation>
 </Patch>
