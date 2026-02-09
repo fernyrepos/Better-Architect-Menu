@@ -1013,6 +1013,7 @@
 	<li IfModActive="ninoss.rimservers">Mods and Shit/Rimservers</li>
 	<li IfModActive="Erin.Auraeyl">Mods and Shit/Erin Auraeyl</li>
 	<li IfModActive="mlmlmlm.bluearchivefurniture3">Mods and Shit/Blue Archive Furniture 3</li>
+	<li IfModActive="AzzyH.UniversalMechCharger">Mods and Shit/Universal Mech Chargers</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
