@@ -1016,6 +1016,8 @@
 	<li IfModActive="AzzyH.UniversalMechCharger">Mods and Shit/Universal Mech Chargers</li>
 	<li IfModActive="als.gravtech.bc">Mods and Shit/GravTech Big Cannons</li>
 	<li IfModActive="Owlchemist.FridgeUtilities">Mods and Shit/Simple Utilities Fridge</li>
+	<li IfModActive="talias.furnace">Mods and Shit/Talias Furnaces</li>
+	<li IfModActive="BlackDog.SuperHydroponicBed">Mods and Shit/Super Automatic Hydroponics</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
