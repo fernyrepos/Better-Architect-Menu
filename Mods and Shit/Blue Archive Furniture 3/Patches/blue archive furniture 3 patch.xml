@@ -54,7 +54,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Wildhunt_Wooden_Fence"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_Ranching</designationCategory>
+			<designationCategory>Ferny_DecoOutdoor</designationCategory>
 		</value>
 	</Operation>
 	
