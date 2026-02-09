@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Space Combat -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_GravliteDefenseTurret"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
+		</value>
+	</Operation>
+	
+		<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_AmmoBox_BlackHoleShell"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_AmmoBox_GravRailShell"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_GunnerSubpersonaCore"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceCombat</designationCategory>
+		</value>
+	</Operation>
+	
+	
+	<!-- Research -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_GravjumperComputer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_GravWaveAnalyzer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_MaintenanceDevice"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_MaintenanceHub"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_GravshipBlackBox"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_FlightComputer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PilotSubpersonaCore"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_Gravlift"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_Astropurifier"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="FuelOptimizer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+		</value>
+	</Operation>
+	
+	
+	
+	<!-- VACUUM -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_WallOxygenHarvester"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_AdvOxygenTank"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_AdvOxygenHarvester"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_AdvLifeSupportSystem"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
+		</value>
+	</Operation>
+	
+		<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_OxygenReclaimer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceVacuum</designationCategory>
+		</value>
+	</Operation>
+	
+	<!-- POWER -->
+		<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GTbc_ReinforcedSolarPanelling"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePower</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_CapacitorHarmonizer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePower</designationCategory>
+		</value>
+	</Operation>
+	
+	
+
+</Patch>
