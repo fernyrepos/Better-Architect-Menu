@@ -47,7 +47,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="Masterpiece_Bookshelf"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_Auxiliaries</designationCategory>
+            <designationCategory>Ferny_InformationStorage</designationCategory>
         </value>
     </Operation>
 
@@ -126,8 +126,11 @@
 
 	
     <!-- Remove the original BS category -->
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/DesignationCategoryDef[defName="Gehenna_Decoration"]</xpath>
+   <Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="BA_Decoration"]</xpath>
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="BA_Decoration"]</xpath>
+		</match>
 	</Operation>
-
 </Patch>
