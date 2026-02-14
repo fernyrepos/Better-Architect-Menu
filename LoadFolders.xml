@@ -292,6 +292,7 @@
     <li IfModActive="wanzi.biggraves">Mods and Shit/Big Graves and Sarcophaguses</li>
     <li IfModActive="jdgg.adaptive.cargoholds">Mods and Shit/Cargo Holds</li>
     <li IfModActive="Erin.CottageCollection">Mods and Shit/Erin Cottage</li>
+	
     <li IfModActive="mosi.VFEC.DoubleTents">Mods and Shit/Double Tents</li>
     <li IfModActive="joeyjoejoeshabidoo.EvaporationPond">Mods and Shit/Evaporation Pond</li>
     <li IfModActive="NoneObsidiaExpansion.LEDLightsStrip">Mods and Shit/Led Lights Strip</li>
@@ -1009,6 +1010,14 @@
     <li IfModActive="Salvador143.ShuttleDock">Mods and Shit/Shuttle Dock</li>
     <li IfModActive="vanillaexpanded.vfesecurity">Mods and Shit/VFE Security</li>
     <li IfModActive="cyco.WorshipOfMoloch">Mods and Shit/Worship of Moloch</li>
+	<li IfModActive="ninoss.rimservers">Mods and Shit/Rimservers</li>
+	<li IfModActive="Erin.Auraeyl">Mods and Shit/Erin Auraeyl</li>
+	<li IfModActive="mlmlmlm.bluearchivefurniture3">Mods and Shit/Blue Archive Furniture 3</li>
+	<li IfModActive="AzzyH.UniversalMechCharger">Mods and Shit/Universal Mech Chargers</li>
+	<li IfModActive="als.gravtech.bc">Mods and Shit/GravTech Big Cannons</li>
+	<li IfModActive="Owlchemist.FridgeUtilities">Mods and Shit/Simple Utilities Fridge</li>
+	<li IfModActive="talias.furnace">Mods and Shit/Talias Furnaces</li>
+	<li IfModActive="BlackDog.SuperHydroponicBed">Mods and Shit/Super Automatic Hydroponics</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

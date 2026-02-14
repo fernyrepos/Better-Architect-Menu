@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- ========== RUGS (All carpets use same parent) ========== -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="WildhuntCarpetBase"]</xpath>
+		<value>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
+		</value>
+	</Operation>
+	
+		<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Stepped_Platform"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoArt</designationCategory>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Wildhunt_Wooden_Gate"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Wildhunt_Wooden_Partition"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Wildhunt_Glass_Partition"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Wildhunt_Wooden_Pillar"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Supports</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Wildhunt_Wooden_Fence"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoOutdoor</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Typewriter_Desk"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ResearchProduction</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Typewriter_Chair"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Velvet_Chair"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+		<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Green_Library_Chair"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Seating</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Medium_Green_Light_Desk"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Tables</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Large_Green_Light_Desk"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Tables</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Art_Theory_Book_Shelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_InformationStorage</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Painting_shelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Wild_Hunt_Display_Shelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BASimple_Rack"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Typewriter_Shelf"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_GeneralStorage</designationCategory>
+		</value>
+	</Operation>
+	
+ <!-- Remove the original BS category -->
+   <Operation Class="PatchOperationConditional">
+		<xpath>Defs/DesignationCategoryDef[defName="BA_Decoration"]</xpath>
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="BA_Decoration"]</xpath>
+		</match>
+	</Operation>
+
+</Patch>
