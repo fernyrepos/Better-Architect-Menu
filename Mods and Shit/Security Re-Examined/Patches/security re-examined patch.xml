@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+
+<!-- CONCEALED -->
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFES_Turret_FloorTurretShotgun"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Concealed</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFES_Turret_FloorTurretAutoCannon"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Concealed</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFES_Turret_FloorTurretCharge"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Concealed</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFES_Turret_FloorTurretPopup"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_Concealed</designationCategory>
+                    </value>
+                </Operation>
+</Patch>

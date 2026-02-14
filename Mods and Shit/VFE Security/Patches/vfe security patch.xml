@@ -27,7 +27,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFES_Turret_Concealed"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Weapons</designationCategory>
+                        <designationCategory>Ferny_Concealed</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
@@ -210,7 +210,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFES_ConcealedBarrier"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Barricades</designationCategory>
+                        <designationCategory>Ferny_Concealed</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">

@@ -533,6 +533,22 @@
   </DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_Concealed</defName>
+    <label>Concealed</label>
+    <description>Build conealed buildings for surprising your enemies.</description>
+    <order>901</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Security</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_CombatInfrastructure</defName>
     <label>Infrastructure</label>
     <description>Build infrastructure for your enemies.</description>

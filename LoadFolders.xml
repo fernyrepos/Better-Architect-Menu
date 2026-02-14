@@ -1009,6 +1009,9 @@
     <li IfModActive="Salvador143.ShuttleDock">Mods and Shit/Shuttle Dock</li>
     <li IfModActive="vanillaexpanded.vfesecurity">Mods and Shit/VFE Security</li>
     <li IfModActive="cyco.WorshipOfMoloch">Mods and Shit/Worship of Moloch</li>
+    <li IfModActive="mumei.signs">Mods and Shit/Signs and Comments</li>
+    <li IfModActive="antediluvian.tombtraps">Mods and Shit/Tomb Traps</li>
+    <li IfModActive="smxrez.securityreexamined">Mods and Shit/Security Re-Examined</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
