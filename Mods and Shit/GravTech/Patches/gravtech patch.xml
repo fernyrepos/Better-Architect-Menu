@@ -19,16 +19,6 @@
 		</value>
 	</Operation>
 
-
-	
-	<Operation Class="PatchOperationAdd">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[@ParentName="FuelTankBase"]</xpath>
-		<value>
-			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
-		</value>
-	</Operation>
-
 <!-- PRODUCTION -->
 
 	<Operation Class="PatchOperationReplace">
