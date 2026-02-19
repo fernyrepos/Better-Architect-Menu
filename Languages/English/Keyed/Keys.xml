@@ -31,5 +31,28 @@
 	<BA.More>Other</BA.More>
 	<BA.BackgroundAlpha>Background transparency</BA.BackgroundAlpha>
 	<BA.NothingAvailableToBuild>There is nothing available to build yet.</BA.NothingAvailableToBuild>
-	
+
+	<BA.LoadingLabel>Loading Better Architect ...</BA.LoadingLabel>
+	<BA.SettingsIntro>Optional edit-mode tools for customizing parent/child categories and designator layout.</BA.SettingsIntro>
+	<BA.EditModeToggleTooltip>Toggle Edit Mode</BA.EditModeToggleTooltip>
+	<BA.SkipParentCategoriesTitle>Parent Category Rendering</BA.SkipParentCategoriesTitle>
+	<BA.SkipParentCategoriesDesc>Checked parent categories are visible. Uncheck to hide from Architect tabs.</BA.SkipParentCategoriesDesc>
+	<BA.OpenParentVisibility>Edit parent category visibility</BA.OpenParentVisibility>
+	<BA.ResetAll>Reset all edit-mode overrides</BA.ResetAll>
+	<BA.ResetAllComplete>All edit-mode settings were reset.</BA.ResetAllComplete>
+	<BA.TooltipAddCategoryToParent>Add category to this parent</BA.TooltipAddCategoryToParent>
+	<BA.TooltipRemoveSelectedChildCategory>Remove selected child category</BA.TooltipRemoveSelectedChildCategory>
+	<BA.TooltipResetCategoriesForParent>Reset categories for this parent</BA.TooltipResetCategoriesForParent>
+	<BA.TooltipResetDesignatorsForSelectedCategory>Reset designator overrides for selected category</BA.TooltipResetDesignatorsForSelectedCategory>
+	<BA.CategoryOptionFormat>{0} ({1})</BA.CategoryOptionFormat>
+	<BA.NoCategoriesAvailable>No categories available</BA.NoCategoriesAvailable>
+	<BA.TooltipAddBuildableOrSpecialDesignator>Add buildable or special designator</BA.TooltipAddBuildableOrSpecialDesignator>
+	<BA.TooltipRemoveDesignator>Remove designator</BA.TooltipRemoveDesignator>
+	<BA.AddBuildable>Add buildable</BA.AddBuildable>
+	<BA.AddBuildableTitle>Add Buildable</BA.AddBuildableTitle>
+	<BA.AddSpecialDesignator>Add special designator</BA.AddSpecialDesignator>
+	<BA.AddSpecialDesignatorTitle>Add Special Designator</BA.AddSpecialDesignatorTitle>
+	<BA.SearchShowing>Showing {0} / {1}</BA.SearchShowing>
+	<BA.Close>Close</BA.Close>
+
 </LanguageData>

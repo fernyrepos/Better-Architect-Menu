@@ -11,8 +11,14 @@ namespace BetterArchitect
 
         public BetterArchitectMod(ModContentPack content) : base(content)
         {
+            LongEventHandler.QueueLongEvent(Init, "BA.LoadingLabel", true, null);
+        }
+
+        public void Init()
+        {
             settings = GetSettings<BetterArchitectSettings>();
             BetterArchitectSettings.mod = this;
+            EditModeRuntime.Initialize();
             new Harmony("BetterArchitectMod").PatchAll();
         }
 
@@ -32,6 +38,23 @@ namespace BetterArchitect
 
             listingStandard.Gap();
             listingStandard.CheckboxLabeled("BA.UseSpecialFloorsTab".Translate(), ref BetterArchitectSettings.useSpecialFloorsTab, "BA.UseSpecialFloorsTabTooltip".Translate());
+
+            listingStandard.GapLine();
+            listingStandard.Label("BA.SettingsIntro".Translate());
+            if (listingStandard.ButtonText("BA.OpenParentVisibility".Translate()))
+            {
+                Find.WindowStack.Add(new EditModeParentVisibilityWindow());
+            }
+            listingStandard.Gap();
+            if (listingStandard.ButtonText("BA.ResetAll".Translate()))
+            {
+                BetterArchitectSettings.ResetAllEditModeOverrides();
+                if (MainButtonDefOf.Architect.TabWindow is MainTabWindow_Architect architectWindow)
+                {
+                    architectWindow.CacheDesPanels();
+                }
+                Messages.Message("BA.ResetAllComplete".Translate(), MessageTypeDefOf.NeutralEvent, false);
+            }
 
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
