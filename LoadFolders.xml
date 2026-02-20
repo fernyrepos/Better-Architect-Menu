@@ -1021,8 +1021,8 @@
     <li IfModActive="Owlchemist.FridgeUtilities">Mods and Shit/Simple Utilities Fridge</li>
     <li IfModActive="talias.furnace">Mods and Shit/Talias Furnaces</li>
     <li IfModActive="BlackDog.SuperHydroponicBed">Mods and Shit/Super Automatic Hydroponics</li>
-	<li IfModActive="mlmlmlm.bluearchivejoybojects">Mods and Shit/Blue Archive Furniture Joy</li>
-	<li IfModActive="ponpeco.PFSF">Mods and Shit/Ponpeco Furnitures Sci-Fi</li>
+    <li IfModActive="mlmlmlm.bluearchivejoybojects">Mods and Shit/Blue Archive Furniture Joy</li>
+    <li IfModActive="ponpeco.PFSF">Mods and Shit/Ponpeco Furnitures Sci-Fi</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
