@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/designationCategoryDef[defName="PonpecoFurniture"]</xpath>
+		<value>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Furniture</parentCategory>
+			</li>
+		</value>
+	</Operation>
+	
+	<!-- CHILDHOOD -->
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_Crib"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_Childhood</designationCategory>
+			</value>
+		</match>
+	</Operation>
+
+		<Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="PFS_DisplayPod"]/designationCategory |
+            Defs/ThingDef[defName="PFS_Shelf"]/designationCategory |
+            Defs/ThingDef[defName="PFS_ShelfSmall"]/designationCategory 
+        </xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="PFSDecoBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Decorations</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[@Name="PFSBasicBedBase"]/designationCategory |
+            Defs/ThingDef[defName="PFS_EndTable"]/designationCategory |
+            Defs/ThingDef[defName="PFS_DresserA"]/designationCategory |
+            Defs/ThingDef[defName="PFS_DresserB"]/designationCategory 
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Bedroom</designationCategory>
+        </value>
+    </Operation>
+	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_AnimalBed"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AnimalBedding</designationCategory>
+		</value>
+	</Operation>
+	
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="PFSTableBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Tables</designationCategory>
+		</value>
+	</Operation>
+		
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="PFSDoorBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+		
+		
+	<Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="PFS_Stool"]/designationCategory |
+            Defs/ThingDef[defName="PFS_StoolB"]/designationCategory |
+            Defs/ThingDef[defName="PFS_DiningChair"]/designationCategory |
+            Defs/ThingDef[defName="PFS_Armchair"]/designationCategory |
+            Defs/ThingDef[defName="PFS_ArmchairB"]/designationCategory |
+			Defs/ThingDef[defName="PFS_Couch"]/designationCategory 
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Seating</designationCategory>
+        </value>
+    </Operation>
+
+	
+	<Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="PFS_FloorlineLight"]/designationCategory |
+			Defs/ThingDef[defName="PFS_CubeLight"]/designationCategory |
+            Defs/ThingDef[defName="PFS_TriLight"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Lighting</designationCategory>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="PFS_PokerTable"]/designationCategory |
+            Defs/ThingDef[defName="PFS_BilliardsTable"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Joy</designationCategory>
+        </value>
+    </Operation>
+	
+	
+	<Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>
+            Defs/ThingDef[defName="PFS_ColumnA"]/designationCategory |
+			Defs/ThingDef[defName="PFS_ColumnB"]/designationCategory |
+            Defs/ThingDef[defName="PFS_ColumnC"]/designationCategory
+        </xpath>
+        <value>
+            <designationCategory>Ferny_Supports</designationCategory>
+        </value>
+    </Operation>
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_FirefoamPopper"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Firefoam</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_Barricade"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Barricades</designationCategory>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_Heater"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Heating</designationCategory>
+		</value>
+	</Operation>
+</Patch>
