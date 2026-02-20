@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
+		<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs[DesignationCategoryDef/defName="BA_Decoration"]</xpath>
+		<match Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="BA_Decoration"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Furniture</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+		</match>
+	</Operation>
+
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Trinity_Teaching_Desk"]/designationCategory</xpath>
@@ -173,7 +189,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Classic_Book_Wagon"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Furniture</designationCategory>
+			<designationCategory>Ferny_DecoArt</designationCategory>
 		</value>
 	</Operation>
 
@@ -367,12 +383,6 @@
 	</Operation>
 
 		
-    <!-- Remove the original BS category -->
-	<Operation Class="PatchOperationConditional">
-		<xpath>Defs/DesignationCategoryDef[defName="BA_Decoration"]</xpath>
-		<match Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>Defs/DesignationCategoryDef[defName="BA_Decoration"]</xpath>
-		</match>
-	</Operation>
+
+	
 </Patch>
