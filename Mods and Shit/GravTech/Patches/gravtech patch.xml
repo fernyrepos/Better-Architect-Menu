@@ -186,7 +186,7 @@
         <operations>
         <li Class="PatchOperationAdd">
             <success>Always</success>
-            <xpath>Defs/ThingDef[@ParentName="FuelTankBase"]</xpath>
+            <xpath>Defs/ThingDef[defName="AdvShip_GravChemfuelTank"]</xpath>
             <value>
             <designationCategory>Ferny_AstrofuelNetwork</designationCategory>
             </value>
