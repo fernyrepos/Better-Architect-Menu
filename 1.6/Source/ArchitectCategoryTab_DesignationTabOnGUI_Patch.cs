@@ -23,6 +23,7 @@ namespace BetterArchitect
         private static DesignationCategoryDef lastMainCategory;
         private static string lastSearchText = "";
         public static MaterialInfo selectedMaterial;
+        private static bool isFloorsSpecialTabActive;
         public const float EditToolbarHeight = 28f;
         private const float EditToolbarVerticalPadding = 4f;
         private const float EditToolbarReservedHeight = EditToolbarHeight + EditToolbarVerticalPadding;
@@ -213,6 +214,7 @@ namespace BetterArchitect
 
             if (tab.def == DesignationCategoryDefOf.Floors && BetterArchitectSettings.useSpecialFloorsTab)
             {
+                isFloorsSpecialTabActive = true;
                 Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = true;
                 var floorSpecificDesignators = new List<Designator>();
                 var orderSpecificDesignators = new List<Designator>();
@@ -260,6 +262,7 @@ namespace BetterArchitect
             }
             else
             {
+                isFloorsSpecialTabActive = false;
                 Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = false;
                 var selectedCategory = HandleCategorySelection(leftRect, tab.def, designatorDataList);
                 var selectedData = designatorDataList.FirstOrDefault(d => d.def == selectedCategory);
@@ -548,7 +551,7 @@ namespace BetterArchitect
 
         private static Designator DrawFlatGrid(Rect rect, List<Designator> designators, DesignationCategoryDef category)
         {
-            if (BetterArchitectSettings.editMode)
+            if (BetterArchitectSettings.editMode && !isFloorsSpecialTabActive)
             {
                 Bam_InlineDesignatorEditor.TryHandleOverlayInput(rect, designators, designatorGridScrollPosition, false, category);
             }
@@ -590,7 +593,7 @@ namespace BetterArchitect
             
             Widgets.EndScrollView();
 
-            if (BetterArchitectSettings.editMode)
+            if (BetterArchitectSettings.editMode && !isFloorsSpecialTabActive)
             {
                 Bam_InlineDesignatorEditor.DrawGridOverlay(rect, designators, designatorGridScrollPosition, false, category);
             }
@@ -849,7 +852,7 @@ namespace BetterArchitect
             var outRect = rect.ContractedBy(2f);
             outRect.width += 2;
 
-            if (BetterArchitectSettings.editMode)
+            if (BetterArchitectSettings.editMode && !isFloorsSpecialTabActive)
             {
                 Bam_InlineDesignatorEditor.TryHandleOverlayInput(outRect, designators, ordersScrollPosition, true, category);
             }
@@ -890,7 +893,7 @@ namespace BetterArchitect
             
             Widgets.EndScrollView();
 
-            if (BetterArchitectSettings.editMode)
+            if (BetterArchitectSettings.editMode && !isFloorsSpecialTabActive)
             {
                 Bam_InlineDesignatorEditor.DrawGridOverlay(outRect, designators, ordersScrollPosition, true, category);
             }
