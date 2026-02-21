@@ -325,7 +325,8 @@ namespace BetterArchitect
                 });
             }
 
-            return BuildMixedDesignatorList(defaults, buildables, specials);
+            var mixed = BuildMixedDesignatorList(defaults, buildables, specials);
+            return mixed.Where(d => d.Visible).ToList();
         }
 
         private static List<Designator> BuildMixedDesignatorList(List<Designator> defaults, List<Designator> buildables, List<Designator> specials)

@@ -50,6 +50,7 @@
 	<BA.TooltipRemoveDesignator>Remove designator</BA.TooltipRemoveDesignator>
 	<BA.AddBuildable>Add buildable</BA.AddBuildable>
 	<BA.AddBuildableTitle>Add Buildable</BA.AddBuildableTitle>
+	<BA.AddedBuildableNotVisible>{0} was added to {1}, but it has not met visibility conditions yet.</BA.AddedBuildableNotVisible>
 	<BA.AddSpecialDesignator>Add special designator</BA.AddSpecialDesignator>
 	<BA.AddSpecialDesignatorTitle>Add Special Designator</BA.AddSpecialDesignatorTitle>
 	<BA.SearchShowing>Showing {0} / {1}</BA.SearchShowing>

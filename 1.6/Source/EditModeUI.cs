@@ -705,6 +705,22 @@ namespace BetterArchitect
             if (!entry.buildableDefNames.Contains(defName)) entry.buildableDefNames.Add(defName);
             entry.removedBuildableDefNames.Remove(defName);
             BetterArchitectSettings.Save();
+
+            var buildableDef = DefDatabase<BuildableDef>.GetNamedSilentFail(defName);
+
+            var createdDesignator = new Designator_Build(buildableDef);
+            if (createdDesignator.Visible)
+            {
+                return;
+            }
+
+            var buildableLabel = buildableDef.LabelCap.ToString();
+            var categoryLabel = category.LabelCap.ToString();
+
+            Messages.Message(
+                "BA.AddedBuildableNotVisible".Translate(buildableLabel, categoryLabel),
+                MessageTypeDefOf.NeutralEvent,
+                false);
         }
 
         private static void AddSpecialToCurrentCategory(string className, DesignationCategoryDef category)

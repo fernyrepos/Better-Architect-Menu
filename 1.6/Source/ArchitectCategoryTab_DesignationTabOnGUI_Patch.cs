@@ -336,14 +336,16 @@ namespace BetterArchitect
 
             foreach (var cat in subCategories)
             {
-                if (IsSpecialCategory(cat) || EditModeSelectionOverrides.IsCurrentParentChildVisible(cat.defName))
+                if (IsSpecialCategory(cat))
                 {
                     filteredSubCategories.Add(cat);
                 }
                 else
                 {
                     var categoryData = designatorDataList.FirstOrDefault(d => d.def == cat);
-                    if (categoryData != null && !categoryData.buildables.NullOrEmpty())
+                    var showForEditing = BetterArchitectSettings.editMode &&
+                        EditModeSelectionOverrides.IsCurrentParentChildVisible(cat.defName);
+                    if (HasVisibleBuildables(categoryData) || showForEditing)
                     {
                         filteredSubCategories.Add(cat);
                     }
@@ -358,7 +360,7 @@ namespace BetterArchitect
                 {
                     if (IsSpecialCategory(cat)) return true;
                     var categoryData = designatorDataList.FirstOrDefault(d => d.def == cat);
-                    return categoryData != null && !categoryData.buildables.NullOrEmpty();
+                    return HasVisibleBuildables(categoryData);
                 });
 
                 shouldHideMoreCategory = subCategoriesHaveBuildings && !mainCategoryHasDesignators;
@@ -450,6 +452,11 @@ namespace BetterArchitect
             }
 
             return currentSelection;
+        }
+
+        private static bool HasVisibleBuildables(DesignatorCategoryData categoryData)
+        {
+            return categoryData.buildables.Any(d => d.Visible);
         }
 
         private static List<Designator> DrawMaterialListForFloors(Rect rect, List<Designator> allFloorDesignators)
