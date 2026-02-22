@@ -326,6 +326,11 @@ namespace BetterArchitect
             }
 
             var mixed = BuildMixedDesignatorList(defaults, buildables, specials);
+            if (BetterArchitectSettings.editMode)
+            {
+                return mixed;
+            }
+
             return mixed.Where(d => d.Visible).ToList();
         }
 

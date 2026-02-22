@@ -618,10 +618,7 @@ namespace BetterArchitect
 
             if (!buildableDefName.NullOrEmpty())
             {
-                if (entry.buildableDefNames == null || entry.buildableDefNames.Count == 0)
-                {
-                    entry.buildableDefNames = currentDesignators.Select(GetBuildableDefName).Where(n => !n.NullOrEmpty()).Distinct().ToList();
-                }
+                EnsureBuildableOrderSeeded(entry, currentDesignators);
                 if (!entry.buildableDefNames.Contains(buildableDefName)) entry.buildableDefNames.Add(buildableDefName);
                 CategoryEditControlsDrawer.MoveString(entry.buildableDefNames, buildableDefName, dir);
                 entry.removedBuildableDefNames.Remove(buildableDefName);
@@ -648,14 +645,7 @@ namespace BetterArchitect
 
             if (!buildableDefName.NullOrEmpty())
             {
-                if (entry.buildableDefNames == null || entry.buildableDefNames.Count == 0)
-                {
-                    entry.buildableDefNames = currentDesignators
-                        .Select(GetBuildableDefName)
-                        .Where(n => !n.NullOrEmpty())
-                        .Distinct()
-                        .ToList();
-                }
+                EnsureBuildableOrderSeeded(entry, currentDesignators);
                 if (!entry.buildableDefNames.Contains(buildableDefName))
                     entry.buildableDefNames.Add(buildableDefName);
                 entry.removedBuildableDefNames.Remove(buildableDefName);
@@ -675,6 +665,30 @@ namespace BetterArchitect
             }
 
             BetterArchitectSettings.Save();
+        }
+
+        private static void EnsureBuildableOrderSeeded(CategoryOverride entry, List<Designator> currentDesignators)
+        {
+            var orderedVisible = currentDesignators
+                .Select(GetBuildableDefName)
+                .ToList();
+
+            if (entry.buildableDefNames == null || entry.buildableDefNames.Count == 0)
+            {
+                entry.buildableDefNames = orderedVisible;
+                return;
+            }
+
+            var merged = new List<string>(orderedVisible);
+            foreach (var existing in entry.buildableDefNames)
+            {
+                if (!merged.Contains(existing))
+                {
+                    merged.Add(existing);
+                }
+            }
+
+            entry.buildableDefNames = merged;
         }
 
         private static void OpenAddDesignatorMenu(DesignationCategoryDef category)
@@ -705,22 +719,6 @@ namespace BetterArchitect
             if (!entry.buildableDefNames.Contains(defName)) entry.buildableDefNames.Add(defName);
             entry.removedBuildableDefNames.Remove(defName);
             BetterArchitectSettings.Save();
-
-            var buildableDef = DefDatabase<BuildableDef>.GetNamedSilentFail(defName);
-
-            var createdDesignator = new Designator_Build(buildableDef);
-            if (createdDesignator.Visible)
-            {
-                return;
-            }
-
-            var buildableLabel = buildableDef.LabelCap.ToString();
-            var categoryLabel = category.LabelCap.ToString();
-
-            Messages.Message(
-                "BA.AddedBuildableNotVisible".Translate(buildableLabel, categoryLabel),
-                MessageTypeDefOf.NeutralEvent,
-                false);
         }
 
         private static void AddSpecialToCurrentCategory(string className, DesignationCategoryDef category)
