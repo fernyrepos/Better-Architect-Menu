@@ -671,6 +671,7 @@ namespace BetterArchitect
         {
             var orderedVisible = currentDesignators
                 .Select(GetBuildableDefName)
+                .Where(defName => !defName.NullOrEmpty())
                 .ToList();
 
             if (entry.buildableDefNames == null || entry.buildableDefNames.Count == 0)
@@ -682,7 +683,7 @@ namespace BetterArchitect
             var merged = new List<string>(orderedVisible);
             foreach (var existing in entry.buildableDefNames)
             {
-                if (!merged.Contains(existing))
+                if (!existing.NullOrEmpty() && !merged.Contains(existing))
                 {
                     merged.Add(existing);
                 }
