@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="VFEFactory_Factories"]/order</xpath>
+                    <value>
+                        <order>9999</order>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="VFEFactory_Factories"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Automation</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
+
+
+</Patch>
