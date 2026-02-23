@@ -157,6 +157,7 @@ namespace BetterArchitect
             if (!hasCachedParents || cachedParents == null)
             {
                 cachedParents = DefDatabase<DesignationCategoryDef>.AllDefsListForReading
+                    .Where(d => d.GetModExtension<NestedCategoryExtension>()?.parentCategory == null)
                     .OrderBy(d => d.order)
                     .ThenBy(d => d.LabelCap.ToString())
                     .ToHashSet();

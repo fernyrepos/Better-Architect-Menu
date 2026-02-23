@@ -19,7 +19,7 @@ namespace BetterArchitect
             doCloseX = true;
             absorbInputAroundWindow = true;
             closeOnClickedOutside = false;
-            parentCategories = EditModeRuntime.GetParents().OrderBy(d => d.LabelCap.ToString()).ToList();
+            parentCategories = DefDatabase<DesignationCategoryDef>.AllDefsListForReading.OrderBy(d => d.LabelCap.ToString()).ToList();
         }
 
         public override void DoWindowContents(Rect inRect)

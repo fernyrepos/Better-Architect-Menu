@@ -174,7 +174,7 @@ namespace BetterArchitect
 
         private static List<Designator> GetDefaultDesignatorsFor(DesignationCategoryDef def)
         {
-            if (def.ResolvedAllowedDesignators == null)
+            if (def == null || def.ResolvedAllowedDesignators == null)
             {
                 return new List<Designator>();
             }
