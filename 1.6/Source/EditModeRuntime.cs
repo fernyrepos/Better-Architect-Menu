@@ -157,7 +157,6 @@ namespace BetterArchitect
             if (!hasCachedParents || cachedParents == null)
             {
                 cachedParents = DefDatabase<DesignationCategoryDef>.AllDefsListForReading
-                    .Where(d => !defaultParentChildren.TryGetValue(d.defName, out var children) || children.Count > 0)
                     .OrderBy(d => d.order)
                     .ThenBy(d => d.LabelCap.ToString())
                     .ToHashSet();
