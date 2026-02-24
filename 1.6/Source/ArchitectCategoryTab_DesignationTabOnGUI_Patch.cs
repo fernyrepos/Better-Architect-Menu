@@ -102,8 +102,8 @@ namespace BetterArchitect
             var sourceDef = DefDatabase<DesignationCategoryDef>.GetNamedSilentFail(cat.defName);
             return sourceDef == DefsOf.Orders ||
                    sourceDef == DesignationCategoryDefOf.Zone ||
-                   sourceDef.defName == "Blueprints" ||
-                   sourceDef.GetModExtension<SpecialCategoryExtension>() != null;
+                   sourceDef?.defName == "Blueprints" ||
+                   sourceDef?.GetModExtension<SpecialCategoryExtension>() != null;
         }
 
         private static List<Designator> GetUniqueDesignators(IEnumerable<Designator> source)

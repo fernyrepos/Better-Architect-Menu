@@ -19,6 +19,12 @@ namespace BetterArchitect
             {
                 childCategoryIds = new List<string>();
             }
+
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                childCategoryIds.RemoveAll(defName =>
+                    defName.NullOrEmpty() || DefDatabase<DesignationCategoryDef>.GetNamedSilentFail(defName) == null);
+            }
         }
     }
 
