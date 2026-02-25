@@ -106,6 +106,17 @@ namespace BetterArchitect
                    sourceDef?.GetModExtension<SpecialCategoryExtension>() != null;
         }
 
+        internal static bool IsBlueprintCategory(DesignationCategoryDef cat)
+        {
+            var sourceDef = DefDatabase<DesignationCategoryDef>.GetNamedSilentFail(cat.defName);
+            return sourceDef?.defName == "Blueprints" || cat.defName == "Blueprints";
+        }
+
+        private static bool IsEditModeEnabledFor(DesignationCategoryDef category)
+        {
+            return BetterArchitectSettings.editMode && !IsBlueprintCategory(category);
+        }
+
         private static List<Designator> GetUniqueDesignators(IEnumerable<Designator> source)
         {
             var unique = new List<Designator>();
@@ -263,9 +274,22 @@ namespace BetterArchitect
                 Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = false;
                 var selectedCategory = HandleCategorySelection(leftRect, tab.def, designatorDataList);
                 var selectedData = designatorDataList.FirstOrDefault(d => d.def == selectedCategory);
-                designatorsToDisplay = selectedData.buildables;
-                orderDesignators = selectedData.orders;
                 category = selectedData.def;
+
+                if (IsBlueprintCategory(category))
+                {
+                    var sourceDef = DefDatabase<DesignationCategoryDef>.GetNamedSilentFail(category.defName) ?? category;
+                    var blueprintDesignators = sourceDef.ResolvedAllowedDesignators?.Where(d => d.Visible).ToList() ?? new List<Designator>();
+                    var separated = SeparateDesignatorsByType(blueprintDesignators, sourceDef);
+                    designatorsToDisplay = separated.buildables;
+                    orderDesignators = separated.orders;
+                    category = sourceDef;
+                }
+                else
+                {
+                    designatorsToDisplay = selectedData.buildables;
+                    orderDesignators = selectedData.orders;
+                }
             }
 
             var mouseoverGizmo = DrawDesignatorGrid(gridRect, category, designatorsToDisplay);
@@ -277,12 +301,16 @@ namespace BetterArchitect
 
         private static DesignationCategoryDef HandleCategorySelection(Rect rect, DesignationCategoryDef mainCat, List<DesignatorCategoryData> designatorDataList)
         {
-            if (BetterArchitectSettings.editMode)
+            bool isEditModeEnabled = IsEditModeEnabledFor(mainCat);
+            if (isEditModeEnabled)
             {
                 rect.height -= EditToolbarReservedHeight;
             }
 
-            EditModeSelectionOverrides.Apply(mainCat, designatorDataList);
+            if (!IsBlueprintCategory(mainCat))
+            {
+                EditModeSelectionOverrides.Apply(mainCat, designatorDataList);
+            }
             var allCategories = designatorDataList.Select(d => d.def).ToList();
             DesignationCategoryDef currentSelection = null;
             if (BetterArchitectSettings.rememberSubcategory || lastMainCategory == mainCat)
@@ -343,7 +371,7 @@ namespace BetterArchitect
                 else
                 {
                     var categoryData = designatorDataList.FirstOrDefault(d => d.def == cat);
-                    var showForEditing = BetterArchitectSettings.editMode &&
+                    var showForEditing = isEditModeEnabled &&
                         EditModeSelectionOverrides.IsCurrentParentChildVisible(cat.defName);
                     if (HasVisibleBuildables(categoryData) || showForEditing)
                     {
@@ -398,7 +426,7 @@ namespace BetterArchitect
             var viewRect = new Rect(0, 0, outRect.width - 16f, GetCategoryViewHeight(displayCategories.Count));
             HandleScrollBar(outRect, viewRect, ref leftPanelScrollPosition);
 
-            if (BetterArchitectSettings.editMode)
+            if (isEditModeEnabled)
             {
                 CategoryEditControlsDrawer.TryHandleCategoryDrag(outRect, viewRect.width, displayCategories, mainCat, leftPanelScrollPosition);
             }
@@ -444,7 +472,7 @@ namespace BetterArchitect
             }
             Widgets.EndScrollView();
 
-            if (BetterArchitectSettings.editMode)
+            if (isEditModeEnabled)
             {
                 CategoryEditControlsDrawer.DrawCategoryDropHighlight(outRect, viewRect.width, displayCategories, leftPanelScrollPosition);
                 CategoryEditControlsDrawer.DrawCategoryGhost();
@@ -518,8 +546,9 @@ namespace BetterArchitect
         private static Designator DrawDesignatorGrid(Rect rect, DesignationCategoryDef category, List<Designator> designators)
         {
             if (!BetterArchitectSettings.sortSettingsPerCategory.ContainsKey(category.defName)) BetterArchitectSettings.sortSettingsPerCategory[category.defName] = new SortSettings();
+            bool isEditModeEnabled = IsEditModeEnabledFor(category);
 
-            if (BetterArchitectSettings.editMode)
+            if (isEditModeEnabled)
             {
                 BetterArchitectSettings.groupByTechLevelPerCategory[category.defName] = false;
                 BetterArchitectSettings.sortSettingsPerCategory[category.defName].SortBy = SortBy.Default;
@@ -555,7 +584,8 @@ namespace BetterArchitect
 
         private static Designator DrawFlatGrid(Rect rect, List<Designator> designators, DesignationCategoryDef category)
         {
-            if (BetterArchitectSettings.editMode)
+            bool isEditModeEnabled = IsEditModeEnabledFor(category);
+            if (isEditModeEnabled)
             {
                 Bam_InlineDesignatorEditor.TryHandleOverlayInput(rect, designators, designatorGridScrollPosition, false, category);
             }
@@ -597,7 +627,7 @@ namespace BetterArchitect
             
             Widgets.EndScrollView();
 
-            if (BetterArchitectSettings.editMode)
+            if (isEditModeEnabled)
             {
                 Bam_InlineDesignatorEditor.DrawGridOverlay(rect, designators, designatorGridScrollPosition, false, category);
             }
@@ -674,6 +704,8 @@ namespace BetterArchitect
             var groupButtonRect = new Rect(rect.x, rect.y, rect.height, rect.height).ExpandedBy(-4f);
             var sortButtonRect = new Rect(groupButtonRect.xMax + 4f, rect.y + 4f, groupButtonRect.height, groupButtonRect.height).ExpandedBy(2f);
             var toggleRect = new Rect(sortButtonRect.xMax + 4f, rect.y + 4f, groupButtonRect.height, groupButtonRect.height).ExpandedBy(2f);
+            bool isBlueprintCategory = IsBlueprintCategory(category);
+            bool isEditModeEnabled = IsEditModeEnabledFor(category);
             bool groupByTechLevel = BetterArchitectSettings.groupByTechLevelPerCategory.ContainsKey(category.defName) ? BetterArchitectSettings.groupByTechLevelPerCategory[category.defName] : false;
             if (Widgets.ButtonImage(groupButtonRect, Assets.GroupingIcon))
             {
@@ -715,16 +747,19 @@ namespace BetterArchitect
             }
 
             var buttonRect = new Rect(rect.x - 30f, rect.y + 4f, 24f, 24f).ExpandedBy(1f);
-            var icon = BetterArchitectSettings.editMode ? Assets.EditIconHighlighted : Assets.EditIcon;
+            var icon = isEditModeEnabled ? Assets.EditIconHighlighted : Assets.EditIcon;
 
             if (Widgets.ButtonImage(buttonRect, icon))
             {
-                BetterArchitectSettings.editMode = !BetterArchitectSettings.editMode;
-                BamDragDrop.Clear();
-                BetterArchitectSettings.Save();
+                if (!isBlueprintCategory)
+                {
+                    BetterArchitectSettings.editMode = !BetterArchitectSettings.editMode;
+                    BamDragDrop.Clear();
+                    BetterArchitectSettings.Save();
+                }
             }
 
-            if (BetterArchitectSettings.editMode)
+            if (isEditModeEnabled)
             {
                 Widgets.DrawHighlight(buttonRect);
             }
@@ -855,8 +890,9 @@ namespace BetterArchitect
             var rowHeight = gizmoSize + gizmoSpacing + 5f;
             var outRect = rect.ContractedBy(2f);
             outRect.width += 2;
+            bool isEditModeEnabled = IsEditModeEnabledFor(category);
 
-            if (BetterArchitectSettings.editMode)
+            if (isEditModeEnabled)
             {
                 Bam_InlineDesignatorEditor.TryHandleOverlayInput(outRect, designators, ordersScrollPosition, true, category);
             }
@@ -897,7 +933,7 @@ namespace BetterArchitect
             
             Widgets.EndScrollView();
 
-            if (BetterArchitectSettings.editMode)
+            if (isEditModeEnabled)
             {
                 Bam_InlineDesignatorEditor.DrawGridOverlay(outRect, designators, ordersScrollPosition, true, category);
             }
