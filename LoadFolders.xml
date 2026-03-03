@@ -1024,6 +1024,7 @@
     <li IfModActive="mlmlmlm.bluearchivejoybojects">Mods and Shit/Blue Archive Furniture Joy</li>
     <li IfModActive="ponpeco.PFSF">Mods and Shit/Ponpeco Furnitures Sci-Fi</li>
     <li IfModActive="vanillaexpanded.vfefactory">Mods and Shit/VFE Factory</li>
+    <li IfModActive="krkr.rule56">Mods and Shit/CAI</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
