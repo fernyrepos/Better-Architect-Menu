@@ -15,11 +15,6 @@ public static class TerrainFromLeather
         return AccessTools.TypeByName("VFEMedieval.VFEMedieval_DefGenerator_GenerateImpliedDefs_PreResolve_Patch").GetMethod("TerrainFromLeather");
     }
 
-    static TerrainFromLeather()
-    {
-        Log.Message("[BetterArchitect] TerrainFromLeather patch loaded.");
-    }
-
     [HarmonyPostfix]
     public static void Postfix(TerrainDef __result, Def tp)
     {
