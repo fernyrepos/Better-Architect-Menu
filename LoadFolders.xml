@@ -1027,6 +1027,7 @@
     <li IfModActive="krkr.rule56">Mods and Shit/CAI</li>
     <li IfModActive="godsfathermixtape.worksitesexpanded">Mods and Shit/Worksites Expanded</li>
     <li IfModActive="Xercaine.Furniture.Small">Mods and Shit/Small Furniture</li>
+    <li IfModActive="vanillaquestsexpanded.dronefactory">Mods and Shit/VQE Drone Factory</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

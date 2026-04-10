@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>        
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VQE_DroneTransmitter"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Drones</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VQE_DroneTinkeringBench"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Drones</designationCategory>
+    </value>
+</Operation>
+
+</Patch>
