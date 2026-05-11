@@ -1209,7 +1209,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_SpaceProduction</defName>
-    <label>Production</label>
+    <label>Compact</label>
     <description>Build space production benches.</description>
     <order>4</order>
     <specialDesignatorClasses>

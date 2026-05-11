@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="LTS_CompactSerumLab"]/designationCategory</xpath>
+	<value>
+		<designationCategory>Ferny_SpaceProduction</designationCategory>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="LTS_CompactBioferriteShaper"]/designationCategory</xpath>
+	<value>
+		<designationCategory>Ferny_SpaceProduction</designationCategory>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="LTS_CompactRecyclingWorkbench"]/designationCategory</xpath>
+	<value>
+		<designationCategory>Ferny_SpaceProduction</designationCategory>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="LTS_CompactLaserCutter"]/designationCategory</xpath>
+	<value>
+		<designationCategory>Ferny_SpaceProduction</designationCategory>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="LTS_CompactBionicModuleBench"]/designationCategory</xpath>
+	<value>
+		<designationCategory>Ferny_SpaceProduction</designationCategory>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="LTS_CompactGarageBench"]/designationCategory</xpath>
+	<value>
+		<designationCategory>Ferny_SpaceProduction</designationCategory>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="LTS_CompactAndroidPartWorkbench"]/designationCategory</xpath>
+	<value>
+		<designationCategory>Ferny_SpaceProduction</designationCategory>
+	</value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/ThingDef[defName="LTS_CompactNutrientPasteGrinder"]/designationCategory</xpath>
+	<value>
+		<designationCategory>Ferny_SpaceProduction</designationCategory>
+	</value>
+</Operation>
+
+</Patch>

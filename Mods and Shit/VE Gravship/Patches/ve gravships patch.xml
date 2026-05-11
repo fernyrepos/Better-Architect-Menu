@@ -234,6 +234,13 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_GravshipScannerCluster"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpacePlatform</designationCategory>
+		</value>
+	</Operation>
+
 
 <!-- VACUUM -->
 
@@ -504,8 +511,6 @@
 			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
-	
-<!-- PROCESSING PRODUCTION -->
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="VGE_CompactRefinery"]/designationCategory</xpath>
@@ -513,6 +518,65 @@
 			<designationCategory>Ferny_SpaceProduction</designationCategory>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_WallToolCabinet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_CompactResearchBench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VGE_CompactMultiAnalyzer"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
+		</value>
+	</Operation>
+
+	
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VGE_CompactBiosculpterPod"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_SpaceProduction</designationCategory>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="VGE_GravshipBaseMechCharger"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_SpaceProduction</designationCategory>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VGE_CompactGeneBank"]/designationCategory</xpath>
+					<value>
+						<designationCategory>Ferny_SpaceProduction</designationCategory>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
 
 <!-- WEAPONS -->
 

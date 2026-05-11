@@ -846,6 +846,13 @@
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
                 </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_IceCellar"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
 
 <!-- GENERAL STORAGE -->
                 <Operation Class="PatchOperationReplace">
@@ -959,18 +966,6 @@
                 </Operation>
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2c"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="DankPyon_IceCellar"]</xpath>
-                    <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="DankPyon_IceCellar"]</xpath>
                     <value>
                         <designationCategory>Ferny_GeneralStorage</designationCategory>
                     </value>
