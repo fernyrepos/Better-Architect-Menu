@@ -1,27 +1,519 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationConditional">
-		<xpath>/Defs/DesignationCategoryDef[defName="VCHE_PipeNetworks"]</xpath>
-		<match Class="PatchOperationAddModExtension">
-			<success>Always</success>
-			<xpath>Defs/DesignationCategoryDef[defName=""]</xpath>
+	<!-- ======================== NEUTRONIUM DESIGNATOR CATEGORY ======================== -->
+
+		<Operation Class="PatchOperationReplace">
+			<xpath>Defs/DesignationCategoryDef[defName="BOR"]/label</xpath>
 			<value>
+				<label>Neutronium</label>
+			</value>
+		</Operation>
+
+
+		<Operation Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/DesignationCategoryDef[defName="BOR"]</xpath>
+			<value>
+				<modExtensions>
 				<li Class="BetterArchitect.NestedCategoryExtension">
 					<parentCategory>VCHE_PipeNetworks</parentCategory>
 				</li>
+				</modExtensions>
 			</value>
-		</match>
-	</Operation>
+		</Operation>
 
-<!-- ? -->
+	<!-- Remove dropdowns -->
 
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/TerrainDef[defName=""]/designationCategory</xpath>
-		<value>
-			<designationCategory></designationCategory>
-		</value>
-	</Operation>
+		<Operation Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[designatorDropdown="NeutroniumRefinery"]/designatorDropdown</xpath>
+		</Operation>
+
+	<!-- ======================== POWER ======================== -->
+
+		<!-- Generators -->
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_SolarGeothermalPowerGenerator"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerGeneration</designationCategory>
+				</value>
+
+			</Operation>
+				<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Reactor_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerGeneration</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Reactor_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerGeneration</designationCategory>
+				</value>
+
+			</Operation>
+				<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Reactor_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerGeneration</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Reactor_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerGeneration</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Reactor_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerGeneration</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Reactor_IV"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerGeneration</designationCategory>
+				</value>
+			</Operation>
+
+
+		<!-- Batteries -->
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Battery_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerStorage</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Battery_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerStorage</designationCategory>
+				</value>
+			</Operation>
+
+				<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Battery_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_PowerStorage</designationCategory>
+				</value>
+			</Operation>
+
+	<!-- ======================== PRODUCTION ======================== -->
+
+		<!-- Production Main --> 
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Bench_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Production</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Bench_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Production</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Bench_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Production</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Bench_IV"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Production</designationCategory>
+				</value>
+			</Operation>
+
+
+		<!-- Production Refine -->
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Forge_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_ProcessingProduction</designationCategory>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Forge_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_ProcessingProduction</designationCategory>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Forge_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_ProcessingProduction</designationCategory>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Forge_IV"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_ProcessingProduction</designationCategory>
+				</value>
+			</Operation>
+
+		<!-- Farming --> 
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Farming</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Farming</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Farming</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_Tileable_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Farming</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_Tileable_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Farming</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_HydroponicsBasin_Tileable_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Farming</designationCategory>
+				</value>
+			</Operation>
+
+		<!-- Research -->
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Research_Unlocker_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_ResearchProduction</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Research_Unlocker_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_ResearchProduction</designationCategory>
+				</value>
+			</Operation>
+
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Research_Unlocker_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_ResearchProduction</designationCategory>
+				</value>
+			</Operation>
+
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Research_Unlocker_IV"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_ResearchProduction</designationCategory>
+				</value>
+			</Operation>
+
+		<!-- Auxilaries -->
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_ToolCabinet_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Auxiliaries</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_ToolCabinet_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Auxiliaries</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_ToolCabinet_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Auxiliaries</designationCategory>
+				</value>
+			</Operation>
+
+	<!-- ======================== BIOTECHNOLOGY ======================== -->
+
+		<!-- Medical -->
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_MedicineBench_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Medical</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_MedicineBench_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Medical</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_MedicineBench_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Medical</designationCategory>
+				</value>
+			</Operation>
+		
+		<!-- Enhancement -->
+			
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Solar_SleepAccelerator"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Enhancement</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Quasar_SleepAccelerator"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Enhancement</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Tenebral_SleepAccelerator"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Enhancement</designationCategory>
+				</value>
+			</Operation>
+
+	<!-- ======================== OTHER ======================== -->
+
+
+		<!-- Joy -->
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_GameOfUrBoard"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_ChessTable"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_PokerTable"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_BilliardsTable"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_MegascreenTelevision_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_MegascreenTelevision_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_MegascreenTelevision_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Telescope_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Telescope_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_Telescope_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_PC_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_PC_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_PC_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Joy</designationCategory>
+				</value>
+			</Operation>
+
+		<!-- Terraforming -->
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_MoisturePump_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Terraforming</designationCategory>
+				</value>
+			</Operation>
+			
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_MoisturePump_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Terraforming</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_MoisturePump_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Terraforming</designationCategory>
+				</value>
+			</Operation>
+
+		<!-- Pollution -->
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_PollutionPump_I"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Pollution</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_PollutionPump_II"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Pollution</designationCategory>
+				</value>
+			</Operation>
+
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="BOR_PollutionPump_III"]/designationCategory</xpath>
+				<value>
+					<designationCategory>Ferny_Pollution</designationCategory>
+				</value>
+			</Operation>
+
 
 </Patch>
