@@ -362,7 +362,7 @@
     <li IfModActive="frozensnowfox.frozensnowfoxtweaks">Mods and Shit/FrozenSnowFox Tweaks</li>
     <li IfModActive="dd.unofficial.notfood.mendandrecycle">Mods and Shit/MendAndRecycle</li>
     <li IfModActive="tradingcontrol.tad.rimworld.core">Mods and Shit/Trading Control</li>
-    <!-- <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li> -->                                            <!-- Borked, rewrite in progress. -->
+    <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li>                                            <!-- patches a lot of other mods so likely needs sub-patches at some point. -->
     <li IfModActive="mlie.autopsytable">Mods and Shit/AutopsyTable</li>
     <li IfModActive="slimesenpai.autovents">Mods and Shit/AutoVents</li>
     <li IfModActive="princeofpluto.vehicles.trains">Mods and Shit/Trains of the Rim</li>
