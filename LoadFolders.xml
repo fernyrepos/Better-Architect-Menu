@@ -1029,6 +1029,8 @@
     <li IfModActive="Xercaine.Furniture.Small">Mods and Shit/Small Furniture</li>
     <li IfModActive="vanillaquestsexpanded.dronefactory">Mods and Shit/VQE Drone Factory</li>
     <li IfModActive="LTS.MGW">Mods and Shit/More Gravship Workbenches</li>
+    <li IfModActive="acutus.clusterprojection">Mods and Shit/Cluster Projection</li>
+    <li IfModActive="eeg.moxasf">Mods and Shit/Medieval Overhaul Adaptive Storage</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
