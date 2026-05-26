@@ -40,6 +40,7 @@ namespace BetterArchitect
         {
             try
             {
+                EditModeRuntime.InvalidateAllCaches();
                 cachedArchitectTab = MainButtonDefOf.Architect?.TabWindow as MainTabWindow_Architect;
                 if (cachedArchitectTab == null)
                 {

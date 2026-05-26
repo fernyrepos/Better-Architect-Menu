@@ -11,10 +11,8 @@ namespace BetterArchitect
     {
         private static readonly Dictionary<string, DesignatorCategoryData> byDefNameBuffer = new Dictionary<string, DesignatorCategoryData>();
         private static readonly HashSet<string> currentParentVisibleChildIds = new HashSet<string>();
-        private static readonly List<DesignatorCategoryData> cachedRows = new List<DesignatorCategoryData>();
-        private static readonly HashSet<string> cachedVisibleChildIds = new HashSet<string>();
-        private static string cachedParentDefName;
-        private static bool hasSelectionCache;
+        private static readonly Dictionary<string, List<DesignatorCategoryData>> cachedRowsByParent = new Dictionary<string, List<DesignatorCategoryData>>();
+        private static readonly Dictionary<string, HashSet<string>> cachedVisibleChildIdsByParent = new Dictionary<string, HashSet<string>>();
 
         public static bool IsCurrentParentChildVisible(string categoryDefName)
         {
@@ -25,10 +23,8 @@ namespace BetterArchitect
         {
             byDefNameBuffer.Clear();
             currentParentVisibleChildIds.Clear();
-            cachedRows.Clear();
-            cachedVisibleChildIds.Clear();
-            cachedParentDefName = null;
-            hasSelectionCache = false;
+            cachedRowsByParent.Clear();
+            cachedVisibleChildIdsByParent.Clear();
         }
 
         public static void Apply(DesignationCategoryDef mainCat, List<DesignatorCategoryData> designatorDataList)
@@ -116,20 +112,18 @@ namespace BetterArchitect
 
         private static bool TryApplyCachedRows(DesignationCategoryDef mainCat, List<DesignatorCategoryData> designatorDataList)
         {
-            if (!hasSelectionCache)
-            {
-                return false;
-            }
-
-            if (!string.Equals(cachedParentDefName, mainCat.defName, StringComparison.Ordinal))
+            if (!cachedRowsByParent.TryGetValue(mainCat.defName, out var cachedRows))
             {
                 return false;
             }
 
             currentParentVisibleChildIds.Clear();
-            foreach (var childId in cachedVisibleChildIds)
+            if (cachedVisibleChildIdsByParent.TryGetValue(mainCat.defName, out var cachedVisibleChildIds))
             {
-                currentParentVisibleChildIds.Add(childId);
+                foreach (var childId in cachedVisibleChildIds)
+                {
+                    currentParentVisibleChildIds.Add(childId);
+                }
             }
 
             designatorDataList.Clear();
@@ -139,17 +133,14 @@ namespace BetterArchitect
 
         private static void UpdateSelectionCache(string parentDefName, List<DesignatorCategoryData> rows)
         {
-            cachedParentDefName = parentDefName;
-            hasSelectionCache = true;
-
-            cachedRows.Clear();
-            cachedRows.AddRange(rows);
-
-            cachedVisibleChildIds.Clear();
+            cachedRowsByParent[parentDefName] = rows.ToList();
+            var visibleChildIds = new HashSet<string>();
             foreach (var childId in currentParentVisibleChildIds)
             {
-                cachedVisibleChildIds.Add(childId);
+                visibleChildIds.Add(childId);
             }
+
+            cachedVisibleChildIdsByParent[parentDefName] = visibleChildIds;
         }
 
         private static DesignatorCategoryData BuildDataRow(
@@ -306,24 +297,15 @@ namespace BetterArchitect
                     currentByClass[className] = created;
                 }
 
-                var classOrder = entry.specialClassNames
-                    .Select((name, index) => new { name, index })
-                    .ToDictionary(x => x.name, x => x.index);
-
-                specials.Sort((a, b) =>
-                {
-                    var keyA = a.GetType().FullName;
-                    var keyB = b.GetType().FullName;
-                    var orderA = classOrder.TryGetValue(keyA, out var idxA) ? idxA : int.MaxValue;
-                    var orderB = classOrder.TryGetValue(keyB, out var idxB) ? idxB : int.MaxValue;
-                    var cmp = orderA.CompareTo(orderB);
-                    if (cmp != 0)
-                    {
-                        return cmp;
-                    }
-                    return string.Compare(a.LabelCap.ToString(), b.LabelCap.ToString(), StringComparison.OrdinalIgnoreCase);
-                });
             }
+
+            if (entry.removedSpecialClassNames.Count > 0)
+            {
+                var removed = new HashSet<string>(entry.removedSpecialClassNames);
+                specials = specials.Where(d => !removed.Contains(d.GetType().FullName)).ToList();
+            }
+
+            ApplySpecialClassOrder(specials, entry);
 
             var mixed = BuildMixedDesignatorList(defaults, buildables, specials);
             if (BetterArchitectSettings.editMode)
@@ -368,6 +350,91 @@ namespace BetterArchitect
             }
 
             return result;
+        }
+
+        private static void ApplySpecialClassOrder(List<Designator> specials, CategoryOverride entry)
+        {
+            var classOrder = BuildClassOrder(entry);
+            if (classOrder.Count == 0 || specials.Count <= 1)
+            {
+                return;
+            }
+
+            var byClass = new Dictionary<string, Queue<Designator>>();
+            for (var i = 0; i < specials.Count; i++)
+            {
+                var className = specials[i].GetType().FullName;
+                if (className.NullOrEmpty())
+                {
+                    continue;
+                }
+
+                if (!byClass.TryGetValue(className, out var queue))
+                {
+                    queue = new Queue<Designator>();
+                    byClass[className] = queue;
+                }
+
+                queue.Enqueue(specials[i]);
+            }
+
+            var ordered = new List<Designator>(specials.Count);
+            var consumed = new HashSet<Designator>();
+            for (var i = 0; i < classOrder.Count; i++)
+            {
+                var className = classOrder[i];
+                if (byClass.TryGetValue(className, out var queue) && queue.Count > 0)
+                {
+                    var designator = queue.Dequeue();
+                    ordered.Add(designator);
+                    consumed.Add(designator);
+                }
+            }
+
+            for (var i = 0; i < specials.Count; i++)
+            {
+                var designator = specials[i];
+                if (!consumed.Contains(designator))
+                {
+                    ordered.Add(designator);
+                }
+            }
+
+            specials.Clear();
+            specials.AddRange(ordered);
+        }
+
+        private static List<string> BuildClassOrder(CategoryOverride entry)
+        {
+            var result = new List<string>();
+            var sourceOrder = entry.specialClassOrder != null && entry.specialClassOrder.Count > 0 ? entry.specialClassOrder : entry.specialClassNames;
+            if (sourceOrder != null)
+            {
+                for (var i = 0; i < sourceOrder.Count; i++)
+                {
+                    AddClassOrder(result, sourceOrder[i]);
+                }
+            }
+
+            if (entry.specialClassNames == null)
+            {
+                return result;
+            }
+
+            for (var i = 0; i < entry.specialClassNames.Count; i++)
+            {
+                AddClassOrder(result, entry.specialClassNames[i]);
+            }
+
+            return result;
+        }
+
+        private static void AddClassOrder(List<string> classOrder, string className)
+        {
+            if (!className.NullOrEmpty() && !classOrder.Contains(className))
+            {
+                classOrder.Add(className);
+            }
         }
 
         private static Designator CreateBuildableDesignator(string defName)

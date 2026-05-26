@@ -153,6 +153,8 @@ namespace BetterArchitect
             entry.replaceDefaultSpecials = false;
             entry.buildableDefNames.Clear();
             entry.specialClassNames.Clear();
+            entry.specialClassOrder.Clear();
+            entry.removedSpecialClassNames.Clear();
             entry.removedBuildableDefNames.Clear();
             BetterArchitectSettings.Save();
         }
@@ -600,12 +602,12 @@ namespace BetterArchitect
             else
             {
                 var className = target.GetType().FullName;
-                if (!entry.replaceDefaultSpecials)
+                if (IsDefaultSpecialDesignator(category, className) && !entry.removedSpecialClassNames.Contains(className))
                 {
-                    entry.replaceDefaultSpecials = true;
-                    entry.specialClassNames = BuildSpecialClassSeedList(currentDesignators, entry);
+                    entry.removedSpecialClassNames.Add(className);
                 }
                 entry.specialClassNames.Remove(className);
+                entry.specialClassOrder.Remove(className);
             }
 
             BetterArchitectSettings.Save();
@@ -626,13 +628,18 @@ namespace BetterArchitect
             else
             {
                 var className = target.GetType().FullName;
-                if (!entry.replaceDefaultSpecials)
+                entry.removedSpecialClassNames.Remove(className);
+                if (entry.replaceDefaultSpecials)
                 {
-                    entry.replaceDefaultSpecials = true;
-                    entry.specialClassNames = BuildSpecialClassSeedList(currentDesignators, entry);
+                    if (!entry.specialClassNames.Contains(className)) entry.specialClassNames.Add(className);
+                    CategoryEditControlsDrawer.MoveString(entry.specialClassNames, className, dir);
                 }
-                if (!entry.specialClassNames.Contains(className)) entry.specialClassNames.Add(className);
-                CategoryEditControlsDrawer.MoveString(entry.specialClassNames, className, dir);
+                else
+                {
+                    EnsureSpecialOrderSeeded(entry, currentDesignators);
+                    if (!entry.specialClassOrder.Contains(className)) entry.specialClassOrder.Add(className);
+                    CategoryEditControlsDrawer.MoveString(entry.specialClassOrder, className, dir);
+                }
             }
 
             BetterArchitectSettings.Save();
@@ -654,14 +661,17 @@ namespace BetterArchitect
             else
             {
                 var className = target.GetType().FullName;
-                if (!entry.replaceDefaultSpecials)
+                entry.removedSpecialClassNames.Remove(className);
+                if (entry.replaceDefaultSpecials)
                 {
-                    entry.replaceDefaultSpecials = true;
-                    entry.specialClassNames = BuildSpecialClassSeedList(currentDesignators, entry);
+                    if (!entry.specialClassNames.Contains(className))
+                        entry.specialClassNames.Add(className);
+                    CategoryEditControlsDrawer.MoveStringToIndex(entry.specialClassNames, className, targetIndex);
                 }
-                if (!entry.specialClassNames.Contains(className))
-                    entry.specialClassNames.Add(className);
-                CategoryEditControlsDrawer.MoveStringToIndex(entry.specialClassNames, className, targetIndex);
+                else
+                {
+                    entry.specialClassOrder = BuildSpecialClassOrderAfterMove(currentDesignators, target, targetIndex, entry);
+                }
             }
 
             BetterArchitectSettings.Save();
@@ -690,6 +700,55 @@ namespace BetterArchitect
             }
 
             entry.buildableDefNames = merged;
+        }
+
+        private static void EnsureSpecialOrderSeeded(CategoryOverride entry, List<Designator> currentDesignators)
+        {
+            var orderedVisible = BuildSpecialClassSeedList(currentDesignators, entry);
+            if (entry.specialClassOrder == null || entry.specialClassOrder.Count == 0)
+            {
+                entry.specialClassOrder = orderedVisible;
+                return;
+            }
+
+            var merged = new List<string>(orderedVisible);
+            foreach (var existing in entry.specialClassOrder)
+            {
+                AddUniqueClassName(merged, existing);
+            }
+
+            foreach (var existing in entry.specialClassNames)
+            {
+                AddUniqueClassName(merged, existing);
+            }
+
+            entry.specialClassOrder = merged;
+        }
+
+        private static List<string> BuildSpecialClassOrderAfterMove(List<Designator> currentDesignators, Designator target, int targetIndex, CategoryOverride entry)
+        {
+            var reordered = currentDesignators.ToList();
+            var sourceIndex = reordered.IndexOf(target);
+            if (sourceIndex >= 0)
+            {
+                reordered.RemoveAt(sourceIndex);
+            }
+
+            targetIndex = Mathf.Clamp(targetIndex, 0, reordered.Count);
+            reordered.Insert(targetIndex, target);
+
+            var result = BuildSpecialClassSeedList(reordered, entry);
+            foreach (var existing in entry.specialClassOrder)
+            {
+                AddUniqueClassName(result, existing);
+            }
+
+            foreach (var existing in entry.specialClassNames)
+            {
+                AddUniqueClassName(result, existing);
+            }
+
+            return result;
         }
 
         private static void OpenAddDesignatorMenu(DesignationCategoryDef category)
@@ -725,7 +784,12 @@ namespace BetterArchitect
         private static void AddSpecialToCurrentCategory(string className, DesignationCategoryDef category)
         {
             var entry = BetterArchitectSettings.GetOrCreateCategoryOverride(category.defName);
-            if (!entry.specialClassNames.Contains(className)) entry.specialClassNames.Add(className);
+            entry.removedSpecialClassNames.Remove(className);
+            if ((entry.replaceDefaultSpecials || !IsDefaultSpecialDesignator(category, className)) && !entry.specialClassNames.Contains(className))
+            {
+                entry.specialClassNames.Add(className);
+            }
+            if (entry.specialClassOrder.Count > 0 && !entry.specialClassOrder.Contains(className)) entry.specialClassOrder.Add(className);
             BetterArchitectSettings.Save();
         }
 
@@ -738,6 +802,25 @@ namespace BetterArchitect
                 return nested != null && nested.PlacingDef != null ? nested.PlacingDef.defName : null;
             }
             return null;
+        }
+
+        private static bool IsDefaultSpecialDesignator(DesignationCategoryDef category, string className)
+        {
+            if (category?.specialDesignatorClasses == null || className.NullOrEmpty())
+            {
+                return false;
+            }
+
+            for (var i = 0; i < category.specialDesignatorClasses.Count; i++)
+            {
+                var type = category.specialDesignatorClasses[i];
+                if (type != null && type.FullName == className)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         private static List<string> BuildSpecialClassSeedList(List<Designator> currentDesignators, CategoryOverride entry)
@@ -761,6 +844,11 @@ namespace BetterArchitect
             for (int i = 0; i < entry.specialClassNames.Count; i++)
             {
                 AddUniqueClassName(result, entry.specialClassNames[i]);
+            }
+
+            for (int i = 0; i < entry.specialClassOrder.Count; i++)
+            {
+                AddUniqueClassName(result, entry.specialClassOrder[i]);
             }
 
             return result;
@@ -869,6 +957,14 @@ namespace BetterArchitect
             foreach (var entry in BetterArchitectSettings.categoryOverrides.Values)
             {
                 foreach (var className in entry.specialClassNames)
+                {
+                    if (!className.NullOrEmpty())
+                    {
+                        classNames.Add(className);
+                    }
+                }
+
+                foreach (var className in entry.specialClassOrder)
                 {
                     if (!className.NullOrEmpty())
                     {

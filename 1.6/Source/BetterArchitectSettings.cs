@@ -57,9 +57,32 @@ namespace BetterArchitect
                 skippedParentCategoryIds = skippedParentCategoryIds
                     .Where(id => !id.NullOrEmpty() && DefDatabase<DesignationCategoryDef>.GetNamedSilentFail(id) != null)
                     .ToList();
+                CleanupCategoryOverrides();
                 _skippedParentCategoryIdsCache = null;
             }
             base.ExposeData();
+        }
+
+        private static void CleanupCategoryOverrides()
+        {
+            foreach (var pair in categoryOverrides.ToList())
+            {
+                var categoryId = pair.Key;
+                var entry = pair.Value;
+                if (entry == null || categoryId.NullOrEmpty() ||
+                    DefDatabase<DesignationCategoryDef>.GetNamedSilentFail(categoryId) == null)
+                {
+                    categoryOverrides.Remove(categoryId);
+                    continue;
+                }
+
+                entry.categoryId = categoryId;
+                entry.CleanupSpecialDesignatorOverrides();
+                if (!entry.HasModifications)
+                {
+                    categoryOverrides.Remove(categoryId);
+                }
+            }
         }
 
         public static ParentOverride GetOrCreateParentOverride(string parentDefName)
