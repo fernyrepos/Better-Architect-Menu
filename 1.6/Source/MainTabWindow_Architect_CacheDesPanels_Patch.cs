@@ -9,6 +9,12 @@ namespace BetterArchitect
     [HarmonyPatch(typeof(MainTabWindow_Architect), "CacheDesPanels")]
     public static class MainTabWindow_Architect_CacheDesPanels_Patch
     {
+        public static void Prefix()
+        {
+            EditModeSelectionOverrides.ClearSelectionCache();
+            DesignatorSearchCache.Invalidate();
+        }
+
         public static void Postfix(MainTabWindow_Architect __instance)
         {
             var visibleCategories = DefDatabase<DesignationCategoryDef>.AllDefsListForReading.Where(def => def.GetModExtension<NestedCategoryExtension>()?.parentCategory == null).ToHashSet();

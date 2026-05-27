@@ -3,6 +3,7 @@ using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Verse;
 
 namespace BetterArchitect
@@ -13,6 +14,8 @@ namespace BetterArchitect
         private static readonly HashSet<string> currentParentVisibleChildIds = new HashSet<string>();
         private static readonly Dictionary<string, List<DesignatorCategoryData>> cachedRowsByParent = new Dictionary<string, List<DesignatorCategoryData>>();
         private static readonly Dictionary<string, HashSet<string>> cachedVisibleChildIdsByParent = new Dictionary<string, HashSet<string>>();
+        private static readonly Dictionary<string, int> cachedRowsFrameByParent = new Dictionary<string, int>();
+        private const int SelectionCacheLifetimeFrames = 300;
 
         public static bool IsCurrentParentChildVisible(string categoryDefName)
         {
@@ -25,6 +28,7 @@ namespace BetterArchitect
             currentParentVisibleChildIds.Clear();
             cachedRowsByParent.Clear();
             cachedVisibleChildIdsByParent.Clear();
+            cachedRowsFrameByParent.Clear();
         }
 
         public static void Apply(DesignationCategoryDef mainCat, List<DesignatorCategoryData> designatorDataList)
@@ -117,6 +121,15 @@ namespace BetterArchitect
                 return false;
             }
 
+            if (!cachedRowsFrameByParent.TryGetValue(mainCat.defName, out var cachedFrame) ||
+                Time.frameCount - cachedFrame > SelectionCacheLifetimeFrames)
+            {
+                cachedRowsByParent.Remove(mainCat.defName);
+                cachedVisibleChildIdsByParent.Remove(mainCat.defName);
+                cachedRowsFrameByParent.Remove(mainCat.defName);
+                return false;
+            }
+
             currentParentVisibleChildIds.Clear();
             if (cachedVisibleChildIdsByParent.TryGetValue(mainCat.defName, out var cachedVisibleChildIds))
             {
@@ -141,6 +154,7 @@ namespace BetterArchitect
             }
 
             cachedVisibleChildIdsByParent[parentDefName] = visibleChildIds;
+            cachedRowsFrameByParent[parentDefName] = Time.frameCount;
         }
 
         private static DesignatorCategoryData BuildDataRow(
