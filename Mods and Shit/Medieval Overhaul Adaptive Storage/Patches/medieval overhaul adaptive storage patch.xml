@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>   
+
+<!-- RESOURCE STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Log1x1Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Log1x2Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Log2x2Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Timber1x1Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Timber1x2Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Timber2x2Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Ingot1x1Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Ingot1x2Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Ingot2x2Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Bricks1x1Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Bricks1x2Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Bricks2x2Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticOreBarrelEmpty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticTextileBarrelEmpty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticLogBarrelEmpty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticComponentBarrelEmpty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticGrapeBarrelEmpty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
+                    </value>
+                </Operation>
+
+
+<!-- GENERAL STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_LargeShelf"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboard1x3Empty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate1x2d"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Crate2x2d"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_SmallShelf"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_CartEmptyA"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticEmptyShelf1x1Storage"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticEmptyShelf1x2Storage"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_SackEmpty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- GEAR STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Rack2x1a"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Rack2x1b"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_Rack2x1c"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RackRange2x1a"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RackRange2x1b"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RackRange2x1c"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
+                    </value>
+                </Operation>
+
+<!-- FOOD STORAGE -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardCheese"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardBread"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardWine"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticBarrelBigGrape"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticCupboardEmpty"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+</Patch>

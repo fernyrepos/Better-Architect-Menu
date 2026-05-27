@@ -974,6 +974,8 @@
     <li>Xercaine.Furniture.Small</li>
     <li>vanillaquestsexpanded.dronefactory</li>
     <li>LTS.MGW</li>
+    <li>acutus.clusterprojection</li>
+    <li>eeg.moxasf</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
