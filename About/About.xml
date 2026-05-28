@@ -976,6 +976,7 @@
     <li>LTS.MGW</li>
     <li>acutus.clusterprojection</li>
     <li>eeg.moxasf</li>
+    <li>ICC.FOV.ORBITER</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>
