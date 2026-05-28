@@ -5,7 +5,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="TychforAntenna"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[defName="BurnoutTychforFalseSignal"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_Summon</designationCategory>
 		</value>
