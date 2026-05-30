@@ -7,13 +7,16 @@
             <li>Dubs_Skylight.Designator_RemoveSkylights</li>
         </value>
     </Operation>
-    <!-- Move buildables from skylights to Ferny_Lighting, only if Forked Skylights is not loaded -->
+    <!-- Move buildables from skylights to Ferny_Lighting and fucking explode the Skylights category only if FORKED Skylights isn't loaded -->
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>FORKED Skylights</li>
         </mods>
         <nomatch Class="PatchOperationSequence">
             <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/DesignationCategoryDef[defName="skylights"]</xpath>
+                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="SkyLightA"]</xpath>
                     <value>
