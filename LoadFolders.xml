@@ -1031,7 +1031,6 @@
     <li IfModActive="LTS.MGW">Mods and Shit/More Gravship Workbenches</li>
     <li IfModActive="acutus.clusterprojection">Mods and Shit/Cluster Projection</li>
     <li IfModActive="eeg.moxasf">Mods and Shit/Medieval Overhaul Adaptive Storage</li>
-    <li IfModActive="maux36.rimbody">Mods and Shit/Rimbody</li>
     <li IfModActive="escarval.mirroredpodlauncher">Mods and Shit/Mirrored Pod Launcher</li>
     <li IfModActive="crewd.AdvancedTransportPodsV2">Mods and Shit/Advanced Transport Pods V2</li>
     <li IfModActive="Nebulae.BiggerVacBarriers">Mods and Shit/Bigger Vac Barriers</li>
