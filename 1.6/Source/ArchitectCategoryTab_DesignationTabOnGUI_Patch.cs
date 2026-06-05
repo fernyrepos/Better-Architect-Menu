@@ -21,7 +21,9 @@ namespace BetterArchitect
         private static readonly Dictionary<DesignationCategoryDef, bool> categorySearchMatches = new Dictionary<DesignationCategoryDef, bool>();
         public static Vector2 leftPanelScrollPosition, designatorGridScrollPosition, ordersScrollPosition;
         private static DesignationCategoryDef lastMainCategory;
+        private static DesignationCategoryDef lastSubCategory;
         private static string lastSearchText = "";
+        private static int lastDrawFrame = -1;
         public static MaterialInfo selectedMaterial;
         public const float EditToolbarHeight = 28f;
         private const float EditToolbarVerticalPadding = 4f;
@@ -35,7 +37,9 @@ namespace BetterArchitect
             EditModeRuntime.InvalidateAllCaches();
             selectedMaterial = null;
             lastMainCategory = null;
+            lastSubCategory = null;
             lastSearchText = "";
+            lastDrawFrame = -1;
             leftPanelScrollPosition = designatorGridScrollPosition = ordersScrollPosition = Vector2.zero;
             currentArchitectCategoryTab = null;
             BamDragDrop.Clear();
@@ -174,13 +178,36 @@ namespace BetterArchitect
                 DoInfoBox(Find.DesignatorManager.SelectedDesignator);
                 return false;
             }
-            DrawBetterArchitectMenu(__instance);
-            if (lastMainCategory != __instance.def)
+            bool menuJustOpened = Time.frameCount - lastDrawFrame > 1;
+            lastDrawFrame = Time.frameCount;
+            if (menuJustOpened || lastMainCategory != __instance.def)
             {
-                leftPanelScrollPosition = designatorGridScrollPosition = ordersScrollPosition = Vector2.zero;
-                lastMainCategory = __instance.def;
+                HandleMainCategoryChanged(__instance.def);
             }
+            DrawBetterArchitectMenu(__instance);
             return false;
+        }
+
+        private static void HandleMainCategoryChanged(DesignationCategoryDef newMainCategory)
+        {
+            leftPanelScrollPosition = Vector2.zero;
+            designatorGridScrollPosition = Vector2.zero;
+            ordersScrollPosition = Vector2.zero;
+            selectedMaterial = null;
+            categorySearchMatches.Clear();
+            lastSearchText = "";
+            cachedSortedDesignators.Clear();
+            EditModeSelectionOverrides.ClearSelectionCache();
+            lastMainCategory = newMainCategory;
+            lastSubCategory = null;
+        }
+
+        private static void HandleSubCategoryChanged(DesignationCategoryDef newSubCategory)
+        {
+            designatorGridScrollPosition = Vector2.zero;
+            ordersScrollPosition = Vector2.zero;
+            cachedSortedDesignators.Clear();
+            lastSubCategory = newSubCategory;
         }
 
         private static void DrawBetterArchitectMenu(ArchitectCategoryTab tab)
@@ -273,6 +300,10 @@ namespace BetterArchitect
             {
                 Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = false;
                 var selectedCategory = HandleCategorySelection(leftRect, tab.def, designatorDataList);
+                if (lastSubCategory?.defName != selectedCategory?.defName)
+                {
+                    HandleSubCategoryChanged(selectedCategory);
+                }
                 var selectedData = designatorDataList.FirstOrDefault(d => d.def == selectedCategory);
                 category = selectedData.def;
 
