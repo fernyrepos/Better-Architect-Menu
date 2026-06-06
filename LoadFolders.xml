@@ -1031,6 +1031,8 @@
     <li IfModActive="LTS.MGW">Mods and Shit/More Gravship Workbenches</li>
     <li IfModActive="acutus.clusterprojection">Mods and Shit/Cluster Projection</li>
     <li IfModActive="eeg.moxasf">Mods and Shit/Medieval Overhaul Adaptive Storage</li>
+    <li IfModActive="ICC.FOV.ORBITER">Mods and Shit/Faction - Orbiters</li>
+    <li IfModActive="lemore.loadoutcabinet">Mods and Shit/Loadout Cabinet Exosuit Framework Addon</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
