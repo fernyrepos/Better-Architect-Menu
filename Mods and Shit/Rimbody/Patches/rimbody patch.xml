@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- ATHLETICS -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[
+			defName="Rimbody_WeightRack" or
+			defName="Rimbody_FlatBench" or
+			defName="Rimbody_ExerciseMat" or
+			defName="Rimbody_Treadmill" or
+			defName="Rimbody_ExerciseBike" or
+			defName="Rimbody_WeightBench" or
+			defName="Rimbody_Barbell" or
+			defName="Rimbody_PrimitiveBarbell" or
+			defName="Rimbody_PullupBars" or
+			defName="Rimbody_SpinningDummy"
+		]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Athletics</designationCategory>
+		</value>
+	</Operation>
+
+
+</Patch>

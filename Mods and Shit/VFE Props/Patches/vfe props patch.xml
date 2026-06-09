@@ -107,12 +107,18 @@
       </mods>
       <match Class="PatchOperationSequence">
           <operations>
-              <li Class="PatchOperationAdd">
+            <li Class="PatchOperationConditional">
+
+              <xpath>/Defs/DesignationCategoryDef[defName="ASFstorage"]</xpath>
+              <success>Always</success>
+              <match Class="PatchOperationAdd">
                 <xpath>/Defs/DesignationCategoryDef[defName="ASFstorage"]/specialDesignatorClasses</xpath>
                 <value>
                   <li>VFEProps.Designator_Props</li>
                 </value>
-              </li>
+              </match>
+
+            </li>
           </operations>
       </match>
   </Operation>

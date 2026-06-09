@@ -4,7 +4,7 @@
                     <success>Always</success>
                     <xpath>Defs/DesignationCategoryDef[defName="Ferny_Education"]/order</xpath>
                     <value>
-                        <order>6</order>
+                        <order>998</order>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">

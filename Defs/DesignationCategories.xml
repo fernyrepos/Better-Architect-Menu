@@ -740,43 +740,27 @@
     </specialDesignatorClasses>
   </DesignationCategoryDef>
 
-	<DesignationCategoryDef>
-		<defName>Ferny_Management</defName>
-		<label>Manage</label>
-		<description>Manage your pawns.</description>
-		<order>9999</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_Life</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef>
+  <DesignationCategoryDef>
+    <defName>Ferny_Meditation</defName>
+    <label>Meditation</label>
+    <description>Places for colonists to meditate.</description>
+    <order>800</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Life</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
 
-	<DesignationCategoryDef>
-		<defName>Ferny_Control</defName>
-		<label>Influence</label>
-		<description>Influence pawn behavior.</description>
-		<order>9999</order>
-		<specialDesignatorClasses>
-			<li>Designator_Cancel</li>
-			<li>Designator_Deconstruct</li>
-		</specialDesignatorClasses>
-		<modExtensions>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_Life</parentCategory>
-			</li>
-		</modExtensions>
-	</DesignationCategoryDef>
-	
   <DesignationCategoryDef>
     <defName>Ferny_Childhood</defName>
     <label>Childhood</label>
     <description>Things that relate to childhood.</description>
-    <order>3</order>
+    <order>800</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -792,7 +776,7 @@
     <defName>Ferny_Memorial</defName>
     <label>Memorial</label>
     <description>Things that relate to burials or memorials.</description>
-    <order>2</order>
+    <order>800</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -803,22 +787,42 @@
       </li>
     </modExtensions>
   </DesignationCategoryDef>
+  
+	<DesignationCategoryDef>
+		<defName>Ferny_Management</defName>
+		<label>Manage</label>
+		<description>Manage your pawns.</description>
+		<order>800</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Life</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
 
-  <DesignationCategoryDef>
-    <defName>Ferny_Meditation</defName>
-    <label>Meditation</label>
-    <description>Places for colonists to meditate.</description>
-    <order>2</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Ferny_Life</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
+	<DesignationCategoryDef>
+		<defName>Ferny_Control</defName>
+		<label>Influence</label>
+		<description>Influence pawn behavior.</description>
+		<order>800</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Life</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+
+
+
 
   <DesignationCategoryDef>
     <defName>Ferny_ColonyLocations</defName>

@@ -298,6 +298,16 @@
                     </value>
                 </Operation>
 
-
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="EEG_MOxASFStorage"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Storage</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+                </Operation>
 
 </Patch>
