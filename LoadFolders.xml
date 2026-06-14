@@ -1048,6 +1048,12 @@
     <li IfModActive="horo.lavapower">Mods and Shit/Lava Power</li>
     <li IfModActive="SickBoyWi.Vault.OnePointOne">Mods and Shit/Vault Walls and Doors</li>
     <li IfModActive="horo.minisolars">Mods and Shit/Miniature Solar Panels</li>
+    <li IfModActive="maux36.rimbody">Mods and Shit/Rimbody</li>
+    <li IfModActive="pal5k.personamechs2">Mods and Shit/Persona Mechanoid Pawns 2</li>
+    <li IfModActive="zwei2stein.pyrinthstove">Mods and Shit/Pyrinth Stove</li>
+    <li IfModActive="rang.screamforcream">Mods and Shit/Scream For Cream</li>
+    <li IfModActive="mo.decorationsluxury">Mods and Shit/Decorations And Dishes At Gorgeous Banquet</li>
+    <li IfModActive="CN.DecoyDummies">Mods and Shit/Decoy Dummies</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

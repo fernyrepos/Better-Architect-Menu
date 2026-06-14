@@ -426,6 +426,21 @@
                         <designationCategory>Ferny_Auxiliaries</designationCategory>
                     </value>
                 </Operation>
+                <Operation Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName="DankPyon_RoyalBookshelf"]/designationCategory</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="DankPyon_RoyalBookshelf"]/designationCategory</xpath>
+                        <value>
+                            <designationCategory>Ferny_Auxiliaries</designationCategory>
+                        </value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="DankPyon_RoyalBookshelf"]</xpath>
+                        <value>
+                            <designationCategory>Ferny_Auxiliaries</designationCategory>
+                        </value>
+                    </nomatch>
+                </Operation>
 
 <!-- SUPPORTS -->
                 <Operation Class="PatchOperationReplace">
@@ -1291,4 +1306,19 @@
                         <designationCategory>Ferny_Market</designationCategory>
                     </value>
                 </Operation>
+
+<!-- No dropdowns -->
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_BeveragesGroup"]/designatorDropdown</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_ResearchToolsGroup"]/designatorDropdown</xpath>
+                </Operation>
+                <Operation Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[@Name="DankPyon_ScribeToolsGroup"]/designatorDropdown</xpath>
+                </Operation>
+
 </Patch>
