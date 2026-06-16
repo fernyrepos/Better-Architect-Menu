@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>        
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="PMP_BioelectricCellRecharger"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Personas</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="PMP_RechargeBed"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Personas</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="PMP_NeuralSiphonCasket"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Personas</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="PMP_PersonaMechaniteEncoder"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Personas</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="PMP_PersonaRipscanner"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Personas</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="PMP_PersonaInterface"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Personas</designationCategory>
+    </value>
+</Operation>
+
+
+</Patch>
