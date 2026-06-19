@@ -292,48 +292,65 @@ namespace BetterArchitect
             if (tab.def == DesignationCategoryDefOf.Floors && BetterArchitectSettings.useSpecialFloorsTab)
             {
                 Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = true;
-                var floorSpecificDesignators = new List<Designator>();
-                var orderSpecificDesignators = new List<Designator>();
 
-                var rawFloorDesignators = new List<Designator>();
-                var floorsCatData = designatorDataList.FirstOrDefault(d => d.def == DesignationCategoryDefOf.Floors);
-                if (floorsCatData != null)
+                // Rebuild the floor designator lists only when the underlying designator data
+                // has changed. Previously this ran unconditionally every frame, calling
+                // GetUniqueDesignators (O(n²) via GroupsWith) and Except (O(n×m)) on the full
+                // cross-category floor list each time.
+                if (cachedFloorDesignatorsFor != cachedRawDesignatorDataFor)
                 {
-                    rawFloorDesignators.AddRange(floorsCatData.allDesignators);
-                }
-                
-                foreach (DesignatorCategoryData designatorCategoryData in designatorDataList)
-                {
-                    if (designatorCategoryData.def == DesignationCategoryDefOf.Floors) continue;
-                    rawFloorDesignators.AddRange(designatorCategoryData.allDesignators.Except(designatorCategoryData.orders));
-                }
+                    var floorSpecificDesignators = new List<Designator>();
+                    var orderSpecificDesignators = new List<Designator>();
 
-                var uniqueFloorDesignators = GetUniqueDesignators(rawFloorDesignators);
-
-                foreach (var designator in uniqueFloorDesignators)
-                {
-                    if (designator is Designator_Dropdown dropdown)
+                    var rawFloorDesignators = new List<Designator>();
+                    var floorsCatData = designatorDataList.FirstOrDefault(d => d.def == DesignationCategoryDefOf.Floors);
+                    if (floorsCatData != null)
                     {
-                        if (dropdown.Elements.OfType<Designator_Place>().Any(x => x.PlacingDef.designatorDropdown?.includeEyeDropperTool == true))
+                        rawFloorDesignators.AddRange(floorsCatData.allDesignators);
+                    }
+
+                    var ordersSet = new HashSet<Designator>();
+                    foreach (DesignatorCategoryData designatorCategoryData in designatorDataList)
+                    {
+                        if (designatorCategoryData.def == DesignationCategoryDefOf.Floors) continue;
+                        ordersSet.Clear();
+                        ordersSet.UnionWith(designatorCategoryData.orders);
+                        foreach (var d in designatorCategoryData.allDesignators)
+                            if (!ordersSet.Contains(d)) rawFloorDesignators.Add(d);
+                    }
+
+                    var uniqueFloorDesignators = GetUniqueDesignators(rawFloorDesignators);
+
+                    foreach (var designator in uniqueFloorDesignators)
+                    {
+                        if (designator is Designator_Dropdown dropdown)
                         {
-                            floorSpecificDesignators.Add(dropdown);
+                            if (dropdown.Elements.OfType<Designator_Place>().Any(x => x.PlacingDef.designatorDropdown?.includeEyeDropperTool == true))
+                            {
+                                floorSpecificDesignators.Add(dropdown);
+                            }
+                            else
+                            {
+                                floorSpecificDesignators.AddRange(dropdown.Elements.OfType<Designator_Build>());
+                            }
+                        }
+                        else if (designator is Designator_Build || designator is Designator_Place)
+                        {
+                            floorSpecificDesignators.Add(designator);
                         }
                         else
                         {
-                            floorSpecificDesignators.AddRange(dropdown.Elements.OfType<Designator_Build>());
+                            orderSpecificDesignators.Add(designator);
                         }
                     }
-                    else if (designator is Designator_Build || designator is Designator_Place)
-                    {
-                        floorSpecificDesignators.Add(designator);
-                    }
-                    else
-                    {
-                        orderSpecificDesignators.Add(designator);
-                    }
+
+                    cachedFloorSpecificDesignators = floorSpecificDesignators;
+                    cachedFloorOrderDesignators = orderSpecificDesignators;
+                    cachedFloorDesignatorsFor = cachedRawDesignatorDataFor;
                 }
-                orderDesignators = orderSpecificDesignators;
-                designatorsToDisplay = DrawMaterialListForFloors(leftRect, floorSpecificDesignators);
+
+                orderDesignators = cachedFloorOrderDesignators;
+                designatorsToDisplay = DrawMaterialListForFloors(leftRect, cachedFloorSpecificDesignators);
                 category = tab.def;
             }
             else
