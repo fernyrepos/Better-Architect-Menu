@@ -25,15 +25,24 @@ namespace BetterArchitect
         private static string lastSearchText = "";
         private static int lastDrawFrame = -1;
         public static MaterialInfo selectedMaterial;
+        private static List<DesignatorCategoryData> cachedRawDesignatorData = null;
+        private static DesignationCategoryDef cachedRawDesignatorDataFor = null;
         public const float EditToolbarHeight = 28f;
         private const float EditToolbarVerticalPadding = 4f;
         private const float EditToolbarReservedHeight = EditToolbarHeight + EditToolbarVerticalPadding;
+        internal static void InvalidateDesignatorDataCache()
+        {
+            cachedRawDesignatorData = null;
+            cachedRawDesignatorDataFor = null;
+        }
+
         public static void Reset()
         {
             selectedCategory.Clear();
             categorySearchMatches.Clear();
             cachedSortedDesignators.Clear();
             EditModeSelectionOverrides.ClearSelectionCache();
+            InvalidateDesignatorDataCache();
             EditModeRuntime.InvalidateAllCaches();
             selectedMaterial = null;
             lastMainCategory = null;
@@ -198,6 +207,7 @@ namespace BetterArchitect
             lastSearchText = "";
             cachedSortedDesignators.Clear();
             EditModeSelectionOverrides.ClearSelectionCache();
+            InvalidateDesignatorDataCache();
             lastMainCategory = newMainCategory;
             lastSubCategory = null;
         }
@@ -234,16 +244,22 @@ namespace BetterArchitect
             var ordersRect = new Rect(gridRect.xMax, mainRect.y + 30f, ordersWidth, mainRect.height - 30f);
             var newColor = new Color(Color.white.r, Color.white.g, Color.white.b, 1f - BetterArchitectSettings.backgroundAlpha);
             Widgets.DrawWindowBackground(mainRect, newColor);
-            var allCategories = DefDatabase<DesignationCategoryDef>.AllDefsListForReading
-                .Where(d => d.GetModExtension<NestedCategoryExtension>()?.parentCategory == tab.def).ToList();
-            allCategories.Add(tab.def);
-            var designatorDataList = new List<DesignatorCategoryData>();
-            foreach (var cat in allCategories)
+            if (cachedRawDesignatorData == null || cachedRawDesignatorDataFor != tab.def)
             {
-                var allDesignators = cat.ResolvedAllowedDesignators.Where(d => d.Visible).ToList();
-                var (buildables, orders) = SeparateDesignatorsByType(allDesignators, cat);
-                designatorDataList.Add(new DesignatorCategoryData(cat, cat == tab.def, allDesignators, buildables, orders));
+                var allCats = DefDatabase<DesignationCategoryDef>.AllDefsListForReading
+                    .Where(d => d.GetModExtension<NestedCategoryExtension>()?.parentCategory == tab.def).ToList();
+                allCats.Add(tab.def);
+                var freshData = new List<DesignatorCategoryData>();
+                foreach (var cat in allCats)
+                {
+                    var allDesignators = cat.ResolvedAllowedDesignators.Where(d => d.Visible).ToList();
+                    var (buildables, orders) = SeparateDesignatorsByType(allDesignators, cat);
+                    freshData.Add(new DesignatorCategoryData(cat, cat == tab.def, allDesignators, buildables, orders));
+                }
+                cachedRawDesignatorData = freshData;
+                cachedRawDesignatorDataFor = tab.def;
             }
+            var designatorDataList = new List<DesignatorCategoryData>(cachedRawDesignatorData);
 
             List<Designator> designatorsToDisplay;
             List<Designator> orderDesignators;
@@ -515,7 +531,8 @@ namespace BetterArchitect
 
         private static bool HasVisibleBuildables(DesignatorCategoryData categoryData)
         {
-            return categoryData.buildables.Any(d => d.Visible);
+            if (categoryData == null) return false;
+            return categoryData.buildables.Any(x => x is Designator_Place || x is Designator_Dropdown);
         }
 
         private static List<Designator> DrawMaterialListForFloors(Rect rect, List<Designator> allFloorDesignators)

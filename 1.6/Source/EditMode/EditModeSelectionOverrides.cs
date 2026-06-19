@@ -29,6 +29,7 @@ namespace BetterArchitect
             cachedRowsByParent.Clear();
             cachedVisibleChildIdsByParent.Clear();
             cachedRowsFrameByParent.Clear();
+            ArchitectCategoryTab_DesignationTabOnGUI_Patch.InvalidateDesignatorDataCache();
         }
 
         public static void Apply(DesignationCategoryDef mainCat, List<DesignatorCategoryData> designatorDataList)
@@ -118,15 +119,6 @@ namespace BetterArchitect
         {
             if (!cachedRowsByParent.TryGetValue(mainCat.defName, out var cachedRows))
             {
-                return false;
-            }
-
-            if (!cachedRowsFrameByParent.TryGetValue(mainCat.defName, out var cachedFrame) ||
-                Time.frameCount - cachedFrame > SelectionCacheLifetimeFrames)
-            {
-                cachedRowsByParent.Remove(mainCat.defName);
-                cachedVisibleChildIdsByParent.Remove(mainCat.defName);
-                cachedRowsFrameByParent.Remove(mainCat.defName);
                 return false;
             }
 
