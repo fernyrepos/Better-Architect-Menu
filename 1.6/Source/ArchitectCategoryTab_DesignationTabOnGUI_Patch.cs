@@ -28,10 +28,16 @@ namespace BetterArchitect
         private static List<DesignatorCategoryData> cachedRawDesignatorData = null;
         private static DesignationCategoryDef cachedRawDesignatorDataFor = null;
 
+        // Cached floor designator lists — rebuilt only when cachedRawDesignatorDataFor changes.
+        // The set of floor types in the menu never changes mid-session, so this is safe to hold
+        // until the broader designator cache is invalidated (research, map change, etc.).
         private static List<Designator> cachedFloorSpecificDesignators = null;
         private static List<Designator> cachedFloorOrderDesignators = null;
         private static DesignationCategoryDef cachedFloorDesignatorsFor = null;
 
+        // Cached material map and sorted list — rebuilt when floor designators change OR when
+        // enough ticks have passed for map resource availability to have meaningfully changed.
+        // 250 ticks (~4 seconds) matches the granularity of RimWorld's rare-tick events.
         private static Dictionary<MaterialInfo, List<Designator>> cachedFloorsByMaterial = null;
         private static List<MaterialInfo> cachedFloorMaterials = null;
         private static DesignationCategoryDef cachedMaterialsFor = null;
