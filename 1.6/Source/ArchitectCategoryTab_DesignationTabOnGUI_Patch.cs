@@ -27,6 +27,17 @@ namespace BetterArchitect
         public static MaterialInfo selectedMaterial;
         private static List<DesignatorCategoryData> cachedRawDesignatorData = null;
         private static DesignationCategoryDef cachedRawDesignatorDataFor = null;
+
+        private static List<Designator> cachedFloorSpecificDesignators = null;
+        private static List<Designator> cachedFloorOrderDesignators = null;
+        private static DesignationCategoryDef cachedFloorDesignatorsFor = null;
+
+        private static Dictionary<MaterialInfo, List<Designator>> cachedFloorsByMaterial = null;
+        private static List<MaterialInfo> cachedFloorMaterials = null;
+        private static DesignationCategoryDef cachedMaterialsFor = null;
+        private static int cachedMaterialsTick = -1;
+        private const int MaterialCacheTickInterval = 250;
+
         public const float EditToolbarHeight = 28f;
         private const float EditToolbarVerticalPadding = 4f;
         private const float EditToolbarReservedHeight = EditToolbarHeight + EditToolbarVerticalPadding;
@@ -34,6 +45,13 @@ namespace BetterArchitect
         {
             cachedRawDesignatorData = null;
             cachedRawDesignatorDataFor = null;
+            cachedFloorSpecificDesignators = null;
+            cachedFloorOrderDesignators = null;
+            cachedFloorDesignatorsFor = null;
+            cachedFloorsByMaterial = null;
+            cachedFloorMaterials = null;
+            cachedMaterialsFor = null;
+            cachedMaterialsTick = -1;
         }
 
         public static void Reset()
