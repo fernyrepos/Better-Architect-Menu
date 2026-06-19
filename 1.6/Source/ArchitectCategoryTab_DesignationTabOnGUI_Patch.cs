@@ -578,12 +578,27 @@ namespace BetterArchitect
 
         private static List<Designator> DrawMaterialListForFloors(Rect rect, List<Designator> allFloorDesignators)
         {
-            var floorsByMaterial = new Dictionary<MaterialInfo, List<Designator>>();
-            var freeKey = new MaterialInfo("BA.Free".Translate(), Assets.FreeIcon, Color.white, null);
-            foreach (var designator in allFloorDesignators) PopulateMaterials(floorsByMaterial, freeKey, designator);
-            var materials = floorsByMaterial.Keys
-                .OrderBy(m => m.def == null ? 5 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Woody) == true ? 1 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Metallic) == true ? 2 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Stony) == true ? 3 : 4))))
-                .ThenByDescending(m => m.def?.stuffProps?.commonality ?? float.PositiveInfinity).ThenBy(m => m.def?.BaseMarketValue ?? 0).ToList();
+            // Rebuild the material map only when the floor designator set has changed OR when
+            // the tick bucket advances (~4 s), so listerThings availability stays roughly current.
+            // Previously this rebuilt the full dictionary every frame, calling
+            // PopulateMaterials -> GetFloorCosts -> DefDatabase.AllDefs scan + listerThings.ThingsOfDef
+            // for every material of every floor designator on every frame.
+            int tickBucket = GenTicks.TicksGame / MaterialCacheTickInterval;
+            if (cachedFloorsByMaterial == null
+                || cachedMaterialsFor != cachedFloorDesignatorsFor
+                || cachedMaterialsTick != tickBucket)
+            {
+                var floorsByMaterial = new Dictionary<MaterialInfo, List<Designator>>();
+                var freeKey = new MaterialInfo("BA.Free".Translate(), Assets.FreeIcon, Color.white, null);
+                foreach (var designator in allFloorDesignators) PopulateMaterials(floorsByMaterial, freeKey, designator);
+                cachedFloorsByMaterial = floorsByMaterial;
+                cachedFloorMaterials = floorsByMaterial.Keys
+                    .OrderBy(m => m.def == null ? 5 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Woody) == true ? 1 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Metallic) == true ? 2 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Stony) == true ? 3 : 4))))
+                    .ThenByDescending(m => m.def?.stuffProps?.commonality ?? float.PositiveInfinity).ThenBy(m => m.def?.BaseMarketValue ?? 0).ToList();
+                cachedMaterialsFor = cachedFloorDesignatorsFor;
+                cachedMaterialsTick = tickBucket;
+            }
+            var materials = cachedFloorMaterials;
             if ((selectedMaterial == null || !materials.Contains(selectedMaterial)) && materials.Any()) selectedMaterial = materials.First();
             var outRect = rect.ContractedBy(10f);
             var viewRect = new Rect(0, 0, outRect.width - 16f, GetCategoryViewHeight(materials.Count));
@@ -618,7 +633,7 @@ namespace BetterArchitect
                 curY += rowRect.height + 5;
             }
             Widgets.EndScrollView();
-            var result = (selectedMaterial != null && floorsByMaterial.ContainsKey(selectedMaterial)) ? floorsByMaterial[selectedMaterial] : new List<Designator>();
+            var result = (selectedMaterial != null && cachedFloorsByMaterial.ContainsKey(selectedMaterial)) ? cachedFloorsByMaterial[selectedMaterial] : new List<Designator>();
             if (selectedMaterial?.def != null)
             {
                 foreach (var designator in result)
