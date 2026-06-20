@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AreaSpawnerToxicGas"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AreaSpawnerMechVirusGas"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AreaSpawnerAntibugGas"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AreaSpawnerSleepGas"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="AreaSpawnerRageGas"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+</Patch>

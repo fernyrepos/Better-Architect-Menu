@@ -1037,6 +1037,20 @@
     <li IfModActive="rang.screamforcream">Mods and Shit/Scream For Cream</li>
     <li IfModActive="mo.decorationsluxury">Mods and Shit/Decorations And Dishes At Gorgeous Banquet</li>
     <li IfModActive="CN.DecoyDummies">Mods and Shit/Decoy Dummies</li>
+    <li IfModActive="DeeColon.Anomalies.Main">Mods and Shit/Dees Anomalies</li>
+    <li IfModActive="com.distman.gastrap">Mods and Shit/Gas Traps and Shells</li>
+    <li IfModActive="BiomesTeam.BiomesCaverns">Mods and Shit/Biomes Caverns</li>
+    <li IfModActive="TitaniusRex.RiverEnergy">Mods and Shit/River Energy</li>
+    <li IfModActive="Tolgrim.ThermalWellExcavation">Mods and Shit/Thermal Well Excavation</li>
+    <li IfModActive="JGH.MechanoidBench3">Mods and Shit/Mechanoid Bench 3</li>
+    <li IfModActive="leion247153.CulturedHMeat">Mods and Shit/Cultured Meat</li>
+    <li IfModActive="Xenon.ss14onrim">Mods and Shit/Space Station 14 Rim</li>
+    <li IfModActive="FluffyTowels.StandingCryptosleepCasket">Mods and Shit/Standing Cryptopods</li>
+    <li IfModActive="WexMan.TrainingConsole1.2">Mods and Shit/Training Console</li>
+    <li IfModActive="dornan.hellpod">Mods and Shit/Buildable Ancient Transport Pods</li>
+    <li IfModActive="Mlie.MiningCoMMS">Mods and Shit/MiningCo MMS</li>
+    <li IfModActive="RedBaronFlyer.RedsTweaks.CraftableUrns">Mods and Shit/Craftable Urns</li>
+    <li IfModActive="SOA.compactworkbenches">Mods and Shit/Vanilla Gravship Expanded - Expanded</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

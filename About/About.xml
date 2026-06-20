@@ -981,6 +981,20 @@
     <li>zwei2stein.pyrinthstove</li>
     <li>rang.screamforcream</li>
     <li>CN.DecoyDummies</li>
+    <li>DeeColon.Anomalies.Main</li>
+    <li>com.distman.gastrap</li>
+    <li>BiomesTeam.BiomesCaverns</li>
+    <li>TitaniusRex.RiverEnergy</li>
+    <li>Tolgrim.ThermalWellExcavation</li>
+    <li>JGH.MechanoidBench3</li>
+    <li>leion247153.CulturedHMeat</li>
+    <li>Xenon.ss14onrim</li>
+    <li>FluffyTowels.StandingCryptosleepCasket</li>
+    <li>WexMan.TrainingConsole1.2</li>
+    <li>dornan.hellpod</li>
+    <li>Mlie.MiningCoMMS</li>
+    <li>RedBaronFlyer.RedsTweaks.CraftableUrns</li>
+    <li>SOA.compactworkbenches</li>
 	<!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

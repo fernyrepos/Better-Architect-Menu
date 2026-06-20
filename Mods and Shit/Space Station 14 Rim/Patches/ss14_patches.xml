@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="SS_wall_base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="SD_DoorBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="SD_DoorBaseAirlockStandard"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="SD_DoorBaseAirlockGlass"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="SD_GlassAirlockBasic"]</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[@Name="SD_StandardAirlockBasic"]</xpath>
+		<value>
+			<designationCategory>Ferny_Doors</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/TerrainDef[@Name="SS14_floor_base"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsMetal</designationCategory>
+		</value>
+	</Operation>
+	
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SS_wall_solid"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Walls</designationCategory>
+		</value>
+	</Operation>
+</Patch>

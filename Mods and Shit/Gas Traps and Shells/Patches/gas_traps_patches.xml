@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GasTrap"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GasTrapRage"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GasTrapSleepGas"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GasTrapTearGas"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GasTrapFearGas"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GasTrapAcid"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GasTrapMechanoidVirus"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="GasTrapAntiBugGas"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Traps</designationCategory>
+		</value>
+	</Operation>
+</Patch>
