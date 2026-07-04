@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>              
+
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="PlanningExtended"]/label</xpath>
+                    <value>
+                        <label>Plan</label>
+                    </value>
+                </Operation>    
+
+
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/DesignationCategoryDef[defName="PlanningExtended"]/order</xpath>
                     <value>

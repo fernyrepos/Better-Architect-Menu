@@ -127,4 +127,12 @@
 		</match>
 	</Operation>
 
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VMF_WirelessTransmitter"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_PlatformTransport</designationCategory>
+    </value>
+</Operation>
+
 </Patch>

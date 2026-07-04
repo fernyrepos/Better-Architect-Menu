@@ -1038,5 +1038,16 @@
     <li IfModActive="mo.decorationsluxury">Mods and Shit/Decorations And Dishes At Gorgeous Banquet</li>
     <li IfModActive="CN.DecoyDummies">Mods and Shit/Decoy Dummies</li>
     <!-- (Add new mods here ^^^^^) -->
+    <li IfModActive="gogatio.dronefactory.addon">Mods and Shit/VQE Drone Factory Add-On</li>
+    <li IfModActive="lts.i">Mods and Shit/Integrated Implants</li>
+    <li IfModActive="vexedtrees980.rimgnoblinsbiotech">Mods and Shit/Rim-Gnoblins</li>
+    <li IfModActive="cn.moreusefulmaterials">Mods and Shit/More Useful Materials</li>
+    <li IfModActive="onofre150.me.vaccines">Mods and Shit/Medical Expansion - Vaccines</li>
+    <li IfModActive="blues.forge">Mods and Shit/Dynamic Effects Forge</li>
+    <li IfModActive="borsh.logicswitches">Mods and Shit/Logic Switch</li>
+    <li IfModActive="biomesteam.biomesbees">Mods and Shit/Biomes Bees</li>
+    <li IfModActive="forti.rimjoust">Mods and Shit/RimJoust</li>
+    <li IfModActive="Matathias.Empire">Mods and Shit/Empire Refactored</li>
+    <li IfModActive="chezhou.Building.Skinner">Mods and Shit/Skinner</li>
   </v1.6>
 </loadFolders>

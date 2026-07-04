@@ -981,6 +981,17 @@
     <li>zwei2stein.pyrinthstove</li>
     <li>rang.screamforcream</li>
     <li>CN.DecoyDummies</li>
+    <li>gogatio.dronefactory.addon</li>
+    <li>lts.I</li>
+    <li>VexedTrees980.RimGnoblinsBiotech</li>
+    <li>CN.MoreUsefulMaterials</li>
+    <li>onofre150.me.vaccines</li>
+    <li>blues.forge</li>
+    <li>Borsh.LogicSwitches</li>
+    <li>als.gravtech.bc</li>
+    <li>biomesteam.biomesbees</li>
+    <li>forti.rimjoust</li>
+    <li>Matathias.Empire</li>
 	<!-- (Add new mods here ^^^^^) -->
-    </loadAfter>
+</loadAfter>
 </ModMetaData>

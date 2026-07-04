@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/DesignationCategoryDef[defName="Ferny_Farming"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="BMT_MeadBarrel"]/designationCategory</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BMT_MeadBarrel"]/designationCategory</xpath>
+            <value>
+              <designationCategory>Ferny_Kitchen</designationCategory>
+            </value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="BMT_MedievalApiary"]/designationCategory</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BMT_MedievalApiary"]/designationCategory</xpath>
+            <value>
+              <designationCategory>Ferny_Farming</designationCategory>
+            </value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="BMT_IndustrialApiary"]/designationCategory</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BMT_IndustrialApiary"]/designationCategory</xpath>
+            <value>
+              <designationCategory>Ferny_Farming</designationCategory>
+            </value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="BMT_UltratechApiary"]/designationCategory</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BMT_UltratechApiary"]/designationCategory</xpath>
+            <value>
+              <designationCategory>Ferny_Farming</designationCategory>
+            </value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="BMT_BeeswaxCandle"]/designationCategory</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BMT_BeeswaxCandle"]/designationCategory</xpath>
+            <value>
+              <designationCategory>Ferny_Lighting</designationCategory>
+            </value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="BMT_BeeswaxFancyCandle"]/designationCategory</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BMT_BeeswaxFancyCandle"]/designationCategory</xpath>
+            <value>
+              <designationCategory>Ferny_Lighting</designationCategory>
+            </value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="BMT_BeeswaxCandlestick"]/designationCategory</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BMT_BeeswaxCandlestick"]/designationCategory</xpath>
+            <value>
+              <designationCategory>Ferny_Lighting</designationCategory>
+            </value>
+          </match>
+        </li>
+
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="BMT_BeeswaxCandelabra"]/designationCategory</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="BMT_BeeswaxCandelabra"]/designationCategory</xpath>
+            <value>
+              <designationCategory>Ferny_Lighting</designationCategory>
+            </value>
+          </match>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>
