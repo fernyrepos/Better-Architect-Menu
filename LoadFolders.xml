@@ -267,6 +267,7 @@
     <li IfModActive="MrHydralisk.VOEPowerGrid">Mods and Shit/MrHydralisk/VOE Power Grid</li>
     <li IfModActive="MrHydralisk.AnomaliesExpected">Mods and Shit/MrHydralisk/Anomalies Expected</li>
     <li IfModActive="MrHydralisk.UndergroundVault">Mods and Shit/MrHydralisk/Underground Vault</li>
+    <li IfModActive="MrHydralisk.AirshipsFleet">Mods and Shit/MrHydralisk/Airships Fleet</li>
     <li IfModActive="windwardsnow.mechanitorweapons">Mods and Shit/Mechanitor Weapons</li>
     <li IfModActive="mjeiouws.outlander.continuouscontention">Mods and Shit/Outlander Solutions Continuous Contention</li>
     <li IfModActive="mlie.jwlatmosphericwaterprocessor">Mods and Shit/Atmospheric Water Processor</li>
