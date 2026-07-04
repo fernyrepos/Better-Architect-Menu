@@ -262,7 +262,11 @@
     <li IfModActive="ilyvion.colonymanagerredux">Mods and Shit/Colony Manager Redux</li>
     <li IfModActive="aelanna.eccentrictech.defensegrid">Mods and Shit/Eccentric Tech Defense Grid</li>
     <li IfModActive="aelanna.eccentrictech.fusionpower">Mods and Shit/Eccentric Tech Fusion Power</li>
-    <li IfModActive="mrhydralisk.complementaryodyssey">Mods and Shit/Complementary Odyssey</li>
+    <li IfModActive="MrHydralisk.ComplementaryOdyssey">Mods and Shit/MrHydralisk/Complementary Odyssey</li>
+    <li IfModActive="MrHydralisk.VNPEReimaginedProgression">Mods and Shit/MrHydralisk/VNPE Reimagined Progression</li>
+    <li IfModActive="MrHydralisk.VOEPowerGrid">Mods and Shit/MrHydralisk/VOE Power Grid</li>
+    <li IfModActive="MrHydralisk.AnomaliesExpected">Mods and Shit/MrHydralisk/Anomalies Expected</li>
+    <li IfModActive="MrHydralisk.UndergroundVault">Mods and Shit/MrHydralisk/Underground Vault</li>
     <li IfModActive="windwardsnow.mechanitorweapons">Mods and Shit/Mechanitor Weapons</li>
     <li IfModActive="mjeiouws.outlander.continuouscontention">Mods and Shit/Outlander Solutions Continuous Contention</li>
     <li IfModActive="mlie.jwlatmosphericwaterprocessor">Mods and Shit/Atmospheric Water Processor</li>
@@ -311,7 +315,6 @@
     <li IfModActive="neronix17.geothermalcooler">Mods and Shit/Geothermal Coolers</li>
     <li IfModActive="HT.LUNARTIKA">Mods and Shit/Heavy Truck</li>
     <li IfModActive="GHOST.RootsofRimworld">Mods and Shit/Roots of Rimworld</li>
-    <li IfModActive="MrHydralisk.VNPEReimaginedProgression">Mods and Shit/VE Nutrient Paste Expanded</li>
     <li IfModActive="vin.warehouse.storage.corpse">Mods and Shit/Warehouse Storage Corpses</li>
     <li IfModActive="drilledhead.MyDogsHouse">Mods and Shit/MyDogsHouse</li>
     <li IfModActive="JTCsBonereapers.FormerlyPPHHYY">Mods and Shit/BoneReapers Remarrowed</li>
@@ -375,7 +378,6 @@
     <li IfModActive="rx97.mapvehicles">Mods and Shit/RX97 Simple Raft</li>
     <li IfModActive="mo.technicalvehicles">Mods and Shit/Technical Vehicles</li>
     <li IfModActive="mo.technicalmapvehicles">Mods and Shit/Technical Map Vehicles</li>
-    <li IfModActive="mrhydralisk.voepowergrid">Mods and Shit/VE Outposts Power Grid</li>
     <li IfModActive="oels.vehiclemapframework">Mods and Shit/Vehicle Map Framework</li>
     <li IfModActive="mingtuwuxiang.fishingdecorative">Mods and Shit/MUS FishingDecorative</li>                              <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.gothicdecorative">Mods and Shit/MUS Gothicstyle Vampire Furniture</li>                   <!-- Progression: Aesthetics compat -->
@@ -472,7 +474,6 @@
     <li IfModActive="bart.atg">Mods and Shit/Advanced Toxifier Generator</li>
     <li IfModActive="redmattis.geneextractor">Mods and Shit/Gene Extractor Tiers</li>                                       <!-- Implicit support for Gene Nodes - Genes for Sale -->
     <li IfModActive="scorpio.biotechnology">Mods and Shit/Biotechnology</li>
-    <li IfModActive="mrhydralisk.anomaliesexpected">Mods and Shit/Anomalies Expected</li>
     <li IfModActive="aoba.rimthunder.redarmy.coldfront">Mods and Shit/RimThunder Cold Front</li>
     <li IfModActive="rimthunderteams.rimthunder.flyingchariot">Mods and Shit/RimThunder Flying Chariot</li>
     <li IfModActive="aoba.rimthunder.roca">Mods and Shit/RimThunder Roaring Tiger</li>
