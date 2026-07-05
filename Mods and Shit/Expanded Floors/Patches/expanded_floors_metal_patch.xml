@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDMetalSheets"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDStripedMetalTile"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDPatternedMetalTile"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDMetalCheckTile"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDHexMetalFloor"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDSilverCheckTile"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDSilverTileHex"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDGoldCheckTile"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDGodlTileHex"]</xpath><!--'correctly' spelled as of 05/30/2026-->
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDPlasteelTile"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDPlasteelTileHex"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDCheckSterileTile"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/TerrainDef[defName="WDHexSterileTile"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsMetal</designationCategory>
+        </value>
+	</Operation>
+
+
+</Patch>
