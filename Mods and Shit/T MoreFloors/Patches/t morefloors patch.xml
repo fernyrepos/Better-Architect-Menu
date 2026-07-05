@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Remove More Floors category -->
+	
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/designationCategoryDef[defName="MoreFloors"]</xpath>
+    </Operation>
+
+    <!-- Change Category to Default Floors -->
+	
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/TerrainDef[@Name="FloorPlasteel"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/TerrainDef[@Name="TFloorBaseGemstone"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+	
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/TerrainDef[@Name="TFloorBaseStone"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+	
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/TerrainDef[@Name="TFloorBaseWood"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Floors</designationCategory>
+        </value>
+    </Operation>
+	
+</Patch>
