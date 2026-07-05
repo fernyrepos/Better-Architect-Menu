@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Change Category -->
+	
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="NeolithicDesk"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Childhood</designationCategory>
+        </value>
+    </Operation>
+	
+	<Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="NeolithicBlackboard"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Childhood</designationCategory>
+        </value>
+    </Operation>
+	
+</Patch>

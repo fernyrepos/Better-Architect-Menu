@@ -1063,5 +1063,9 @@
     <li IfModActive="forti.rimjoust">Mods and Shit/RimJoust</li>
     <li IfModActive="Matathias.Empire">Mods and Shit/Empire Refactored</li>
     <li IfModActive="chezhou.Building.Skinner">Mods and Shit/Skinner</li>
+    <li IfModActive="moistestWhale.CeilingTradeBeacon">Mods and Shit/Ceiling Mounted Orbital Trade Beacon</li>
+    <li IfModActive="hol.neolstuff">Mods and Shit/Neolithic Desk and Blackboard</li>
+    <li IfModActive="Meltup.NopowerCommsSimplified">Mods and Shit/Nopower Comms Simplified</li>
+    <li IfModActive="Telkir.TMods.MoreFloors">Mods and Shit/T MoreFloors</li>
   </v1.6>
 </loadFolders>
