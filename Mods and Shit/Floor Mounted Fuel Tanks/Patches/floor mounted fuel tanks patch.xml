@@ -45,7 +45,31 @@
     </match>
     </Operation>
 
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Nutrient Paste Expanded</li>
+        </mods>
 
+        <match Class="PatchOperationSequence">
+            <operations>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="UFST_NutrientPasteTank"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="UFST_NutrientPasteTankLarge"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+                </value>
+            </li>
+
+            </operations>
+        </match>
+    </Operation>
 
 
 

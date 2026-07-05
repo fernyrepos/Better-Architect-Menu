@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+    <!--Mod patches base urn, so we want to modify that as well.-->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Urn"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Memorial</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>

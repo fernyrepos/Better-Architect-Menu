@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SOA_CompactCarvingBench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SOA_CompactRecyclingBench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
+		</value>
+	</Operation>
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="SOA_CompactMendingBench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
