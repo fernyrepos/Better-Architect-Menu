@@ -668,6 +668,16 @@
 			<designationCategory>Ferny_SpacePower</designationCategory>
 		</value>
 	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VGE_CapacitorHarmonizer"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VGE_CapacitorHarmonizer"]/designationCategory</xpath>
+			<value>
+				<designationCategory>Ferny_SpacePower</designationCategory>
+			</value>
+		</match>
+	</Operation>
 	
 
 <!-- POWER STORAGE -->

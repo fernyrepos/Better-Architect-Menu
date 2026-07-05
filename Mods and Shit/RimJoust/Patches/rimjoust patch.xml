@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>          
+<Patch>       
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="RimJoust_SpotBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Jousting</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="RimJoust_StagingPostBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Jousting</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RimJoust_LiceBarrier"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Jousting</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RimJoust_Quintain"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Jousting</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RimJoust_RecoverySpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Jousting</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="RimJoust_RecoverySpot"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Jousting</designationCategory>
+                    </value>
+                </Operation>
+</Patch>

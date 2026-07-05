@@ -26,14 +26,6 @@
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="VGE_GunnerSubpersonaCore"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_SpaceCombat</designationCategory>
-		</value>
-	</Operation>
-	
 	
 	<!-- Research -->
 	<Operation Class="PatchOperationReplace">
@@ -57,60 +49,6 @@
 		<xpath>Defs/ThingDef[defName="GTbc_MaintenanceDevice"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_SpacePlatform</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="VGE_MaintenanceHub"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_SpacePlatform</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="VGE_GravshipBlackBox"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_SpacePlatform</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="VGE_FlightComputer"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_SpacePlatform</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="PilotSubpersonaCore"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_SpacePlatform</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="VGE_Gravlift"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_SpacePlatform</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="VGE_Astropurifier"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
-		</value>
-	</Operation>
-	
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="FuelOptimizer"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_AstrofuelNetwork</designationCategory>
 		</value>
 	</Operation>
 	
@@ -151,14 +89,6 @@
 		</value>
 	</Operation>
 	
-		<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="VGE_OxygenReclaimer"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_SpaceVacuum</designationCategory>
-		</value>
-	</Operation>
-	
 	<!-- POWER -->
 		<Operation Class="PatchOperationReplace">
 		<success>Always</success>
@@ -168,14 +98,4 @@
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationReplace">
-		<success>Always</success>
-		<xpath>Defs/ThingDef[defName="VGE_CapacitorHarmonizer"]/designationCategory</xpath>
-		<value>
-			<designationCategory>Ferny_SpacePower</designationCategory>
-		</value>
-	</Operation>
-	
-	
-
 </Patch>

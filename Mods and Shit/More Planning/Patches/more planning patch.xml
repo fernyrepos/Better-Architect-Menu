@@ -2,6 +2,13 @@
 <Patch>              
 
 
+               <Operation Class="PatchOperationReplace">
+                    <xpath>Defs/DesignationCategoryDef[defName="Planning"]/label</xpath>
+                    <value>
+                        <label>Plan</label>
+                    </value>
+                </Operation>    
+
 <!-- Special -->   
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/DesignationCategoryDef[defName="Planning"]/order</xpath>

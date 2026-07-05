@@ -11,4 +11,12 @@
                 </Operation>
 
 
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="PyrinthStove_PyrinthSmithy"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_Production</designationCategory>
+    </value>
+</Operation>
+
 </Patch>

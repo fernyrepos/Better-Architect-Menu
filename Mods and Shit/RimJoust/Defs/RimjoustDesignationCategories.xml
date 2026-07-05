@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Jousting</defName>
+    <label>Jousting</label>
+    <description>Build jousting arenas.</description>
+    <order>7</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Hosting</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+</Defs>
