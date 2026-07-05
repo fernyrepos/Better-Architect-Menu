@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Change Category -->
+	
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="TradeMarker"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Outreach</designationCategory>
+        </value>
+    </Operation>
+	
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BirdPostCage"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Outreach</designationCategory>
+        </value>
+    </Operation>
+	
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BirdPostMessageTable"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Outreach</designationCategory>
+        </value>
+    </Operation>
+	
+</Patch>

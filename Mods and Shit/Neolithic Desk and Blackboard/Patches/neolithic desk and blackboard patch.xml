@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <!-- Change Category to Default Floors -->
+    <!-- Change Category -->
 	
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="NeolithicDesk"]/designationCategory</xpath>
