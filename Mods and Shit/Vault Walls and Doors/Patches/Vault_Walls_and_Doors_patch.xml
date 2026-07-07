@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VaultWall"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+	</Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VaultVent"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_AirManagement</designationCategory>
+        </value>
+	</Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="VaultEmbrasure"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Walls</designationCategory>
+        </value>
+	</Operation>
+
+    <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="VaultDoorBase"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Doors</designationCategory>
+        </value>
+	</Operation>
+
+
+
+</Patch>
