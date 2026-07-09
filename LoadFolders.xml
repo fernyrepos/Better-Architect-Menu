@@ -1097,6 +1097,7 @@
     <li IfModActive="hol.neolstuff">Mods and Shit/Neolithic Desk and Blackboard</li>
     <li IfModActive="Meltup.NopowerCommsSimplified">Mods and Shit/Nopower Comms Simplified</li>
     <li IfModActive="Telkir.TMods.MoreFloors">Mods and Shit/T MoreFloors</li>
+    <li IfModActive="Skyl3lazer.DigitalStorage">Mods and Shit/Digital Storage</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
