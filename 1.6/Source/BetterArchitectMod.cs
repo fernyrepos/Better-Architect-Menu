@@ -28,6 +28,7 @@ namespace BetterArchitect
         {
             settings = GetSettings<BetterArchitectSettings>();
             BetterArchitectSettings.mod = this;
+            VefHiddenDesignatorCache.Initialize();
             EditModeRuntime.Initialize();
         }
 

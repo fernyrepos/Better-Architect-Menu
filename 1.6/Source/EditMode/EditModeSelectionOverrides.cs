@@ -176,11 +176,12 @@ namespace BetterArchitect
                 return new List<Designator>();
             }
 
-            return def.ResolvedAllowedDesignators.Where(d => d.Visible).ToList();
+            return VefHiddenDesignatorCache.FilterDesignators(def.ResolvedAllowedDesignators).Where(d => d.Visible).ToList();
         }
 
         private static List<Designator> BuildEffectiveDesignators(string categoryId, List<Designator> defaults)
         {
+            defaults = VefHiddenDesignatorCache.FilterDesignatorsToList(defaults);
             var entry = EditModeRuntime.GetCategoryOverride(categoryId);
             if (entry == null)
             {
@@ -233,6 +234,11 @@ namespace BetterArchitect
 
                 foreach (var defName in entry.buildableDefNames)
                 {
+                    if (VefHiddenDesignatorCache.IsHidden(defName))
+                    {
+                        continue;
+                    }
+
                     if (currentByDefName.TryGetValue(defName, out var existing))
                     {
                         if (!buildables.Contains(existing))
@@ -446,7 +452,7 @@ namespace BetterArchitect
         private static Designator CreateBuildableDesignator(string defName)
         {
             var def = DefDatabase<BuildableDef>.GetNamedSilentFail(defName);
-            if (def == null)
+            if (def == null || VefHiddenDesignatorCache.IsHidden(def))
             {
                 return null;
             }

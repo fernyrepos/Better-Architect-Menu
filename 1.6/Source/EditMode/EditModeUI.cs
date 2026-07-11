@@ -907,6 +907,11 @@ namespace BetterArchitect
                     continue;
                 }
 
+                if (VefHiddenDesignatorCache.IsHidden(def))
+                {
+                    continue;
+                }
+
                 var label = def.LabelCap.ToString();
                 if (label.NullOrEmpty())
                 {

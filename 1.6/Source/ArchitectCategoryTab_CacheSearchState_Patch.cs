@@ -20,7 +20,7 @@ namespace BetterArchitect
             
             foreach (var nestedCategory in nestedCategories)
             {
-                foreach (var designator in nestedCategory.ResolvedAllowedDesignators)
+                foreach (var designator in VefHiddenDesignatorCache.FilterDesignators(nestedCategory.ResolvedAllowedDesignators))
                 {
                     if (__instance.quickSearchFilter.Matches(designator.Label))
                     {

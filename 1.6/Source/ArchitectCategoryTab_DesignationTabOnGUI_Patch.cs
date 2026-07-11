@@ -252,7 +252,7 @@ namespace BetterArchitect
                 var freshData = new List<DesignatorCategoryData>();
                 foreach (var cat in allCats)
                 {
-                    var allDesignators = cat.ResolvedAllowedDesignators.Where(d => d.Visible).ToList();
+                    var allDesignators = VefHiddenDesignatorCache.FilterDesignators(cat.ResolvedAllowedDesignators).Where(d => d.Visible).ToList();
                     var (buildables, orders) = SeparateDesignatorsByType(allDesignators, cat);
                     freshData.Add(new DesignatorCategoryData(cat, cat == tab.def, allDesignators, buildables, orders));
                 }
@@ -326,7 +326,9 @@ namespace BetterArchitect
                 if (IsBlueprintCategory(category))
                 {
                     var sourceDef = DefDatabase<DesignationCategoryDef>.GetNamedSilentFail(category.defName) ?? category;
-                    var blueprintDesignators = sourceDef.ResolvedAllowedDesignators?.Where(d => d.Visible).ToList() ?? new List<Designator>();
+                    var blueprintDesignators = sourceDef.ResolvedAllowedDesignators != null
+                        ? VefHiddenDesignatorCache.FilterDesignators(sourceDef.ResolvedAllowedDesignators).Where(d => d.Visible).ToList()
+                        : new List<Designator>();
                     var separated = SeparateDesignatorsByType(blueprintDesignators, sourceDef);
                     designatorsToDisplay = separated.buildables;
                     orderDesignators = separated.orders;
@@ -593,6 +595,7 @@ namespace BetterArchitect
 
         private static Designator DrawDesignatorGrid(Rect rect, DesignationCategoryDef category, List<Designator> designators)
         {
+            designators = VefHiddenDesignatorCache.FilterDesignatorsToList(designators);
             if (!BetterArchitectSettings.sortSettingsPerCategory.ContainsKey(category.defName)) BetterArchitectSettings.sortSettingsPerCategory[category.defName] = new SortSettings();
             bool isEditModeEnabled = IsEditModeEnabledFor(category);
 
@@ -933,6 +936,7 @@ namespace BetterArchitect
 
         private static Designator DrawOrdersPanel(Rect rect, List<Designator> designators, DesignationCategoryDef category)
         {
+            designators = VefHiddenDesignatorCache.FilterDesignatorsToList(designators);
             var gizmoSize = 75f;
             var gizmoSpacing = 5f;
             var rowHeight = gizmoSize + gizmoSpacing + 5f;
