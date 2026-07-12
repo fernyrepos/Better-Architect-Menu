@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_UndergroundStorage</defName>
+		<label>Underground</label>
+		<description>Build deep underground storage.</description>
+		<order>7</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+			<li>Designator_ZoneAddStockpile_Resources</li>
+			<li>Designator_ZoneAddStockpile_Dumping</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Storage</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+</Defs>
