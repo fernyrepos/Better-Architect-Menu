@@ -1097,6 +1097,7 @@
     <li IfModActive="hol.neolstuff">Mods and Shit/Neolithic Desk and Blackboard</li>
     <li IfModActive="Meltup.NopowerCommsSimplified">Mods and Shit/Nopower Comms Simplified</li>
     <li IfModActive="Telkir.TMods.MoreFloors">Mods and Shit/T MoreFloors</li>
+    <li IfModActive="veterano.mythicages.megafaunabestiary">Mods and Shit/Mythic Ages Megafauna Bestiary</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
