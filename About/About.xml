@@ -1021,6 +1021,7 @@
 	<li>AOBA.USAC.Core</li>
 	<li>QX.AstraMilitarum</li>
 	<li>QX.AstraMilitarum.ServoSkull</li>
+	<li>Joedox.CryptoCraftable.Fr</li>
 	<!-- (Add new mods here ^^^^^) -->
 </loadAfter>
 </ModMetaData>

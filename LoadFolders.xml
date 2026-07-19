@@ -1107,6 +1107,7 @@
     <li IfModActive="AOBA.USAC.Core">Mods and Shit/Ascension Megacorp</li>
     <li IfModActive="QX.AstraMilitarum">Mods and Shit/Astra Militarum Imperial Guard</li>
     <li IfModActive="QX.AstraMilitarum.ServoSkull">Mods and Shit/Astra Militarum ServoSkull</li>
+    <li IfModActive="Joedox.CryptoCraftable.Fr">Mods and Shit/Crypto-Tech Craftable</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
