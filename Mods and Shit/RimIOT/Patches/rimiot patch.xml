@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="RimIOT_Cable" or defName="RimIOT_InputConnector" or defName="RimIOT_Interface")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Logistics</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="RimIOT_Cable" or defName="RimIOT_InputConnector" or defName="RimIOT_Interface") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Logistics</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>/Defs/DesignationCategoryDef[defName="RimIOT_Category"]</xpath>
+  </Operation>
+</Patch>

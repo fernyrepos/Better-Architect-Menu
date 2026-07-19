@@ -1026,6 +1026,7 @@
 	<li>Grimworld.AspectusImperialis</li>
 	<li>Grimworld.Core</li>
 	<li>Grimworld.AstraMilitarum</li>
+	<li>CN.RimIOT</li>
 	<!-- (Add new mods here ^^^^^) -->
 </loadAfter>
 </ModMetaData>
