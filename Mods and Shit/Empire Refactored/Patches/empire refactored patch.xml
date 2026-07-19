@@ -1,26 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="Empire"]/order</xpath>
-                    <value>
-                        <order>2</order>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="Empire"]</xpath>
-                    <value>
-                        <modExtensions>
-                        <li Class="BetterArchitect.NestedCategoryExtension">
-                            <parentCategory>Ferny_Colony</parentCategory>
-                        </li>
-                        </modExtensions>
-                    </value>
-                </Operation>
-
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="CapitalSpot"]/designationCategory</xpath>
@@ -36,4 +15,23 @@
                         <designationCategory>Ferny_ColonyLocations</designationCategory>
                     </value>
                 </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="EmpirePowerGenerator"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="EmpirePowerGenerator" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>/Defs/DesignationCategoryDef[defName="Empire"]</xpath>
+  </Operation>
 </Patch>
