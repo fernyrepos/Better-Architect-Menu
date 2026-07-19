@@ -1102,6 +1102,7 @@
     <li IfModActive="FrozenSnowFox.BetterSpikeTraps">Mods and Shit/Better Spike Traps</li>
     <li IfModActive="tradingpost.programmerlily.com">Mods and Shit/PL Trading Spot</li>
     <li IfModActive="TW.IS.IndustrialismStyle">Mods and Shit/Industrialism Style</li>
+    <li IfModActive="Mlie.AmnabisFlags">Mods and Shit/Amnabi's Flags</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
