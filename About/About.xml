@@ -1025,6 +1025,7 @@
 	<li>wuhuansuiyue.defensivenetworkexpanded</li>
 	<li>Grimworld.AspectusImperialis</li>
 	<li>Grimworld.Core</li>
+	<li>Grimworld.AstraMilitarum</li>
 	<!-- (Add new mods here ^^^^^) -->
 </loadAfter>
 </ModMetaData>
