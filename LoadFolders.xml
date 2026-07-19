@@ -1105,6 +1105,7 @@
     <li IfModActive="Mlie.AmnabisFlags">Mods and Shit/Amnabi's Flags</li>
     <li IfModActive="XMB.AmorphousStylePack.MO">Mods and Shit/Amorphous Style Pack</li>
     <li IfModActive="AOBA.USAC.Core">Mods and Shit/Ascension Megacorp</li>
+    <li IfModActive="QX.AstraMilitarum">Mods and Shit/Astra Militarum Imperial Guard</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
