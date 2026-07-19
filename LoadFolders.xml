@@ -1110,6 +1110,7 @@
     <li IfModActive="Joedox.CryptoCraftable.Fr">Mods and Shit/Crypto-Tech Craftable</li>
     <li IfModActive="wuhuansuiyue.defensivenetworkexpanded">Mods and Shit/Defensive Network</li>
     <li IfModActive="Grimworld.AspectusImperialis">Mods and Shit/GrimWorld Aspectus Imperialis</li>
+    <li IfModActive="Grimworld.Core">Mods and Shit/GrimWorld Core Imperialis</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
