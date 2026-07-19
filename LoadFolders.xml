@@ -1115,6 +1115,7 @@
     <li IfModActive="CN.RimIOT">Mods and Shit/RimIOT</li>
     <li IfModActive="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Mods and Shit/Segmentum Children of the Omnissiah</li>
     <li IfModActive="REDACTED.Segmentum.Core">Mods and Shit/Segmentum Core</li>
+    <li IfModActive="Albion.SparklingWorlds.Full">Mods and Shit/Sparkling Worlds</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
