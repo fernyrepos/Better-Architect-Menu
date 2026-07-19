@@ -1113,6 +1113,7 @@
     <li IfModActive="Grimworld.Core">Mods and Shit/GrimWorld Core Imperialis</li>
     <li IfModActive="Grimworld.AstraMilitarum">Mods and Shit/GrimWorld Hammer of the Imperium</li>
     <li IfModActive="CN.RimIOT">Mods and Shit/RimIOT</li>
+    <li IfModActive="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Mods and Shit/Segmentum Children of the Omnissiah</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
