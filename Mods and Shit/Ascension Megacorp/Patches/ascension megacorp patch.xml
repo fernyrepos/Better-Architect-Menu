@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="USAC_CorpseBag"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_GeneralStorage</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="USAC_CorpseBag" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_GeneralStorage</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="USAC_HESCO"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Walls</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="USAC_HESCO" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Walls</designationCategory>
+    </value>
+  </Operation>
+</Patch>
