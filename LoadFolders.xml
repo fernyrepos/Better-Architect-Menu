@@ -1100,6 +1100,7 @@
     <li IfModActive="veterano.mythicages.megafaunabestiary">Mods and Shit/Mythic Ages Megafauna Bestiary</li>
     <li IfModActive="dracora.powerthrone">Mods and Shit/Power Throne</li>
     <li IfModActive="FrozenSnowFox.BetterSpikeTraps">Mods and Shit/Better Spike Traps</li>
+    <li IfModActive="tradingpost.programmerlily.com">Mods and Shit/PL Trading Spot</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
