@@ -1028,6 +1028,7 @@
 	<li>Grimworld.AstraMilitarum</li>
 	<li>CN.RimIOT</li>
 	<li>REDACTED.Segmentum.ChildrenOfTheOmnissiah</li>
+	<li>REDACTED.Segmentum.Core</li>
 	<!-- (Add new mods here ^^^^^) -->
 </loadAfter>
 </ModMetaData>
