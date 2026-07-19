@@ -1108,6 +1108,7 @@
     <li IfModActive="QX.AstraMilitarum">Mods and Shit/Astra Militarum Imperial Guard</li>
     <li IfModActive="QX.AstraMilitarum.ServoSkull">Mods and Shit/Astra Militarum ServoSkull</li>
     <li IfModActive="Joedox.CryptoCraftable.Fr">Mods and Shit/Crypto-Tech Craftable</li>
+    <li IfModActive="wuhuansuiyue.defensivenetworkexpanded">Mods and Shit/Defensive Network</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
