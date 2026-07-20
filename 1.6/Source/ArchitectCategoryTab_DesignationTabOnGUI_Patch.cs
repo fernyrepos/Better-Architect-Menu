@@ -36,6 +36,16 @@ namespace BetterArchitect
             cachedRawDesignatorDataFor = null;
         }
 
+        internal static void InvalidateResearchSensitiveCaches()
+        {
+            InvalidateDesignatorDataCache();
+            cachedSortedDesignators.Clear();
+            categorySearchMatches.Clear();
+            lastSearchText = null;
+            EditModeSelectionOverrides.ClearSelectionCache();
+            DesignatorSearchCache.Invalidate();
+        }
+
         public static void Reset()
         {
             selectedCategory.Clear();
