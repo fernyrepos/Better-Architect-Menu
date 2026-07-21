@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="AMN_WallFlag"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_DecoHanging</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="AMN_WallFlag" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_DecoHanging</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="AMN_PoleFlag" or defName="AMN_PoleFlagTall" or defName="AMN_PoleFlagTallVertical" or defName="AMN_PoleFlagVertical")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_DecoOutdoor</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="AMN_PoleFlag" or defName="AMN_PoleFlagTall" or defName="AMN_PoleFlagTallVertical" or defName="AMN_PoleFlagVertical") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_DecoOutdoor</designationCategory>
+    </value>
+  </Operation>
+</Patch>

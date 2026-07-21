@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_DroneCommandConsole" or defName="DNX_HAD09GhoulBomberBay" or defName="DNX_ExperimentalDroneDock" or defName="DNX_LogisticsDroneDock")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Drones</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_DroneCommandConsole" or defName="DNX_HAD09GhoulBomberBay" or defName="DNX_ExperimentalDroneDock" or defName="DNX_LogisticsDroneDock") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Drones</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="DNX_GiantCapacitorArray"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerStorage</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="DNX_GiantCapacitorArray" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_PowerStorage</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="DNX_TacticalSimulationTable"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Joy</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="DNX_TacticalSimulationTable" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Joy</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_GunLaunchedMissileAmmoBox" or defName="DNX_HighSpeedBeltFeeder")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_AmmunitionNetwork</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_GunLaunchedMissileAmmoBox" or defName="DNX_HighSpeedBeltFeeder") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_AmmunitionNetwork</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_AimingExtensionArray" or defName="DNX_DirectionalShieldGenerator" or defName="DNX_FireControlConsole" or defName="DNX_MaintenanceArm" or defName="DNX_TacticalMarkerTower" or defName="DNX_TriEyeTargetingArray")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_CombatInfrastructure</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_AimingExtensionArray" or defName="DNX_DirectionalShieldGenerator" or defName="DNX_FireControlConsole" or defName="DNX_MaintenanceArm" or defName="DNX_TacticalMarkerTower" or defName="DNX_TriEyeTargetingArray") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_CombatInfrastructure</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="DNX_EDD"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Traps</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="DNX_EDD" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Traps</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_Turret_AvengerTwinCannon" or defName="DNX_Turret_Boxer35mmAA" or defName="DNX_Turret_ConvergenceDeathRay" or defName="DNX_Turret_FlatheadRocketTurret" or defName="DNX_Turret_GeminiGatling" or defName="DNX_Turret_GyrfalconM20mmComposite" or defName="DNX_Turret_Hammer120mm" or defName="DNX_HunterKillerSupportSystem" or defName="DNX_Turret_LaserChargeEmitter" or defName="DNX_Turret_LightMachineGun" or defName="DNX_Turret_LightSniper" or defName="DNX_Turret_LittleTrainRGPrototype" or defName="DNX_SustainedLaserEmitter" or defName="DNX_Turret_LongbowM301RocketArtillery" or defName="DNX_Turret_OpenerMLSSixteen" or defName="DNX_Turret_Orchestra40mmChainCannon" or defName="DNX_PrismLaserPointDefenseSystem" or defName="DNX_Turret_SentinelHMGFour" or defName="DNX_Turret_ShieldedSMG" or defName="DNX_Turret_ShowerGrenadeSupport" or defName="DNX_SonicShockEmitter" or defName="DNX_UplinkSupportConsole" or defName="DNX_Turret_Vanguard20mmSuppressiveCannon" or defName="DNX_VerticalMissileSilo" or defName="DNX_Turret_WatcherLongRangePrecision")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Weapons</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_Turret_AvengerTwinCannon" or defName="DNX_Turret_Boxer35mmAA" or defName="DNX_Turret_ConvergenceDeathRay" or defName="DNX_Turret_FlatheadRocketTurret" or defName="DNX_Turret_GeminiGatling" or defName="DNX_Turret_GyrfalconM20mmComposite" or defName="DNX_Turret_Hammer120mm" or defName="DNX_HunterKillerSupportSystem" or defName="DNX_Turret_LaserChargeEmitter" or defName="DNX_Turret_LightMachineGun" or defName="DNX_Turret_LightSniper" or defName="DNX_Turret_LittleTrainRGPrototype" or defName="DNX_SustainedLaserEmitter" or defName="DNX_Turret_LongbowM301RocketArtillery" or defName="DNX_Turret_OpenerMLSSixteen" or defName="DNX_Turret_Orchestra40mmChainCannon" or defName="DNX_PrismLaserPointDefenseSystem" or defName="DNX_Turret_SentinelHMGFour" or defName="DNX_Turret_ShieldedSMG" or defName="DNX_Turret_ShowerGrenadeSupport" or defName="DNX_SonicShockEmitter" or defName="DNX_UplinkSupportConsole" or defName="DNX_Turret_Vanguard20mmSuppressiveCannon" or defName="DNX_VerticalMissileSilo" or defName="DNX_Turret_WatcherLongRangePrecision") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Weapons</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_Inactive82AHoverVehicle" or defName="DNX_RestoredInactive82AHoverVehicle")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_MilitaryTransport</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="DNX_Inactive82AHoverVehicle" or defName="DNX_RestoredInactive82AHoverVehicle") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_MilitaryTransport</designationCategory>
+    </value>
+  </Operation>
+</Patch>

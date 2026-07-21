@@ -1331,6 +1331,38 @@
     </specialDesignatorClasses>
   </DesignationCategoryDef>
 
+  <DesignationCategoryDef>
+    <defName>Ferny_Drones</defName>
+    <label>Drones</label>
+    <description>Manage drones.</description>
+    <order>959</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Automation</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+	<DesignationCategoryDef>
+		<defName>Ferny_Logistics</defName>
+		<label>Logistics</label>
+		<description>Manage automated logistics networks.</description>
+		<order>920</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Automation</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
 	<DesignationCategoryDef>
 		<defName>Ferny_Hosting</defName>
 		<label>Entertain</label>

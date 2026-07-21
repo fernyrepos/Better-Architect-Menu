@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_IF_MedicaeBed"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Medical</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_IF_MedicaeBed" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Medical</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_3x6MundaneRug" or defName="GW_IF_4x4MundaneRug" or defName="GW_IF_4x6MundaneRug" or defName="GW_IF_8x8MundaneRug" or defName="GW_IF_3x6RoyalRug" or defName="GW_IF_4x4RoyalRug" or defName="GW_IF_4x6RoyalRug" or defName="GW_IF_8x8RoyalRug")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_DecoRugs</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_3x6MundaneRug" or defName="GW_IF_4x4MundaneRug" or defName="GW_IF_4x6MundaneRug" or defName="GW_IF_8x8MundaneRug" or defName="GW_IF_3x6RoyalRug" or defName="GW_IF_4x4RoyalRug" or defName="GW_IF_4x6RoyalRug" or defName="GW_IF_8x8RoyalRug") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_DecoRugs</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_CommonDouble" or defName="GW_IF_CommonSingle" or defName="GW_IF_RoyalDouble" or defName="GW_IF_RoyalSingle" or defName="GW_IF_PrisonerSingle")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_CommonDouble" or defName="GW_IF_CommonSingle" or defName="GW_IF_RoyalDouble" or defName="GW_IF_RoyalSingle" or defName="GW_IF_PrisonerSingle") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_Candelabra" or defName="GW_IF_Candle" or defName="GW_IF_CandleSkull" or defName="GW_IF_CandleStand" or defName="GW_IF_CandlesWax" or defName="GW_IF_WallLamp")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_Candelabra" or defName="GW_IF_Candle" or defName="GW_IF_CandleSkull" or defName="GW_IF_CandleStand" or defName="GW_IF_CandlesWax" or defName="GW_IF_WallLamp") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_Chair" or defName="GW_IF_Royal_Chair")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Seating</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_Chair" or defName="GW_IF_Royal_Chair") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Seating</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_Royal_2x1c" or defName="GW_IF_Royal_2x2c" or defName="GW_IF_Royal_2x4c" or defName="GW_IF_Royal_3x3c" or defName="GW_IF_Royal_1x1c" or defName="GW_IF_1x1c" or defName="GW_IF_2x1c" or defName="GW_IF_2x2c" or defName="GW_IF_2x4c" or defName="GW_IF_3x3c")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_IF_Royal_2x1c" or defName="GW_IF_Royal_2x2c" or defName="GW_IF_Royal_2x4c" or defName="GW_IF_Royal_3x3c" or defName="GW_IF_Royal_1x1c" or defName="GW_IF_1x1c" or defName="GW_IF_2x1c" or defName="GW_IF_2x2c" or defName="GW_IF_2x4c" or defName="GW_IF_3x3c") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Tables</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GWGT_GoldenThrone"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Meditation</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GWGT_GoldenThrone" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Meditation</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW40k_2x1Gate" or defName="GW40k_3x1Gate")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Doors</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW40k_2x1Gate" or defName="GW40k_3x1Gate") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Doors</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>/Defs/DesignationCategoryDef[defName="GW_IF_Furniture"]</xpath>
+  </Operation>
+</Patch>

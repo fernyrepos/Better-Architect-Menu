@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="Amorphous_1x1Rug" or defName="Amorphous_1x2Rug" or defName="Amorphous_2x2Rug" or defName="Amorphous_2x3Rug" or defName="Amorphous_3x3Rug" or defName="Amorphous_3x4Rug" or defName="Amorphous_4x4Rug")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_DecoRugs</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="Amorphous_1x1Rug" or defName="Amorphous_1x2Rug" or defName="Amorphous_2x2Rug" or defName="Amorphous_2x3Rug" or defName="Amorphous_3x3Rug" or defName="Amorphous_3x4Rug" or defName="Amorphous_4x4Rug") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_DecoRugs</designationCategory>
+    </value>
+  </Operation>
+</Patch>

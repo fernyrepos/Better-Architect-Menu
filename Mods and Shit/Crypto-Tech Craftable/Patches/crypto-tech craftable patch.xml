@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="VQEAdd_AetherPressureTubes" or defName="VQEAdd_CryptoInfusionCoils" or defName="VQEAdd_CryptotechPrototypeBench" or defName="VQEAdd_SubZeroHammer")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Auxiliaries</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="VQEAdd_AetherPressureTubes" or defName="VQEAdd_CryptoInfusionCoils" or defName="VQEAdd_CryptotechPrototypeBench" or defName="VQEAdd_SubZeroHammer") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Auxiliaries</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="VQEAdd_Cryptoforge"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="VQEAdd_Cryptoforge" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>/Defs/DesignationCategoryDef[defName="VQEAdd_Crypto"]</xpath>
+  </Operation>
+</Patch>

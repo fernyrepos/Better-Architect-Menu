@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_AM_MilitarumArmorBench" or defName="HP_AM_MilitarumFabricationBench")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_AM_MilitarumArmorBench" or defName="HP_AM_MilitarumFabricationBench") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_HOI_Building_Autocannon" or defName="GW_HOI_Building_Lascannon" or defName="GW_HOI_Building_TarantulaLascannon" or defName="GW_Trenches" or defName="TrenchBarricade")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Barricades</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_HOI_Building_Autocannon" or defName="GW_HOI_Building_Lascannon" or defName="GW_HOI_Building_TarantulaLascannon" or defName="GW_Trenches" or defName="TrenchBarricade") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Barricades</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_HOI_Turret_Earthshaker" or defName="GW_HOI_Building_HeavyBolter" or defName="GW_HOI_Building_TarantulaHeavyBolter")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Weapons</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_HOI_Turret_Earthshaker" or defName="GW_HOI_Building_HeavyBolter" or defName="GW_HOI_Building_TarantulaHeavyBolter") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Weapons</designationCategory>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="IndoctrinationChamber"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Control</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="IndoctrinationChamber" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Control</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_PlasmaGenerator"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_PlasmaGenerator" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_VehicleToolCabinet"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Auxiliaries</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_VehicleToolCabinet" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Auxiliaries</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_RepairBench"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_RepairBench" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_Furnace"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ProcessingProduction</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_Furnace" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_ProcessingProduction</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_Cogitator"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ResearchProduction</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_Cogitator" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_ResearchProduction</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_WarhammerTable"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Joy</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="GW_WarhammerTable" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Joy</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_HOI_Embrasure" or defName="GW_HOI_EmbrasureArmored" or defName="DefensiveTankTrapA" or defName="DefensiveTankTrapB")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Barricades</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_HOI_Embrasure" or defName="GW_HOI_EmbrasureArmored" or defName="DefensiveTankTrapA" or defName="DefensiveTankTrapB") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Barricades</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="DefensiveBarbedWire"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Traps</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="DefensiveBarbedWire" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Traps</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_BlastDoor" or defName="GW_ImperialisAutodoor" or defName="GW_ImperialisDoor" or defName="GW_MechanicusAutodoor" or defName="GW_MechanicusDoor")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Doors</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_BlastDoor" or defName="GW_ImperialisAutodoor" or defName="GW_ImperialisDoor" or defName="GW_MechanicusAutodoor" or defName="GW_MechanicusDoor") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Doors</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_ReinforcedWall" or defName="GW_Wall")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Walls</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="GW_ReinforcedWall" or defName="GW_Wall") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Walls</designationCategory>
+    </value>
+  </Operation>
+</Patch>

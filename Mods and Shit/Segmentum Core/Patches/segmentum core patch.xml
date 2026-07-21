@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="Seg_ImperialCraftingTable"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="Seg_ImperialCraftingTable" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="Seg_COTO_CeramiteFurnace" or defName="Seg_COTO_CeramiteFurnaceChemfuel")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ProcessingProduction</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="Seg_COTO_CeramiteFurnace" or defName="Seg_COTO_CeramiteFurnaceChemfuel") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_ProcessingProduction</designationCategory>
+    </value>
+  </Operation>
+</Patch>
