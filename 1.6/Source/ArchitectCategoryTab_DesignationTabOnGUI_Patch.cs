@@ -27,6 +27,23 @@ namespace BetterArchitect
         public static MaterialInfo selectedMaterial;
         private static List<DesignatorCategoryData> cachedRawDesignatorData = null;
         private static DesignationCategoryDef cachedRawDesignatorDataFor = null;
+
+        // Cached floor designator lists — rebuilt only when cachedRawDesignatorDataFor changes.
+        // The set of floor types in the menu never changes mid-session, so this is safe to hold
+        // until the broader designator cache is invalidated (research, map change, etc.).
+        private static List<Designator> cachedFloorSpecificDesignators = null;
+        private static List<Designator> cachedFloorOrderDesignators = null;
+        private static DesignationCategoryDef cachedFloorDesignatorsFor = null;
+
+        // Cached material map and sorted list — rebuilt when floor designators change OR when
+        // enough ticks have passed for map resource availability to have meaningfully changed.
+        // 250 ticks (~4 seconds) matches the granularity of RimWorld's rare-tick events.
+        private static Dictionary<MaterialInfo, List<Designator>> cachedFloorsByMaterial = null;
+        private static List<MaterialInfo> cachedFloorMaterials = null;
+        private static DesignationCategoryDef cachedMaterialsFor = null;
+        private static int cachedMaterialsTick = -1;
+        private const int MaterialCacheTickInterval = 250;
+
         public const float EditToolbarHeight = 28f;
         private const float EditToolbarVerticalPadding = 4f;
         private const float EditToolbarReservedHeight = EditToolbarHeight + EditToolbarVerticalPadding;
@@ -34,6 +51,13 @@ namespace BetterArchitect
         {
             cachedRawDesignatorData = null;
             cachedRawDesignatorDataFor = null;
+            cachedFloorSpecificDesignators = null;
+            cachedFloorOrderDesignators = null;
+            cachedFloorDesignatorsFor = null;
+            cachedFloorsByMaterial = null;
+            cachedFloorMaterials = null;
+            cachedMaterialsFor = null;
+            cachedMaterialsTick = -1;
         }
 
         internal static void InvalidateResearchSensitiveCaches()
@@ -278,48 +302,65 @@ namespace BetterArchitect
             if (tab.def == DesignationCategoryDefOf.Floors && BetterArchitectSettings.useSpecialFloorsTab)
             {
                 Designator_Build_ProcessInput_Transpiler.shouldSkipFloatMenu = true;
-                var floorSpecificDesignators = new List<Designator>();
-                var orderSpecificDesignators = new List<Designator>();
 
-                var rawFloorDesignators = new List<Designator>();
-                var floorsCatData = designatorDataList.FirstOrDefault(d => d.def == DesignationCategoryDefOf.Floors);
-                if (floorsCatData != null)
+                // Rebuild the floor designator lists only when the underlying designator data
+                // has changed. Previously this ran unconditionally every frame, calling
+                // GetUniqueDesignators (O(n²) via GroupsWith) and Except (O(n×m)) on the full
+                // cross-category floor list each time.
+                if (cachedFloorDesignatorsFor != cachedRawDesignatorDataFor)
                 {
-                    rawFloorDesignators.AddRange(floorsCatData.allDesignators);
-                }
-                
-                foreach (DesignatorCategoryData designatorCategoryData in designatorDataList)
-                {
-                    if (designatorCategoryData.def == DesignationCategoryDefOf.Floors) continue;
-                    rawFloorDesignators.AddRange(designatorCategoryData.allDesignators.Except(designatorCategoryData.orders));
-                }
+                    var floorSpecificDesignators = new List<Designator>();
+                    var orderSpecificDesignators = new List<Designator>();
 
-                var uniqueFloorDesignators = GetUniqueDesignators(rawFloorDesignators);
-
-                foreach (var designator in uniqueFloorDesignators)
-                {
-                    if (designator is Designator_Dropdown dropdown)
+                    var rawFloorDesignators = new List<Designator>();
+                    var floorsCatData = designatorDataList.FirstOrDefault(d => d.def == DesignationCategoryDefOf.Floors);
+                    if (floorsCatData != null)
                     {
-                        if (dropdown.Elements.OfType<Designator_Place>().Any(x => x.PlacingDef.designatorDropdown?.includeEyeDropperTool == true))
+                        rawFloorDesignators.AddRange(floorsCatData.allDesignators);
+                    }
+
+                    var ordersSet = new HashSet<Designator>();
+                    foreach (DesignatorCategoryData designatorCategoryData in designatorDataList)
+                    {
+                        if (designatorCategoryData.def == DesignationCategoryDefOf.Floors) continue;
+                        ordersSet.Clear();
+                        ordersSet.UnionWith(designatorCategoryData.orders);
+                        foreach (var d in designatorCategoryData.allDesignators)
+                            if (!ordersSet.Contains(d)) rawFloorDesignators.Add(d);
+                    }
+
+                    var uniqueFloorDesignators = GetUniqueDesignators(rawFloorDesignators);
+
+                    foreach (var designator in uniqueFloorDesignators)
+                    {
+                        if (designator is Designator_Dropdown dropdown)
                         {
-                            floorSpecificDesignators.Add(dropdown);
+                            if (dropdown.Elements.OfType<Designator_Place>().Any(x => x.PlacingDef.designatorDropdown?.includeEyeDropperTool == true))
+                            {
+                                floorSpecificDesignators.Add(dropdown);
+                            }
+                            else
+                            {
+                                floorSpecificDesignators.AddRange(dropdown.Elements.OfType<Designator_Build>());
+                            }
+                        }
+                        else if (designator is Designator_Build || designator is Designator_Place)
+                        {
+                            floorSpecificDesignators.Add(designator);
                         }
                         else
                         {
-                            floorSpecificDesignators.AddRange(dropdown.Elements.OfType<Designator_Build>());
+                            orderSpecificDesignators.Add(designator);
                         }
                     }
-                    else if (designator is Designator_Build || designator is Designator_Place)
-                    {
-                        floorSpecificDesignators.Add(designator);
-                    }
-                    else
-                    {
-                        orderSpecificDesignators.Add(designator);
-                    }
+
+                    cachedFloorSpecificDesignators = floorSpecificDesignators;
+                    cachedFloorOrderDesignators = orderSpecificDesignators;
+                    cachedFloorDesignatorsFor = cachedRawDesignatorDataFor;
                 }
-                orderDesignators = orderSpecificDesignators;
-                designatorsToDisplay = DrawMaterialListForFloors(leftRect, floorSpecificDesignators);
+
+                orderDesignators = cachedFloorOrderDesignators;
+                designatorsToDisplay = DrawMaterialListForFloors(leftRect, cachedFloorSpecificDesignators);
                 category = tab.def;
             }
             else
@@ -549,12 +590,27 @@ namespace BetterArchitect
 
         private static List<Designator> DrawMaterialListForFloors(Rect rect, List<Designator> allFloorDesignators)
         {
-            var floorsByMaterial = new Dictionary<MaterialInfo, List<Designator>>();
-            var freeKey = new MaterialInfo("BA.Free".Translate(), Assets.FreeIcon, Color.white, null);
-            foreach (var designator in allFloorDesignators) PopulateMaterials(floorsByMaterial, freeKey, designator);
-            var materials = floorsByMaterial.Keys
-                .OrderBy(m => m.def == null ? 5 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Woody) == true ? 1 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Metallic) == true ? 2 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Stony) == true ? 3 : 4))))
-                .ThenByDescending(m => m.def?.stuffProps?.commonality ?? float.PositiveInfinity).ThenBy(m => m.def?.BaseMarketValue ?? 0).ToList();
+            // Rebuild the material map only when the floor designator set has changed OR when
+            // the tick bucket advances (~4 s), so listerThings availability stays roughly current.
+            // Previously this rebuilt the full dictionary every frame, calling
+            // PopulateMaterials -> GetFloorCosts -> DefDatabase.AllDefs scan + listerThings.ThingsOfDef
+            // for every material of every floor designator on every frame.
+            int tickBucket = GenTicks.TicksGame / MaterialCacheTickInterval;
+            if (cachedFloorsByMaterial == null
+                || cachedMaterialsFor != cachedFloorDesignatorsFor
+                || cachedMaterialsTick != tickBucket)
+            {
+                var floorsByMaterial = new Dictionary<MaterialInfo, List<Designator>>();
+                var freeKey = new MaterialInfo("BA.Free".Translate(), Assets.FreeIcon, Color.white, null);
+                foreach (var designator in allFloorDesignators) PopulateMaterials(floorsByMaterial, freeKey, designator);
+                cachedFloorsByMaterial = floorsByMaterial;
+                cachedFloorMaterials = floorsByMaterial.Keys
+                    .OrderBy(m => m.def == null ? 5 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Woody) == true ? 1 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Metallic) == true ? 2 : (m.def.stuffProps?.categories?.Contains(StuffCategoryDefOf.Stony) == true ? 3 : 4))))
+                    .ThenByDescending(m => m.def?.stuffProps?.commonality ?? float.PositiveInfinity).ThenBy(m => m.def?.BaseMarketValue ?? 0).ToList();
+                cachedMaterialsFor = cachedFloorDesignatorsFor;
+                cachedMaterialsTick = tickBucket;
+            }
+            var materials = cachedFloorMaterials;
             if ((selectedMaterial == null || !materials.Contains(selectedMaterial)) && materials.Any()) selectedMaterial = materials.First();
             var outRect = rect.ContractedBy(10f);
             var viewRect = new Rect(0, 0, outRect.width - 16f, GetCategoryViewHeight(materials.Count));
@@ -589,7 +645,7 @@ namespace BetterArchitect
                 curY += rowRect.height + 5;
             }
             Widgets.EndScrollView();
-            var result = (selectedMaterial != null && floorsByMaterial.ContainsKey(selectedMaterial)) ? floorsByMaterial[selectedMaterial] : new List<Designator>();
+            var result = (selectedMaterial != null && cachedFloorsByMaterial.ContainsKey(selectedMaterial)) ? cachedFloorsByMaterial[selectedMaterial] : new List<Designator>();
             if (selectedMaterial?.def != null)
             {
                 foreach (var designator in result)
