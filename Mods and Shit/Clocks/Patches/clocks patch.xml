@@ -6,21 +6,21 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ZCL_CuckooClock"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_Fixtures</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ZCL_GrandfatherClock"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_Fixtures</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ZCL_ModernGrandfatherClock"]</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_Fixtures</designationCategory>
                     </value>
                 </Operation>
 

@@ -1293,7 +1293,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DankPyon_Lecturn"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_Fixtures</designationCategory>
                     </value>
                 </Operation>
 

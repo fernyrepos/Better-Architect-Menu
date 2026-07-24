@@ -12,7 +12,7 @@
     <defName>Ferny_Seating</defName>
     <label>Seating</label>
     <description>Manage seating.</description>
-    <order>900</order>
+    <order>960</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -28,7 +28,7 @@
     <defName>Ferny_Tables</defName>
     <label>Tables</label>
     <description>Manage tables.</description>
-    <order>900</order>
+    <order>950</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -44,7 +44,23 @@
     <defName>Ferny_Lighting</defName>
     <label>Lighting</label>
     <description>Buildings that emit light.</description>
-    <order>596</order>
+    <order>930</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Furniture</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_Fixtures</defName>
+    <label>Fixtures</label>
+    <description>Useful household fixtures and room accessories.</description>
+    <order>920</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -60,7 +76,7 @@
     <defName>Ferny_Bedroom</defName>
     <label>Bedroom</label>
     <description>Things that relate to bedrooms.</description>
-    <order>457</order>
+    <order>940</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
@@ -100,7 +116,8 @@
 		</specialDesignatorClasses>
 		<modExtensions>
 			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_Decorations</parentCategory>
+				<!-- <parentCategory>Ferny_Decorations</parentCategory> -->
+				<parentCategory>Furniture</parentCategory>
 			</li>
 		</modExtensions>
 	</DesignationCategoryDef>
@@ -132,7 +149,8 @@
 		</specialDesignatorClasses>
 		<modExtensions>
 			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_Decorations</parentCategory>
+				<!-- <parentCategory>Ferny_Decorations</parentCategory> -->
+				<parentCategory>Furniture</parentCategory>
 			</li>
 		</modExtensions>
 	</DesignationCategoryDef>
@@ -141,14 +159,14 @@
 		<defName>Ferny_DecoHanging</defName>
 		<label>Hanging</label>
 		<description>Manage Hanging Decorations such as signs, banners and curtains.</description>
-		<order>700</order>
+		<order>910</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>
 		</specialDesignatorClasses>
 		<modExtensions>
 			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Ferny_Decorations</parentCategory>
+				<parentCategory>Furniture</parentCategory>
 			</li>
 		</modExtensions>
 	</DesignationCategoryDef>

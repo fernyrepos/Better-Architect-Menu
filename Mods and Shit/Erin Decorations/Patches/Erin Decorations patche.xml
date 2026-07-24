@@ -46,7 +46,7 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="ED_Vase"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_Fixtures</designationCategory>
                     </value>
                 </Operation>
 
