@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ImpHospitalBed"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Medical</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ImpHospitalBed" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Medical</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ImpDoubleBed"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ImpDoubleBed" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_FlrStripLight_GOLD_CRN" or defName="IG_FlrStripLight_GOLD_ST" or defName="IG_FlrStripLight_SILVER_CRN" or defName="IG_FlrStripLight_SILVER_ST" or defName="IG_WH40kSciFiLamp" or defName="IG_WallLightGOLD" or defName="IG_WallLightSilver")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_FlrStripLight_GOLD_CRN" or defName="IG_FlrStripLight_GOLD_ST" or defName="IG_FlrStripLight_SILVER_CRN" or defName="IG_FlrStripLight_SILVER_ST" or defName="IG_WH40kSciFiLamp" or defName="IG_WallLightGOLD" or defName="IG_WallLightSilver") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ImpGeothermGen" or defName="ImpPReactor" or defName="ImpSolarPanel" or defName="ImpUReactor")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ImpGeothermGen" or defName="ImpPReactor" or defName="ImpSolarPanel" or defName="ImpUReactor") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ImpBattery"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerStorage</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ImpBattery" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_PowerStorage</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ManCogitator"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Auxiliaries</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ManCogitator" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Auxiliaries</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ImperialArmorFab" or defName="IG_ImperialCONFabricator" or defName="ImperialFabricator" or defName="ImperialMedicalFab" or defName="PlanetaryCoreExractor" or defName="ImperialWeaponFab")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ImperialArmorFab" or defName="IG_ImperialCONFabricator" or defName="ImperialFabricator" or defName="ImperialMedicalFab" or defName="PlanetaryCoreExractor" or defName="ImperialWeaponFab") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ResCogitator"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ResearchProduction</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="ResCogitator" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_ResearchProduction</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_Imp_Barricades" or defName="RazerWire")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Barricades</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_Imp_Barricades" or defName="RazerWire") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Barricades</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_DEMOBlastCharge" or defName="IG_EMPBlastCharge")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Explosives</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_DEMOBlastCharge" or defName="IG_EMPBlastCharge") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Explosives</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_VoidShieldGenerator_GRN" or defName="IG_VoidShieldGenerator_AIR")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_CombatInfrastructure</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_VoidShieldGenerator_GRN" or defName="IG_VoidShieldGenerator_AIR") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_CombatInfrastructure</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ATSentryTurret" or defName="ATAutoGunPowered" or defName="MTHeavyBolter" or defName="MTLasCannon" or defName="ATMiniAutoGunPowered" or defName="ATDualHeavyBolter" or defName="ATDualLasCannon" or defName="BDThudGun")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Weapons</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ATSentryTurret" or defName="ATAutoGunPowered" or defName="MTHeavyBolter" or defName="MTLasCannon" or defName="ATMiniAutoGunPowered" or defName="ATDualHeavyBolter" or defName="ATDualLasCannon" or defName="BDThudGun") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Weapons</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ImperiumAutodoor" or defName="ImperiumDoor")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Doors</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ImperiumAutodoor" or defName="ImperiumDoor") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Doors</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="IG_IMP_Wall"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Walls</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="IG_IMP_Wall" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Walls</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_IMPMoisturePump" or defName="IG_IMPThermalDrill")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Terraforming</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="IG_IMPMoisturePump" or defName="IG_IMPThermalDrill") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Terraforming</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ImpDropPod" or defName="ImpDropPodLauncher")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_AerialTransport</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="ImpDropPod" or defName="ImpDropPodLauncher") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_AerialTransport</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>/Defs/DesignationCategoryDef[defName="IG_ImperialMenuA"]</xpath>
+  </Operation>
+</Patch>

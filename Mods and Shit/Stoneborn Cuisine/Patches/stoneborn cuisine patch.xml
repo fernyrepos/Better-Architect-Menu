@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="SC_Bench1x3c" or defName="SC_Bench1x5c")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Seating</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="SC_Bench1x3c" or defName="SC_Bench1x5c") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Seating</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="SC_ArtificialHive"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Farming</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="SC_ArtificialHive" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Farming</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="SC_CuringRack" or defName="SC_DwarvenOven" or defName="SC_HotGrill" or defName="SC_PortablePot" or defName="SC_PrepTable")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Kitchen</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="SC_CuringRack" or defName="SC_DwarvenOven" or defName="SC_HotGrill" or defName="SC_PortablePot" or defName="SC_PrepTable") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Kitchen</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="SC_FoodSpot"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_FoodStorage</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="SC_FoodSpot" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_FoodStorage</designationCategory>
+    </value>
+  </Operation>
+</Patch>

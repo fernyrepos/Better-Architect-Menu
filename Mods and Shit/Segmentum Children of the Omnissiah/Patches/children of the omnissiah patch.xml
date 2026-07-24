@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="Seg_COTO_AugmeticsTable" or defName="Seg_COTO_CraftingTable" or defName="Seg_COTO_CraftingTableChemfuel")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="Seg_COTO_AugmeticsTable" or defName="Seg_COTO_CraftingTable" or defName="Seg_COTO_CraftingTableChemfuel") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="Seg_COTOSlab_Medium"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsStone</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="Seg_COTOSlab_Medium" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsStone</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="Seg_COTOMetallicEmblem_Medium"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsMetal</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="Seg_COTOMetallicEmblem_Medium" and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsMetal</designationCategory>
+    </value>
+  </Operation>
+</Patch>

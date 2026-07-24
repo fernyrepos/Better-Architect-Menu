@@ -163,4 +163,18 @@
 			<designationCategory>Ferny_Heating</designationCategory>
 		</value>
 	</Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="PFS_Bed" or defName="PFS_BedB" or defName="PFS_DoubleBed" or defName="PFS_DoubleBedB" or defName="PFS_RoyalBed")]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[(defName="PFS_Bed" or defName="PFS_BedB" or defName="PFS_DoubleBed" or defName="PFS_DoubleBedB" or defName="PFS_RoyalBed") and not(designationCategory)]</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
 </Patch>

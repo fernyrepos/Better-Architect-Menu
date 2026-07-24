@@ -1098,6 +1098,26 @@
     <li IfModActive="Meltup.NopowerCommsSimplified">Mods and Shit/Nopower Comms Simplified</li>
     <li IfModActive="Telkir.TMods.MoreFloors">Mods and Shit/T MoreFloors</li>
     <li IfModActive="veterano.mythicages.megafaunabestiary">Mods and Shit/Mythic Ages Megafauna Bestiary</li>
+    <li IfModActive="dracora.powerthrone">Mods and Shit/Power Throne</li>
+    <li IfModActive="FrozenSnowFox.BetterSpikeTraps">Mods and Shit/Better Spike Traps</li>
+    <li IfModActive="tradingpost.programmerlily.com">Mods and Shit/PL Trading Spot</li>
+    <li IfModActive="TW.IS.IndustrialismStyle">Mods and Shit/Industrialism Style</li>
+    <li IfModActive="Mlie.AmnabisFlags">Mods and Shit/Amnabi's Flags</li>
+    <li IfModActive="XMB.AmorphousStylePack.MO">Mods and Shit/Amorphous Style Pack</li>
+    <li IfModActive="AOBA.USAC.Core">Mods and Shit/Ascension Megacorp</li>
+    <li IfModActive="QX.AstraMilitarum">Mods and Shit/Astra Militarum Imperial Guard</li>
+    <li IfModActive="QX.AstraMilitarum.ServoSkull">Mods and Shit/Astra Militarum ServoSkull</li>
+    <li IfModActive="Joedox.CryptoCraftable.Fr">Mods and Shit/Crypto-Tech Craftable</li>
+    <li IfModActive="wuhuansuiyue.defensivenetworkexpanded">Mods and Shit/Defensive Network</li>
+    <li IfModActive="Grimworld.AspectusImperialis">Mods and Shit/GrimWorld Aspectus Imperialis</li>
+    <li IfModActive="Grimworld.Core">Mods and Shit/GrimWorld Core Imperialis</li>
+    <li IfModActive="Grimworld.AstraMilitarum">Mods and Shit/GrimWorld Hammer of the Imperium</li>
+    <li IfModActive="CN.RimIOT">Mods and Shit/RimIOT</li>
+    <li IfModActive="REDACTED.Segmentum.ChildrenOfTheOmnissiah">Mods and Shit/Segmentum Children of the Omnissiah</li>
+    <li IfModActive="REDACTED.Segmentum.Core">Mods and Shit/Segmentum Core</li>
+    <li IfModActive="Albion.SparklingWorlds.Full">Mods and Shit/Sparkling Worlds</li>
+    <li IfModActive="det.sbcuisine">Mods and Shit/Stoneborn Cuisine</li>
+    <li IfModActive="MortStrudel.CorporationFaction">Mods and Shit/The Corporation</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
