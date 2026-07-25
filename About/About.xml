@@ -62,6 +62,7 @@
     <li>ferny.progressioncore</li>
     <li>ferny.progressiongenetics</li>
     <li>ferny.progressionaesthetics</li>
+    <li>ferny.progressionfurniture</li>
     <li>ferny.progressionwarfare</li>
     <li>ferny.progressionhospitality</li>
     <li>ferny.progressionproduction</li>
@@ -211,6 +212,7 @@
     <li>cixwow.helixienboiler</li>
     <li>cixwow.helixienbrazier</li>
     <li>cixwow.helixiengasproduction</li>
+    <li>kongkim.PanelsFrames</li>
     <li>alias.doormats</li>
     <li>Mlie.MorePlanning</li>
     <li>doug.mapedittools</li>
@@ -942,6 +944,8 @@
     <li>smallmine.heavyshuttle</li>
     <li>barbedwire.ultratecpassengershuttle</li>
     <li>misstalls.vrshuttle</li>
+    <li>misstall.furniture</li>
+    <li>Misstall.AR.IdeologyStyle</li>
     <li>turbopickle.gravshuttle</li>
     <li>mrwireman.stealthshuttle</li>
     <li>unagi.ap.dress</li>
@@ -978,6 +982,7 @@
     <li>acutus.clusterprojection</li>
     <li>eeg.moxasf</li>
     <li>maux36.rimbody</li>
+    <li>ferny.RimbodyIntegrationPatch</li>
     <li>pal5k.personamechs2</li>
     <li>zwei2stein.pyrinthstove</li>
     <li>rang.screamforcream</li>

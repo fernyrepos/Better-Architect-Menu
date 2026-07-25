@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <DesignationCategoryDef>
@@ -109,7 +109,7 @@
 		<defName>Ferny_DecoPlants</defName>
 		<label>Plants</label>
 		<description>Manage plant decorations.</description>
-		<order>900</order>
+		<order>970</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>
@@ -117,7 +117,23 @@
 		<modExtensions>
 			<li Class="BetterArchitect.NestedCategoryExtension">
 				<!-- <parentCategory>Ferny_Decorations</parentCategory> -->
-				<parentCategory>Furniture</parentCategory>
+				<parentCategory>Ferny_Decorations</parentCategory>
+			</li>
+		</modExtensions>
+	</DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+		<defName>Ferny_Framing</defName>
+		<label>Frames</label>
+		<description>Manage door frames, door panels, and architectural framing.</description>
+		<order>940</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+		</specialDesignatorClasses>
+		<modExtensions>
+			<li Class="BetterArchitect.NestedCategoryExtension">
+				<parentCategory>Ferny_Decorations</parentCategory>
 			</li>
 		</modExtensions>
 	</DesignationCategoryDef>
@@ -159,14 +175,14 @@
 		<defName>Ferny_DecoHanging</defName>
 		<label>Hanging</label>
 		<description>Manage Hanging Decorations such as signs, banners and curtains.</description>
-		<order>910</order>
+		<order>960</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>
 		</specialDesignatorClasses>
 		<modExtensions>
 			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Furniture</parentCategory>
+				<parentCategory>Ferny_Decorations</parentCategory>
 			</li>
 		</modExtensions>
 	</DesignationCategoryDef>
@@ -175,7 +191,7 @@
 		<defName>Ferny_DecoArt</defName>
 		<label>Art</label>
 		<description>Manage art and music decorations.</description>
-		<order>700</order>
+		<order>550</order>
 		<specialDesignatorClasses>
 			<li>Designator_Cancel</li>
 			<li>Designator_Deconstruct</li>

@@ -123,4 +123,35 @@
       </match>
   </Operation>
 
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Seating"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Tables"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Lighting"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Fixtures"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Bedroom"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>VFEProps.Designator_Props</li>
+    </value>
+  </Operation>
+
 </Patch>

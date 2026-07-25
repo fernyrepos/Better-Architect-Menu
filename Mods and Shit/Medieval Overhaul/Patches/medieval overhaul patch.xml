@@ -761,7 +761,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="DankPyon_Frame_Log"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_Framing</designationCategory>
                     </value>
                 </Operation>
 
@@ -1297,6 +1297,30 @@
                     </value>
                 </Operation>
 
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticRoomDivider1x2c"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Fixtures</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticThickRoomDivider_Open1x2c"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Fixtures</designationCategory>
+                    </value>
+                </Operation>
+
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="DankPyon_RusticThickRoomDivider_Closed1x2c"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Fixtures</designationCategory>
+                    </value>
+                </Operation>
+
 
 <!-- AMENITIES -->
                 <Operation Class="PatchOperationReplace">
@@ -1320,5 +1344,6 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[@Name="DankPyon_ScribeToolsGroup"]/designatorDropdown</xpath>
                 </Operation>
+
 
 </Patch>

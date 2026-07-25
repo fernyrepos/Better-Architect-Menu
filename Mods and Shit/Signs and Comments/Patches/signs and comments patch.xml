@@ -13,4 +13,12 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Comment"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Orders</designationCategory>
+		</value>
+	</Operation>
+
 </Patch>

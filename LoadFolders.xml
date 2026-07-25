@@ -76,6 +76,8 @@
     <!-- THE REST (Add whatever you'd like here)-->
     <li IfModActive="smashphil.vehicleframework">Mods and Shit/Vehicle Framework</li>
     <li IfModActive="VanillaExpanded.VFECore">Mods and Shit/VE Furniture</li>
+    <li IfModActive="misstall.furniture">Mods and Shit/Misstall's Furniture</li>
+    <li IfModActive="Misstall.AR.IdeologyStyle">Mods and Shit/Aliaile Race Furniture</li>
     <li IfModActive="VanillaExpanded.VFESpacer">Mods and Shit/VFE Spacer</li>
     <li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">Mods and Shit/VFE Settlers</li>
     <li IfModActive="kentington.saveourship2">Mods and Shit/SOS2</li>
@@ -877,6 +879,7 @@
     <li IfModActive="serzhuk.primitivefridge">Mods and Shit/Primitive Fridge</li>
     <li IfModActive="park.desrtstorm">Mods and Shit/Sundial Desrt Storm</li>
     <li IfModActive="blackmarket420.pandoraframework">Mods and Shit/Pandora's Framework</li>
+    <li IfModActive="kongkim.PanelsFrames">Mods and Shit/Panels Frames and Stairs</li>
     <li IfModActive="qq.expanded.brickwork">Mods and Shit/Expanded Brickwork</li>
     <li IfModActive="rick.fcp.core.tools">Mods and Shit/FCP Tools</li>
     <li IfModActiveAny="mlie.hunterphagexenotype,joeownage.hunterphageequip">Mods and Shit/Hunterphage/Hunterphage Equipment Only</li>
@@ -1032,6 +1035,7 @@
     <li IfModActive="acutus.clusterprojection">Mods and Shit/Cluster Projection</li>
     <li IfModActive="eeg.moxasf">Mods and Shit/Medieval Overhaul Adaptive Storage</li>
     <li IfModActive="maux36.rimbody">Mods and Shit/Rimbody</li>
+    <li IfModActive="ferny.RimbodyIntegrationPatch">Mods and Shit/Rimbody Vanilla-Style Integration Patch</li>
     <li IfModActive="escarval.mirroredpodlauncher">Mods and Shit/Mirrored Pod Launcher</li>
     <li IfModActive="crewd.AdvancedTransportPodsV2">Mods and Shit/Advanced Transport Pods V2</li>
     <li IfModActive="Nebulae.BiggerVacBarriers">Mods and Shit/Bigger Vac Barriers</li>

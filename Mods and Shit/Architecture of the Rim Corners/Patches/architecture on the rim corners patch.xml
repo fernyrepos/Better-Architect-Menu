@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-<Operation Class="PatchOperationAddModExtension">
+
+  <Operation Class="PatchOperationAddModExtension">
+    <success>Always</success>
     <xpath>Defs/DesignationCategoryDef[defName="Eaves"]</xpath>
-        <value>
-            <li Class="BetterArchitect.NestedCategoryExtension">
-                <parentCategory>Structure</parentCategory>
-            </li>
-        </value>
-</Operation>
+    <value>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Ferny_Decorations</parentCategory>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/DesignationCategoryDef[defName="Eaves"]/label</xpath>
+    <value>
+      <label>Eaves</label>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/DesignationCategoryDef[defName="Eaves"]/order</xpath>
+    <value>
+      <order>950</order>
+    </value>
+  </Operation>
+
 </Patch>
-
-
