@@ -946,6 +946,7 @@
     <li>misstalls.vrshuttle</li>
     <li>misstall.furniture</li>
     <li>Misstall.AR.IdeologyStyle</li>
+    <li>astryl.AsAboveSoBelow</li>
     <li>turbopickle.gravshuttle</li>
     <li>mrwireman.stealthshuttle</li>
     <li>unagi.ap.dress</li>
@@ -1017,6 +1018,7 @@
     <li>moistestWhale.CeilingTradeBeacon</li>
     <li>Meltup.NopowerCommsSimplified</li>
     <li>veterano.mythicages.megafaunabestiary</li>
-	<!-- (Add new mods here ^^^^^) -->
+    <li>gguake.grazingarea</li>
+    <!-- (Add new mods here ^^^^^) -->
 </loadAfter>
 </ModMetaData>

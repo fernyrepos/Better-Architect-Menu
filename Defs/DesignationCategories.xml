@@ -467,6 +467,22 @@
   	</DesignationCategoryDef>
 
   <DesignationCategoryDef>
+    <defName>Ferny_Elevation</defName>
+    <label>Elevation</label>
+    <description>Build stairs, ladders, and elevators between levels.</description>
+    <order>10</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Structure</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
     <defName>Ferny_Foundations</defName>
     <label>Foundations</label>
     <description>Build structural bridges.</description>

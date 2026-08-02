@@ -163,4 +163,59 @@
 			<designationCategory>Ferny_Heating</designationCategory>
 		</value>
 	</Operation>
+
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[@Name="PFSDecoDoorFrame"]/designatorDropdown</xpath>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[@Name="PFSDecoDoorFrame"]</xpath>
+    <value>
+      <designationCategory>Ferny_Framing</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="PFS_DoorSlope"]</xpath>
+    <value>
+      <designationCategory>Ferny_Framing</designationCategory>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="PFS_DoorFrameA"]</xpath>
+    <value>
+      <uiOrder>1</uiOrder>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="PFS_DoorFrameB"]</xpath>
+    <value>
+      <uiOrder>2</uiOrder>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="PFS_DoorFrameC"]</xpath>
+    <value>
+      <uiOrder>3</uiOrder>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="PFS_DoorSlope"]</xpath>
+    <value>
+      <uiOrder>4</uiOrder>
+    </value>
+  </Operation>
+
 </Patch>

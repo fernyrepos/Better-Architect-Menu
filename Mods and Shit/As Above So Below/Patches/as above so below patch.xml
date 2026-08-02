@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[
+      defName="AB_StairsDown" or
+      defName="AB_GrandStairsDown" or
+      defName="AB_GrandStairsUp" or
+      defName="AB_Elevator" or
+      defName="AB_LadderDown" or
+      defName="AB_LadderUp" or
+      defName="AB_StairsUp" or
+      defName="AB_WideStairsDown" or
+      defName="AB_WideStairsUp"
+    ]</xpath>
+    <value>
+      <designationCategory>Ferny_Elevation</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[@Name="AB_VerticalConduitBase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerManagement</designationCategory>
+    </value>
+  </Operation>
+
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>
+      Defs/ThingDef[defName="AB_VerticalDuctDown"]/designationCategory |
+      Defs/ThingDef[defName="AB_VerticalDuctUp"]/designationCategory
+    </xpath>
+    <value>
+      <designationCategory>Ferny_Elevation</designationCategory>
+    </value>
+  </Operation>
+
+</Patch>

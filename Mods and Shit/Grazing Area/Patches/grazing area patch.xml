@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/DesignationCategoryDef[modExtensions/li/parentCategory="Ferny_Animals"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>GrazingArea.Designator_AreaGrazingExpand</li>
+      <li>GrazingArea.Designator_AreaGrazingClear</li>
+    </value>
+  </Operation>
+</Patch>

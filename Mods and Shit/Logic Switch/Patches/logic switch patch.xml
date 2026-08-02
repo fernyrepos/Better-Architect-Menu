@@ -17,4 +17,16 @@
     </value>
 </Operation>
 
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>
+        Defs/ThingDef[defName="LogicGate_Timer"]/designationCategory |
+        Defs/ThingDef[defName="LogicGate_PowerCross"]/designationCategory
+    </xpath>
+    <value>
+        <designationCategory>Ferny_PowerManagement</designationCategory>
+    </value>
+</Operation>
+
 </Patch>
