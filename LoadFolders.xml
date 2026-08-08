@@ -79,6 +79,7 @@
     <li IfModActive="misstall.furniture">Mods and Shit/Misstall's Furniture</li>
     <li IfModActive="Misstall.AR.IdeologyStyle">Mods and Shit/Aliaile Race Furniture</li>
     <li IfModActive="astryl.AsAboveSoBelow">Mods and Shit/As Above So Below</li>
+    <li IfModActive="astryl.AsAboveSoBelow2">Mods and Shit/As Above So Below 2</li>
     <li IfModActive="VanillaExpanded.VFESpacer">Mods and Shit/VFE Spacer</li>
     <li IfModActive="OskarPotocki.VanillaFactionsExpanded.SettlersModule">Mods and Shit/VFE Settlers</li>
     <li IfModActive="kentington.saveourship2">Mods and Shit/SOS2</li>
@@ -1104,6 +1105,8 @@
     <li IfModActive="Telkir.TMods.MoreFloors">Mods and Shit/T MoreFloors</li>
     <li IfModActive="veterano.mythicages.megafaunabestiary">Mods and Shit/Mythic Ages Megafauna Bestiary</li>
     <li IfModActive="gguake.grazingarea">Mods and Shit/Grazing Area</li>
+        <li IfModActive="simeyo.PathAvoid">Mods and Shit/Path Avoid</li>
+        <li IfModActive="alt4s.Deck2">Mods and Shit/Deck 2</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

@@ -1019,6 +1019,9 @@
     <li>Meltup.NopowerCommsSimplified</li>
     <li>veterano.mythicages.megafaunabestiary</li>
     <li>gguake.grazingarea</li>
+        <li>astryl.AsAboveSoBelow2</li>
+        <li>simeyo.PathAvoid</li>
+        <li>alt4s.Deck2</li>
     <!-- (Add new mods here ^^^^^) -->
 </loadAfter>
 </ModMetaData>
