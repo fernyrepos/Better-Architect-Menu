@@ -245,6 +245,17 @@
 <!-- VACUUM -->
 
 	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="Ferny_SpaceVacuum"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>VanillaGravshipExpanded.Designator_AreaBuildVacBarrierRoof</li>
+			<li>Designator_AreaNoRoof</li>
+			<li>Designator_AreaIgnoreRoof</li>
+			<li>VanillaGravshipExpanded.Designator_RecolorVacBarrierRoof</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="VGE_SealantPopper"]</xpath>
 		<value>
 			<designationCategory>Ferny_SpaceVacuum</designationCategory>
