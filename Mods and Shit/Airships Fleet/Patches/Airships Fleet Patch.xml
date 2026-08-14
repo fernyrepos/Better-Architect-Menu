@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AF_Corsair_Blueprint" or defName="AF_Sapsucker_Blueprint" or defName="AF_Swallow_Blueprint" or defName="AF_Whale_Blueprint" or defName="AF_Woodpecker_Blueprint"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
