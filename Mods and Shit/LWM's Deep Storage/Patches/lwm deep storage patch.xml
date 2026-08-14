@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="LWM_DS_Storage"]/label</xpath>
+			<value>
+				<label>Deep Storage</label>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="LWM_DS_Storage"]/order</xpath>
+			<value>
+				<order>2</order>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs[DesignationCategoryDef/defName="LWM_DS_Storage"]</xpath>
+		<match Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="LWM_DS_Storage"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Storage</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+		</match>
+	</Operation>
+</Patch>

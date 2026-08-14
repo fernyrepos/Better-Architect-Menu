@@ -177,6 +177,8 @@
     <li IfModActive="oskarpotocki.vfe.deserters">Mods and Shit/VFE Deserters</li>                                           <!-- Implicit support for Pressure Plate -->
     <li IfModActive="oskarpotocki.vfe.tribals">Mods and Shit/VFE Tribals</li>
     <li IfModActive="adaptive.storage.framework">Mods and Shit/Adaptive Storage Framework</li>
+    <li IfModActive="lwm.deepstorage">Mods and Shit/LWM's Deep Storage</li>
+    <li IfModActive="gideon.simplestorage">Mods and Shit/Simple Storage Reborn</li>
     <li IfModActive="sarg.alphaprefabs">Mods and Shit/Alpha Prefabs</li>
     <li IfModActive="mlie.enterhere">Mods and Shit/Enter Here</li>
     <li IfModActive="adamas.hospital">Mods and Shit/Hospital</li>
