@@ -207,6 +207,8 @@
     <li>adamas.hospitalitycasino</li>
     <li>adamas.hospitalityspa</li>
     <li>adamas.vendingmachines</li>
+    <li>vanillaexpanded.gravship2</li>
+    <li>sbz.bookcase</li>
     <li>sarg.alphabooks</li>
     <li>telardo.multifloors</li>
     <li>cixwow.helixienboiler</li>
@@ -1022,6 +1024,11 @@
         <li>astryl.AsAboveSoBelow2</li>
         <li>simeyo.PathAvoid</li>
         <li>alt4s.Deck2</li>
+        <li>arsiy.rooms</li>
+        <li>ferny.CaptureExpansion</li>
+        <li>talias.VFEHardleatherConcrete</li>
+        <li>drilledhead.Wallpenmarker</li>
+        <li>forti.rimtoll</li>
     <!-- (Add new mods here ^^^^^) -->
 </loadAfter>
 </ModMetaData>

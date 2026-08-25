@@ -68,6 +68,15 @@
     </value>
 </Operation>
 
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VREA_NeutroValve"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_NeutroamineNetwork</designationCategory>
+    </value>
+</Operation>
+
+
 <!-- ANDROIDS -->
 <Operation Class="PatchOperationReplace">
     <success>Always</success>

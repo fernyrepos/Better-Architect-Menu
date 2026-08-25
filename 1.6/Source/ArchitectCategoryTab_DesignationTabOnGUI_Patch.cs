@@ -262,7 +262,7 @@ namespace BetterArchitect
                 var freshData = new List<DesignatorCategoryData>();
                 foreach (var cat in allCats)
                 {
-                    var allDesignators = VefHiddenDesignatorCache.FilterDesignators(cat.ResolvedAllowedDesignators).Where(d => d.Visible).ToList();
+                    var allDesignators = VefHiddenDesignatorCache.FilterDesignators(cat.ResolvedAllowedDesignators).Where(d => d.Visible).OrderBy(d => d.Order).ToList();
                     var (buildables, orders) = SeparateDesignatorsByType(allDesignators, cat);
                     freshData.Add(new DesignatorCategoryData(cat, cat == tab.def, allDesignators, buildables, orders));
                 }
@@ -684,6 +684,10 @@ namespace BetterArchitect
                 var result = designator.GizmoOnGUI(new Vector2(col * (gizmoSize + gizmoSpacing), row * rowHeight), gizmoSize, parms);
                 ProcessGizmoResult(result, designator, ref mouseoverGizmo, ref interactedGizmo, ref floatMenuGizmo, ref interactedEvent);
             }
+            if (BetterArchitectSettings.debugShowUiOrder)
+            {
+                DebugUiOrderOverlay.DrawBadges(designators, Vector2.zero, gizmosPerRow, gizmoSize, gizmoSpacing, rowHeight);
+            }
             ProcessGizmoInteractions(interactedGizmo, floatMenuGizmo, interactedEvent);
             
             Widgets.EndScrollView();
@@ -750,6 +754,10 @@ namespace BetterArchitect
 
                     var result = designator.GizmoOnGUI(new Vector2(col * (gizmoSize + gizmoSpacing), currentY + row * rowHeight), gizmoSize, parms);
                     ProcessGizmoResult(result, designator, ref mouseoverGizmo, ref interactedGizmo, ref floatMenuGizmo, ref interactedEvent);
+                }
+                if (BetterArchitectSettings.debugShowUiOrder)
+                {
+                    DebugUiOrderOverlay.DrawBadges(groupItems, new Vector2(0f, currentY), gizmosPerRow, gizmoSize, gizmoSpacing, rowHeight);
                 }
                 int rowCount = Mathf.CeilToInt((float)groupItems.Count / gizmosPerRow);
                 currentY += rowCount * rowHeight + gizmoSpacing;
@@ -990,6 +998,10 @@ namespace BetterArchitect
 
                 var result = designator.GizmoOnGUI(new Vector2(xPos, yPos), gizmoSize, parms);
                 ProcessGizmoResult(result, designator, ref mouseoverGizmo, ref interactedGizmo, ref floatMenuGizmo, ref interactedEvent);
+            }
+            if (BetterArchitectSettings.debugShowUiOrder)
+            {
+                DebugUiOrderOverlay.DrawBadges(designators, Vector2.zero, columns, gizmoSize, gizmoSpacing, rowHeight);
             }
             ProcessGizmoInteractions(interactedGizmo, floatMenuGizmo, interactedEvent);
             

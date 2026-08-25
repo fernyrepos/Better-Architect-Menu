@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- PLATFORM -->
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="VGE_GravshipSubarmor"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_SpacePlatform</designationCategory>
+    </value>
+</Operation>
+
+<!-- ASTROFUEL -->
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VGE_AuxiliaryAstrofuelTank"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VGE_AstrofuelPodLauncher"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VGE_Astropurifier"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="FuelOptimizer"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_AstrofuelNetwork</designationCategory>
+    </value>
+</Operation>
+
+<!-- PLATFORM -->
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VGE_EscapePod"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_SpacePlatform</designationCategory>
+    </value>
+</Operation>
+
+<!-- VACUUM -->
+
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VGE_VacuumWarningLight"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_SpaceVacuum</designationCategory>
+    </value>
+</Operation>
+
+</Patch>

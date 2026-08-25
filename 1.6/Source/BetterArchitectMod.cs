@@ -83,6 +83,9 @@ namespace BetterArchitect
                 Messages.Message("BA.ResetAllComplete".Translate(), MessageTypeDefOf.NeutralEvent, false);
             }
 
+            listingStandard.GapLine();
+            listingStandard.CheckboxLabeled("BA.DebugShowUiOrder".Translate(), ref BetterArchitectSettings.debugShowUiOrder, "BA.DebugShowUiOrderTooltip".Translate());
+
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }

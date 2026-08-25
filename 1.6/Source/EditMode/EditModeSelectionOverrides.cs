@@ -176,7 +176,7 @@ namespace BetterArchitect
                 return new List<Designator>();
             }
 
-            return VefHiddenDesignatorCache.FilterDesignators(def.ResolvedAllowedDesignators).Where(d => d.Visible).ToList();
+            return VefHiddenDesignatorCache.FilterDesignators(def.ResolvedAllowedDesignators).Where(d => d.Visible).OrderBy(d => d.Order).ToList();
         }
 
         private static List<Designator> BuildEffectiveDesignators(string categoryId, List<Designator> defaults)

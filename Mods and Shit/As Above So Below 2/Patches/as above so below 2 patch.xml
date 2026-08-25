@@ -7,4 +7,235 @@
       <designationCategory>Ferny_Elevation</designationCategory>
     </value>
   </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="AB_ColumnPower"]</xpath>
+    <value>
+      <designationCategory>Ferny_Elevation</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="AB_ColumnPipe"]</xpath>
+    <value>
+      <designationCategory>Ferny_Elevation</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="AB_ColumnClimate"]</xpath>
+    <value>
+      <designationCategory>Ferny_Elevation</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="AB_ColumnData"]</xpath>
+    <value>
+      <designationCategory>Ferny_Elevation</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB2_StairsDown"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_StairsDown"]/uiOrder</xpath>
+      <value>
+        <uiOrder>90</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_StairsDown"]</xpath>
+      <value>
+        <uiOrder>90</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB2_StairsUp"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_StairsUp"]/uiOrder</xpath>
+      <value>
+        <uiOrder>91</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_StairsUp"]</xpath>
+      <value>
+        <uiOrder>91</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB2_Elevator"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_Elevator"]/uiOrder</xpath>
+      <value>
+        <uiOrder>92</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_Elevator"]</xpath>
+      <value>
+        <uiOrder>92</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB2_GrandStairsDown"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_GrandStairsDown"]/uiOrder</xpath>
+      <value>
+        <uiOrder>93</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_GrandStairsDown"]</xpath>
+      <value>
+        <uiOrder>93</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB2_GrandStairsUp"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_GrandStairsUp"]/uiOrder</xpath>
+      <value>
+        <uiOrder>94</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_GrandStairsUp"]</xpath>
+      <value>
+        <uiOrder>94</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB2_LadderDown"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_LadderDown"]/uiOrder</xpath>
+      <value>
+        <uiOrder>95</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_LadderDown"]</xpath>
+      <value>
+        <uiOrder>95</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB2_LadderUp"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_LadderUp"]/uiOrder</xpath>
+      <value>
+        <uiOrder>96</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB2_LadderUp"]</xpath>
+      <value>
+        <uiOrder>96</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB_ColumnPower"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB_ColumnPower"]/uiOrder</xpath>
+      <value>
+        <uiOrder>97</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB_ColumnPower"]</xpath>
+      <value>
+        <uiOrder>97</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB_ColumnPipe"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB_ColumnPipe"]/uiOrder</xpath>
+      <value>
+        <uiOrder>98</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB_ColumnPipe"]</xpath>
+      <value>
+        <uiOrder>98</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB_ColumnClimate"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB_ColumnClimate"]/uiOrder</xpath>
+      <value>
+        <uiOrder>99</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB_ColumnClimate"]</xpath>
+      <value>
+        <uiOrder>99</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="AB_ColumnData"]/uiOrder</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB_ColumnData"]/uiOrder</xpath>
+      <value>
+        <uiOrder>100</uiOrder>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="AB_ColumnData"]</xpath>
+      <value>
+        <uiOrder>100</uiOrder>
+      </value>
+    </nomatch>
+  </Operation>
+
 </Patch>

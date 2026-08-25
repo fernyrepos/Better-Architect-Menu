@@ -54,5 +54,7 @@
 	<BA.AddSpecialDesignatorTitle>Add Special Designator</BA.AddSpecialDesignatorTitle>
 	<BA.SearchShowing>Showing {0} / {1}</BA.SearchShowing>
 	<BA.Close>Close</BA.Close>
+	<BA.DebugShowUiOrder>Debug: show UI order</BA.DebugShowUiOrder>
+	<BA.DebugShowUiOrderTooltip>Draws each designator's UI order (uiOrder) on its icon in the architect menu. For debugging designator sorting and writing uiOrder patches.</BA.DebugShowUiOrderTooltip>
 
 </LanguageData>

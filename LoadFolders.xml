@@ -208,6 +208,7 @@
     <li IfModActive="adamas.hospitalitycasino">Mods and Shit/Hospitality Casino</li>
     <li IfModActive="adamas.hospitalityspa">Mods and Shit/Hospitality Spa</li>
     <li IfModActive="adamas.vendingmachines">Mods and Shit/Vending Machines</li>
+    <li IfModActive="sbz.bookcase">Mods and Shit/sbz Bookcase</li>
     <li IfModActive="sarg.alphabooks">Mods and Shit/Alpha Books</li>
     <li IfModActive="telardo.multifloors">Mods and Shit/Multifloors</li>
     <li IfModActive="drilledhead.chute">Mods and Shit/Chute</li>
@@ -1107,6 +1108,12 @@
     <li IfModActive="gguake.grazingarea">Mods and Shit/Grazing Area</li>
         <li IfModActive="simeyo.PathAvoid">Mods and Shit/Path Avoid</li>
         <li IfModActive="alt4s.Deck2">Mods and Shit/Deck 2</li>
+    <li IfModActive="arsiy.rooms">Mods and Shit/Rooms</li>
+    <li IfModActive="ferny.CaptureExpansion">Mods and Shit/Capture Expansion</li>
+    <li IfModActive="talias.VFEHardleatherConcrete">Mods and Shit/Industrial Hardleather Concrete and Cheese</li>
+    <li IfModActive="drilledhead.Wallpenmarker">Mods and Shit/DHM Wallpenmarker</li>
+    <li IfModActive="forti.rimtoll">Mods and Shit/RimToll</li>
+    <li IfModActive="vanillaexpanded.gravship2">Mods and Shit/VE Gravship 2</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

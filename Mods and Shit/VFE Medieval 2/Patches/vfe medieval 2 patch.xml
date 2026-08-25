@@ -120,7 +120,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEM2_LeatherBoilpot"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Production</designationCategory>
+                        <designationCategory>Ferny_ProcessingProduction</designationCategory>
                     </value>
                 </Operation>
 
