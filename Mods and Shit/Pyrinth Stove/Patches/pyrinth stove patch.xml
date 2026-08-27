@@ -1,22 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>   
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PyrinthStove_PyrinthStove"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Kitchen</designationCategory>
+		</value>
+	</Operation>
 
-<!-- Cooking -->
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="PyrinthStove_PyrinthStove"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_Kitchen</designationCategory>
-                    </value>
-                </Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PyrinthStove_PyrinthSmithy"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Production</designationCategory>
+		</value>
+	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PyrinthStove_PyrinthCrematorium"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
 
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="PyrinthStove_PyrinthSmithy"]/designationCategory</xpath>
-    <value>
-        <designationCategory>Ferny_Production</designationCategory>
-    </value>
-</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PyrinthStove_PyrinthSmelter"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_ProcessingProduction</designationCategory>
+		</value>
+	</Operation>
 
+	<Operation Class="PatchOperationReplace" DBHLite="true" MayRequire="Dubwise.DubsBadHygiene">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PyrinthStove_PyrinthBoiler"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Hygiene</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace" MayRequire="Dubwise.DubsBadHygiene">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PyrinthStove_PyrinthSaunaHeater"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Joy</designationCategory>
+		</value>
+	</Operation>
 </Patch>
