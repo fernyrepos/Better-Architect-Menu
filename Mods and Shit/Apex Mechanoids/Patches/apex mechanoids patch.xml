@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_MechbandAntenna_Dominus"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Summon</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_MechbandAntenna_Terminus"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Summon</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_MechbandAntenna_Celerus"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Summon</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_MechbandAntenna_Gazer"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Summon</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_MechbandAntenna_United"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Summon</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_MechCommandCasket"]</xpath>
+    <value>
+      <designationCategory>Ferny_Mechanoids</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_CasketBandwidthAmplifier"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Mechanoids</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_GestatorAmplifier"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Mechanoids</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_MechanoidContainer_Player"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Mechanoids</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_RepairStation_Small"]</xpath>
+    <value>
+      <designationCategory>Ferny_Mechanoids</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_RepairStation_Advanced"]</xpath>
+    <value>
+      <designationCategory>Ferny_Mechanoids</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_Building_ToxicPurifier"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Pollution</designationCategory>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs/ThingDef[defName="APM_GazerEmplacement"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Weapons</designationCategory>
+    </value>
+  </Operation>
+</Patch>

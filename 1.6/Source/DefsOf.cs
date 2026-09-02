@@ -7,5 +7,6 @@ namespace BetterArchitect
     public class DefsOf
     {
         public static DesignationCategoryDef Orders;
+        public static SoundDef BA_DiscoverDesignator;
     }
 }

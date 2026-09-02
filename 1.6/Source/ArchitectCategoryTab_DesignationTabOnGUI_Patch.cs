@@ -61,6 +61,7 @@ namespace BetterArchitect
             lastDrawFrame = -1;
             leftPanelScrollPosition = designatorGridScrollPosition = ordersScrollPosition = Vector2.zero;
             currentArchitectCategoryTab = null;
+            MysteryUnlockRuntime.Reset();
             BamDragDrop.Clear();
         }
         private struct SortCacheKey : IEquatable<SortCacheKey>
@@ -617,6 +618,10 @@ namespace BetterArchitect
 
             var viewControlsRect = new Rect(rect.xMax - 100f, rect.y, 235f, 28f);
             DrawViewControls(viewControlsRect, category, designators);
+            if (MysteryUnlockRuntime.Active)
+            {
+                MysteryUnlockRuntime.DrawRevealAllButton(new Rect(rect.x, rect.y, rect.width, 28f));
+            }
             var settings = BetterArchitectSettings.sortSettingsPerCategory[category.defName];
             SortDesignators(designators, settings, category);
             var outRect = new Rect(rect.x, rect.y + 30f, rect.width, rect.height - 30f);
@@ -681,7 +686,13 @@ namespace BetterArchitect
                     multipleSelected = false
                 };
 
-                var result = designator.GizmoOnGUI(new Vector2(col * (gizmoSize + gizmoSpacing), row * rowHeight), gizmoSize, parms);
+                var gizmoPosition = new Vector2(col * (gizmoSize + gizmoSpacing), row * rowHeight);
+                if (MysteryUnlockRuntime.Active && MysteryUnlockRuntime.DrawInsteadOfGizmo(gizmoPosition, gizmoSize, designator, parms))
+                {
+                    continue;
+                }
+
+                var result = designator.GizmoOnGUI(gizmoPosition, gizmoSize, parms);
                 ProcessGizmoResult(result, designator, ref mouseoverGizmo, ref interactedGizmo, ref floatMenuGizmo, ref interactedEvent);
             }
             if (BetterArchitectSettings.debugShowUiOrder)
@@ -752,7 +763,13 @@ namespace BetterArchitect
                         multipleSelected = false
                     };
 
-                    var result = designator.GizmoOnGUI(new Vector2(col * (gizmoSize + gizmoSpacing), currentY + row * rowHeight), gizmoSize, parms);
+                    var gizmoPosition = new Vector2(col * (gizmoSize + gizmoSpacing), currentY + row * rowHeight);
+                    if (MysteryUnlockRuntime.Active && MysteryUnlockRuntime.DrawInsteadOfGizmo(gizmoPosition, gizmoSize, designator, parms))
+                    {
+                        continue;
+                    }
+
+                    var result = designator.GizmoOnGUI(gizmoPosition, gizmoSize, parms);
                     ProcessGizmoResult(result, designator, ref mouseoverGizmo, ref interactedGizmo, ref floatMenuGizmo, ref interactedEvent);
                 }
                 if (BetterArchitectSettings.debugShowUiOrder)
@@ -995,6 +1012,11 @@ namespace BetterArchitect
                     isFirst = i == 0,
                     multipleSelected = false
                 };
+
+                if (MysteryUnlockRuntime.Active && MysteryUnlockRuntime.DrawInsteadOfGizmo(new Vector2(xPos, yPos), gizmoSize, designator, parms))
+                {
+                    continue;
+                }
 
                 var result = designator.GizmoOnGUI(new Vector2(xPos, yPos), gizmoSize, parms);
                 ProcessGizmoResult(result, designator, ref mouseoverGizmo, ref interactedGizmo, ref floatMenuGizmo, ref interactedEvent);

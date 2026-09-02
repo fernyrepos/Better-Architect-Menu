@@ -168,6 +168,8 @@
     <li IfModActive="vanillaracesexpanded.waster">Mods and Shit/VRE Wasters</li>
     <li IfModActive="vanillaexpanded.temperature">Mods and Shit/VE Temperature</li>
     <li IfModActive="sarg.alphamechs">Mods and Shit/Alpha Mechs</li>
+    <li IfModActive="Mortis.ApexMechanoids">Mods and Shit/Apex Mechanoids</li>
+    <li IfModActive="Smxrez.SAStarfireboss">Mods and Shit/Simple Additions Starfire Boss</li>
     <li IfModActive="sbz.cryogenictank">Mods and Shit/Cryogenic Tank</li>
     <li IfModActive="heremeus.medicaldissection">Mods and Shit/Medical Dissection</li>
     <li IfModActive="harkon.biotechaddon.medievaldeathrestcoffin">Mods and Shit/Medieval Deathrest</li>

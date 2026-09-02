@@ -66,6 +66,9 @@ namespace BetterArchitect
             listingStandard.Gap();
             listingStandard.CheckboxLabeled("BA.UseSpecialFloorsTab".Translate(), ref BetterArchitectSettings.useSpecialFloorsTab, "BA.UseSpecialFloorsTabTooltip".Translate());
 
+            listingStandard.Gap();
+            listingStandard.CheckboxLabeled("BA.MysteryUnlocks".Translate(), ref BetterArchitectSettings.mysteryUnlocks, "BA.MysteryUnlocksTooltip".Translate());
+
             listingStandard.GapLine();
             listingStandard.Label("BA.SettingsIntro".Translate());
             if (listingStandard.ButtonText("BA.OpenParentVisibility".Translate()))

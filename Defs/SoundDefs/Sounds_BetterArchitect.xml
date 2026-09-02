@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>BA_DiscoverDesignator</defName>
+    <maxSimultaneous>99</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/DiscoverDesignator</clipPath>
+          </li>
+        </grains>
+        <volumeRange>50</volumeRange>
+				<pitchRange>10</pitchRange>  
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

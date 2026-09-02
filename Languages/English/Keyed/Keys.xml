@@ -54,6 +54,11 @@
 	<BA.AddSpecialDesignatorTitle>Add Special Designator</BA.AddSpecialDesignatorTitle>
 	<BA.SearchShowing>Showing {0} / {1}</BA.SearchShowing>
 	<BA.Close>Close</BA.Close>
+	<BA.MysteryUnlocks>Mystery unlocks</BA.MysteryUnlocks>
+	<BA.MysteryUnlocksTooltip>Buildings unlocked by research arrive gift-wrapped in the architect menu. Click one to reveal it.</BA.MysteryUnlocksTooltip>
+	<BA.ClickToReveal>Click to reveal</BA.ClickToReveal>
+	<BA.NewUnlockBadge>NEW</BA.NewUnlockBadge>
+	<BA.RevealAll>Reveal all ({0})</BA.RevealAll>
 	<BA.DebugShowUiOrder>Debug: show UI order</BA.DebugShowUiOrder>
 	<BA.DebugShowUiOrderTooltip>Draws each designator's UI order (uiOrder) on its icon in the architect menu. For debugging designator sorting and writing uiOrder patches.</BA.DebugShowUiOrderTooltip>
 
