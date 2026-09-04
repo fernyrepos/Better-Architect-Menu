@@ -620,7 +620,7 @@ namespace BetterArchitect
             DrawViewControls(viewControlsRect, category, designators);
             if (MysteryUnlockRuntime.Active)
             {
-                MysteryUnlockRuntime.DrawRevealAllButton(new Rect(rect.x, rect.y, rect.width, 28f));
+                MysteryUnlockRuntime.DrawRevealAllButton(new Rect(rect.x, rect.y, rect.width, 28f), designators);
             }
             var settings = BetterArchitectSettings.sortSettingsPerCategory[category.defName];
             SortDesignators(designators, settings, category);

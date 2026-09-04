@@ -66,10 +66,16 @@ namespace BetterArchitect
             return true;
         }
 
-        public static void DrawRevealAllButton(Rect headerRect)
+        public static void DrawRevealAllButton(Rect headerRect, List<Designator> designators)
         {
-            var pendingCount = MysteryUnlockTracker.PendingCount;
-            if (pendingCount <= RevealAllThreshold) return;
+            if (!MysteryUnlockTracker.HasPending || designators == null) return;
+
+            var hiddenCount = 0;
+            for (var i = 0; i < designators.Count; i++)
+            {
+                if (IsHidden(designators[i])) hiddenCount++;
+            }
+            if (hiddenCount <= RevealAllThreshold) return;
 
             var available = headerRect.width - 108f;
             if (available < 70f) return;
@@ -77,14 +83,28 @@ namespace BetterArchitect
             var buttonRect = new Rect(headerRect.x + 4f, headerRect.y + 2f, Mathf.Min(RevealAllButtonWidth, available), 24f);
             var oldFont = Text.Font;
             Text.Font = GameFont.Tiny;
-            if (Widgets.ButtonText(buttonRect, "BA.RevealAll".Translate(pendingCount)))
+            if (Widgets.ButtonText(buttonRect, "BA.RevealAll".Translate(hiddenCount)))
             {
-                MysteryUnlockTracker.ClearAll();
-                activeReveals.Clear();
-                revealsUntil = 0f;
-                DefsOf.BA_DiscoverDesignator?.PlayOneShotOnCamera();
+                RevealAll(designators);
             }
             Text.Font = oldFont;
+        }
+
+        private static void RevealAll(List<Designator> designators)
+        {
+            var revealedAny = false;
+            for (var i = 0; i < designators.Count; i++)
+            {
+                if (!IsHidden(designators[i])) continue;
+                ClearPendingFor(designators[i]);
+                revealedAny = true;
+            }
+
+            if (!revealedAny) return;
+
+            activeReveals.Clear();
+            revealsUntil = 0f;
+            DefsOf.BA_DiscoverDesignator?.PlayOneShotOnCamera();
         }
 
         private static void DrawMysteryBox(Rect rect, Designator designator, string key)
@@ -173,7 +193,7 @@ namespace BetterArchitect
             GUI.color = Color.white;
         }
 
-        private static void Reveal(Designator designator, string key)
+        private static void ClearPendingFor(Designator designator)
         {
             if (designator is Designator_Build build)
             {
@@ -190,6 +210,11 @@ namespace BetterArchitect
                     }
                 }
             }
+        }
+
+        private static void Reveal(Designator designator, string key)
+        {
+            ClearPendingFor(designator);
 
             var now = Time.realtimeSinceStartup;
             if (now >= revealsUntil)

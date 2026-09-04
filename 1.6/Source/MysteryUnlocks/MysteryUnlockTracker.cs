@@ -19,8 +19,6 @@ namespace BetterArchitect
             acceptsMarks = false;
         }
 
-        public static int PendingCount => pending.Count;
-
         public static bool IsPending(string defName)
         {
             return defName != null && pending.Contains(defName);
