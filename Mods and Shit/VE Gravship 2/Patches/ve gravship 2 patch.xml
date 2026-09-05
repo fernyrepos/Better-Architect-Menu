@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+<!-- CATEGORY -->
+
+<Operation Class="PatchOperationAddModExtension">
+    <success>Always</success>
+    <xpath>Defs/DesignationCategoryDef[defName="VGE_Designer"]</xpath>
+    <value>
+        <li Class="BetterArchitect.NestedCategoryExtension">
+            <parentCategory>Ferny_Space</parentCategory>
+        </li>
+    </value>
+</Operation>
+
 <!-- PLATFORM -->
 
 <Operation Class="PatchOperationReplace">
