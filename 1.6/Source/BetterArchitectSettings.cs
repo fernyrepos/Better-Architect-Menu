@@ -11,6 +11,8 @@ namespace BetterArchitect
         public static bool hideOnSelection = false;
         public static bool rememberSubcategory = false;
         public static bool useSpecialFloorsTab = true;
+        public static bool hideUnavailableVariants = true;
+        public static bool hideUnavailableFixedMaterials = false;
         public static bool mysteryUnlocks = true;
         public static bool debugShowUiOrder;
         public static float backgroundAlpha = 0.42f;
@@ -38,6 +40,8 @@ namespace BetterArchitect
             Scribe_Values.Look(ref rememberSubcategory, "rememberSubcategory", false);
             Scribe_Values.Look(ref backgroundAlpha, "backgroundAlpha", 0.15f);
             Scribe_Values.Look(ref useSpecialFloorsTab, "useSpecialFloorsTab", true);
+            Scribe_Values.Look(ref hideUnavailableVariants, "hideUnavailableVariants", true);
+            Scribe_Values.Look(ref hideUnavailableFixedMaterials, "hideUnavailableFixedMaterials", false);
             Scribe_Values.Look(ref mysteryUnlocks, "mysteryUnlocks", true);
             Scribe_Values.Look(ref debugShowUiOrder, "debugShowUiOrder", false);
 

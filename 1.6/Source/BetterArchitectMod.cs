@@ -65,6 +65,11 @@ namespace BetterArchitect
 
             listingStandard.Gap();
             listingStandard.CheckboxLabeled("BA.UseSpecialFloorsTab".Translate(), ref BetterArchitectSettings.useSpecialFloorsTab, "BA.UseSpecialFloorsTabTooltip".Translate());
+            if (BetterArchitectSettings.useSpecialFloorsTab)
+            {
+                listingStandard.CheckboxLabeled("BA.HideUnavailableVariants".Translate(), ref BetterArchitectSettings.hideUnavailableVariants, "BA.HideUnavailableVariantsTooltip".Translate());
+                listingStandard.CheckboxLabeled("BA.HideUnavailableFixedMaterials".Translate(), ref BetterArchitectSettings.hideUnavailableFixedMaterials, "BA.HideUnavailableFixedMaterialsTooltip".Translate());
+            }
 
             listingStandard.Gap();
             listingStandard.CheckboxLabeled("BA.MysteryUnlocks".Translate(), ref BetterArchitectSettings.mysteryUnlocks, "BA.MysteryUnlocksTooltip".Translate());

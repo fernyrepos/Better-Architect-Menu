@@ -1107,21 +1107,41 @@ namespace BetterArchitect
 
         private static void PopulateMaterials(Dictionary<MaterialInfo, List<Designator>> floorsByMaterial, MaterialInfo freeKey, Designator element)
         {
-            var costs = GetFloorCosts(element);
-            if (costs.NullOrEmpty())
+            var (fixedMaterials, stuffMaterials) = GetFloorCosts(element);
+            if (fixedMaterials.Count == 0 && stuffMaterials.Count == 0)
             {
                 AddFloor(element, freeKey, floorsByMaterial);
+                return;
             }
-            else
+            bool hideFixed = IsVariant(element) ? BetterArchitectSettings.hideUnavailableVariants : BetterArchitectSettings.hideUnavailableFixedMaterials;
+            foreach (var material in fixedMaterials)
             {
-                foreach (var cost in costs)
+                if (!hideFixed || IsOnMap(material))
                 {
-                    if (DebugSettings.godMode || Find.CurrentMap.listerThings.ThingsOfDef(cost.thingDef).Any())
-                    {
-                        AddFloor(element, new MaterialInfo(cost.thingDef.LabelCap, cost.thingDef.uiIcon, cost.thingDef.uiIconColor, cost.thingDef), floorsByMaterial);
-                    }
+                    AddFloor(element, new MaterialInfo(material.LabelCap, material.uiIcon, material.uiIconColor, material), floorsByMaterial);
                 }
             }
+            foreach (var material in stuffMaterials)
+            {
+                if (!BetterArchitectSettings.hideUnavailableVariants || IsOnMap(material))
+                {
+                    AddFloor(element, new MaterialInfo(material.LabelCap, material.uiIcon, material.uiIconColor, material), floorsByMaterial);
+                }
+            }
+        }
+
+        // A variant is one member of a floor family that differs only by material: a tile per stone, a matting
+        // per leather. They reach here as the expanded elements of a dropdown group. A dropdown kept whole (the
+        // colour-picker carpet) or a floor outside any group is a floor of its own with a set material.
+        private static bool IsVariant(Designator designator)
+        {
+            var dropdown = GetBuildableDefFrom(designator)?.designatorDropdown;
+            return dropdown != null && !dropdown.includeEyeDropperTool;
+        }
+
+        private static bool IsOnMap(ThingDef material)
+        {
+            return DebugSettings.godMode || Find.CurrentMap.listerThings.ThingsOfDef(material).Any();
         }
 
         private static void AddFloor(Designator designator, MaterialInfo key, Dictionary<MaterialInfo, List<Designator>> floorsByMaterial)
@@ -1220,21 +1240,20 @@ namespace BetterArchitect
             return MatchesSearch(designator);
         }
 
-        private static List<ThingDefCountClass> GetFloorCosts(Designator designator)
+        // Fixed materials come from the floor's own costList (a carpet always costs cloth); stuff materials are
+        // every stuff the floor accepts (a tile can be any stone). The two are filtered separately.
+        private static (List<ThingDef> fixedMaterials, List<ThingDef> stuffMaterials) GetFloorCosts(Designator designator)
         {
-            var costs = new List<ThingDefCountClass>();
+            var fixedMaterials = new List<ThingDef>();
+            var stuffMaterials = new List<ThingDef>();
             BuildableDef floor = GetBuildableDefFrom(designator);
-            if (floor?.costList != null) costs.AddRange(floor.costList);
+            if (floor?.costList != null) fixedMaterials.AddRange(floor.costList.Select(c => c.thingDef));
             if (floor?.costStuffCount > 0 && floor.stuffCategories != null)
             {
-                var allStuff = DefDatabase<ThingDef>.AllDefs
-                    .Where(y => y.stuffProps?.categories != null && y.stuffProps.categories.Any(cat => floor.stuffCategories.Contains(cat)));
-                foreach (var item in allStuff)
-                {
-                    costs.Add(new ThingDefCountClass(item, floor.costStuffCount));
-                }
+                stuffMaterials.AddRange(DefDatabase<ThingDef>.AllDefs
+                    .Where(y => y.stuffProps?.categories != null && y.stuffProps.categories.Any(cat => floor.stuffCategories.Contains(cat))));
             }
-            return costs;
+            return (fixedMaterials, stuffMaterials);
         }
 
         private static float? GetMaxPowerOutput(BuildableDef buildable)

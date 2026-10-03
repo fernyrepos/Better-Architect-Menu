@@ -10,6 +10,10 @@
 	<BA.RememberSubcategoryTooltip>When enabled, the mod will remember the last selected subcategory for each main category. When disabled, it will always default to the first subcategory.</BA.RememberSubcategoryTooltip>
 	<BA.UseSpecialFloorsTab>Use custom floor menu</BA.UseSpecialFloorsTab>
 	<BA.UseSpecialFloorsTabTooltip>Whether the menu should use subcategories for each material, or be more broadly sorted. (WIP)</BA.UseSpecialFloorsTabTooltip>
+	<BA.HideUnavailableVariants>Hide material variants not on the map</BA.HideUnavailableVariants>
+	<BA.HideUnavailableVariantsTooltip>Floors that come in one version per material only list the materials currently on the map.</BA.HideUnavailableVariantsTooltip>
+	<BA.HideUnavailableFixedMaterials>Hide floors whose material is not on the map</BA.HideUnavailableFixedMaterials>
+	<BA.HideUnavailableFixedMaterialsTooltip>Floors with a set material are hidden until that material is on the map.</BA.HideUnavailableFixedMaterialsTooltip>
 	<BA.Default>Default</BA.Default>
 	<BA.Label>Label</BA.Label>
 	<BA.Beauty>Beauty</BA.Beauty>
