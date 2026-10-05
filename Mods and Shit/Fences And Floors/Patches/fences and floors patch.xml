@@ -39,4 +39,35 @@
 		</value>
 	</Operation>
 	
+
+	<!-- FLOORS -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FAFWoodTile"]</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsWood</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FAFMetalTileA"]</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsMetal</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FAFMetalTileB"]</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsMetal</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FAFTechTile"]</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsMetal</designationCategory>
+		</value>
+	</Operation>
+
 </Patch>

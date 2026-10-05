@@ -21,29 +21,48 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/TerrainDef[@Name="FloorPlasteel"]/designationCategory</xpath>
         <value>
-            <designationCategory>Floors</designationCategory>
+            <designationCategory>Ferny_FloorsClean</designationCategory>
         </value>
     </Operation>
 	
 	<Operation Class="PatchOperationReplace">
         <xpath>Defs/TerrainDef[@Name="TFloorBaseGemstone"]/designationCategory</xpath>
         <value>
-            <designationCategory>Floors</designationCategory>
+            <designationCategory>Ferny_FloorsStone</designationCategory>
         </value>
     </Operation>
 	
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/TerrainDef[@Name="TFloorBaseStone"]/designationCategory</xpath>
         <value>
-            <designationCategory>Floors</designationCategory>
+            <designationCategory>Ferny_FloorsStone</designationCategory>
         </value>
     </Operation>
 	
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/TerrainDef[@Name="TFloorBaseWood"]/designationCategory</xpath>
         <value>
-            <designationCategory>Floors</designationCategory>
+            <designationCategory>Ferny_FloorsWood</designationCategory>
         </value>
     </Operation>
 	
+
+    <!-- CARPET -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/TerrainTemplateDef[defName="CheckCarpet"]</xpath>
+        <value>
+            <li Class="BetterArchitect.TemplateCategoryExtension">
+                <designationCategory>Ferny_FloorsCarpet</designationCategory>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/TerrainTemplateDef[defName="WoolCarpet"]</xpath>
+        <value>
+            <li Class="BetterArchitect.TemplateCategoryExtension">
+                <designationCategory>Ferny_FloorsCarpet</designationCategory>
+            </li>
+        </value>
+    </Operation>
+
 </Patch>

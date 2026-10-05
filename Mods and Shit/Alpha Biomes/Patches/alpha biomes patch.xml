@@ -166,4 +166,48 @@
     </value>
   </Operation>
 
+  <!-- FLOORS -->
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AlienWoodFloors_CrystalWood"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsWood</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AlienWoodFloors_MushroomStalks"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsWood</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AlienWoodFloors_RedWood"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsWood</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AsphaltFloor"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsConcrete</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AsphaltBridge"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsConcrete</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_CompactedSand"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsStone</designationCategory>
+    </value>
+  </Operation>
+
 </Patch>

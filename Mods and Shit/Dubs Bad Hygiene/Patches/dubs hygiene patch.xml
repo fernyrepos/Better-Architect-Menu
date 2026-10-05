@@ -55,4 +55,13 @@
                     </value>
                 </Operation>
 
+                <!-- STONE -->
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/TerrainDef[@Name="DBHMosaicBase"]</xpath>
+                    <value>
+                        <designationCategory>Ferny_FloorsStone</designationCategory>
+                    </value>
+                </Operation>
+
 </Patch>

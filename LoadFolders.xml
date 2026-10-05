@@ -1121,6 +1121,7 @@
     <li IfModActive="natsuki.manipulatorbeam">Mods and Shit/Manipulator Beam Emitter</li>
     <li IfModActive="kvr.beamconstructor">Mods and Shit/Beam Constructor</li>
     <li IfModActive="koni.misc.toxlamps">Mods and Shit/Toxlamps</li>
+    <li IfModActive="Teok25.ArchotechExpanded">Mods and Shit/Archotech Expanded</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

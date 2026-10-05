@@ -19,4 +19,13 @@
         </value>
     </Operation>
 
+    <!-- CARPET -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/VEF.Maps.ActiveTerrainDef[defName="VFEM2_Chemdrench"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsCarpet</designationCategory>
+        </value>
+    </Operation>
+
 </Patch>

@@ -1592,6 +1592,46 @@
     </modExtensions>
   </DesignationCategoryDef>
 
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsSynthetic</defName>
+    <label>Synthetic</label>
+    <description>Synthetic floors.</description>
+    <order>300</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
+  <DesignationCategoryDef>
+    <defName>Ferny_FloorsFree</defName>
+    <label>Free</label>
+    <description>Floors that cost nothing.</description>
+    <order>100</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_RemoveFloor</li>
+      <li>Designator_RemoveFoundation</li>
+      <li>Designator_SmoothFloors</li>
+      <li>Designator_PaintFloor</li>
+      <li>Designator_RemoveFloorPaint</li>
+    </specialDesignatorClasses>
+    <modExtensions>
+      <li Class="BetterArchitect.NestedCategoryExtension">
+        <parentCategory>Floors</parentCategory>
+      </li>
+    </modExtensions>
+  </DesignationCategoryDef>
+
 	<DesignationCategoryDef>
 		<defName>VCHE_PipeNetworks</defName>
 		<label>Resources</label>

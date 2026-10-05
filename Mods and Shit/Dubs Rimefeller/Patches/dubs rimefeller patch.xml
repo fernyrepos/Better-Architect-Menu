@@ -22,9 +22,9 @@
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>Defs/TerrainDef[@ParentName="RimefellerLinoBase"]</xpath>
+		<xpath>Defs/TerrainDef[@ParentName="RimefellerLinoBase"][not(defName="Lino_SterileTile")]</xpath>
 		<value>
-			<designationCategory>Floors</designationCategory>
+			<designationCategory>Ferny_FloorsSynthetic</designationCategory>
 		</value>
 	</Operation>
 
@@ -84,4 +84,28 @@
 		</value>
 	</Operation>
 	
+
+	<!-- CLEAN / WOOD -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="Lino_SterileTile"]</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsClean</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="Wood_ParquetHerring"]</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsWood</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="Wood_ParquetVersailles"]</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsWood</designationCategory>
+		</value>
+	</Operation>
+
 </Patch>

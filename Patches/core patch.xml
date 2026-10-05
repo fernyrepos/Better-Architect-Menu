@@ -162,9 +162,16 @@
     </Operation>
 
     <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="StrawMatting"]</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsCarpet</designationCategory>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="SterileTile"]</xpath>
         <value>
-            <designationCategory>Ferny_FloorsMetal</designationCategory>
+            <designationCategory>Ferny_FloorsClean</designationCategory>
         </value>
     </Operation>
 
