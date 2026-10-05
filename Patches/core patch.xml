@@ -1512,6 +1512,22 @@
         </value>
     </Operation>
 
+    <!-- LOCATIONS -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="MarriageSpot"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_ColonyLocations</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/ThingDef[defName="PartySpot"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_ColonyLocations</designationCategory>
+        </value>
+    </Operation>
+
     <!-- PROCESSING PRODUCTION -->
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
