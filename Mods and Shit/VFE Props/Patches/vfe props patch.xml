@@ -154,4 +154,13 @@
     </value>
   </Operation>
 
+  <!-- WALLS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="VFEP_ShortWalls"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Walls</designationCategory>
+    </value>
+  </Operation>
+
 </Patch>

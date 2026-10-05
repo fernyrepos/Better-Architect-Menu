@@ -49,4 +49,35 @@
                         <designationCategory>Ferny_ProcessingProduction</designationCategory>
                     </value>
                 </Operation>
+
+  <!-- AERIAL TRANSPORT -->
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="SoS2_Shuttle_Personal_Blueprint"]</xpath>
+    <value>
+      <designationCategory>Ferny_AerialTransport</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="SoS2_Shuttle_Standard_Blueprint"]</xpath>
+    <value>
+      <designationCategory>Ferny_AerialTransport</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="SoS2_Shuttle_Heavy_Blueprint"]</xpath>
+    <value>
+      <designationCategory>Ferny_AerialTransport</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="SoS2_Shuttle_Superheavy_Blueprint"]</xpath>
+    <value>
+      <designationCategory>Ferny_AerialTransport</designationCategory>
+    </value>
+  </Operation>
+
 </Patch>

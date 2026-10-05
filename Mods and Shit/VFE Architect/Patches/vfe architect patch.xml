@@ -84,6 +84,13 @@
                         <designationCategory>Ferny_Walls</designationCategory>
                     </value>
                 </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VFEArch_CellWall"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Ferny_Walls</designationCategory>
+                    </value>
+                </Operation>
 
 
 <!-- CONCRETE FOUNDATIONS -->

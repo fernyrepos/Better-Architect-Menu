@@ -166,4 +166,171 @@
     </value>
   </Operation>
 
+  <!-- GAS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropanePipe"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_HelixienGasNetwork</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropanePipe_Underground"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_HelixienGasNetwork</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_Propane_Valve"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_HelixienGasNetwork</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropaneStorage"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_HelixienGasNetwork</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropaneTap"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_HelixienGasNetwork</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropaneDrain"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_HelixienGasNetwork</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropanePump"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_HelixienGasNetwork</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- PRODUCE -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropaneTableMachining"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_TarPump"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_CoreSampleDrill"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- REFINE -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_SlimeCompressor"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ProcessingProduction</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropaneFueledSmithy"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ProcessingProduction</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropaneSmelter"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ProcessingProduction</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- POWER GENERATION -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_AlcyoniteSolar"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_AlcyoniteSolar_Advanced"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_PowerGeneration</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- FEED -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropaneStove"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Kitchen</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- HEATING -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_PropaneHeater"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Heating</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- WEAPONS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_Turret_Propane"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Weapons</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- TRAPS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_TrapIED_Tar"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Traps</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- COMBAT INFRASTRUCTURE -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_OcularGasSpewer"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_CombatInfrastructure</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- INFLUENCE -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AB_AlienComplianceCenter"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Control</designationCategory>
+    </value>
+  </Operation>
+
 </Patch>
