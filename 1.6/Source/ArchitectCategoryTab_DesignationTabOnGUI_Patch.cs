@@ -1359,11 +1359,7 @@ namespace BetterArchitect
 
         private static System.Type mainTabWindowMayaMenuType;
         private static System.Reflection.FieldInfo editModeField;
-        private static System.Type dubUtilsType;
-        private static System.Reflection.MethodInfo getDesignatorKeyMethod;
-        private static System.Type dubsMintMenusModType;
-        private static System.Reflection.PropertyInfo settingsProperty;
-        private static System.Reflection.MethodInfo toggleDesMethod;
+        private static System.Reflection.MethodInfo mintWheelAssignMethod;
         private static System.Reflection.MethodInfo refreshDesignatorCachesMethod;
         private static bool? _dubsMintMenusActive;
         public static bool DubsMintMenusActive => _dubsMintMenusActive ??= ModsConfig.IsActive("Dubwise.DubsMintMenus");
@@ -1397,42 +1393,16 @@ namespace BetterArchitect
                     return;
                 }
 
-                dubUtilsType = AccessTools.TypeByName("DubsMintMenus.DubUtils");
-                if (dubUtilsType == null)
+                var mintWheelType = AccessTools.TypeByName("DubsMintMenus.MintWheel");
+                if (mintWheelType == null)
                 {
-                    Log.Error("InitializeDubsMintMenusReflection: dubUtilsType is null");
+                    Log.Error("InitializeDubsMintMenusReflection: mintWheelType is null");
                     return;
                 }
-                getDesignatorKeyMethod = AccessTools.Method(dubUtilsType, "GetDesignatorKey");
-                if (getDesignatorKeyMethod == null)
+                mintWheelAssignMethod = AccessTools.Method(mintWheelType, "Assign");
+                if (mintWheelAssignMethod == null)
                 {
-                    Log.Error("InitializeDubsMintMenusReflection: getDesignatorKeyMethod is null");
-                    return;
-                }
-
-                dubsMintMenusModType = AccessTools.TypeByName("DubsMintMenus.DubsMintMenusMod");
-                if (dubsMintMenusModType == null)
-                {
-                    Log.Error("InitializeDubsMintMenusReflection: dubsMintMenusModType is null");
-                    return;
-                }
-                settingsProperty = AccessTools.Property(dubsMintMenusModType, "Settings");
-                if (settingsProperty == null)
-                {
-                    Log.Error("InitializeDubsMintMenusReflection: settingsProperty is null");
-                    return;
-                }
-
-                var settingsType = AccessTools.TypeByName("DubsMintMenus.Settings");
-                if (settingsType == null)
-                {
-                    Log.Error("InitializeDubsMintMenusReflection: settingsType is null");
-                    return;
-                }
-                toggleDesMethod = AccessTools.Method(settingsType, "ToggleDes");
-                if (toggleDesMethod == null)
-                {
-                    Log.Error("InitializeDubsMintMenusReflection: toggleDesMethod is null");
+                    Log.Error("InitializeDubsMintMenusReflection: mintWheelAssignMethod is null");
                     return;
                 }
             }
@@ -1458,9 +1428,7 @@ namespace BetterArchitect
         {
             try
             {
-                var key = getDesignatorKeyMethod.Invoke(null, new object[] { designator }) as string;
-                var settings = settingsProperty.GetValue(null);
-                toggleDesMethod.Invoke(settings, new object[] { key });
+                mintWheelAssignMethod.Invoke(null, new object[] { designator });
                 refreshDesignatorCachesMethod.Invoke(null, null);
             }
             catch (Exception ex)
