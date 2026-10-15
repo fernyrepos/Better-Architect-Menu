@@ -367,10 +367,10 @@
     <li IfModActive="harkon.veaddon.vanillaexpandedextraembrasures">Mods and Shit/VE Extra Embrasures</li>
     <li IfModActive="aelanna.eccentrictech.furniture">Mods and Shit/Eccentric Tech Furniture</li>
     <li IfModActive="frozensnowfox.frozensnowfoxtweaks">Mods and Shit/FrozenSnowFox Tweaks</li>
-    <li IfModActive="dd.unofficial.notfood.mendandrecycle">Mods and Shit/MendAndRecycle</li>
+    <li IfModActive="dd.unofficial.notfood.mendandrecycle,notfood.MendAndRecycle">Mods and Shit/MendAndRecycle</li>
     <li IfModActive="tradingcontrol.tad.rimworld.core">Mods and Shit/Trading Control</li>
     <li IfModActive="bambaryla.bor">Mods and Shit/Beyond Our Reach</li>                                            <!-- patches a lot of other mods so likely needs sub-patches at some point. -->
-    <li IfModActive="mlie.autopsytable">Mods and Shit/AutopsyTable</li>
+    <li IfModActive="mlie.autopsytable,Smuffle.HarvestOrgansPostMortem">Mods and Shit/AutopsyTable</li>
     <li IfModActive="slimesenpai.autovents">Mods and Shit/AutoVents</li>
     <li IfModActive="princeofpluto.vehicles.trains">Mods and Shit/Trains of the Rim</li>
     <li IfModActive="garbageday.convectionalwarcrimes">Mods and Shit/Convectional War Crimes</li>
@@ -1121,6 +1121,22 @@
     <li IfModActive="natsuki.manipulatorbeam">Mods and Shit/Manipulator Beam Emitter</li>
     <li IfModActive="kvr.beamconstructor">Mods and Shit/Beam Constructor</li>
     <li IfModActive="koni.misc.toxlamps">Mods and Shit/Toxlamps</li>
+    <li IfModActive="Teok25.ArchotechExpanded">Mods and Shit/Archotech Expanded</li>
+    <li IfModActive="Mersid.BackupPowerUpdated">Mods and Shit/Backup Power</li>
+    <li IfModActive="Heaven.ColonyManagerFork">Mods and Shit/Colony Manager Fork</li>
+    <li IfModActive="Argon.ExpandedMaterials.Masonry">Mods and Shit/Expanded Materials - Masonry</li>
+    <li IfModActive="Argon.ExpandedMaterials.Metals">Mods and Shit/Expanded Materials - Metals</li>
+    <li IfModActive="NanoCE.GlassLights">Mods and Shit/Glass+Lights</li>
+    <li IfModActive="co.uk.epicguru.meleeanimation">Mods and Shit/Melee Animation</li>
+    <li IfModActive="Asiimoves.MediStation">Mods and Shit/MediStation</li>
+    <li IfModActive="Niilo007.NiilosQoL">Mods and Shit/Niilo's QoL</li>
+    <li IfModActive="RimThunderTeams.RimThunder.EnduringFreedom">Mods and Shit/RimThunder Enduring Freedom</li>
+    <li IfModActive="rimfridge.kv.rw">Mods and Shit/RimFridge</li>
+    <li IfModActive="Argon.SaltedMeatRemake">Mods and Shit/Salted Meat</li>
+    <li IfModActive="ODs.SimpleDoors">Mods and Shit/Simple Doors</li>
+    <li IfModActive="Proxyer.SmallShelf">Mods and Shit/Small Shelf</li>
+    <li IfModActive="vanillaquestsexpanded.generator">Mods and Shit/VQE The Generator</li>
+    <li IfModActive="Mlie.YayosEndGame">Mods and Shit/Yayos EndGame</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

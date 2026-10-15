@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- LOCATIONS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="AM_DuelSpot"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ColonyLocations</designationCategory>
+    </value>
+  </Operation>
+
+</Patch>

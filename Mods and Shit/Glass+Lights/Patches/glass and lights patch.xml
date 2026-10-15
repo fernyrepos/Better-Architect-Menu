@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- PRODUCTION -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="GlassworkTable"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="FueledGlassworkTable"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="ReinforcedGlassworkTable"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- DOORS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[@Name="DoorGlassBase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Doors</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- WINDOWS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Window"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Windows</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- LIGHTING -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[@Name="GlCeilingLampBase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="OutdoorGroundLamp"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- KITCHEN -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="SM_MeatRack"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Kitchen</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="SM_FishRack"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Kitchen</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="SM_SausageRack"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Kitchen</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="SM_BrineBarrel"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Kitchen</designationCategory>
+    </value>
+  </Operation>
+
+</Patch>

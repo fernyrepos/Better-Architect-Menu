@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- MANAGEMENT -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="FM_BasicManagerStation"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Management</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="FM_ManagerStation"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Management</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="FM_AIManager"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Management</designationCategory>
+    </value>
+  </Operation>
+
+</Patch>

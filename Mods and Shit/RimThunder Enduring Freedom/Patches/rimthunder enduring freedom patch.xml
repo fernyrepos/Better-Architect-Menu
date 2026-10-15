@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- GROUND TRANSPORT -->
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_M1078_LMTV_Blueprint"]</xpath>
+    <value>
+      <designationCategory>Ferny_GroundTransport</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- MILITARY TRANSPORT -->
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="RT_MATV_Vehicle_Blueprint"]</xpath>
+    <value>
+      <designationCategory>Ferny_MilitaryTransport</designationCategory>
+    </value>
+  </Operation>
+
+</Patch>

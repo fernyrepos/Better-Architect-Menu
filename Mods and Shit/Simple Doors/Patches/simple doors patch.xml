@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- SUPPORTS -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="SD_WoodColumn"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Supports</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="SD_StoneColumn"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Supports</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="SD_IndustrialColumn"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Supports</designationCategory>
+    </value>
+  </Operation>
+
+</Patch>
