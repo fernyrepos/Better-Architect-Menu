@@ -185,7 +185,7 @@
     <li IfModActive="mlie.prisonerarena">Mods and Shit/Prisoner Arena</li>
     <li IfModActive="mlie.smartervisitors">Mods and Shit/Smarter Visitors</li>
     <li IfModActive="smashphil.dropspot">Mods and Shit/Trade Ship Drop Spot</li>
-    <li IfModActive="grizzlemethis.tradingspot.rw">Mods and Shit/Trading Spot</li>
+    <li IfModActive="grizzlemethis.tradingspot.rw,tradingpost.programmerlily.com">Mods and Shit/Trading Spot</li>
     <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">Mods and Shit/VE Framework</li>
     <li IfModActive="vanillastorytellersexpanded.winstonwave">Mods and Shit/Winston Waves</li>
     <li IfModActive="smxrez.nonlethalreexamined">Mods and Shit/Non Lethal RE</li>
@@ -1121,6 +1121,17 @@
     <li IfModActive="natsuki.manipulatorbeam">Mods and Shit/Manipulator Beam Emitter</li>
     <li IfModActive="kvr.beamconstructor">Mods and Shit/Beam Constructor</li>
     <li IfModActive="koni.misc.toxlamps">Mods and Shit/Toxlamps</li>
+    <li IfModActive="talias.storage">Mods and Shit/Talias Storage</li>
+    <li IfModActive="kongkim.researchdata">Mods and Shit/Research Data</li>
+    <li IfModActive="pebblecat.electricpods">Mods and Shit/Electric Pod Launchers</li>
+    <li IfModActive="rimworld.superindustrialdeepdrill">Mods and Shit/Super Industrial DeepDrill</li>
+    <li IfModActive="aex.swampcooler">Mods and Shit/Halno's Simple Swamp Cooler</li>
+    <li IfModActive="trouperton.trystantravellersshuttleschematics">Mods and Shit/Trystan Traveller's Shuttle Schematics</li>
+    <li IfModActive="gravship.tactical.holotable">Mods and Shit/Gravship Tactical Holotable</li>
+    <li IfModActive="wvc.sergkart.biotech.moremechanoidsworkmodes">Mods and Shit/WVC - Work Modes</li>
+    <li IfModActive="comfycuddles.witheuterpe">Mods and Shit/Simple Mending</li>
+    <li IfModActive="hhinattta.miner">Mods and Shit/Auto Miner Unit</li>
+    <li IfModActive="morton.nobleandpsycasterfurniture">Mods and Shit/Noble and Psycaster Furniture</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

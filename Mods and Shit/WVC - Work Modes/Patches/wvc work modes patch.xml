@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Ferny_Mechanoids"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>WVC_WorkModes.Designator_MechanoidShutdownZone</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="Biotech"]/specialDesignatorClasses/li[text()="WVC_WorkModes.Designator_MechanoidShutdownZone"]</xpath>
+	</Operation>
+</Patch>

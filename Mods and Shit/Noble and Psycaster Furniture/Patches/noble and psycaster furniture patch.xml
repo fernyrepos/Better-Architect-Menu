@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonCeremonialHearth" or defName="MortonBloodlightBrazier" or defName="MortonBlacklightBrazier" or defName="MortonCeremonialHearth"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Lighting</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonBacklitDrape" or defName="MortonModernDrape" or defName="MortonRitualDrape" or defName="MortonGildedDrape" or defName="MortonTribalDrape"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoHanging</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="MortonSkullConduitBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Meditation</designationCategory>
+		</value>
+	</Operation>
+</Patch>

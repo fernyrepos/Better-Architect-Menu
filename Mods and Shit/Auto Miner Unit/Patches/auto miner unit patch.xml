@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AutoMiner_Launcher" or defName="ProtoAutoMiner_Pod" or defName="AutoMiner_Pod" or defName="AstAutoMiner_Pod"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_AerialTransport</designationCategory>
+		</value>
+	</Operation>
+</Patch>
