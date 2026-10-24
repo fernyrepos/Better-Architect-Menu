@@ -1029,6 +1029,72 @@
         <li>talias.VFEHardleatherConcrete</li>
         <li>drilledhead.Wallpenmarker</li>
         <li>forti.rimtoll</li>
+		<li>3HSTltd.signs</li>
+		<li>addie.spiralbornxenotype</li>
+		<li>Albion.SparklingWorlds.Full</li>
+		<li>Anthitei.ATHsStyleDraconic.Style</li>
+		<li>anthitei.athsstylegothic.style</li>
+		<li>anthitei.athsstylenorse.style</li>
+		<li>Aoba.DeadManSwitch.Expedition</li>
+		<li>AOBA.Framework</li>
+		<li>asunib.Gravlock</li>
+		<li>bean.mineralpack</li>
+		<li>Broms.AsteroidMineralScanner</li>
+		<li>Chairheir.VPERunesmith</li>
+		<li>chibi.shipholoai</li>
+		<li>co.uk.epicguru.rimforge</li>
+		<li>CraftableOdysseyTraps.Sentinel</li>
+		<li>Crows.DragonBond</li>
+		<li>DaniAngione.UltimatePatcher.Concrete</li>
+		<li>DSP.HalituisAmaricanous</li>
+		<li>ellit.Archeology</li>
+		<li>FS.ReviaRaceBiotech</li>
+		<li>Garethp.AshAndDust</li>
+		<li>Gerrymon.GreekcoreStyle</li>
+		<li>Ghastly.ProtocolAnomaly</li>
+		<li>GM.Cannibal.Style</li>
+		<li>GM.Erotic.Style</li>
+		<li>GM.Nautian.Style</li>
+		<li>GodlyAnnihilator.AnimalMedicalBed</li>
+		<li>Hobbes.terrapumps</li>
+		<li>jabberwocky887.chemfuelappliances</li>
+		<li>Jarocks.SecurityDoorsExpanded</li>
+		<li>jdubarb.spaceservices</li>
+		<li>JF.GeometricFloors</li>
+		<li>Joedox.CryptoCraftable.Fr</li>
+		<li>ks.flooringfloors</li>
+		<li>lemore.loadoutcabinet</li>
+		<li>LingLuo.CustomizeRoomRole</li>
+		<li>lite.gravships</li>
+		<li>lordfelix.RimContractors</li>
+		<li>Mlie.FuelEconomy</li>
+		<li>Mlie.LargeFactionBases</li>
+		<li>moistestWhale.spacerFloorTiles</li>
+		<li>morton.NobleandPsycasterFurniture</li>
+		<li>MortStrudel.CorporationFaction</li>
+		<li>notfood.MendAndRecycle</li>
+		<li>ODs.SimpleDoors</li>
+		<li>Onimods.ElectricTorches</li>
+		<li>pumpkin.morephytokinxenotypes</li>
+		<li>QuestionedMemes.PrisonerDeliveryService</li>
+		<li>ravvy.DD.Void.Addon</li>
+		<li>sarg.alphapropsships</li>
+		<li>Scorpio.VQEAncientsCraftable</li>
+		<li>siggi.nonlethaltraps</li>
+		<li>Smuffle.HarvestOrgansPostMortem</li>
+		<li>SunsetModerTeam.SunsetTechnology3</li>
+		<li>talias.brewery</li>
+		<li>tradingpost.programmerlily.com</li>
+		<li>Van.DATools</li>
+		<li>VanillaExpanded.VFEArt</li>
+		<li>vanillaquestsexpanded.ancients</li>
+		<li>VisSov.floortile</li>
+		<li>WallMounted.FunctionFurniture</li>
+		<li>XMB.AmorphousStylePack.MO</li>
+		<li>zal.rimthunderfurniture</li>
+        <li>GafarovMaxim.HackingExpansionNetrun</li>
+        <li>lucius.floorpatch</li>
+        <li>SmallTanksForVGE.ByNiki</li>
     <!-- (Add new mods here ^^^^^) -->
-</loadAfter>
+    </loadAfter>
 </ModMetaData>

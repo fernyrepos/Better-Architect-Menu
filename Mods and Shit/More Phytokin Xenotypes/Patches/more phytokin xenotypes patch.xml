@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Farming -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MPX_SourceSoilPlanter"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Farming</designationCategory></value>
+	</Operation>
+</Patch>

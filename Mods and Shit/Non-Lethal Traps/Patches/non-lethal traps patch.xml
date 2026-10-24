@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Traps -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NLT_Trap_Pit"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Traps</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NLT_Trap_TranqNet"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Traps</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NLT_Trap_TreeHoist"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Traps</designationCategory></value>
+	</Operation>
+</Patch>

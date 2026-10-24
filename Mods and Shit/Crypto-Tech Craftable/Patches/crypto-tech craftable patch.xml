@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Remove Crypto category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="VQEAdd_Crypto"]</xpath>
+    </Operation>
+
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Production -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEAdd_AetherPressureTubes"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEAdd_Cryptoforge"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEAdd_CryptoInfusionCoils"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEAdd_SubZeroHammer"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_ResearchProduction -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEAdd_CryptotechPrototypeBench"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ResearchProduction</designationCategory></value>
+	</Operation>
+</Patch>

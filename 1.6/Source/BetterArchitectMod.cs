@@ -14,7 +14,8 @@ namespace BetterArchitect
         // For simplicity, all patch categories should use the same identifier as the mod they categorize
         private List<String> PatchCategories = new List<string>()
         {
-            "OskarPotocki.VFE.Medieval2"
+            "OskarPotocki.VFE.Medieval2",
+            "co.uk.epicguru.rimforge"
         };
 
         public BetterArchitectMod(ModContentPack content) : base(content)

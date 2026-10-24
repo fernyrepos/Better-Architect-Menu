@@ -14,4 +14,100 @@
       Defs/ThingDef[@Name="Reverse_Engineered_ConditionCauserBase"]/designatorDropdown
     </xpath>
   </Operation>
+
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_Pollution -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Reverse_Engineered_SmokeSpewer"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_SmokeSpewer"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Pollution</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_SmokeSpewer"]</xpath>
+			<value><designationCategory>Ferny_Pollution</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Reverse_Engineered_ToxicSpewer"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_ToxicSpewer"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Pollution</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_ToxicSpewer"]</xpath>
+			<value><designationCategory>Ferny_Pollution</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Terraforming -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Reverse_Engineered_ClimateAdjuster"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_ClimateAdjuster"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_ClimateAdjuster"]</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Reverse_Engineered_Defoliator"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_Defoliator"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_Defoliator"]</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Reverse_Engineered_EMI"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_EMI"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_EMI"]</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Reverse_Engineered_SunBlocker"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_SunBlocker"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_SunBlocker"]</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Reverse_Engineered_WeatherController"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_WeatherController"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Reverse_Engineered_WeatherController"]</xpath>
+			<value><designationCategory>Ferny_Terraforming</designationCategory></value>
+		</nomatch>
+	</Operation>
 </Patch>

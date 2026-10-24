@@ -290,5 +290,321 @@
 			</value>
 		</match>
 	</Operation>
-	
+
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_Childhood -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_Ball"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_Ball"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_Ball"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_Cushion"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_Cushion"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_Cushion"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_GiantPlushie"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_GiantPlushieB"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_GiantPlushieM"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_PKCDog"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_PKCDog"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_PKCDog"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_PKCRobo"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_PKCRobo"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_PKCRobo"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_WoodenToy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToy"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToyB"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToyC"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToyD"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToyS"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToySB"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToySC"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_WoodenToySD"]</xpath>
+			<value><designationCategory>Ferny_Childhood</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_DecoRugs -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_FluffyRug_A"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_FluffyRug_A"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_FluffyRug_A"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_FluffyRug_B"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_FluffyRug_B"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_FluffyRug_B"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_FluffyRug_C"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_FluffyRug_C"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_FluffyRug_C"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_FluffyRug_D"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_FluffyRug_D"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_FluffyRug_D"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_A"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_A"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_A"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_B"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_B"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_B"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_C"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_C"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_C"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_D"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_D"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFK_ShaggyRug_D"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="PFK_CarpetDot" or defName="PFK_CarpetDotB" or defName="PFK_CarpetSky" or defName="PFK_CarpetStarGray" or defName="PFK_CarpetStarNavy" or defName="PFK_CarpetStarWhite" or defName="PFK_CarpetStarWhiteB"]</xpath>
+		<value><designationCategory>Ferny_FloorsCarpet</designationCategory></value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="PFK_TilesBlueSky" or defName="PFK_TilesColorful" or defName="PFK_TilesColorfulB" or defName="PFK_TilesColorfulC" or defName="PFK_TilesStars"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
 </Patch>

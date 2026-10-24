@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FineGoldFloorCoinA" or defName="FineGoldFloorCoinB"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
+</Patch>

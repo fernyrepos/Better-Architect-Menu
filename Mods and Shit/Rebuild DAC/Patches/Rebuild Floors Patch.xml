@@ -24,4 +24,16 @@
         </value>
     </Operation>
 
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="RB_WoodPlankFloor_Transhumanist"]</xpath>
+		<value><designationCategory>Ferny_FloorsWood</designationCategory></value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="RB_PavedTile_Transhumanist"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
 </Patch>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_DecoHanging -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WMFF_WallDrape"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Education -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WMFF_WallMountedBlackboard"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Education</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Firefoam -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WMFF_WallMountedSprinkler"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Firefoam</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Medical -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WMFF_WallMountedVitalsmonitor"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Medical</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Ranching -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WMFF_WallMountedPenMarker"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Ranching</designationCategory></value>
+	</Operation>
+</Patch>

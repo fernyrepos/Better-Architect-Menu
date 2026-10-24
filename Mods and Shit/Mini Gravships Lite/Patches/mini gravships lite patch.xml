@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_AstrofuelNetwork -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipFuelControlUnit"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_AstrofuelNetwork</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipMinisChembarrel"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_AstrofuelNetwork</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MiniChemfuelTank"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_AstrofuelNetwork</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_SpaceCombat -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Gravship_Anticraft_BeamTurret"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Gravship_Anticraft_BeamTurret"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Gravship_Anticraft_BeamTurret"]</xpath>
+			<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Gravship_Gauss_Turret"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MiningCharge"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MiningChargeBlackbox"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MiningChargeEmp"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MiningChargeFire"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MiningChargeHE"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MiningChargeStun"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MiningChargeToxic"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_GravshipArmoredTurret"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_MiniTurretLaser"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceCombat</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_SpacePlatform -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipBlastDoor"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipHullArmor"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipHullPowered"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipPylon"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipSensors"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipSmallShieldGenerator"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipWallLamp"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MiniPilotConsole"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="OrbitalScannerSmall"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="OrbitalTransportPod"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SignalJammerSmall"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SmallPilotConsole"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="XLargeThruster"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="XLMiniGravshipThruster"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePlatform</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_SpacePower -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravcoreReactor"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePower</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipHullSolar"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePower</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SolarGeneratorGravship"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePower</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SolarGeneratorGravshipWall"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePower</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SpaceshipBattery"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePower</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SpaceshipBatteryTwo"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePower</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_SpaceVacuum -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ColdPump"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceVacuum</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GravshipLifeSupportUnit"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceVacuum</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="HeatPump"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceVacuum</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VacAirlock"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceVacuum</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VacPump"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceVacuum</designationCategory></value>
+	</Operation>
+</Patch>

@@ -218,4 +218,163 @@
     </value>
   </Operation>
 
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_DecoArt -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_DecoTablewareA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareA"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_DecoTablewareB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareB"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_DecoTablewareC"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareC"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareC"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_DecoTablewareD"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareD"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareD"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_DecoTablewareE"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareE"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_DecoTablewareE"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_HoloGlassDesktop"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_HoloGlassDesktop"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_HoloGlassDesktop"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_HoloGlassPanel"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_HoloGlassPanel"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_HoloGlassPanel"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_MetalTeddyBear"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_MetalTeddyBear"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_MetalTeddyBear"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_MiniHoloGlass"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_MiniHoloGlass"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_MiniHoloGlass"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_ObsidianFigurine"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_ObsidianFigurine"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_ObsidianFigurine"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_DecoPlants -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_TabletopPlant"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="PFS_TabletopPlant"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoPlants</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="PFS_TabletopPlant"]</xpath>
+			<value><designationCategory>Ferny_DecoPlants</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="PFS_BlackPanel" or defName="PFS_BlackPanelB" or defName="PFS_CompositePanel" or defName="PFS_CompositePanel_Black" or defName="PFS_CompositePanel_Gray" or defName="PFS_GrayPanel" or defName="PFS_GrayPanelB" or defName="PFS_RustGrate" or defName="PFS_WhitePanel" or defName="PFS_WhitePanelB"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="PFS_BlackTile" or defName="PFS_ClearBlueTile" or defName="PFS_ClearGrayTile" or defName="PFS_GrayTile" or defName="PFS_HexaTile" or defName="PFS_HexaTileB" or defName="PFS_LF_Black" or defName="PFS_LF_CoolGray" or defName="PFS_LF_Cyan" or defName="PFS_LF_DustyAmethyst" or defName="PFS_LF_Mint" or defName="PFS_LuminousFlooring" or defName="PFS_TRONTile" or defName="PFS_WhiteTile"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
 </Patch>

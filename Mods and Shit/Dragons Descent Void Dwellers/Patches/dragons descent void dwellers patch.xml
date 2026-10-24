@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Remove Dragon deco category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="DD_Void_Dragon_Stuff"]</xpath>
+    </Operation>
+
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_DecoArt -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Dragon_Statue_A"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Dragon_Statue_B"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Dragon_Statue_C"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Dragon_Statue_D"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Dragon_Statue_E"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_DecoHanging -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_Banner_A"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_Banner_B"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_Banner_C"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_Banner_D"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Lighting -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_AncientBrazier"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Lighting</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_NebulaLamp"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RWY_NebulaLamp"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RWY_NebulaLamp"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_StarLamp"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RWY_StarLamp"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RWY_StarLamp"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_VoidLamp"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RWY_VoidLamp"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RWY_VoidLamp"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Supports -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_DD_RuneColumn"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Supports</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Tables -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_DD_BigTable"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RWY_DD_BigTable"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Tables</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RWY_DD_BigTable"]</xpath>
+			<value><designationCategory>Ferny_Tables</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RWY_DD_Table"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RWY_DD_Table"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Tables</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RWY_DD_Table"]</xpath>
+			<value><designationCategory>Ferny_Tables</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

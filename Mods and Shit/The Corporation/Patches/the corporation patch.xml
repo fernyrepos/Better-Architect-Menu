@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Auxiliaries -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MF_CorporateExecutiveOfficeDesk"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ProcessingProduction</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MF_CorporateSimpleOfficeDesk"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ProcessingProduction</designationCategory></value>
+	</Operation>
+</Patch>

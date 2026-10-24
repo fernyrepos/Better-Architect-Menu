@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_DecoArt -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EL_BoxOfShells"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Decorations</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_GeneralStorage -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EL_ArchLinkable"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Auxiliaries</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Museum -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EL_ArchDisplay"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="EL_ArchDisplay"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Museum</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="EL_ArchDisplay"]</xpath>
+			<value><designationCategory>Ferny_Museum</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_ResearchProduction -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="EL_ArchBench"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ResearchProduction</designationCategory></value>
+	</Operation>
+</Patch>

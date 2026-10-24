@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Remove SUNSET category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="Buildings_cy"]</xpath>
+    </Operation>
+
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_AerialTransport -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LargeTransportPod_cy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="LargeTransportPod_cy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_AerialTransport</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="LargeTransportPod_cy"]</xpath>
+			<value><designationCategory>Ferny_AerialTransport</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_ProcessingProduction -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ReactionKettle_Alloy_cy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ReactionKettle_Alloy_cy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_ProcessingProduction</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ReactionKettle_Alloy_cy"]</xpath>
+			<value><designationCategory>Ferny_ProcessingProduction</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ReactionKettle_Polymer_cy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ReactionKettle_Polymer_cy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_ProcessingProduction</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ReactionKettle_Polymer_cy"]</xpath>
+			<value><designationCategory>Ferny_ProcessingProduction</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Production -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AdvancedProductionPlatform_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Excavator_big_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Excavator_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Tablecy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Weapons -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYH155_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYH55_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYH75_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYHF_Fortress_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYLCIWS6_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYLF4_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYLG1_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYM35_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYM57_cy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_XYM57_cy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Turret_XYM57_cy"]</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYN1A_cy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_XYN1A_cy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Turret_XYN1A_cy"]</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYN65_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYNX33_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYS_cy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_XYS_cy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Turret_XYS_cy"]</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYS_MG_cy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_XYS_MG_cy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Turret_XYS_MG_cy"]</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYS_Missile_cy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_XYS_Missile_cy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Turret_XYS_Missile_cy"]</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Turret_XYS_SG_cy"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Turret_XYS_SG_cy"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Turret_XYS_SG_cy"]</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Power -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Building_Reactor_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Generator_cy"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+	</Operation>
+</Patch>

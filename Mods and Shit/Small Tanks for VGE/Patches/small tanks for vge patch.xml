@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Small astrofuel tanks: Space > Astrofuel instead of Fuel -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_SoSmallAstrofuelTank"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VGE_SoSmallAstrofuelTank"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_AstrofuelNetwork</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VGE_SoSmallAstrofuelTank"]</xpath>
+			<value><designationCategory>Ferny_AstrofuelNetwork</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VGE_VerySmallAstrofuelTank"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VGE_VerySmallAstrofuelTank"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_AstrofuelNetwork</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VGE_VerySmallAstrofuelTank"]</xpath>
+			<value><designationCategory>Ferny_AstrofuelNetwork</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

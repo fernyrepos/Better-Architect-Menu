@@ -26,5 +26,58 @@
                     </value>
                 </Operation>
 
-
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_DecoRugs -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GR_HugeBearCatRug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="GR_HugeBearCatRug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="GR_HugeBearCatRug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GR_HugeBearRug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="GR_HugeBearRug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="GR_HugeBearRug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GR_MuffaloRug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="GR_MuffaloRug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="GR_MuffaloRug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GR_WolfRug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="GR_WolfRug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="GR_WolfRug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
 </Patch>

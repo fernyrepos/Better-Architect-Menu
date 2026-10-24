@@ -39,4 +39,10 @@
 		</value>
 	</Operation>
 
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="AT_Erodedmetal"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
 </Patch>

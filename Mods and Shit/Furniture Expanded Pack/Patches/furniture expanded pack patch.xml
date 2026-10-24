@@ -76,5 +76,326 @@
 			<designationCategory>Ferny_Bedroom</designationCategory>
 		</value>
 	</Operation>
-	
+
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_DecoHanging -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_Banner"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_GeneralStorage -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteel"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteel"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteel"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelA"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelB"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelC"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelC"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelC"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelD"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelD"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelD"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelE"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelE"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeSteelE"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWooden"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWooden"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWooden"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenA"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenB"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenC"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenC"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenC"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenD"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenD"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenD"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenE"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenE"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardLargeWoodenE"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteel"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteel"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteel"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelA"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelB"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelC"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelC"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelC"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelD"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelD"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelD"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelE"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelE"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallSteelE"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWooden"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWooden"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWooden"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenA"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenB"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenC"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenC"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenC"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenD"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenD"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenD"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenE"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenE"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FFE_CupboardSmallWoodenE"]</xpath>
+			<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
 </Patch>

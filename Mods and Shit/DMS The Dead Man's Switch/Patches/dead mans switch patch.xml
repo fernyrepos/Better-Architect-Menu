@@ -97,5 +97,65 @@
 			<designationCategory>Ferny_Weapons</designationCategory>
 		</value>
 	</Operation>
-	
+
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_Doors -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Double"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Double"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Doors</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Double"]</xpath>
+			<value><designationCategory>Ferny_Doors</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Quadruple"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Quadruple"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Doors</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Quadruple"]</xpath>
+			<value><designationCategory>Ferny_Doors</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Single"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Doors</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Triple"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Triple"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Doors</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DMS_RollingDoor_Triple"]</xpath>
+			<value><designationCategory>Ferny_Doors</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_GeneralStorage -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMS_LogisticContainer"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_ProductionInfrastructure -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMS_LogisticTerminal"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ProductionInfrastructure</designationCategory></value>
+	</Operation>
 </Patch>

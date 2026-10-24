@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Remove Ancients category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="VQEAC_AncientsCraftable"]</xpath>
+    </Operation>
+
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Doors -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VAEC_AutodoorDouble"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Doors</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VAEC_AutodoorSmall"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Doors</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VAEC_AutodoorTriple"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Doors</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_ProcessingProduction -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VAEC_AncientSmelter"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ProcessingProduction</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Production -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VAEC_AncientSculptor"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+</Patch>

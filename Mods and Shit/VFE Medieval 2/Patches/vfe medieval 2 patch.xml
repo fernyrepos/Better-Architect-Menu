@@ -180,5 +180,46 @@
 			<designationCategory>Ferny_Barricades</designationCategory>
 		</value>
 	</Operation>
-	
+
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_DecoRugs -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFEM2_HeraldicRugBroad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VFEM2_HeraldicRugBroad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VFEM2_HeraldicRugBroad"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFEM2_HeraldicRugGrand"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VFEM2_HeraldicRugGrand"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VFEM2_HeraldicRugGrand"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFEM2_HeraldicRugNarrow"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VFEM2_HeraldicRugNarrow"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VFEM2_HeraldicRugNarrow"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
 </Patch>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Lighting -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricBrazier"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Lighting</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricDarklightBrazier"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricDarklightBrazier"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricDarklightBrazier"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricDarktorch"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricDarktorch"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricDarktorch"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricDarktorchFungus"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricDarktorchFungus"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricDarktorchFungus"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_BloodflameSepulchralBrazier"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_BloodflameSepulchralBrazier"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_BloodflameSepulchralBrazier"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_BloodflameSepulchralStatue"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_BloodflameSepulchralStatue"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_BloodflameSepulchralStatue"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_DarklightSepulchralBrazier"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_DarklightSepulchralBrazier"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_DarklightSepulchralBrazier"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_DarkligtSepulchralStatue"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_DarkligtSepulchralStatue"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_DarkligtSepulchralStatue"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_SepulchralBrazier"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_SepulchralBrazier"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_SepulchralBrazier"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_SepulchralStatue"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_SepulchralStatue"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorches_DA_SepulchralStatue"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricTorchLamp"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Lighting</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Onimods_ElectricTorchWallLamp"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorchWallLamp"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Onimods_ElectricTorchWallLamp"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

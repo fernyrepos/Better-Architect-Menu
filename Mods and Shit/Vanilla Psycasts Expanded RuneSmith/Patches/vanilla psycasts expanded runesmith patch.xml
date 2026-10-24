@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Rune circle (psycast): Colons > Meditation -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VPER_Runecircle_Constructible"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VPER_Runecircle_Constructible"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Meditation</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VPER_Runecircle_Constructible"]</xpath>
+			<value><designationCategory>Ferny_Meditation</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

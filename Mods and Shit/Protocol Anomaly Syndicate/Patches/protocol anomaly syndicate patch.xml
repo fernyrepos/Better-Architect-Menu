@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Seating -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Gha_MonitoringThrone"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Gha_MonitoringThrone"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Seating</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Gha_MonitoringThrone"]</xpath>
+			<value><designationCategory>Ferny_Seating</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

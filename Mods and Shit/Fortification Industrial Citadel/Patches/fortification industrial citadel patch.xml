@@ -172,5 +172,105 @@
 			<designationCategory>Ferny_Barricades</designationCategory>
 		</value>
 	</Operation>
-	
+
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_Barricades -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FT_Stony_Palisade"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FT_Stony_Palisade"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Barricades</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FT_Stony_Palisade"]</xpath>
+			<value><designationCategory>Ferny_Barricades</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FT_Stony_Palisade_Corner"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FT_Stony_Palisade_Corner"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Barricades</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FT_Stony_Palisade_Corner"]</xpath>
+			<value><designationCategory>Ferny_Barricades</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_FloorsConcrete -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FTC_FloorDeco"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FTC_FloorDeco_D"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FTC_FloorDeco_D"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FTC_FloorDeco_D"]</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FTC_FloorDecoB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FTC_FloorDecoB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FTC_FloorDecoB"]</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FTC_FloorDecoB_D"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FTC_FloorDecoB_D"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FTC_FloorDecoB_D"]</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FTC_FloorDecoC"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FTC_FloorDecoC"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FTC_FloorDecoC"]</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FTC_FloorDecoC_D"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="FTC_FloorDecoC_D"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="FTC_FloorDecoC_D"]</xpath>
+			<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+		</nomatch>
+	</Operation>
 </Patch>

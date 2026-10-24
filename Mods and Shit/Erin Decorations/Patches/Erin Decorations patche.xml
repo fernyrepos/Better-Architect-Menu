@@ -106,4 +106,19 @@
                     </value>
                 </Operation>
 
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_AnimalBedding -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ED_DogHouse"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ED_DogHouse"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_AnimalBedding</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ED_DogHouse"]</xpath>
+			<value><designationCategory>Ferny_AnimalBedding</designationCategory></value>
+		</nomatch>
+	</Operation>
 </Patch>

@@ -205,6 +205,23 @@
 		</value>
 	</Operation>
 
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_Barricades -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FT_Platform"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Barricades</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="FT_Trench"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Barricades</designationCategory></value>
+	</Operation>
 
-
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FT_PlankFloor" or defName="VFEArch_WoodPlankFloorConcrete"]</xpath>
+		<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+	</Operation>
 </Patch>

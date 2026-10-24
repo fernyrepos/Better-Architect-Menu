@@ -38,5 +38,19 @@
 			<designationCategory>Ferny_GeneralStorage</designationCategory>
 		</value>
 	</Operation>
-	
+
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_Production -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="dvd_EvermurkCrafter"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="dvd_FloorFrayMetal"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
 </Patch>

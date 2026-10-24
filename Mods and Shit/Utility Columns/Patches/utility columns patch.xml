@@ -121,4 +121,10 @@
 		</value>
 	</Operation>
 
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="UCScaffoldFloor" or defName="UCScaffoldTile" or defName="UCStripedFloor"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
 </Patch>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Remove DMSE Decoration category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="DMSE_Category"]</xpath>
+    </Operation>
+
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_DecoOutdoor -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_lathedeco"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DMSE_lathedeco"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoOutdoor</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DMSE_lathedeco"]</xpath>
+			<value><designationCategory>Ferny_DecoOutdoor</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_SpacePower -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_FusionCore"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpacePower</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_SpaceVacuum -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_OxygenCandle"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceVacuum</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_VacuumPump"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceVacuum</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_VacuumRoom_Entrance"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceVacuum</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Supports -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_StructuralFrame_Center"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DMSE_StructuralFrame_Center"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoOutdoor</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DMSE_StructuralFrame_Center"]</xpath>
+			<value><designationCategory>Ferny_DecoOutdoor</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_StructuralFrame_End"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DMSE_StructuralFrame_End"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoOutdoor</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DMSE_StructuralFrame_End"]</xpath>
+			<value><designationCategory>Ferny_DecoOutdoor</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_StructuralFrame_Section"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DMSE_StructuralFrame_Section"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoOutdoor</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DMSE_StructuralFrame_Section"]</xpath>
+			<value><designationCategory>Ferny_DecoOutdoor</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_Battery"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DMSE_Battery"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_PowerStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DMSE_Battery"]</xpath>
+			<value><designationCategory>Ferny_PowerStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DMSE_PhotovoltaicPanel"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DMSE_PhotovoltaicPanel"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DMSE_PhotovoltaicPanel"]</xpath>
+			<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

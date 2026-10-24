@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_DecoSigns -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Boomalope"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Boomalope"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Boomalope"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Caution"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Caution"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Caution"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Electric"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Electric"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Electric"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Exit"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Exit"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Exit"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Fire"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Fire"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Fire"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_MechA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_MechA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_MechA"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_MechB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_MechB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_MechB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Royalty"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Royalty"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Royalty"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Turret"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Turret"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Turret"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Weapon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Weapon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsForbidding_Weapon"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Church"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Church"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Church"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_ChurchB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_ChurchB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_ChurchB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Comms"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Comms"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Comms"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Dining"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Dining"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Dining"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Droppod"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Droppod"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Droppod"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Lab"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Lab"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Lab"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Meditation"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Meditation"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Meditation"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Mine"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Mine"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Mine"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Parkin"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Parkin"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Parkin"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Prison"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Prison"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Prison"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_PrisonB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_PrisonB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_PrisonB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Reactor"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Reactor"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Reactor"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Toilet"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Toilet"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Toilet"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Trading"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Trading"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Trading"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Workshop"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Workshop"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocation_Workshop"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Church"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Church"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Church"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_ChurchB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_ChurchB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_ChurchB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Comms"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Comms"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Comms"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Dining"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Dining"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Dining"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Droppod"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Droppod"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Droppod"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Hangar"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Hangar"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Hangar"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Lab"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Lab"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Lab"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Meditation"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Meditation"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Meditation"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Mine"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Mine"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Mine"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Prison"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Prison"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Prison"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_PrisonB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_PrisonB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_PrisonB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Reactor"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Reactor"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Reactor"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Royal"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Royal"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Royal"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_RoyalB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_RoyalB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_RoyalB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Toilet"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Toilet"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Toilet"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Trading"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Trading"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Trading"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Welcome"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Welcome"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Welcome"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_WelcomeB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_WelcomeB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_WelcomeB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Workshop"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Workshop"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationLarge_Workshop"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Armory"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Armory"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Armory"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Exit"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Exit"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Exit"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Medical"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Medical"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Medical"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Royalty"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Royalty"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Royalty"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Shelter"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Shelter"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsLocationSpecial_Shelter"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Boomalope"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Boomalope"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Boomalope"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Caution"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Caution"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Caution"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Electric"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Electric"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Electric"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Exit"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Exit"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Exit"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_GasMask"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_GasMask"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_GasMask"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Helmet"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Helmet"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Helmet"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_MechA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_MechA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_MechA"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_MechB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_MechB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_MechB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Royalty"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Royalty"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Royalty"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Turret"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Turret"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Turret"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Weapon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Weapon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsSuggestive_Weapon"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Boomalope"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Boomalope"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Boomalope"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Caution"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Caution"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Caution"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Cold"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Cold"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Cold"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Electric"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Electric"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Electric"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Explosive"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Explosive"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Explosive"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Fire"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Fire"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Fire"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_GenericA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_GenericA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_GenericA"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_GenericB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_GenericB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_GenericB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Hot"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Hot"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Hot"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Landmine"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Landmine"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Landmine"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Machinery"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Machinery"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Machinery"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_MechA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_MechA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_MechA"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_MechB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_MechB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_MechB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Radioactive"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Radioactive"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Radioactive"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Royalty"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Royalty"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Royalty"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Toxic"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Toxic"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Toxic"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Turret"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Turret"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarning_Turret"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Boomalope"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Boomalope"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Boomalope"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Caution"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Caution"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Caution"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Cold"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Cold"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Cold"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Electric"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Electric"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Electric"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Explosive"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Explosive"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Explosive"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Fire"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Fire"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Fire"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Hot"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Hot"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Hot"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Landmine"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Landmine"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Landmine"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Machinery"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Machinery"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Machinery"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_MechA"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_MechA"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_MechA"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_MechB"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_MechB"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_MechB"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Radioactive"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Radioactive"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Radioactive"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Toxic"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Toxic"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Toxic"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Turret"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Turret"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="BDsSign_SignsWarningLarge_Turret"]</xpath>
+			<value><designationCategory>Ferny_DecoSigns</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

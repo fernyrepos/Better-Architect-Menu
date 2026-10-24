@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-	<Operation Class="PatchOperationAddModExtension">
-		<success>Always</success>
-		<xpath>Defs/DesignationCategoryDef[defName="MoreArchotechGarbage"]</xpath>
-		<value>
-			<li Class="BetterArchitect.NestedCategoryExtension">
-				<parentCategory>Furniture</parentCategory>
-			</li>
-		</value>
-	</Operation>
+    <!-- Remove Archotech category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="MoreArchotechGarbage"]</xpath>
+    </Operation>
 	
 <!-- WALLS -->
 
@@ -398,4 +392,304 @@
 		</value>
 	</Operation>
 
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_Control -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechBlindnessBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechBlindnessBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechBlindnessBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechBrainBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechBrainBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechBrainBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechChadBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechChadBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechChadBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechConstructBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechConstructBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechConstructBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechDiggeyBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechDiggeyBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechDiggeyBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechFragilityBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechFragilityBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechFragilityBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechGenerictBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechGenerictBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechGenerictBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechHaulingBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechHaulingBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechHaulingBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechHealMyBootyBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechHealMyBootyBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechHealMyBootyBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechHermesBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechHermesBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechHermesBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechMeatLeatherYieldBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechMeatLeatherYieldBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechMeatLeatherYieldBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechPainDecreaseBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechPainDecreaseBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechPainDecreaseBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechPainIncreaseBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechPainIncreaseBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechPainIncreaseBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechPewPewBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechPewPewBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechPewPewBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechPlantBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechPlantBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechPlantBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechProtectMyBootyBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechProtectMyBootyBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechProtectMyBootyBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechPsychicAmpBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechPsychicAmpBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechPsychicAmpBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechPsychicDeafnessBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechPsychicDeafnessBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechPsychicDeafnessBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechRamseyBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechRamseyBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechRamseyBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechSlownessBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechSlownessBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechSlownessBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechTempBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechTempBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechTempBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ArchotechZooBeacon"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="ArchotechZooBeacon"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="ArchotechZooBeacon"]</xpath>
+			<value><designationCategory>Ferny_Control</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FloorArchotechOwO" or defName="FloorArchotechUwU"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FloorArchotechOwO_Bridge" or defName="FloorArchotechUwU_Bridge"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Foundations</designationCategory></value>
+	</Operation>
 </Patch>

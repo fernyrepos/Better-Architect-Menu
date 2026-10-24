@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Outreach -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RC_MissionControl"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RC_MissionControl"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Outreach</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RC_MissionControl"]</xpath>
+			<value><designationCategory>Ferny_Outreach</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RC_MissionControlMedieval"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RC_MissionControlMedieval"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Outreach</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RC_MissionControlMedieval"]</xpath>
+			<value><designationCategory>Ferny_Outreach</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

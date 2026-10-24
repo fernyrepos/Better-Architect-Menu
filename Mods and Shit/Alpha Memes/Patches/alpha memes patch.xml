@@ -276,4 +276,451 @@
     </value>
   </Operation>
 
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_DecoArt -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_Building_Misc_FleshmassPiece1x1c"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_Building_Misc_FleshmassPiece1x1c"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_Building_Misc_FleshmassPiece1x1c"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_Building_Misc_FleshmassPiece2x2c"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_Building_Misc_FleshmassPiece2x2c"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_Building_Misc_FleshmassPiece2x2c"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_GrayStatueDecorative"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_DecoOutdoor -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_MesoamericanPyramid"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoOutdoor</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_DecoRugs -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_MesoamericanRug_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_MesoamericanRug_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_MesoamericanRug_Broad"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_MesoamericanRug_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_MesoamericanRug_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_MesoamericanRug_Medium"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_FloorsStone -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_BuddhistSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_BuddhistSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_BuddhistSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_BuddhistSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_BuddhistSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_BuddhistSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_ChristianSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_ChristianSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_ChristianSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_ChristianSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_ChristianSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_ChristianSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_CorsairSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_CorsairSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_CorsairSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_CorsairSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_CorsairSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_CorsairSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_CubicSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_CubicSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_CubicSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_CubicSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_CubicSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_CubicSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_FleshSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_FleshSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_FleshSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_FleshSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_FleshSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_FleshSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_HinduSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_HinduSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_HinduSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_HinduSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_HinduSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_HinduSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_HoraxianSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_HoraxianSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_HoraxianSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_HoraxianSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_HoraxianSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_HoraxianSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_IslamicSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_IslamicSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_IslamicSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_IslamicSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_IslamicSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_IslamicSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_JainSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_JainSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_JainSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_JainSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_JainSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_JainSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_JewishSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_JewishSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_JewishSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_JewishSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_JewishSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_JewishSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_KemeticSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_MesoamericanSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_MesoamericanSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_MesoamericanSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_MesoamericanSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_MesoamericanSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_MesoamericanSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_SikhSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_SikhSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_SikhSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_SikhSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_SikhSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_SikhSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_SteampunkSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_SteampunkSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_SteampunkSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AM_SteampunkSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AM_SteampunkSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="AM_SteampunkSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="AM_JewishTileCragstone" or defName="AM_JewishTileMudstone" or defName="AM_JewishTileObsidian" or defName="AM_JewishTileRoseQuartz" or defName="AM_KemeticTileCragstone" or defName="AM_KemeticTileMudstone" or defName="AM_KemeticTileObsidian" or defName="AM_KemeticTileRoseQuartz" or defName="AM_MesoamericanTileCragstone" or defName="AM_MesoamericanTileGranite" or defName="AM_MesoamericanTileLimestone" or defName="AM_MesoamericanTileMarble" or defName="AM_MesoamericanTileMudstone" or defName="AM_MesoamericanTileObsidian" or defName="AM_MesoamericanTilePristineLimestone" or defName="AM_MesoamericanTileRoseQuartz" or defName="AM_MesoamericanTileSandstone" or defName="AM_MesoamericanTileSlate" or defName="AM_NeolithicTileGranite" or defName="AM_NeolithicTileLimestone" or defName="AM_NeolithicTileMarble" or defName="AM_NeolithicTileSandstone" or defName="AM_NeolithicTileSlate" or defName="AM_RichFungalGravel" or defName="AM_SteampunkTileCragstone" or defName="AM_SteampunkTileMudstone" or defName="AM_SteampunkTileObsidian" or defName="AM_SteampunkTileRoseQuartz" or defName="AM_Tile_Flesh"]</xpath>
+		<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="AM_Tile_Cubic" or defName="AM_Tile_Flesh_Metal" or defName="AM_Tile_Futuristic_Kemetic" or defName="AM_Tile_Horaxian" or defName="AM_Tile_Scavenger" or defName="AM_Tile_Scavenger_Clean"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
 </Patch>

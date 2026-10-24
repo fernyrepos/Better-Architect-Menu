@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_DecoRugs -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Amorphous_1x1Rug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Amorphous_1x1Rug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Amorphous_1x1Rug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Amorphous_1x2Rug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Amorphous_1x2Rug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Amorphous_1x2Rug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Amorphous_2x2Rug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Amorphous_2x2Rug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Amorphous_2x2Rug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Amorphous_2x3Rug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Amorphous_2x3Rug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Amorphous_2x3Rug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Amorphous_3x3Rug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Amorphous_3x3Rug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Amorphous_3x3Rug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Amorphous_3x4Rug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Amorphous_3x4Rug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Amorphous_3x4Rug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Amorphous_4x4Rug"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Amorphous_4x4Rug"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Amorphous_4x4Rug"]</xpath>
+			<value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

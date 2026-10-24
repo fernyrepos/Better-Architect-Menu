@@ -18,4 +18,16 @@
 			<designationCategory>Ferny_Farming</designationCategory>
 		</value>
 	</Operation>
+
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="BMT_MoonlessCarpet" or defName="BMT_MycelialMatting"]</xpath>
+		<value><designationCategory>Ferny_FloorsCarpet</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="BMT_FineWoodenFloorMushroom" or defName="BMT_MushroomBoards_Totemic" or defName="BMT_WoodPlankFloorMushroom" or defName="BMT_WoodenParquetMushroom"]</xpath>
+		<value><designationCategory>Ferny_FloorsWood</designationCategory></value>
+	</Operation>
 </Patch>

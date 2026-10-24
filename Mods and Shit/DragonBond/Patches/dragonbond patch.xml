@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_AnimalBedding -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Crows_MoltenRockNest"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_AnimalBedding</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Memorial -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Crows_FuneralPyre"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Memorial</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Summon -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Crows_SmolderingCauldron"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Ranching</designationCategory></value>
+	</Operation>
+</Patch>
