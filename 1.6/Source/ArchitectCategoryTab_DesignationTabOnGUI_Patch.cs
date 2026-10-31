@@ -231,6 +231,14 @@ namespace BetterArchitect
             lastSubCategory = newSubCategory;
         }
 
+        private static float measuredMenuHeight;
+        private static float requiredMenuHeight;
+
+        private static void ReportRequiredMenuHeight(float height)
+        {
+            if (height > requiredMenuHeight) requiredMenuHeight = height;
+        }
+
         private static void DrawBetterArchitectMenu(ArchitectCategoryTab tab)
         {
             if (Find.DesignatorManager.SelectedDesignator != null)
@@ -238,12 +246,18 @@ namespace BetterArchitect
                 Find.DesignatorManager.SelectedDesignator.DoExtraGuiControls(ExtensionMethods.LeftUIEdge, (float)(UI.screenHeight - 35) - ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).WinHeight - 270f);
             }
             var menuHeight = BetterArchitectSettings.menuHeight;
+            if (BetterArchitectSettings.fillBottomUp && measuredMenuHeight > 0f)
+            {
+                menuHeight = Mathf.Clamp(measuredMenuHeight, 120f, menuHeight);
+            }
+            requiredMenuHeight = 0f;
             var leftWidth = 200f;
             var ordersWidth = 175f;
             var gizmoSize = 75f;
             var gizmoSpacing = 5f;
             var availableWidth = ExtensionMethods.UIWidth - 195f - (((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f) - leftWidth - ordersWidth;
-            var gizmosPerRow = Mathf.Max(1, Mathf.FloorToInt(availableWidth / (gizmoSize + gizmoSpacing)));
+            var maxGizmosPerRow = Mathf.Max(1, Mathf.FloorToInt(availableWidth / (gizmoSize + gizmoSpacing)));
+            var gizmosPerRow = ArchitectMenuResize.ResolveColumns(maxGizmosPerRow);
             var gridWidth = gizmosPerRow * (gizmoSize + gizmoSpacing) + gizmoSpacing + 11;
             var mainRect = new Rect(
                 ((MainTabWindow_Architect)MainButtonDefOf.Architect.TabWindow).RequestedTabSize.x + 10f + ExtensionMethods.LeftUIEdge,
@@ -253,6 +267,7 @@ namespace BetterArchitect
             var leftRect = new Rect(mainRect.x, mainRect.y + 20f, leftWidth, mainRect.height - 30f);
             var gridRect = new Rect(leftRect.xMax, mainRect.y, gridWidth, mainRect.height);
             var ordersRect = new Rect(gridRect.xMax, mainRect.y + 30f, ordersWidth, mainRect.height - 30f);
+            ArchitectMenuResize.HandleInput(mainRect, leftWidth, ordersWidth, gizmoSize + gizmoSpacing, maxGizmosPerRow);
             var newColor = new Color(Color.white.r, Color.white.g, Color.white.b, 1f - BetterArchitectSettings.backgroundAlpha);
             Widgets.DrawWindowBackground(mainRect, newColor);
             if (cachedRawDesignatorData == null || cachedRawDesignatorDataFor != tab.def)
@@ -356,7 +371,9 @@ namespace BetterArchitect
             var orderGizmo = DrawOrdersPanel(ordersRect, orderDesignators, category);
             if (orderGizmo != null) mouseoverGizmo = orderGizmo;
             DoInfoBox(mouseoverGizmo ?? Find.DesignatorManager.SelectedDesignator);
+            ArchitectMenuResize.Draw();
             if (Event.current.type == EventType.MouseDown && Mouse.IsOver(mainRect)) Event.current.Use();
+            measuredMenuHeight = requiredMenuHeight;
         }
 
         private static DesignationCategoryDef HandleCategorySelection(Rect rect, DesignationCategoryDef mainCat, List<DesignatorCategoryData> designatorDataList)
@@ -484,6 +501,9 @@ namespace BetterArchitect
             
             var outRect = rect.ContractedBy(10f);
             var viewRect = new Rect(0, 0, outRect.width - 16f, GetCategoryViewHeight(displayCategories.Count));
+            var bottomUp = BetterArchitectSettings.fillBottomUp && !isEditModeEnabled;
+            ReportRequiredMenuHeight(viewRect.height + 50f);
+            outRect = AnchorToBottom(outRect, viewRect.height, bottomUp);
             HandleScrollBar(outRect, viewRect, ref leftPanelScrollPosition);
 
             if (isEditModeEnabled)
@@ -494,8 +514,9 @@ namespace BetterArchitect
             Widgets.BeginScrollView(outRect, ref leftPanelScrollPosition, viewRect);
             float curY = 0;
 
-            foreach (var cat in displayCategories)
+            for (int catIndex = 0; catIndex < displayCategories.Count; catIndex++)
             {
+                var cat = displayCategories[bottomUp ? displayCategories.Count - 1 - catIndex : catIndex];
                 var rowRect = new Rect(0, curY, viewRect.width, 36);
                 bool isSelected = currentSelection == cat;
                 bool categoryHasSearchMatches = false;
@@ -563,11 +584,15 @@ namespace BetterArchitect
             if ((selectedMaterial == null || !materials.Contains(selectedMaterial)) && materials.Any()) selectedMaterial = materials.First();
             var outRect = rect.ContractedBy(10f);
             var viewRect = new Rect(0, 0, outRect.width - 16f, GetCategoryViewHeight(materials.Count));
+            var bottomUp = BetterArchitectSettings.fillBottomUp;
+            ReportRequiredMenuHeight(viewRect.height + 50f);
+            outRect = AnchorToBottom(outRect, viewRect.height, bottomUp);
             HandleScrollBar(outRect, viewRect, ref leftPanelScrollPosition);
             Widgets.BeginScrollView(outRect, ref leftPanelScrollPosition, viewRect);
             float curY = 0;
-            foreach (var material in materials)
+            for (int materialIndex = 0; materialIndex < materials.Count; materialIndex++)
             {
+                var material = materials[bottomUp ? materials.Count - 1 - materialIndex : materialIndex];
                 var rowRect = new Rect(0, curY, viewRect.width, 36);
                 bool materialMatchesSearch = false;
                 if (currentArchitectCategoryTab?.quickSearchFilter?.Active == true)
@@ -652,6 +677,19 @@ namespace BetterArchitect
             return groupByTechLevel ? DrawGroupedGrid(outRect, designators) : DrawFlatGrid(outRect, designators, category);
         }
 
+        private static int LayoutRow(int index, int perRow, int rowCount, bool bottomUp)
+        {
+            var row = index / perRow;
+            return bottomUp ? rowCount - 1 - row : row;
+        }
+
+        private static Rect AnchorToBottom(Rect rect, float contentHeight, bool bottomUp)
+        {
+            if (!bottomUp) return rect;
+            var fitted = Mathf.Min(rect.height, contentHeight);
+            return new Rect(rect.x, rect.yMax - fitted, rect.width, fitted);
+        }
+
         private static Designator DrawFlatGrid(Rect rect, List<Designator> designators, DesignationCategoryDef category)
         {
             bool isEditModeEnabled = IsEditModeEnabledFor(category);
@@ -666,9 +704,12 @@ namespace BetterArchitect
             var gizmosPerRow = Mathf.Max(1, Mathf.FloorToInt(availableWidth / (gizmoSize + gizmoSpacing)));
             var rowCount = Mathf.CeilToInt((float)designators.Count / gizmosPerRow);
             var rowHeight = gizmoSize + gizmoSpacing + 5f;
+            var bottomUp = BetterArchitectSettings.fillBottomUp && !isEditModeEnabled;
             var viewRect = new Rect(0, 0, rect.width - 16f, rowCount * rowHeight).ExpandedBy(3f);
             viewRect.x += 1f;
             viewRect.width -= 7f;
+            ReportRequiredMenuHeight(viewRect.height + 30f);
+            rect = AnchorToBottom(rect, viewRect.height, bottomUp);
             Designator mouseoverGizmo = null;
             Designator interactedGizmo = null;
             Designator floatMenuGizmo = null;
@@ -679,7 +720,7 @@ namespace BetterArchitect
             
             for (int i = 0; i < designators.Count; i++)
             {
-                int row = i / gizmosPerRow;
+                int row = LayoutRow(i, gizmosPerRow, rowCount, bottomUp);
                 int col = i % gizmosPerRow;
                 var designator = designators[i];
                 var parms = new GizmoRenderParms
@@ -701,7 +742,7 @@ namespace BetterArchitect
             }
             if (BetterArchitectSettings.debugShowUiOrder)
             {
-                DebugUiOrderOverlay.DrawBadges(designators, Vector2.zero, gizmosPerRow, gizmoSize, gizmoSpacing, rowHeight);
+                DebugUiOrderOverlay.DrawBadges(designators, Vector2.zero, gizmosPerRow, gizmoSize, gizmoSpacing, rowHeight, rowCount, bottomUp);
             }
             ProcessGizmoInteractions(interactedGizmo, floatMenuGizmo, interactedEvent);
             
@@ -723,6 +764,7 @@ namespace BetterArchitect
             var rowHeight = gizmoSize + gizmoSpacing + 5f;
             var viewRectWidth = rect.width - 16f;
             var gizmosPerRow = Mathf.Max(1, Mathf.FloorToInt(viewRectWidth / (gizmoSize + gizmoSpacing)));
+            var bottomUp = BetterArchitectSettings.fillBottomUp;
 
             float totalHeight = 0f;
             foreach (var group in groupedDesignators)
@@ -735,6 +777,8 @@ namespace BetterArchitect
 
             var viewRect = new Rect(0, 0, viewRectWidth, totalHeight);
             viewRect.x -= 3f;
+            ReportRequiredMenuHeight(totalHeight + 30f);
+            rect = AnchorToBottom(rect, totalHeight, bottomUp);
             Designator mouseoverGizmo = null;
             Designator interactedGizmo = null;
             Designator floatMenuGizmo = null;
@@ -754,9 +798,10 @@ namespace BetterArchitect
                 Widgets.DrawLineHorizontal(0, currentY, viewRect.width);
                 currentY += 10;
                 var groupItems = group.ToList();
+                int rowCount = Mathf.CeilToInt((float)groupItems.Count / gizmosPerRow);
                 for (int i = 0; i < groupItems.Count; i++)
                 {
-                    int row = i / gizmosPerRow;
+                    int row = LayoutRow(i, gizmosPerRow, rowCount, bottomUp);
                     int col = i % gizmosPerRow;
                     var designator = groupItems[i];
                     var parms = new GizmoRenderParms
@@ -778,9 +823,8 @@ namespace BetterArchitect
                 }
                 if (BetterArchitectSettings.debugShowUiOrder)
                 {
-                    DebugUiOrderOverlay.DrawBadges(groupItems, new Vector2(0f, currentY), gizmosPerRow, gizmoSize, gizmoSpacing, rowHeight);
+                    DebugUiOrderOverlay.DrawBadges(groupItems, new Vector2(0f, currentY), gizmosPerRow, gizmoSize, gizmoSpacing, rowHeight, rowCount, bottomUp);
                 }
-                int rowCount = Mathf.CeilToInt((float)groupItems.Count / gizmosPerRow);
                 currentY += rowCount * rowHeight + gizmoSpacing;
             }
             ProcessGizmoInteractions(interactedGizmo, floatMenuGizmo, interactedEvent);
@@ -992,7 +1036,9 @@ namespace BetterArchitect
             var columnWidth = (outRect.width - 16f - (columns - 1) * gizmoSpacing) / columns;
 
             var rowCount = Mathf.CeilToInt((float)designators.Count / columns);
+            var bottomUp = BetterArchitectSettings.fillBottomUp && !isEditModeEnabled;
             var viewRect = new Rect(0, 0, outRect.width - 16f, rowCount * rowHeight);
+            outRect = AnchorToBottom(outRect, viewRect.height, bottomUp);
 
             Designator mouseoverGizmo = null;
             Designator interactedGizmo = null;
@@ -1004,7 +1050,7 @@ namespace BetterArchitect
             
             for (var i = 0; i < designators.Count; i++)
             {
-                int row = i / columns;
+                int row = LayoutRow(i, columns, rowCount, bottomUp);
                 int col = i % columns;
                 var xPos = col * (gizmoSize + gizmoSpacing);
                 var yPos = row * rowHeight;
@@ -1027,7 +1073,7 @@ namespace BetterArchitect
             }
             if (BetterArchitectSettings.debugShowUiOrder)
             {
-                DebugUiOrderOverlay.DrawBadges(designators, Vector2.zero, columns, gizmoSize, gizmoSpacing, rowHeight);
+                DebugUiOrderOverlay.DrawBadges(designators, Vector2.zero, columns, gizmoSize, gizmoSpacing, rowHeight, rowCount, bottomUp);
             }
             ProcessGizmoInteractions(interactedGizmo, floatMenuGizmo, interactedEvent);
             

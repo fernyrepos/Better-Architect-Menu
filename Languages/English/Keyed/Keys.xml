@@ -10,6 +10,8 @@
 	<BA.RememberSubcategoryTooltip>When enabled, the mod will remember the last selected subcategory for each main category. When disabled, it will always default to the first subcategory.</BA.RememberSubcategoryTooltip>
 	<BA.UseSpecialFloorsTab>Use custom floor menu</BA.UseSpecialFloorsTab>
 	<BA.UseSpecialFloorsTabTooltip>Whether the menu should use subcategories for each material, or be more broadly sorted. (WIP)</BA.UseSpecialFloorsTabTooltip>
+	<BA.FillBottomUp>Fill from the bottom up</BA.FillBottomUp>
+	<BA.FillBottomUpTooltip>Lay designators out starting at the bottom row instead of the top, so a partly filled row sits at the top of the panel. This only changes where things are placed, not their order. Ignored while edit mode is on.</BA.FillBottomUpTooltip>
 	<BA.Default>Default</BA.Default>
 	<BA.Label>Label</BA.Label>
 	<BA.Beauty>Beauty</BA.Beauty>
@@ -58,6 +60,7 @@
 	<BA.MysteryUnlocksTooltip>Buildings unlocked by research arrive gift-wrapped in the architect menu. Click one to reveal it.</BA.MysteryUnlocksTooltip>
 	<BA.ClickToReveal>Click to reveal</BA.ClickToReveal>
 	<BA.NewUnlockBadge>NEW</BA.NewUnlockBadge>
+	<BA.ResizeWidthTip>Drag to resize the menu width. Right-click to reset it to full width.</BA.ResizeWidthTip>
 	<BA.RevealAll>Reveal all ({0})</BA.RevealAll>
 	<BA.DebugShowUiOrder>Debug: show UI order</BA.DebugShowUiOrder>
 	<BA.DebugShowUiOrderTooltip>Draws each designator's UI order (uiOrder) on its icon in the architect menu. For debugging designator sorting and writing uiOrder patches.</BA.DebugShowUiOrderTooltip>

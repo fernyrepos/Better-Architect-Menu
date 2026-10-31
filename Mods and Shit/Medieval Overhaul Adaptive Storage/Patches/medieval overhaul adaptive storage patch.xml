@@ -140,7 +140,7 @@
 
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="EEG_OrePileSquare" or defName="EEG_ChunkPileSquare" or defName="EEG_ChunkPileLong"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="EEG_OrePileSquare" or defName="EEG_ChunkPileSquare" or defName="EEG_ChunkPileLong" or defName="EEG_CorpsePileSquare" or defName="EEG_CorpsePileLong" or defName="EEG_JunkPileSquare" or defName="EEG_JunkPileLong"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>

@@ -67,6 +67,9 @@ namespace BetterArchitect
             listingStandard.CheckboxLabeled("BA.UseSpecialFloorsTab".Translate(), ref BetterArchitectSettings.useSpecialFloorsTab, "BA.UseSpecialFloorsTabTooltip".Translate());
 
             listingStandard.Gap();
+            listingStandard.CheckboxLabeled("BA.FillBottomUp".Translate(), ref BetterArchitectSettings.fillBottomUp, "BA.FillBottomUpTooltip".Translate());
+
+            listingStandard.Gap();
             listingStandard.CheckboxLabeled("BA.MysteryUnlocks".Translate(), ref BetterArchitectSettings.mysteryUnlocks, "BA.MysteryUnlocksTooltip".Translate());
 
             listingStandard.GapLine();

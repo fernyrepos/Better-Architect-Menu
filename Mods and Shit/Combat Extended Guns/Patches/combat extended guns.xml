@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Patch>  
-		
-		<Operation Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="CE_Artillery_Howitzer"]/designationCategory</xpath>
-				<value>
-					<designationCategory>Ferny_Weapons</designationCategory>
-				</value>
-		</Operation>
-
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="CE_Artillery_Howitzer"]/designationCategory</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="CE_Artillery_Howitzer"]/designationCategory</xpath>
+      <value>
+        <designationCategory>Ferny_Weapons</designationCategory>
+      </value>
+    </match>
+  </Operation>
 </Patch>

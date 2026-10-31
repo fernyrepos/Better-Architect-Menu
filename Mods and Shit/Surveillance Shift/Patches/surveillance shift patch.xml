@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Buildings, guard markers, and video cable use BAM's core Intelligences category. -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="SS_BuildingBase" or @Name="SS_GuardMarkerBase" or defName="SS_VideoCable"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Intelligences</designationCategory>
+        </value>
+    </Operation>
+</Patch>

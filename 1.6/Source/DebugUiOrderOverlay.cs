@@ -11,7 +11,7 @@ namespace BetterArchitect
         private static readonly Color BadgeBackgroundColor = new Color(0f, 0f, 0f, 0.75f);
         private static readonly Color BadgeTextColor = new Color(1f, 0.85f, 0.35f);
 
-        public static void DrawBadges(List<Designator> designators, Vector2 origin, int perRow, float gizmoSize, float gizmoSpacing, float rowHeight)
+        public static void DrawBadges(List<Designator> designators, Vector2 origin, int perRow, float gizmoSize, float gizmoSpacing, float rowHeight, int rowCount, bool bottomUp)
         {
             if (Event.current.type != EventType.Repaint) return;
 
@@ -22,7 +22,7 @@ namespace BetterArchitect
 
             for (int i = 0; i < designators.Count; i++)
             {
-                int row = i / perRow;
+                int row = bottomUp ? rowCount - 1 - i / perRow : i / perRow;
                 int col = i % perRow;
                 var badgeRect = new Rect(
                     origin.x + col * (gizmoSize + gizmoSpacing),

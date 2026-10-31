@@ -59,4 +59,10 @@
                     </value>
                 </Operation>
 
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_SmallGravshipGlassShelf" or defName="sbz_3x4GravshipCrate" or defName="sbz_2x3GravshipCrate" or defName="sbz_3x5GravshipCrate" or defName="sbz_2x4GravshipCrate"]</xpath>
+        <value>
+            <designationCategory>Ferny_VehicleStorage</designationCategory>
+        </value>
+    </Operation>
 </Patch>

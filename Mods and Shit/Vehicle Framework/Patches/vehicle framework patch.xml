@@ -22,14 +22,7 @@
                         <li>Vehicles.Designator_AreaRoadClear</li>
                     </value>
                 </Operation>
-                <Operation Class = "PatchOperationAdd">
-                    <xpath>Defs/DesignationCategoryDef[defName = "Ferny_PlatformTransport"]/specialDesignatorClasses</xpath>
-                    <value>
-                        <li>Vehicles.Designator_AreaRoadExpand</li>
-                        <li>Vehicles.Designator_AreaRoadClear</li>
-                    </value>
-                </Operation>
-                <Operation Class = "PatchOperationAdd">
+<Operation Class = "PatchOperationAdd">
                     <xpath>Defs/DesignationCategoryDef[defName = "Ferny_AerialTransport"]/specialDesignatorClasses</xpath>
                     <value>
                         <li>Vehicles.Designator_AreaRoadExpand</li>
