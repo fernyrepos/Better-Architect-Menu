@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_FloorsStone -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NorseSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="NorseSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="NorseSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NorseSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="NorseSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="NorseSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="Floor_Norse_Wooden_RiteBot" or defName="Floor_Norse_Wooden_RiteLeft" or defName="Floor_Norse_Wooden_RiteLeftBot" or defName="Floor_Norse_Wooden_RiteLeftTop" or defName="Floor_Norse_Wooden_RiteRight" or defName="Floor_Norse_Wooden_RiteRightBot" or defName="Floor_Norse_Wooden_RiteRightTop" or defName="Floor_Norse_Wooden_RiteTop" or defName="Floor_Norse_Wooden_Rites" or defName="Tile_Norse_Plank"]</xpath>
+		<value><designationCategory>Ferny_FloorsWood</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="Tile_Norse_Wooden_Inner_BotLeft" or defName="Tile_Norse_Wooden_Inner_BotRight" or defName="Tile_Norse_Wooden_Inner_TopLeft" or defName="Tile_Norse_Wooden_Inner_TopRight"]</xpath>
+		<value><designationCategory>Ferny_FloorsWood</designationCategory></value>
+	</Operation>
+</Patch>

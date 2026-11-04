@@ -209,5 +209,11 @@
 			<xpath>Defs/DesignationCategoryDef[defName="VGE_Workbenches_GT"]</xpath>
 		</match>
 	</Operation>
-	
+
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="Tile_Gravitonium"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
 </Patch>

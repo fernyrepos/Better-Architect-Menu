@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Ferny_PowerGeneration : 17 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQE_Genetron_Atomic" or defName="VQE_Genetron_Basic" or defName="VQE_Genetron_ChemfuelBoosted" or defName="VQE_Genetron_ChemfuelCharged" or defName="VQE_Genetron_ChemfuelFortified" or defName="VQE_Genetron_ChemfuelPowered" or defName="VQE_Genetron_Geothermal" or defName="VQE_Genetron_HeatPowered" or defName="VQE_Genetron_Isotopic" or defName="VQE_Genetron_Nuclear" or defName="VQE_Genetron_SteamPowered" or defName="VQE_Genetron_ThermalVent" or defName="VQE_Genetron_UraniumPowered" or defName="VQE_Genetron_WoodBlasting" or defName="VQE_Genetron_WoodFired" or defName="VQE_Genetron_WoodFueled" or defName="VQE_Genetron_WoodPowered"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="VQE_Genetron_Atomic" or defName="VQE_Genetron_Basic" or defName="VQE_Genetron_ChemfuelBoosted" or defName="VQE_Genetron_ChemfuelCharged" or defName="VQE_Genetron_ChemfuelFortified" or defName="VQE_Genetron_ChemfuelPowered" or defName="VQE_Genetron_Geothermal" or defName="VQE_Genetron_HeatPowered" or defName="VQE_Genetron_Isotopic" or defName="VQE_Genetron_Nuclear" or defName="VQE_Genetron_SteamPowered" or defName="VQE_Genetron_ThermalVent" or defName="VQE_Genetron_UraniumPowered" or defName="VQE_Genetron_WoodBlasting" or defName="VQE_Genetron_WoodFired" or defName="VQE_Genetron_WoodFueled" or defName="VQE_Genetron_WoodPowered") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+	</Operation>
+</Patch>

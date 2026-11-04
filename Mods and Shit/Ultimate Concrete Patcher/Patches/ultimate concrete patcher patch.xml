@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Floors (TerrainDef) -->
+
+	<!-- Floors: category follows the construction material -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="DBHMosaicConcrete"]</xpath>
+		<value><designationCategory>Ferny_FloorsConcrete</designationCategory></value>
+	</Operation>
+</Patch>

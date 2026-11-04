@@ -528,5 +528,11 @@
 			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>
 	</Operation>
-	
+
+	<!-- Floors (TerrainDef) -->
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="MUS_SpaceBase_MetalFlooring" or defName="MUS_SpaceBase_MetalFlooringTransverse" or defName="MUS_SpaceBase_MetalFlooringVertical"]</xpath>
+		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
+	</Operation>
 </Patch>

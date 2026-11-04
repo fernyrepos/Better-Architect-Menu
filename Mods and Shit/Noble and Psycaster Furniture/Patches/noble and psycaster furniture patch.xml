@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_DecoArt -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonSkullShrine_Large"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="MortonSkullShrine_Large"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="MortonSkullShrine_Large"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonSkullShrine_Small"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="MortonSkullShrine_Small"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="MortonSkullShrine_Small"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonSkullShrine_Tiny"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="MortonSkullShrine_Tiny"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="MortonSkullShrine_Tiny"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_DecoHanging -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonBacklitDrape"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonGildedDrape"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonModernDrape"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonRitualDrape"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonTribalDrape"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Lighting -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonBlacklightBrazier"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Lighting</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonBloodlightBrazier"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Lighting</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonCeremonialDarklightHearth"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="MortonCeremonialDarklightHearth"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="MortonCeremonialDarklightHearth"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MortonCeremonialHearth"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Lighting</designationCategory></value>
+	</Operation>
+</Patch>

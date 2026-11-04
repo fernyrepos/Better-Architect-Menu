@@ -15,4 +15,11 @@
     </value>
   </Operation>
 
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- UltratechAutomate -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MB_ArchotechMatterRelay"]/designationCategory</xpath>
+		<value><designationCategory>UltratechAutomate</designationCategory></value>
+	</Operation>
 </Patch>

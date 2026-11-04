@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Traps -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="SentryDroneTrapSTNL"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="SentryDroneTrapSTNL"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Traps</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="SentryDroneTrapSTNL"]</xpath>
+			<value><designationCategory>Ferny_Traps</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WaspDroneTrapSTNL"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="WaspDroneTrapSTNL"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Traps</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="WaspDroneTrapSTNL"]</xpath>
+			<value><designationCategory>Ferny_Traps</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

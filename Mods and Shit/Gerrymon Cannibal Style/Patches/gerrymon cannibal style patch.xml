@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Ferny_Lighting -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GM_Cannibal_SkullBrazier"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="GM_Cannibal_SkullBrazier"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="GM_Cannibal_SkullBrazier"]</xpath>
+			<value><designationCategory>Ferny_Lighting</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

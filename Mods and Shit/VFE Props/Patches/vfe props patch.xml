@@ -154,4 +154,11 @@
     </value>
   </Operation>
 
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_Walls -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFEP_ShortWalls"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Walls</designationCategory></value>
+	</Operation>
 </Patch>

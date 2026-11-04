@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Netrun buildings (they sit in Netrun's own NR_Cyberspace tab) -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NR_AIServer"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="NR_AIServer"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="NR_AIServer"]</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NR_AIServerRack"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="NR_AIServerRack"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="NR_AIServerRack"]</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NR_NetrunCoprocessor"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="NR_NetrunCoprocessor"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="NR_NetrunCoprocessor"]</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="NR_Firewall"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="NR_Firewall"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="NR_Firewall"]</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Netrun moves some Hacking Expansion buildings into NR_Cyberspace: put them back where Better Architect Menu sorts them (this mod loads after Netrun) -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_Cyberpod"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="USH_Cyberpod"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="USH_Cyberpod"]</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="USH_DataServer"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="USH_DataServer"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Auxiliaries</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="USH_DataServer"]</xpath>
+			<value><designationCategory>Ferny_Auxiliaries</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="USH_CoprocessorBase"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="USH_CoprocessorBase"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Hacking</designationCategory></value>
+		</match>
+	</Operation>
+	<!-- Remove the now empty Netrun category -->
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="NR_Cyberspace"]</xpath>
+	</Operation>
+</Patch>

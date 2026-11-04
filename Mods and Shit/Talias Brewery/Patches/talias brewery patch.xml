@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Kitchen -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="talias_FermentingBarrel"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Kitchen</designationCategory></value>
+	</Operation>
+</Patch>

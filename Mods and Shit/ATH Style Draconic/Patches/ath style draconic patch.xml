@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_FloorsStone -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DraconicSlab_Broad"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DraconicSlab_Broad"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DraconicSlab_Broad"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DraconicSlab_Medium"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DraconicSlab_Medium"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DraconicSlab_Medium"]</xpath>
+			<value><designationCategory>Ferny_FloorsStone</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Ferny_FoodStorage : 3 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_Basket" or defName="ASF_MeatHook" or defName="ASF_TrayRack"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_FoodStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="ASF_Basket" or defName="ASF_MeatHook" or defName="ASF_TrayRack") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_FoodStorage</designationCategory></value>
+	</Operation>
+	<!-- Ferny_GearStorage : 3 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_ClothingRack" or defName="ASF_WeaponsCabinet" or defName="ASF_WeaponsLocker"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_GearStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="ASF_ClothingRack" or defName="ASF_WeaponsCabinet" or defName="ASF_WeaponsLocker") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_GearStorage</designationCategory></value>
+	</Operation>
+	<!-- Ferny_GeneralStorage : 6 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_BigShelf" or defName="ASF_BigSShelf" or defName="ASF_FabricHamper" or defName="ASF_Safe" or defName="ASF_VeryBigShelf" or defName="ASF_VeryBigSShelf"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="ASF_BigShelf" or defName="ASF_BigSShelf" or defName="ASF_FabricHamper" or defName="ASF_Safe" or defName="ASF_VeryBigShelf" or defName="ASF_VeryBigSShelf") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+	</Operation>
+	<!-- Ferny_Medical : 1 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_MedCab"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Medical</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="ASF_MedCab") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_Medical</designationCategory></value>
+	</Operation>
+	<!-- Ferny_ResourcesStorage : 3 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASF_Hayloft" or defName="ASF_Pallet" or defName="ASF_Skip"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ResourcesStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="ASF_Hayloft" or defName="ASF_Pallet" or defName="ASF_Skip") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_ResourcesStorage</designationCategory></value>
+	</Operation>
+</Patch>

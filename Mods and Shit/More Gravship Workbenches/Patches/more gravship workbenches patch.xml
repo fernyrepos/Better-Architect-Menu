@@ -49,4 +49,16 @@
 	</value>
 </Operation>
 
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_SpaceProduction -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LTS_CompactDroneTinkeringBench"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceProduction</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LTS_CompactWritingTable"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_SpaceProduction</designationCategory></value>
+	</Operation>
 </Patch>

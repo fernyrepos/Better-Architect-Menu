@@ -96,4 +96,60 @@
 		</value>
 	</Operation>
 
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_DecoArt -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DA_DemonStatue"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DA_DemonStatue"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DA_DemonStatue"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DA_GargoyleStatue"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DA_GargoyleStatue"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DA_GargoyleStatue"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DA_ImpStatue"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DA_ImpStatue"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DA_ImpStatue"]</xpath>
+			<value><designationCategory>Ferny_DecoArt</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Memorial -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="DA_HeroicMemorial"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="DA_HeroicMemorial"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Memorial</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="DA_HeroicMemorial"]</xpath>
+			<value><designationCategory>Ferny_Memorial</designationCategory></value>
+		</nomatch>
+	</Operation>
 </Patch>

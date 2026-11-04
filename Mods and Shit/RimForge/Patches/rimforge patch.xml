@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Farming -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RF_GreenhouseController"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Farming</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Weapons -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RF_Coilgun"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RF_Coilgun"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RF_Coilgun"]</xpath>
+			<value><designationCategory>Ferny_Weapons</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RF_DroneLauncher"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Weapons</designationCategory></value>
+	</Operation>
+
+	<!-- Power -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RF_Capacitor"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RF_Capacitor"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_PowerStorage</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RF_Capacitor"]</xpath>
+			<value><designationCategory>Ferny_PowerStorage</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RF_LightningRod"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RF_LightningRod"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_PowerManagement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RF_LightningRod"]</xpath>
+			<value><designationCategory>Ferny_PowerManagement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RF_TeslaCoil"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RF_TeslaCoil"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Traps</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RF_TeslaCoil"]</xpath>
+			<value><designationCategory>Ferny_Traps</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RF_TeslaCoilWireless"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RF_TeslaCoilWireless"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Traps</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="RF_TeslaCoilWireless"]</xpath>
+			<value><designationCategory>Ferny_Traps</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="RF_WirelessPowerPylon"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_PowerManagement</designationCategory></value>
+	</Operation>
+</Patch>

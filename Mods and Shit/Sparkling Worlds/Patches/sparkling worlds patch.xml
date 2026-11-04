@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_CombatInfrastructure -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BeamCannonSatellitePodSW"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_AerialTransport</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="KineticBombardmentSatellitePodSW"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_AerialTransport</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Control -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MindAlteringDeviceSW"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Control</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Medical -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Medical</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="GlitterworldHospitalBedSW"]</xpath>
+			<value><designationCategory>Ferny_Medical</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_ProcessingProduction -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MechaniteAssemblySW"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ProcessingProduction</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_Production -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TableWeaverSW"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Production</designationCategory></value>
+	</Operation>
+
+	<!-- Ferny_ResearchProduction -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ComputingSystemSW"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ResearchProduction</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CompactFissionPowerSW"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="CompactFissionPowerSW"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="CompactFissionPowerSW"]</xpath>
+			<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

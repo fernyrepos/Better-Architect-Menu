@@ -37,7 +37,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="sbz_TextileRack"]</xpath>
         <value>
-            <designationCategory>Ferny_GeneralStorage</designationCategory>
+            <designationCategory>Ferny_ResourcesStorage</designationCategory>
         </value>
     </Operation>
      
@@ -64,4 +64,27 @@
     </Operation>
 
     <!-- ReelStorageNewBarrel -->
+
+	<!-- Ferny_FoodStorage -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_CorpseSpot"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_FoodStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="sbz_CorpseSpot") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_FoodStorage</designationCategory></value>
+	</Operation>
+	<!-- Ferny_GearStorage -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_GearStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="sbz_HangerShelf" or defName="sbz_WideHangerShelf") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_GearStorage</designationCategory></value>
+	</Operation>
 </Patch>

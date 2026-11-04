@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>          
                 <Operation Class="PatchOperationAdd">
                     <success>Always</success>
@@ -85,7 +85,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ASF_Granary"]</xpath>
                     <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        <designationCategory>Ferny_FoodStorage</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">

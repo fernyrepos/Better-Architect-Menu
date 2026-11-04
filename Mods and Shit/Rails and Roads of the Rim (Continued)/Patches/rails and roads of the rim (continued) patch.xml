@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Ferny_Foundations : 1 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="ConcreteBridge"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Foundations</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[(defName="ConcreteBridge") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_Foundations</designationCategory></value>
+	</Operation>
+</Patch>

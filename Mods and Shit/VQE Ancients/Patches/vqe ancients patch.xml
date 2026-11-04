@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Doors -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_AncientVaultDoor"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_AncientVaultDoor"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Doors</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_AncientVaultDoor"]</xpath>
+			<value><designationCategory>Ferny_Doors</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Enhancement -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_AberrationRedirector"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_AberrationRedirector"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_AberrationRedirector"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_ArchitePathingArray"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_ArchitePathingArray"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_ArchitePathingArray"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_ArchiteRecycler"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_ArchiteRecycler"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_ArchiteRecycler"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_ArchogenInjector"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_ArchogenInjector"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_ArchogenInjector"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_CognitiveRecoveryArray"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_CognitiveRecoveryArray"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_CognitiveRecoveryArray"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_ComplexityHarmonizer"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_ComplexityHarmonizer"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_ComplexityHarmonizer"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_GenomicAttenuator"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_GenomicAttenuator"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_GenomicAttenuator"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_MutagenInhibitorCore"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_MutagenInhibitorCore"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_MutagenInhibitorCore"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_NeurostabilizerArray"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_NeurostabilizerArray"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_NeurostabilizerArray"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_RapidInfusionPump"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_RapidInfusionPump"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_RapidInfusionPump"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_RejectionBufferCoil"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_RejectionBufferCoil"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_RejectionBufferCoil"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_SpliceframeUplink"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_SpliceframeUplink"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_SpliceframeUplink"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_TraitSelectionPrism"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_TraitSelectionPrism"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_TraitSelectionPrism"]</xpath>
+			<value><designationCategory>Ferny_Enhancement</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Farming -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_AncientGreenbed"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_AncientGreenbed"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Farming</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_AncientGreenbed"]</xpath>
+			<value><designationCategory>Ferny_Farming</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Kitchen -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VqEA_AncientCookingStation"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VqEA_AncientCookingStation"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Kitchen</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VqEA_AncientCookingStation"]</xpath>
+			<value><designationCategory>Ferny_Kitchen</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Medical -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_AncientWonderdoc"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_AncientWonderdoc"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Medical</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_AncientWonderdoc"]</xpath>
+			<value><designationCategory>Ferny_Medical</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Production -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_AncientWorkshop"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_AncientWorkshop"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Production</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_AncientWorkshop"]</xpath>
+			<value><designationCategory>Ferny_Production</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Ferny_Walls -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_AncientVaultWall"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_AncientVaultWall"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_Walls</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_AncientVaultWall"]</xpath>
+			<value><designationCategory>Ferny_Walls</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Joy -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_AncientFoosballTable"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_AncientFoosballTable"]/designationCategory</xpath>
+			<value><designationCategory>Joy</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_AncientFoosballTable"]</xpath>
+			<value><designationCategory>Joy</designationCategory></value>
+		</nomatch>
+	</Operation>
+
+	<!-- Power -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_AncientBioBattery"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_AncientBioBattery"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_AncientBioBattery"]</xpath>
+			<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VQEA_AncientChemfuelGenerator"]/designationCategory</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VQEA_AncientChemfuelGenerator"]/designationCategory</xpath>
+			<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VQEA_AncientChemfuelGenerator"]</xpath>
+			<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+		</nomatch>
+	</Operation>
+</Patch>

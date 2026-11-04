@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Generated from BA_TreeExport: buildings left in a Misc/unsorted menu -->
+
+	<!-- Ferny_Memorial -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Building_TreeGrave"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Memorial</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="CannibalFeast"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Memorial</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="WateryGrave"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Memorial</designationCategory></value>
+	</Operation>
+</Patch>

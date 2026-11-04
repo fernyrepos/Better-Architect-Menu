@@ -47,5 +47,12 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="WG_BaseScaffold"]/designatorDropdown</xpath>
 	</Operation>
-	
+
+	<!-- Additional buildings sorted (generated from an in-game export of the architect tree) -->
+<!-- Ferny_CombatEquipment -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MF_Building_AutoRepairArm"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_CombatEquipment</designationCategory></value>
+	</Operation>
 </Patch>
