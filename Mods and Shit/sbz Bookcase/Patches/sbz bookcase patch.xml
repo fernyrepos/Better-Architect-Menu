@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="sbz_TwoTierBookcase"]/designationCategory</xpath>
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="sbz_TwoTierBookcase"]</xpath>
     <value>
         <designationCategory>Ferny_InformationStorage</designationCategory>
     </value>
 </Operation>
 
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="sbz_NarrowTwoTierBookcase"]/designationCategory</xpath>
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="sbz_NarrowTwoTierBookcase"]</xpath>
     <value>
         <designationCategory>Ferny_InformationStorage</designationCategory>
     </value>
 </Operation>
 
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="sbz_Bookshelf"]/designationCategory</xpath>
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="sbz_Bookshelf"]</xpath>
     <value>
         <designationCategory>Ferny_InformationStorage</designationCategory>
     </value>
 </Operation>
 
-<Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="sbz_BookshelfSmall"]/designationCategory</xpath>
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="sbz_BookshelfSmall"]</xpath>
     <value>
         <designationCategory>Ferny_InformationStorage</designationCategory>
     </value>

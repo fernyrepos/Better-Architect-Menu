@@ -2,23 +2,10 @@
 <Patch>
 
 
-                <Operation Class="PatchOperationReplace">
+                <!-- Retain BAM's core category, removing CAI's duplicate. -->
+                <Operation Class="PatchOperationRemove">
                     <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="Intelligences"]/order</xpath>
-                    <value>
-                        <order>2</order>
-                    </value>
-                </Operation>
-                <Operation Class="PatchOperationAdd">
-                    <success>Always</success>
-                    <xpath>Defs/DesignationCategoryDef[defName="Intelligences"]</xpath>
-                    <value>
-                        <modExtensions>
-                        <li Class="BetterArchitect.NestedCategoryExtension">
-                            <parentCategory>Security</parentCategory>
-                        </li>
-                        </modExtensions>
-                    </value>
+                    <xpath>Defs/DesignationCategoryDef[defName="Intelligences" and not(@Name="BAM_Intelligences")]</xpath>
                 </Operation>
 
 </Patch>

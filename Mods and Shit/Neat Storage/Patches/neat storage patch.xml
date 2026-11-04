@@ -3,19 +3,13 @@
 
     <!-- GENERAL -->
     <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="sbz_DisplayTable" or defName="sbz_RoundPedestal"]</xpath>
+        <value>
+            <designationCategory>Ferny_GeneralStorage</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[@Name="sbzDisplayShelfBase"]</xpath>
-        <value>
-            <designationCategory>Ferny_GeneralStorage</designationCategory>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[@Name="sbzSmallDisplayShelfBase"]</xpath>
-        <value>
-            <designationCategory>Ferny_GeneralStorage</designationCategory>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[@Name="sbzCrateBase"]</xpath>
         <value>
             <designationCategory>Ferny_GeneralStorage</designationCategory>
         </value>

@@ -12,6 +12,8 @@ namespace BetterArchitect
         public static bool rememberSubcategory = false;
         public static bool useSpecialFloorsTab = true;
         public static bool mysteryUnlocks = true;
+        public static bool fillBottomUp;
+        public static int gridColumns;
         public static bool debugShowUiOrder;
         public static float backgroundAlpha = 0.42f;
         public static Dictionary<string, SortSettings> sortSettingsPerCategory = new Dictionary<string, SortSettings>();
@@ -39,6 +41,8 @@ namespace BetterArchitect
             Scribe_Values.Look(ref backgroundAlpha, "backgroundAlpha", 0.15f);
             Scribe_Values.Look(ref useSpecialFloorsTab, "useSpecialFloorsTab", true);
             Scribe_Values.Look(ref mysteryUnlocks, "mysteryUnlocks", true);
+            Scribe_Values.Look(ref fillBottomUp, "fillBottomUp", false);
+            Scribe_Values.Look(ref gridColumns, "gridColumns", 0);
             Scribe_Values.Look(ref debugShowUiOrder, "debugShowUiOrder", false);
 
             Scribe_Collections.Look(ref sortSettingsPerCategory, "sortSettingsPerCategory", LookMode.Value, LookMode.Deep);

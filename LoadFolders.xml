@@ -1179,6 +1179,7 @@
     <li IfModActive="Chairheir.VPERunesmith">Mods and Shit/Vanilla Psycasts Expanded RuneSmith</li>
     <li IfModActive="SmallTanksForVGE.ByNiki">Mods and Shit/Small Tanks for VGE</li>
     <li IfModActive="GafarovMaxim.HackingExpansionNetrun">Mods and Shit/Hacking Expansion Netrun</li>
+    <li IfModActive="ferny.SurveillanceShift">Mods and Shit/Surveillance Shift</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>
