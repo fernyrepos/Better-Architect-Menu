@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Ferny_Doors : 2 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MDV_SpaceshipArchway" or defName="MDV_StonyArchway"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Doors</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="MDV_SpaceshipArchway" or defName="MDV_StonyArchway") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_Doors</designationCategory></value>
+	</Operation>
+</Patch>

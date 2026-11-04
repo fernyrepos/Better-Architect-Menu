@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Ferny_CombatInfrastructure : 1 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="GFE_TacticalHolotable"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_CombatInfrastructure</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="GFE_TacticalHolotable") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_CombatInfrastructure</designationCategory></value>
+	</Operation>
+</Patch>

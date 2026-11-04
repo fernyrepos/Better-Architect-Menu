@@ -305,12 +305,12 @@
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="AB_AlcyoniteSolar"]/designationCategory</xpath>
-		<value><designationCategory>Power</designationCategory></value>
+		<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="AB_AlcyoniteSolar_Advanced"]/designationCategory</xpath>
-		<value><designationCategory>Power</designationCategory></value>
+		<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
 	</Operation>
 
 	<!-- Floors (TerrainDef) -->
@@ -328,5 +328,18 @@
 		<success>Always</success>
 		<xpath>Defs/TerrainDef[defName="AB_AsphaltBridge"]/designationCategory</xpath>
 		<value><designationCategory>Ferny_Foundations</designationCategory></value>
+	</Operation>
+
+<!-- Better Architect : batiments non ranges (export du 04/11) -->
+	<!-- Ferny_PowerGeneration -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="AB_MagmaThermalPlant" or defName="AB_MagmaThermalPlant_Advanced"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="AB_MagmaThermalPlant" or defName="AB_MagmaThermalPlant_Advanced") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_PowerGeneration</designationCategory></value>
 	</Operation>
 </Patch>

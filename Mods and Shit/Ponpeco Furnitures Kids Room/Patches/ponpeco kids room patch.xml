@@ -53,6 +53,14 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_DoubleBed" or defName="PFK_RoyalBed"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Bedroom</designationCategory>
+		</value>
+	</Operation>
+	
 <!-- SEATING -->
 
 	<Operation Class="PatchOperationReplace">
@@ -125,6 +133,13 @@
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="PFKRugBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_DecoRugs</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFK_LinkableRug"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>

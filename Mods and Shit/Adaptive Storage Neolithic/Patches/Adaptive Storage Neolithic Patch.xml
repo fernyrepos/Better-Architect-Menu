@@ -50,4 +50,28 @@
         </value>
     </Operation>
 
+
+<!-- Better Architect : batiments non ranges (export du 04/11) -->
+	<!-- Ferny_FoodStorage -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASNeolithicLargePot" or defName="ASNeolithicLargePotStone"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_FoodStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="ASNeolithicLargePot" or defName="ASNeolithicLargePotStone") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_FoodStorage</designationCategory></value>
+	</Operation>
+	<!-- Ferny_GeneralStorage -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ASNeolithicBasketFabric" or defName="ASNeolithicBasketWoody" or defName="ASNeolithicChunkStorage" or defName="ASNeolithicPlinthStone" or defName="ASNeolithicPlinthWoody" or defName="ASNeolithicTextileBundleFabric" or defName="ASNeolithicTextileBundleLeather"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="ASNeolithicBasketFabric" or defName="ASNeolithicBasketWoody" or defName="ASNeolithicChunkStorage" or defName="ASNeolithicPlinthStone" or defName="ASNeolithicPlinthWoody" or defName="ASNeolithicTextileBundleFabric" or defName="ASNeolithicTextileBundleLeather") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+	</Operation>
 </Patch>

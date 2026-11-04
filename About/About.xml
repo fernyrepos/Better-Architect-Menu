@@ -1096,6 +1096,14 @@
         <li>GafarovMaxim.HackingExpansionNetrun</li>
         <li>lucius.floorpatch</li>
         <li>SmallTanksForVGE.ByNiki</li>
+        <li>Adaptive.Ideology.Storage</li>
+        <li>ASF.DeepStorage</li>
+        <li>cantaloupetheclown.vanillafurnitureexpandedpack</li>
+        <li>gravship.tactical.holotable</li>
+        <li>local.moredoorvariants</li>
+        <li>Mlie.RailsAndRoadsOfTheRim</li>
+        <li>nelim.adaptivestorageneolithic</li>
+        <li>vanillaquestsexpanded.generator</li>
     <!-- (Add new mods here ^^^^^) -->
     </loadAfter>
 </ModMetaData>

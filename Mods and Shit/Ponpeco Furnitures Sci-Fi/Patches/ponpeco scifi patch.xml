@@ -377,4 +377,11 @@
 		<xpath>Defs/TerrainDef[defName="PFS_BlackTile" or defName="PFS_ClearBlueTile" or defName="PFS_ClearGrayTile" or defName="PFS_GrayTile" or defName="PFS_HexaTile" or defName="PFS_HexaTileB" or defName="PFS_LF_Black" or defName="PFS_LF_CoolGray" or defName="PFS_LF_Cyan" or defName="PFS_LF_DustyAmethyst" or defName="PFS_LF_Mint" or defName="PFS_LuminousFlooring" or defName="PFS_TRONTile" or defName="PFS_WhiteTile"]</xpath>
 		<value><designationCategory>Ferny_FloorsMetal</designationCategory></value>
 	</Operation>
+
+	<!-- Ferny_Bedroom -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="PFS_Bedroll"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_Bedroom</designationCategory></value>
+	</Operation>
 </Patch>

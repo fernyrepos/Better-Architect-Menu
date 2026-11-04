@@ -114,7 +114,7 @@
     <success>Always</success>
     <xpath>Defs/ThingDef[defName="AM_AncientLockerBank"]/designationCategory</xpath>
     <value>
-      <designationCategory>Ferny_Bedroom</designationCategory>
+      <designationCategory>Ferny_GeneralStorage</designationCategory>
     </value>
   </Operation>
 

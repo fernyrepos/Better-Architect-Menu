@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>          
 
 <!-- RANCHING -->
@@ -45,7 +45,7 @@
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ReelStorageSkip"]</xpath>
                     <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
@@ -198,7 +198,7 @@
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ReelStorageSpacerLocker"]</xpath>
                     <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        <designationCategory>Ferny_GearStorage</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
@@ -210,7 +210,7 @@
                 <Operation Class="PatchOperationAdd">
                     <xpath>Defs/ThingDef[defName="ReelStorageTanningRack"]</xpath>
                     <value>
-                        <designationCategory>Ferny_GeneralStorage</designationCategory>
+                        <designationCategory>Ferny_ResourcesStorage</designationCategory>
                     </value>
                 </Operation>
 

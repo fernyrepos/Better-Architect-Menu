@@ -42,7 +42,7 @@
     <li IfModActive="rimthunderteams.rimthunder.warhorseofreich">Mods and Shit/RimThunder Warhorse of the Reich</li>
     <li IfModActive="rimthunderteams.rimthunder.waytosamurai">Mods and Shit/RimThunder Way to Samurai</li>
     <li IfModActive="myde.aerocraftframework">Mods and Shit/Aerocraft Framework</li>
-    <li IfModActive="Adaptive.Storage.Neolithic">Mods and Shit/Adaptive Storage Neolithic</li>
+    <li IfModActiveAny="Adaptive.Storage.Neolithic,nelim.adaptivestorageneolithic">Mods and Shit/Adaptive Storage Neolithic</li>
 
 
 
@@ -1180,6 +1180,13 @@
     <li IfModActive="SmallTanksForVGE.ByNiki">Mods and Shit/Small Tanks for VGE</li>
     <li IfModActive="GafarovMaxim.HackingExpansionNetrun">Mods and Shit/Hacking Expansion Netrun</li>
     <li IfModActive="ferny.SurveillanceShift">Mods and Shit/Surveillance Shift</li>
+    <li IfModActive="Adaptive.Ideology.Storage">Mods and Shit/Adaptive Ideology Storage</li>
+    <li IfModActive="ASF.DeepStorage">Mods and Shit/LWM's Adaptive Deep Storage</li>
+    <li IfModActive="cantaloupetheclown.vanillafurnitureexpandedpack">Mods and Shit/VFE Pack for Adaptive Storage Framework</li>
+    <li IfModActive="gravship.tactical.holotable">Mods and Shit/Gravship Tactical Holotable</li>
+    <li IfModActive="local.moredoorvariants">Mods and Shit/More Door Variants</li>
+    <li IfModActive="Mlie.RailsAndRoadsOfTheRim">Mods and Shit/Rails and Roads of the Rim (Continued)</li>
+    <li IfModActive="vanillaquestsexpanded.generator">Mods and Shit/Vanilla Quests Expanded - The Generator</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

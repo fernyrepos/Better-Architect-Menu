@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
 <!-- AUXILIARIES -->
@@ -41,35 +41,35 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="RBPPaintingProps"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoArt</designationCategory>
                     </value>
                 </Operation>
 
                  <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="RBPPaintSpills"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoArt</designationCategory>
                     </value>
                 </Operation>
 
                  <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="RBPPaintMat"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoArt</designationCategory>
                     </value>
                 </Operation>
 
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="RBPPaintTins"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoArt</designationCategory>
                     </value>
                 </Operation>
 
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="RBPCanvases"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Decorations</designationCategory>
+                        <designationCategory>Ferny_DecoArt</designationCategory>
                     </value>
                 </Operation>
 

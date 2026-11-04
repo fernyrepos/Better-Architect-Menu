@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Ferny_FoodStorage : 2 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MealCrate_A" or defName="MealCrate_B"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_FoodStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="MealCrate_A" or defName="MealCrate_B") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_FoodStorage</designationCategory></value>
+	</Operation>
+	<!-- Ferny_GearStorage : 3 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="LockerBank_1x1z" or defName="LockerBank_1x2z" or defName="LockerBank_1x3z"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_GearStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="LockerBank_1x1z" or defName="LockerBank_1x2z" or defName="LockerBank_1x3z") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_GearStorage</designationCategory></value>
+	</Operation>
+	<!-- Ferny_GeneralStorage : 16 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="asf_rustedtoolbox" or defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="ContainerC" or defName="ContainerD" or defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="asf_rustedtoolbox" or defName="BarrelD" or defName="BarrelE" or defName="BarrelF" or defName="BarrelG" or defName="CanisterD" or defName="CanisterE" or defName="CanisterF" or defName="ContainerC" or defName="ContainerD" or defName="CrateH" or defName="CrateI" or defName="CrateJ" or defName="CrateK" or defName="CrateL" or defName="CylinderA") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_GeneralStorage</designationCategory></value>
+	</Operation>
+	<!-- Ferny_ResourcesStorage : 5 -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Bundle_D" or defName="ChunkA" or defName="ChunkB" or defName="Freight_A" or defName="Freight_B"]/designationCategory</xpath>
+		<value><designationCategory>Ferny_ResourcesStorage</designationCategory></value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[(defName="Bundle_D" or defName="ChunkA" or defName="ChunkB" or defName="Freight_A" or defName="Freight_B") and not(designationCategory)]</xpath>
+		<value><designationCategory>Ferny_ResourcesStorage</designationCategory></value>
+	</Operation>
+</Patch>

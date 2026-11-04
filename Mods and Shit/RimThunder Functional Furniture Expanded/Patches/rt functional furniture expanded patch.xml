@@ -201,7 +201,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RT_Drum"]</xpath>
 		<value>
-			<designationCategory>Ferny_GeneralStorage</designationCategory>
+			<designationCategory>Ferny_ResourcesStorage</designationCategory>
 		</value>
 	</Operation>
 
