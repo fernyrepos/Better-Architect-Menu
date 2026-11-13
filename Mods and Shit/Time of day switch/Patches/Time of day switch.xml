@@ -3,7 +3,7 @@
   
 <!-- POWER MANAGEMENT -->
                 <Operation Class="PatchOperationReplace">
-                    <xpath>Defs/ThingDef[defName="TimerSwitch"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="TimerSwitch" or defName="WallTimerSwitch"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Ferny_PowerManagement</designationCategory>
                     </value>
