@@ -5,7 +5,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Battery_Silver"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -13,7 +13,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Battery_Gold"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -21,7 +21,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Battery_Plasteel"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -29,7 +29,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Battery_Uranium"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -37,7 +37,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Battery_Advanced"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -45,7 +45,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="Battery_Vanometric"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

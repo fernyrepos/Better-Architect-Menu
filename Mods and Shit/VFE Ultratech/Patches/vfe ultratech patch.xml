@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_UltratechResearchBench" or defName="VFEU_UltracomputerMainframe" or @Name="VFEU_UltracomputerLinkableBase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ResearchProduction</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_Ultrareplicator_Microprocessing" or defName="VFEU_UltratechDrugLab" or defName="VFEU_Ultraweaver"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_Automedic"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Medical</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_GrowthVatMonitor"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Childhood</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="VFEU_RecreationBuildingBase" or defName="VFEU_Ultralounger"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Joy</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="VFEU_HologramBase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="VFEU_UltrabedBase" or @Name="VFEU_UltratechFacilityBase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Bedroom</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_MealReplicator" or defName="VFEU_SynthmeatCultivator" or defName="VFEU_BlancFermentingBarrel"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Kitchen</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_Polymerizer"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ProcessingProduction</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/DesignationCategoryDef[defName="VFEU_Ultratech"]</xpath>
+    <value>
+      <modExtensions>
+        <li Class="BetterArchitect.NestedCategoryExtension">
+          <parentCategory>Ferny_Biotech</parentCategory>
+        </li>
+      </modExtensions>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_NetcastHarmonizer" or defName="VFEU_NetcastTuner" or defName="VFEU_NetcastTransmitter"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Netcast</designationCategory>
+    </value>
+  </Operation>
+  <!-- Hidden and waterproof conduits inherit the standard conduit's category. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_UltraWattConduit" or defName="VFEU_UltraWattSwitch" or defName="VFEU_UltraWattBattery" or defName="VFEU_UltraWattConverter" or defName="VFEU_UltraWattTransformer"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Ultrawatt</designationCategory>
+    </value>
+  </Operation>
+  <!-- Beam blaster, lancer, and resonator inherit the graser turret category. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_Turret_SmartTurret" or @Name="VFEU_GraserTurretBase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Weapons</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_Turret_TargetScanner"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_CombatInfrastructure</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_UltrashieldEmitter" or defName="VFEU_ForcefieldWall"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Barricades</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_SolarCollector" or defName="VFEU_Heliostat" or defName="VFEU_BiofuelHyperburner" or defName="VFEU_WindUltraturbine"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Ultrawatt</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="VFEU_WallGlowstrip"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+</Patch>

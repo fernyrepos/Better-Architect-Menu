@@ -12,7 +12,7 @@
     <success>Always</success>
     <xpath>/Defs/ThingDef[defName="SA_singularitycell"]/designationCategory</xpath>
     <value>
-      <designationCategory>Ferny_PowerGeneration</designationCategory>
+      <designationCategory>Power</designationCategory>
     </value>
   </Operation>
 </Patch>

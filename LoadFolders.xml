@@ -383,7 +383,7 @@
     <li IfModActive="mo.technicalvehicles">Mods and Shit/Technical Vehicles</li>
     <li IfModActive="mo.technicalmapvehicles">Mods and Shit/Technical Map Vehicles</li>
     <li IfModActive="mrhydralisk.voepowergrid">Mods and Shit/VE Outposts Power Grid</li>
-    <li IfModActive="oels.vehiclemapframework">Mods and Shit/Vehicle Map Framework</li>
+    <li IfModActiveAny="oels.vehiclemapframework,oels.vehiclemapframework.dev">Mods and Shit/Vehicle Map Framework</li>
     <li IfModActive="mingtuwuxiang.fishingdecorative">Mods and Shit/MUS FishingDecorative</li>                              <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.gothicdecorative">Mods and Shit/MUS Gothicstyle Vampire Furniture</li>                   <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Space Base Furniture</li>
@@ -1117,11 +1117,17 @@
     <li IfModActive="drilledhead.Wallpenmarker">Mods and Shit/DHM Wallpenmarker</li>
     <li IfModActive="forti.rimtoll">Mods and Shit/RimToll</li>
     <li IfModActive="vanillaexpanded.gravship2">Mods and Shit/VE Gravship 2</li>
-    <li IfModActiveAny="natsuki.manipulatorbeam,kvr.beamconstructor">Mods and Shit/Ultratech Automation</li>
+    <li IfModActive="natsuki.manipulatorbeam">Mods and Shit/Ultratech Automation</li>
     <li IfModActive="natsuki.manipulatorbeam">Mods and Shit/Manipulator Beam Emitter</li>
-    <li IfModActive="kvr.beamconstructor">Mods and Shit/Beam Constructor</li>
     <li IfModActive="koni.misc.toxlamps">Mods and Shit/Toxlamps</li>
     <li IfModActive="ferny.SurveillanceShift">Mods and Shit/Surveillance Shift</li>
+    <li IfModActive="local.moredoorvariants">Mods and Shit/More Door Variants</li>
+    <li IfModActive="I.AutomaticForaging">Mods and Shit/Automatic Foraging</li>
+    <li IfModActive="morton.NobleandPsycasterFurniture">Mods and Shit/Noble and Psycaster Furniture</li>
+    <li IfModActive="asunib.Gravlock">Mods and Shit/Salvage Gravlock</li>
+    <li IfModActive="OskarPotocki.VFE.Ultratech">Mods and Shit/VFE Ultratech</li>
+    <li IfModActiveAll="GMMP.Market,adaptive.storage.framework">Mods and Shit/Gerrymons Misc Props Market</li>
+    <li IfModActive="OELS.MapVehicles.OceanExpansion">Mods and Shit/Map Vehicles Ocean Expansion</li>
     <!-- (Add new mods here ^^^^^) -->
   </v1.6>
 </loadFolders>

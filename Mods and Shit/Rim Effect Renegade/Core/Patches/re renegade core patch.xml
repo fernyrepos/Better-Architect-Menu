@@ -161,7 +161,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RE_PrefabGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -169,7 +169,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PrefabSolarCollectors"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -177,7 +177,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RE_ElementZeroReactor"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -185,7 +185,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RE_FusionReactor"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -193,7 +193,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RE_PrefabGeothermalPlant"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	
@@ -203,7 +203,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RE_FusionCell"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

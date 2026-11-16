@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="ThermalWell_Site"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

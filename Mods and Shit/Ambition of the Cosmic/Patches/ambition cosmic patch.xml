@@ -208,7 +208,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SNS_Reactor_I"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -216,7 +216,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SNS_Reactor_I_Portable"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -224,7 +224,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SNS_Reactor_II"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -232,7 +232,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SNS_Reactor_II_Portable"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -240,7 +240,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SNS_Reactor_III"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	
@@ -250,7 +250,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SNS_Battery_I"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -258,7 +258,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SNS_Battery_II"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -266,7 +266,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="SNS_Battery_III"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

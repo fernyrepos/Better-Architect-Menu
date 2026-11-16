@@ -5,21 +5,21 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PP_MPowerPole"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PP_MPowerPoleLamp"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PP_PowerPoleLamp"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 

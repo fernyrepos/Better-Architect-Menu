@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+  <!-- Beam Constructor is now included in Manipulator Beam Emitter. -->
 
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/ThingDef[defName="BC_BeamConstructorEmitter"]/designationCategory</xpath>

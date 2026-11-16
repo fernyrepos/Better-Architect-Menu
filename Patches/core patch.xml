@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+    <!-- Former More contents are now Miscellaneous inside World. -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/DesignationCategoryDef[defName="Misc"]</xpath>
+        <value>
+            <li Class="BetterArchitect.NestedCategoryExtension">
+                <parentCategory>Ferny_World</parentCategory>
+            </li>
+        </value>
+    </Operation>
+    <!-- Consolidated electricity, first under Resources. Keep vanilla Power identity. -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Power"]/label</xpath>
+        <value><label>Electricity</label></value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/DesignationCategoryDef[defName="Power"]/order</xpath>
+        <value><order>10000</order></value>
+    </Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/DesignationCategoryDef[defName="Power"]</xpath>
+        <value>
+            <li Class="BetterArchitect.NestedCategoryExtension">
+                <parentCategory>VCHE_PipeNetworks</parentCategory>
+            </li>
+        </value>
+    </Operation>
 
     <!-- NEST INTO COLONY MENU -->
     <Operation Class="PatchOperationAdd">
@@ -118,7 +144,7 @@
     </Operation>
 
 
-    <!-- MISC AT THE BOTTOM -->
+    <!-- MISCELLANEOUS AT BOTTOM OF WORLD -->
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/DesignationCategoryDef[defName="Misc"]/order</xpath>
@@ -130,7 +156,7 @@
         <success>Always</success>
         <xpath>Defs/DesignationCategoryDef[defName="Misc"]/label</xpath>
         <value>
-            <label>More</label>
+            <label>Miscellaneous</label>
         </value>
     </Operation>
 
@@ -337,14 +363,14 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="PowerConduit"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerManagement</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="PowerSwitch"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerManagement</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
     </Operation>
 
@@ -353,7 +379,7 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="Battery"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerStorage</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
     </Operation>
 
@@ -363,42 +389,42 @@
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerGeneration</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerGeneration</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="WindTurbine"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerGeneration</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="SolarGenerator"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerGeneration</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="GeothermalGenerator"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerGeneration</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <success>Always</success>
         <xpath>Defs/ThingDef[defName="WatermillGenerator"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerGeneration</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
     </Operation>
 
@@ -797,7 +823,7 @@
                 </Operation>
 
 
-<!-- MISC AT THE BOTTOM -->
+<!-- MISCELLANEOUS AT BOTTOM OF WORLD -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/DesignationCategoryDef[defName="Misc"]/order</xpath>
@@ -809,7 +835,7 @@
                     <success>Always</success>
                     <xpath>Defs/DesignationCategoryDef[defName="Misc"]/label</xpath>
                     <value>
-                        <label>More</label>
+                        <label>Miscellaneous</label>
                     </value>
                 </Operation>
 
@@ -1000,14 +1026,14 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PowerConduit"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="PowerSwitch"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 
@@ -1016,7 +1042,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Battery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerStorage</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 
@@ -1026,42 +1052,42 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="ChemfuelPoweredGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="WindTurbine"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="SolarGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="GeothermalGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="WatermillGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 

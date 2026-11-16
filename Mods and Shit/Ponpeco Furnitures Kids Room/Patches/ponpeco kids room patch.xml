@@ -124,7 +124,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>Defs/ThingDef[@Name="PFKRugBase"]/designationCategory</xpath>
+		<xpath>Defs/ThingDef[@Name="PFKRugBase" or defName="PFK_LinkableRug"]/designationCategory</xpath>
 		<value>
 			<designationCategory>Ferny_DecoRugs</designationCategory>
 		</value>

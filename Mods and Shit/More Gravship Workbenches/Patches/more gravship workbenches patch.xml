@@ -49,4 +49,13 @@
 	</value>
 </Operation>
 
+<Operation Class="PatchOperationConditional">
+	<xpath>Defs/ThingDef[defName="LTS_CompactDroneTinkeringBench"]/designationCategory</xpath>
+	<match Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="LTS_CompactDroneTinkeringBench"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_SpaceProduction</designationCategory>
+		</value>
+	</match>
+</Operation>
 </Patch>

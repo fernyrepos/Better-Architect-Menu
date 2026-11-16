@@ -35,7 +35,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="KT_UFGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

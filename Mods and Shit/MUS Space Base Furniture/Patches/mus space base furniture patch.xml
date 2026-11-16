@@ -367,7 +367,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_SolarGeneratorModule"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	
@@ -377,7 +377,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="MUS_SpaceBase_CompactBattery"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

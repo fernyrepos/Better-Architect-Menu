@@ -5,14 +5,14 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AA_BlueGelBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerStorage</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AA_HexaGelBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerStorage</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 
@@ -21,7 +21,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AA_HexagelCoreReactor"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 

@@ -13,21 +13,21 @@
     <success>Always</success>
     <xpath>Defs/ThingDef[defName="CA_WoodFiredTurbine"]/designationCategory</xpath>
     <value>
-        <designationCategory>Ferny_PowerGeneration</designationCategory>
+        <designationCategory>Power</designationCategory>
     </value>
 </Operation>
 <Operation Class="PatchOperationReplace">
     <success>Always</success>
     <xpath>Defs/ThingDef[defName="CA_GasTurbine"]/designationCategory</xpath>
     <value>
-        <designationCategory>Ferny_PowerGeneration</designationCategory>
+        <designationCategory>Power</designationCategory>
     </value>
 </Operation>
 <Operation Class="PatchOperationReplace">
     <success>Always</success>
     <xpath>Defs/ThingDef[defName="CA_ChemfuelTurbine"]/designationCategory</xpath>
     <value>
-        <designationCategory>Ferny_PowerGeneration</designationCategory>
+        <designationCategory>Power</designationCategory>
     </value>
 </Operation>
 

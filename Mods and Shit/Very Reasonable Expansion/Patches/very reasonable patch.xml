@@ -67,7 +67,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WildTurbine"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

@@ -71,7 +71,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FT_CitadelGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 

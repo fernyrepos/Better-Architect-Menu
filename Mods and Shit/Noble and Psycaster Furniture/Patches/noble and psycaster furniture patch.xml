@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MortonBacklitDrape" or defName="MortonModernDrape" or defName="MortonRitualDrape" or defName="MortonGildedDrape" or defName="MortonTribalDrape"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_DecoHanging</designationCategory>
+    </value>
+  </Operation>
+  <!-- The darklight hearth inherits its category from MortonCeremonialHearth. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="MortonCeremonialHearth" or defName="MortonBloodlightBrazier" or defName="MortonBlacklightBrazier"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_Lighting</designationCategory>
+    </value>
+  </Operation>
+  <!-- Tiny, small, and large skull piles inherit this category. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="MortonSkullConduitBase"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_ResourcesStorage</designationCategory>
+    </value>
+  </Operation>
+</Patch>

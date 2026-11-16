@@ -4,7 +4,7 @@
                     <success>Always</success>
                     <xpath>Defs/DesignationCategoryDef[defName="Ferny_Education"]/order</xpath>
                     <value>
-                        <order>998</order>
+                        <order>9998</order>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationAdd">
@@ -13,7 +13,7 @@
                     <value>
                         <modExtensions>
                         <li Class="BetterArchitect.NestedCategoryExtension">
-                            <parentCategory>Ferny_Life</parentCategory>
+                            <parentCategory>Ferny_Hosting</parentCategory>
                         </li>
                         </modExtensions>
                     </value>

@@ -33,7 +33,7 @@
                 <success>Always</success>
                     <xpath>Defs/ThingDef[defName="AM_SmallGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 
@@ -42,7 +42,7 @@
 					<success>Always</success>   <!-- This patch was erroring as I could not find AM_ElectricalBox loaded in my game. -pillbug2 -->
                     <xpath>Defs/ThingDef[defName="AM_ElectricalBox"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 

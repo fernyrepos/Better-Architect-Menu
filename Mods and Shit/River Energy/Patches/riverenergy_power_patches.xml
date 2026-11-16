@@ -4,13 +4,13 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="WPGTHydroelectricPowerStation"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="WPGTSmollWaterGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -18,7 +18,7 @@
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="WPGTUnderDeepWaterPowerConduit"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

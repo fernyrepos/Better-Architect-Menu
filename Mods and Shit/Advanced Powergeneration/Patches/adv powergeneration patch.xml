@@ -5,7 +5,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="sd_adv_powergen_adv_wind_turbine"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -13,7 +13,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="sd_adv_powergen_adv_solar_generator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -21,7 +21,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="sd_adv_powergen_adv_geothermal_generator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -29,7 +29,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="sd_adv_powergen_nuclear_power_plant"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -37,7 +37,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

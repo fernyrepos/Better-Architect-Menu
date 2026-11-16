@@ -190,7 +190,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="LiquidHydrogenFuelPoweredGenerator_LostS1ght"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -198,7 +198,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="FusionFuelPoweredGenerator_LostS1ght"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -206,7 +206,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="AnnihilationFuelPoweredGenerator_LostS1ght"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -214,7 +214,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ReinforcedVanometricPowerCell_LostS1ght"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -222,7 +222,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ReinforcedVanometricPowerCell2_LostS1ght"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -230,7 +230,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="CompactGenerator114514_LostS1ght"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	
@@ -240,7 +240,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="HighDensityBattery_LostS1ght"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -248,7 +248,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="QuantumCapacitorBattery_LostS1ght"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -256,7 +256,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="AntimatterBattery_LostS1ght"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerStorage</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 

@@ -36,4 +36,14 @@
 	</Operation>
 
 
+<!-- NAVAL: only present when Vehicle Framework is active. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="TSF_Tub_Blueprint"]/designationCategory</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/Vehicles.VehicleBuildDef[defName="TSF_Tub_Blueprint"]/designationCategory</xpath>
+      <value>
+        <designationCategory>Ferny_NavalTransport</designationCategory>
+      </value>
+    </match>
+  </Operation>
 </Patch>

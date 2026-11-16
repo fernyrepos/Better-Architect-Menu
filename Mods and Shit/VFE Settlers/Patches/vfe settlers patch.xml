@@ -29,7 +29,7 @@
                 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="Windmill"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 

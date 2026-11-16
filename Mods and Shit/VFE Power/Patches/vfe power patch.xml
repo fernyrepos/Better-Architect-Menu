@@ -5,28 +5,28 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_LargeBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerStorage</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_SmallBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerStorage</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_AdvancedBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerStorage</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_LargeAdvancedBattery"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerStorage</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 
@@ -36,63 +36,63 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VPE_NuclearGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_IndustrialWoodFiredGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_IndustrialChemfuelPoweredGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_PortableChemfuelPoweredGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_TidalGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_AdvancedWindTurbine"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_AdvancedSolarGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_AdvancedWatermillGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VPE_AdvancedGeothermalGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 
@@ -100,7 +100,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_PortableWoodFiredGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                 
@@ -108,7 +108,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFE_PortableChemfuelPoweredGenerator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
                             

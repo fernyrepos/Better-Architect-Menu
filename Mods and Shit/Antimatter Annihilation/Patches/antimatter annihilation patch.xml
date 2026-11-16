@@ -56,7 +56,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PowerNetConsole_AA"]</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -64,7 +64,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="AntimatterReactorInjector_AA"]</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -72,7 +72,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="AntimatterReactor_AA"]</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	
@@ -82,7 +82,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="AntimatterReactorPowerConverter_AA"]</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

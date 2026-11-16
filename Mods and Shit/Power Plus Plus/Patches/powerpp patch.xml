@@ -7,7 +7,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="ARKPPP_WirelessPowerReceptorBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -15,7 +15,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[@Name="ARKPPP_WirelessPowerEmitterBase"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -23,7 +23,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ARKPPP_LocalWirelessPowerEmitter"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -31,7 +31,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ARKPPP_LocalWirelessPortablePowerEmitter"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -39,7 +39,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ARKPPP_PowerBeamSatelliteTargetingSystem"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -47,7 +47,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ARKPPP_ADRelayTower"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -57,7 +57,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ARKPPP_PowerBeamAbsorptionDish"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

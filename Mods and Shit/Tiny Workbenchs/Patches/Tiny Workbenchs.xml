@@ -157,7 +157,7 @@
         <match Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="TWB_VHGE_GasPoweredSmelterMini"]/designationCategory</xpath>
             <value>
-                <designationCategory>Ferny_PowerGeneration</designationCategory>
+                <designationCategory>Power</designationCategory>
             </value>
         </match>
     </Operation>

@@ -53,7 +53,7 @@
 <Operation Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[defName="RH2_FIRMAN3650_Generator" or defName="RH2_DEWEY2KW_Generator" or defName="RH2_MEP007B_Generator" or defName="RH2_DEFENDER1_Generator"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerGeneration</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
 </Operation>
 

@@ -89,12 +89,12 @@
                     </value>
                 </Operation>
 
-<!-- HEATING -->
+<!-- LIGHTING -->
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="VFEM2_Hearth"]/designationCategory</xpath>
                     <value>
-                        <designationCategory>Ferny_Heating</designationCategory>
+                        <designationCategory>Ferny_Lighting</designationCategory>
                     </value>
                 </Operation>
 
@@ -108,7 +108,7 @@
                                 <success>Always</success>
                                 <xpath>Defs/ThingDef[defName="VFEM2_HearthDarklight"]/designationCategory</xpath>
                                 <value>
-                                    <designationCategory>Ferny_Heating</designationCategory>
+                                    <designationCategory>Ferny_Lighting</designationCategory>
                                 </value>
                             </li>
                         </operations>

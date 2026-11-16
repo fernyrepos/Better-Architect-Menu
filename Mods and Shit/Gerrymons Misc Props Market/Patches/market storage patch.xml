@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="GM_SingleDisplayBase" or @Name="GM_GlassCabinetBase" or @Name="GM_StoreShelfBase"]</xpath>
+    <value>
+      <designationCategory>Ferny_GeneralStorage</designationCategory>
+    </value>
+  </Operation>
+</Patch>

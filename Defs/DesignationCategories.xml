@@ -350,56 +350,8 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-  <DesignationCategoryDef>
-    <defName>Ferny_PowerGeneration</defName>
-    <label>Generation</label>
-    <description>Things that help you generate your power.</description>
-    <order>900</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-      <li>Designator_DeconstructConduit</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Power</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
 
-  <DesignationCategoryDef>
-    <defName>Ferny_PowerStorage</defName>
-    <label>Storage</label>
-    <description>Things that help you store power.</description>
-    <order>900</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-      <li>Designator_DeconstructConduit</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Power</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
 
-  <DesignationCategoryDef>
-    <defName>Ferny_PowerManagement</defName>
-    <label>Infrastructure</label>
-    <description>Things that help you manage your power.</description>
-    <order>900</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-      <li>Designator_DeconstructConduit</li>
-    </specialDesignatorClasses>
-    <modExtensions>
-      <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Power</parentCategory>
-      </li>
-    </modExtensions>
-  </DesignationCategoryDef>
 
   <DesignationCategoryDef>
     <defName>Ferny_Animals</defName>
@@ -781,7 +733,7 @@
 
   <DesignationCategoryDef>
     <defName>Ferny_Life</defName>
-    <label>People</label>
+    <label>Population</label>
     <description>Manage colonists.</description>
     <order>11</order>
     <specialDesignatorClasses>
@@ -810,14 +762,14 @@
     <defName>Ferny_Meditation</defName>
     <label>Meditation</label>
     <description>Places for colonists to meditate.</description>
-    <order>800</order>
+    <order>9996</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Ferny_Life</parentCategory>
+        <parentCategory>Ferny_Hosting</parentCategory>
       </li>
     </modExtensions>
   </DesignationCategoryDef>
@@ -1311,16 +1263,6 @@
     </modExtensions>
   </DesignationCategoryDef>
 
-  <DesignationCategoryDef>
-    <defName>Ferny_World</defName>
-    <label>World</label>
-    <description>Manage the world.</description>
-    <order>100</order>
-    <specialDesignatorClasses>
-      <li>Designator_Cancel</li>
-      <li>Designator_Deconstruct</li>
-    </specialDesignatorClasses>
-  </DesignationCategoryDef>
 
   <DesignationCategoryDef>
     <defName>Ferny_Outreach</defName>
@@ -1383,7 +1325,7 @@
 
 	<DesignationCategoryDef>
 		<defName>Ferny_Hosting</defName>
-		<label>Entertain</label>
+		<label>Activities</label>
 		<order>9</order>
 		<specialDesignatorClasses>
 		  <li>Designator_Cancel</li>
@@ -1600,5 +1542,15 @@
         <parentCategory>Security</parentCategory>
       </li>
     </modExtensions>
+  </DesignationCategoryDef>
+  <DesignationCategoryDef>
+    <defName>Ferny_World</defName>
+    <label>World</label>
+    <description>Manage the world.</description>
+    <order>100</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
   </DesignationCategoryDef>
 </Defs>

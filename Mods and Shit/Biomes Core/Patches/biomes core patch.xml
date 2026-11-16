@@ -61,7 +61,7 @@
           <success>Always</success>
           <xpath>Defs/ThingDef[defName="BMT_LavaGenerator"]/designationCategory</xpath>
           <value>
-              <designationCategory>Ferny_PowerGeneration</designationCategory>
+              <designationCategory>Power</designationCategory>
           </value>
       </Operation>
 

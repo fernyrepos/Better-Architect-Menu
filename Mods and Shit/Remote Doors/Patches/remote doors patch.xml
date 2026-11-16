@@ -38,7 +38,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="RemotePowerSwitch"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

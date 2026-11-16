@@ -42,7 +42,7 @@
                     <success>Always</success>
                     <xpath>Defs/ThingDef[defName="Reverse_Engineered_EMI"]</xpath>
                     <value>
-                        <designationCategory>Ferny_PowerManagement</designationCategory>
+                        <designationCategory>Power</designationCategory>
                     </value>
                 </Operation>
 

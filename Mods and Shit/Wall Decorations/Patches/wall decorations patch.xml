@@ -121,7 +121,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_wallsocket"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -129,7 +129,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="ucp_wallswitch"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerManagement</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Ship equipment inherits its category from this shared base. -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="MVO_ShipEquipmentBase" or defName="MVO_Turret_GrapplingLauncher"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_NavalTransport</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/Vehicles.VehicleBuildDef[defName="MVO_Keel_Blueprint" or defName="MVO_Pontoon_Blueprint" or defName="MVO_ExpandableRaft_Blueprint" or defName="MVO_Roundnose_Blueprint" or defName="MVO_Cannon_Blueprint"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_NavalTransport</designationCategory>
+    </value>
+  </Operation>
+</Patch>

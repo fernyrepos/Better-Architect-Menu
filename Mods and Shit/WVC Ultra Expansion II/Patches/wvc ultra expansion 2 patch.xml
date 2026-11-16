@@ -110,7 +110,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="WVC_StablePowerCell"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

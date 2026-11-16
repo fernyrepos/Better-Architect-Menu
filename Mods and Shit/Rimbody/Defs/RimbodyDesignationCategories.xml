@@ -5,14 +5,14 @@
     <defName>Ferny_Athletics</defName>
     <label>Exercise</label>
     <description>Things that relate to athletics.</description>
-    <order>999</order>
+    <order>9997</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>
       <li>Designator_Deconstruct</li>
     </specialDesignatorClasses>
     <modExtensions>
       <li Class="BetterArchitect.NestedCategoryExtension">
-        <parentCategory>Ferny_Life</parentCategory>
+        <parentCategory>Ferny_Hosting</parentCategory>
       </li>
     </modExtensions>
   </DesignationCategoryDef>

@@ -47,7 +47,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="LA_WoodFiredGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

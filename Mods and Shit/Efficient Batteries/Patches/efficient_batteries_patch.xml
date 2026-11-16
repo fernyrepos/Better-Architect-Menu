@@ -4,19 +4,19 @@
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SmallEfficientBattery"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerStorage</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
 	</Operation>
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SmallHyperEfficentBattery"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerStorage</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
 	</Operation>
     <Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="SmallUltraEfficientBattery"]/designationCategory</xpath>
         <value>
-            <designationCategory>Ferny_PowerStorage</designationCategory>
+            <designationCategory>Power</designationCategory>
         </value>
 	</Operation>
 

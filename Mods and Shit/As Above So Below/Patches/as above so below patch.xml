@@ -22,7 +22,7 @@
     <success>Always</success>
     <xpath>Defs/ThingDef[@Name="AB_VerticalConduitBase"]/designationCategory</xpath>
     <value>
-      <designationCategory>Ferny_PowerManagement</designationCategory>
+      <designationCategory>Power</designationCategory>
     </value>
   </Operation>
 

@@ -117,7 +117,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="HKJ_AutoRepairGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -125,7 +125,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="HKJ_MaterialToEnergyConverter"]</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	

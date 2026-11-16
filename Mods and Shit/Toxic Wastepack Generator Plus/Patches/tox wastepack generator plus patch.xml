@@ -69,7 +69,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PolutionPoweredGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -77,7 +77,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="PortablePolutionPoweredGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 
@@ -85,7 +85,7 @@
 		<success>Always</success>
 		<xpath>Defs/ThingDef[defName="IndustrialPolutionPoweredGenerator"]/designationCategory</xpath>
 		<value>
-			<designationCategory>Ferny_PowerGeneration</designationCategory>
+			<designationCategory>Power</designationCategory>
 		</value>
 	</Operation>
 	
