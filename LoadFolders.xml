@@ -509,7 +509,7 @@
     <li IfModActive="daylight.rimlifeextrgmod">Mods and Shit/RimLife Expansion Trading Items</li>
     <li IfModActive="mlie.apothecary">Mods and Shit/Apothecary</li>
     <li IfModActive="daylight.wbsmorelinkf">Mods and Shit/WorkBench Support</li>
-    <li IfModActiveAny="lts.rh,echotidefish.repairhubsforked">Mods and Shit/Repair Hubs</li>
+    <li IfModActive="lts.rh,echocrosscat.repairhubsforked">Mods and Shit/Repair Hubs</li>
     <li IfModActive="qq.expanded.woodwork">Mods and Shit/Expanded Woodworking 2</li>
     <li IfModActive="honeybadger.wallmountedturretsversiontwo">Mods and Shit/Wall Mounted Turrets</li>
     <li IfModActive="koro.mapvehicles.nomadiccarts">Mods and Shit/Nomadic Carts</li>
