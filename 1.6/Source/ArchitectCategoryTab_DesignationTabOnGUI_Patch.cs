@@ -470,11 +470,11 @@ namespace BetterArchitect
 
                 shouldHideMoreCategory = subCategoriesHaveBuildings && !mainCategoryHasDesignators;
             }
-            if (shouldHideMoreCategory) allCategories.Remove(mainCat);
             var displayCategories = new List<DesignationCategoryDef>();
             displayCategories.AddRange(filteredSubCategories);
             if (!shouldHideMoreCategory) displayCategories.Add(mainCat);
-            if (currentSelection == null || !allCategories.Contains(currentSelection))
+            // Only a listed section can stay selected: one with nothing visible to build is left out of the list.
+            if (currentSelection == null || !displayCategories.Contains(currentSelection))
             {
                 // Proxy defs are recreated on cache invalidation, so the stored reference may be stale.
                 // Try to re-resolve by defName before falling back to the default first category.
