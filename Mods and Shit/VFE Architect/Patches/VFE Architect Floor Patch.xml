@@ -13,7 +13,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="SterileTile"]</xpath>
         <value>
-            <designationCategory>Ferny_FloorsMetal</designationCategory>
+            <designationCategory>Ferny_FloorsClean</designationCategory>
         </value>
     </Operation>
 
@@ -51,6 +51,29 @@
             or defName="VFEArch_FineWoodenFloorMahogany"]</xpath>
         <value>
             <designationCategory>Ferny_FloorsWood</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- FREE -->
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="VFEArch_Grass"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsFree</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="VFEArch_LawnPlot"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsFree</designationCategory>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="VFEArch_PlayerPackedDirt"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_FloorsFree</designationCategory>
         </value>
     </Operation>
 

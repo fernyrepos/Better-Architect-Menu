@@ -1138,5 +1138,6 @@
     <li IfModActive="MrHydralisk.AirshipsFleet">Mods and Shit/Airships Fleet</li>
     <li IfModActive="Skyl3lazer.DigitalStorage">Mods and Shit/Digital Storage</li>
     <li IfModActive="ODs.Tavern">Mods and Shit/Tavern</li>
+    <li IfModActive="Teok25.ArchotechExpanded">Mods and Shit/Archotech Expanded</li>
 </v1.6>
 </loadFolders>

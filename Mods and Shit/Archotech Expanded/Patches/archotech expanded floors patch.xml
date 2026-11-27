@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- CLEAN -->
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/TerrainTemplateDef[defName="AttomachineryFloor"]</xpath>
+        <value>
+            <li Class="BetterArchitect.TemplateCategoryExtension">
+                <designationCategory>Ferny_FloorsClean</designationCategory>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/TerrainTemplateDef[defName="PicomachineryFloor"]</xpath>
+        <value>
+            <li Class="BetterArchitect.TemplateCategoryExtension">
+                <designationCategory>Ferny_FloorsClean</designationCategory>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/TerrainTemplateDef[defName="NanomachineryFloor"]</xpath>
+        <value>
+            <li Class="BetterArchitect.TemplateCategoryExtension">
+                <designationCategory>Ferny_FloorsClean</designationCategory>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

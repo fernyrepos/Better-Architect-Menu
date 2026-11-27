@@ -17,4 +17,48 @@
     </value>
 </Operation>
 
+<!-- FLOORS -->
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="MUM_ComfortWeaveCarpet"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_FloorsCarpet</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="MUM_FineComfortWeaveCarpet"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_FloorsCarpet</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="MUM_CompositeStoneFloor"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_FloorsStone</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="MUM_FineCompositeStoneFloor"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_FloorsStone</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="MUM_RefinedWoodFloor"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_FloorsWood</designationCategory>
+    </value>
+</Operation>
+<Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="MUM_TemperedSteelFloor"]/designationCategory</xpath>
+    <value>
+        <designationCategory>Ferny_FloorsMetal</designationCategory>
+    </value>
+</Operation>
+
 </Patch>
