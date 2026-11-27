@@ -1133,5 +1133,6 @@
     <!-- (Add new mods here ^^^^^) -->
       <li IfModActive="ICC.FOV.ORBITER">Mods and Shit/Faction - Orbiters</li>
     <li IfModActive="lemore.loadoutcabinet">Mods and Shit/Loadout Cabinet Exosuit Framework Addon</li>
+    <li IfModActive="legend.forkedskylights">Mods and Shit/FORKED Skylights</li>
 </v1.6>
 </loadFolders>

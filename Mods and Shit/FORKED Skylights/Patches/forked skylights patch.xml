@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Add forked skylights designator to Ferny_Lighting -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/DesignationCategoryDef[defName="Ferny_Lighting"]/specialDesignatorClasses</xpath>
+        <value>
+            <li>legend.forkedskylights.Designator_AddSkylight</li>
+        </value>
+    </Operation>
+</Patch>
