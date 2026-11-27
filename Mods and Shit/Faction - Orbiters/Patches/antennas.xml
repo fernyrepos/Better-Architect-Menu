@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Summon Antennas -->
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BurnoutTychforFalseSignal"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Summon</designationCategory>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BurnoutTychforAgitator"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_Summon</designationCategory>
+		</value>
+	</Operation>
+
+</Patch>

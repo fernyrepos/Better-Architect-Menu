@@ -1031,5 +1031,7 @@
         <li>drilledhead.Wallpenmarker</li>
         <li>forti.rimtoll</li>
     <!-- (Add new mods here ^^^^^) -->
+    <li>ICC.FOV.ORBITER</li>
+    <li>lemore.loadoutcabinet</li>
 </loadAfter>
 </ModMetaData>

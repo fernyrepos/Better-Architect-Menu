@@ -1131,5 +1131,7 @@
     <li IfModActiveAll="GMMP.Market,adaptive.storage.framework">Mods and Shit/Gerrymons Misc Props Market</li>
     <li IfModActive="OELS.MapVehicles.OceanExpansion">Mods and Shit/Map Vehicles Ocean Expansion</li>
     <!-- (Add new mods here ^^^^^) -->
-  </v1.6>
+      <li IfModActive="ICC.FOV.ORBITER">Mods and Shit/Faction - Orbiters</li>
+    <li IfModActive="lemore.loadoutcabinet">Mods and Shit/Loadout Cabinet Exosuit Framework Addon</li>
+</v1.6>
 </loadFolders>

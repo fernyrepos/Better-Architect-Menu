@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="MF_Building_LoadoutCabinet"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_CombatEquipment</designationCategory>
+		</value>
+	</Operation>
+	
+</Patch>
