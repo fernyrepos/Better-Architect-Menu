@@ -124,17 +124,9 @@
   </Operation>
 
   <!-- DOORS -->
-  <Operation Class="PatchOperationReplace">
+  <Operation Class="PatchOperationAdd">
     <success>Always</success>
-    <xpath>Defs/ThingDef[defName="AB_ExoticDoor"]/designationCategory</xpath>
-    <value>
-      <designationCategory>Ferny_Doors</designationCategory>
-    </value>
-  </Operation>
-
-  <Operation Class="PatchOperationReplace">
-    <success>Always</success>
-    <xpath>Defs/ThingDef[defName="AB_ExoticAutoDoor"]/designationCategory</xpath>
+    <xpath>Defs/ThingDef[defName="AB_ExoticDoor" or defName="AB_ExoticAutoDoor"]</xpath>
     <value>
       <designationCategory>Ferny_Doors</designationCategory>
     </value>
@@ -163,6 +155,50 @@
     <xpath>Defs/ThingDef[defName="VFEFactory_NeutroamineSynthesizer"]/designationCategory</xpath>
     <value>
       <designationCategory>Ferny_Production</designationCategory>
+    </value>
+  </Operation>
+
+  <!-- FLOORS -->
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AlienWoodFloors_CrystalWood"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsWood</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AlienWoodFloors_MushroomStalks"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsWood</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AlienWoodFloors_RedWood"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsWood</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AsphaltFloor"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsConcrete</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_AsphaltBridge"]/designationCategory</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsConcrete</designationCategory>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/TerrainDef[defName="AB_CompactedSand"]</xpath>
+    <value>
+      <designationCategory>Ferny_FloorsStone</designationCategory>
     </value>
   </Operation>
 

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+  <!-- Remove Tavern's own tab -->
+
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>Defs/DesignationCategoryDef[defName="TavernFurniture"]</xpath>
+  </Operation>
+
+  <!-- Seating -->
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_ChairA" or defName="Tav_SoftChair" or defName="Tav_StoolA" or defName="Tav_SoftStool" or defName="Tav_TavernBench" or defName="Tav_SoftArmchair"]/designationCategory</xpath>
+    <value><designationCategory>Ferny_Seating</designationCategory></value>
+  </Operation>
+
+  <!-- Tables -->
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_1x1Table" or defName="Tav_1x2Table" or defName="Tav_2x2Table" or defName="Tav_2x2RoundTable" or defName="Tav_EndTable"]</xpath>
+    <value><designationCategory>Ferny_Tables</designationCategory></value>
+  </Operation>
+
+  <!-- Bedroom -->
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_Dresser" or defName="Tav_Wardrobe" or defName="Tav_1x1Wardrobe"]/designationCategory</xpath>
+    <value><designationCategory>Ferny_Bedroom</designationCategory></value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_SoftBed" or defName="Tav_SoftDoubleBed"]</xpath>
+    <value><designationCategory>Ferny_Bedroom</designationCategory></value>
+  </Operation>
+
+  <!-- Rugs -->
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_StrawRugA" or defName="Tav_RugA" or defName="Tav_RugB" or defName="Tav_RugSquareA" or defName="Tav_RugSquareB" or defName="Tav_RugSquare4X2A"]</xpath>
+    <value><designationCategory>Ferny_DecoRugs</designationCategory></value>
+  </Operation>
+
+  <!-- Kitchen -->
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_Kitchen" or defName="Tav_KitchenShelfs" or defName="Tav_KitchenCloset" or defName="Tav_Oven" or defName="Tav_KitchenButch"]/designationCategory</xpath>
+    <value><designationCategory>Ferny_Kitchen</designationCategory></value>
+  </Operation>
+
+  <!-- Fixtures -->
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_RackA" or defName="Tav_KitchenAdd"]/designationCategory</xpath>
+    <value><designationCategory>Ferny_Fixtures</designationCategory></value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_1x2Counter" or defName="Tav_1x3Counter"]</xpath>
+    <value><designationCategory>Ferny_Fixtures</designationCategory></value>
+  </Operation>
+
+  <!-- Hanging decorations -->
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_Dec2x1Flags" or defName="Tav_Dec3x1Flags" or defName="Tav_Dec4x1Flags" or defName="Tav_DecTrophy"]/designationCategory</xpath>
+    <value><designationCategory>Ferny_DecoHanging</designationCategory></value>
+  </Operation>
+
+  <!-- Lighting -->
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_Candleholder" or defName="Tav_TableLight"]/designationCategory</xpath>
+    <value><designationCategory>Ferny_Lighting</designationCategory></value>
+  </Operation>
+
+  <!-- Production -->
+
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[defName="Tav_TableDecor"]/designationCategory</xpath>
+    <value><designationCategory>Ferny_Production</designationCategory></value>
+  </Operation>
+
+</Patch>

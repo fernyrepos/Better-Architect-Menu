@@ -398,4 +398,34 @@
 		</value>
 	</Operation>
 
+	<!-- ARCHOTECH FLOORS -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FloorArchotechOwO"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsClean</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FloorArchotechOwO_Bridge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsClean</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FloorArchotechUwU"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsClean</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/TerrainDef[defName="FloorArchotechUwU_Bridge"]/designationCategory</xpath>
+		<value>
+			<designationCategory>Ferny_FloorsClean</designationCategory>
+		</value>
+	</Operation>
+
 </Patch>

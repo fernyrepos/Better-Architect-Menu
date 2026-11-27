@@ -52,11 +52,11 @@
     <!-- Note that these may only be partial patches: E.g., moving categories. -->
     <!-- AUTHORS: Please check if your mod needs to be added in one of these strings as well. -->
 
-    <li IfModActiveAny="mingtuwuxiang.fishingdecorative,mingtuwuxiang.gothicdecorative,mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Common Patch</li>
+    <li IfModActive="mingtuwuxiang.fishingdecorative,mingtuwuxiang.gothicdecorative,mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Common Patch</li>
 
-    <li IfModActiveAny="he.rrs,he.agmtfat,he.agmnne,he.bfot,he.ct,he.fbbus,he.fcvpi,he.fe,he.f350a,he.fltdcv,he.bearcatg3,he.mstat,he.pa">Mods and Shit/HE-Vehicles/Common</li>
+    <li IfModActive="he.rrs,he.agmtfat,he.agmnne,he.bfot,he.ct,he.fbbus,he.fcvpi,he.fe,he.f350a,he.fltdcv,he.bearcatg3,he.mstat,he.pa">Mods and Shit/HE-Vehicles/Common</li>
 
-    <li IfModActiveAny="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
+    <li IfModActive="resurrectionem.furniture,resurrectionem.furnitureasia">Mods and Shit/RR Furniture Common</li>
 
 
 
@@ -179,6 +179,8 @@
     <li IfModActive="oskarpotocki.vfe.deserters">Mods and Shit/VFE Deserters</li>                                           <!-- Implicit support for Pressure Plate -->
     <li IfModActive="oskarpotocki.vfe.tribals">Mods and Shit/VFE Tribals</li>
     <li IfModActive="adaptive.storage.framework">Mods and Shit/Adaptive Storage Framework</li>
+    <li IfModActive="lwm.deepstorage">Mods and Shit/LWM's Deep Storage</li>
+    <li IfModActive="gideon.simplestorage">Mods and Shit/Simple Storage Reborn</li>
     <li IfModActive="sarg.alphaprefabs">Mods and Shit/Alpha Prefabs</li>
     <li IfModActive="mlie.enterhere">Mods and Shit/Enter Here</li>
     <li IfModActive="adamas.hospital">Mods and Shit/Hospital</li>
@@ -269,7 +271,7 @@
     <li IfModActive="ilyvion.colonymanagerredux">Mods and Shit/Colony Manager Redux</li>
     <li IfModActive="aelanna.eccentrictech.defensegrid">Mods and Shit/Eccentric Tech Defense Grid</li>
     <li IfModActive="aelanna.eccentrictech.fusionpower">Mods and Shit/Eccentric Tech Fusion Power</li>
-    <li IfModActive="mrhydralisk.complementaryodyssey">Mods and Shit/Complementary Odyssey</li>
+    <li IfModActive="MrHydralisk.ComplementaryOdyssey">Mods and Shit/Complementary Odyssey</li>
     <li IfModActive="windwardsnow.mechanitorweapons">Mods and Shit/Mechanitor Weapons</li>
     <li IfModActive="mjeiouws.outlander.continuouscontention">Mods and Shit/Outlander Solutions Continuous Contention</li>
     <li IfModActive="mlie.jwlatmosphericwaterprocessor">Mods and Shit/Atmospheric Water Processor</li>
@@ -318,7 +320,6 @@
     <li IfModActive="neronix17.geothermalcooler">Mods and Shit/Geothermal Coolers</li>
     <li IfModActive="HT.LUNARTIKA">Mods and Shit/Heavy Truck</li>
     <li IfModActive="GHOST.RootsofRimworld">Mods and Shit/Roots of Rimworld</li>
-    <li IfModActive="MrHydralisk.VNPEReimaginedProgression">Mods and Shit/VE Nutrient Paste Expanded</li>
     <li IfModActive="vin.warehouse.storage.corpse">Mods and Shit/Warehouse Storage Corpses</li>
     <li IfModActive="drilledhead.MyDogsHouse">Mods and Shit/MyDogsHouse</li>
     <li IfModActive="JTCsBonereapers.FormerlyPPHHYY">Mods and Shit/BoneReapers Remarrowed</li>
@@ -382,8 +383,7 @@
     <li IfModActive="rx97.mapvehicles">Mods and Shit/RX97 Simple Raft</li>
     <li IfModActive="mo.technicalvehicles">Mods and Shit/Technical Vehicles</li>
     <li IfModActive="mo.technicalmapvehicles">Mods and Shit/Technical Map Vehicles</li>
-    <li IfModActive="mrhydralisk.voepowergrid">Mods and Shit/VE Outposts Power Grid</li>
-    <li IfModActiveAny="oels.vehiclemapframework,oels.vehiclemapframework.dev">Mods and Shit/Vehicle Map Framework</li>
+    <li IfModActive="oels.vehiclemapframework,oels.vehiclemapframework.dev">Mods and Shit/Vehicle Map Framework</li>
     <li IfModActive="mingtuwuxiang.fishingdecorative">Mods and Shit/MUS FishingDecorative</li>                              <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.gothicdecorative">Mods and Shit/MUS Gothicstyle Vampire Furniture</li>                   <!-- Progression: Aesthetics compat -->
     <li IfModActive="mingtuwuxiang.spacebasedecorative">Mods and Shit/MUS Space Base Furniture</li>
@@ -432,7 +432,7 @@
     <li IfModActive="sarg.alphavehiclesageofsail">Mods and Shit/Alpha Vehicles Age of Sail</li>
     <li IfModActive="warlocksforge.fishtraps">Mods and Shit/Fish Traps</li>
     <li IfModActive="VE.VanillaChristmasExpanded">Mods and Shit/Vanilla Christmas Expanded</li>
-    <li IfModActiveAny="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>
+    <li IfModActive="ling.thelowcooler,godlyannihilator.thelowcooler">Mods and Shit/Cooler</li>
     <li IfModActive="unagi.funiture.build.window">Mods and Shit/UNAGI Decorative Furniture</li>
     <li IfModActive="xercaine.wallheater">Mods and Shit/Wall Heater</li>
     <li IfModActive="test.ford">Mods and Shit/Rim-Bronco Ford</li>
@@ -440,7 +440,7 @@
     <li IfModActive="Killerbot.NavistarMaxxPro">Mods and Shit/GTEK Navistar</li>
     <li IfModActive="Killerbot.SubaruForester">Mods and Shit/GTEK Subaru Forester</li>
     <li IfModActive="sarg.alphabiomes">Mods and Shit/Alpha Biomes</li>
-    <li IfModActiveAny="lts.cc,echotidefish.cryptocoffinsforked">Mods and Shit/Crypto Coffins</li>
+    <li IfModActive="lts.cc,echotidefish.cryptocoffinsforked">Mods and Shit/Crypto Coffins</li>
     <li IfModActive="ogliss.thewhitecrayon.quarry">Mods and Shit/Quarry</li>
     <li IfModActive="4loris4.morelinkables">Mods and Shit/More Linkables</li>
     <li IfModActive="sbz.neatstoragefridge">Mods and Shit/Fridge</li>
@@ -479,7 +479,7 @@
     <li IfModActive="bart.atg">Mods and Shit/Advanced Toxifier Generator</li>
     <li IfModActive="redmattis.geneextractor">Mods and Shit/Gene Extractor Tiers</li>                                       <!-- Implicit support for Gene Nodes - Genes for Sale -->
     <li IfModActive="scorpio.biotechnology">Mods and Shit/Biotechnology</li>
-    <li IfModActive="mrhydralisk.anomaliesexpected">Mods and Shit/Anomalies Expected</li>
+    <li IfModActive="MrHydralisk.AnomaliesExpected">Mods and Shit/Anomalies Expected</li>
     <li IfModActive="aoba.rimthunder.redarmy.coldfront">Mods and Shit/RimThunder Cold Front</li>
     <li IfModActive="rimthunderteams.rimthunder.flyingchariot">Mods and Shit/RimThunder Flying Chariot</li>
     <li IfModActive="aoba.rimthunder.roca">Mods and Shit/RimThunder Roaring Tiger</li>
@@ -509,7 +509,7 @@
     <li IfModActive="daylight.rimlifeextrgmod">Mods and Shit/RimLife Expansion Trading Items</li>
     <li IfModActive="mlie.apothecary">Mods and Shit/Apothecary</li>
     <li IfModActive="daylight.wbsmorelinkf">Mods and Shit/WorkBench Support</li>
-    <li IfModActiveAny="lts.rh,echotidefish.repairhubsforked">Mods and Shit/Repair Hubs</li>
+    <li IfModActive="lts.rh,echocrosscat.repairhubsforked">Mods and Shit/Repair Hubs</li>
     <li IfModActive="qq.expanded.woodwork">Mods and Shit/Expanded Woodworking 2</li>
     <li IfModActive="honeybadger.wallmountedturretsversiontwo">Mods and Shit/Wall Mounted Turrets</li>
     <li IfModActive="koro.mapvehicles.nomadiccarts">Mods and Shit/Nomadic Carts</li>
@@ -887,7 +887,7 @@
     <li IfModActive="kongkim.PanelsFrames">Mods and Shit/Panels Frames and Stairs</li>
     <li IfModActive="qq.expanded.brickwork">Mods and Shit/Expanded Brickwork</li>
     <li IfModActive="rick.fcp.core.tools">Mods and Shit/FCP Tools</li>
-    <li IfModActiveAny="mlie.hunterphagexenotype,joeownage.hunterphageequip">Mods and Shit/Hunterphage/Hunterphage Equipment Only</li>
+    <li IfModActive="mlie.hunterphagexenotype,joeownage.hunterphageequip">Mods and Shit/Hunterphage/Hunterphage Equipment Only</li>
     <li IfModActive="mlie.hunterphagexenotype">Mods and Shit/Hunterphage/Hunterphage Xenotype</li>
     <li IfModActive="scorpio.mechanoidfoundry">Mods and Shit/Mechanoid Foundry</li>
     <li IfModActive="wm.weaponstri">Mods and Shit/Traderunners Arsenal</li>
@@ -947,7 +947,7 @@
     <li IfModActive="lothmorg.vcg">Mods and Shit/Variable Chemfuel Generator</li>
     <li IfModActive="drake.replicator">Mods and Shit/Replicator</li>
     <li IfModActive="ww.guillotine">Mods and Shit/Guillotine</li>
-    <li IfModActiveAny="exmtts.cosmic,exmttspipe.cosmic">Mods and Shit/Extra Turrets Cosmic</li>
+    <li IfModActive="exmtts.cosmic,exmttspipe.cosmic">Mods and Shit/Extra Turrets Cosmic</li>
     <li IfModActive="para0234.snsambitioncosmic">Mods and Shit/Ambition of the Cosmic</li>
     <li IfModActive="caveman.jellywall">Mods and Shit/Jelly Wall</li>
     <li IfModActive="cc.honk.sentry">Mods and Shit/Crimson HONK Sentry</li>
@@ -1129,5 +1129,15 @@
     <li IfModActiveAll="GMMP.Market,adaptive.storage.framework">Mods and Shit/Gerrymons Misc Props Market</li>
     <li IfModActive="OELS.MapVehicles.OceanExpansion">Mods and Shit/Map Vehicles Ocean Expansion</li>
     <!-- (Add new mods here ^^^^^) -->
-  </v1.6>
+      <li IfModActive="ICC.FOV.ORBITER">Mods and Shit/Faction - Orbiters</li>
+    <li IfModActive="lemore.loadoutcabinet">Mods and Shit/Loadout Cabinet Exosuit Framework Addon</li>
+    <li IfModActive="legend.forkedskylights">Mods and Shit/FORKED Skylights</li>
+    <li IfModActive="MrHydralisk.VNPEReimaginedProgression">Mods and Shit/VNPE Reimagined Progression</li>
+    <li IfModActive="MrHydralisk.VOEPowerGrid">Mods and Shit/VOE Power Grid</li>
+    <li IfModActive="MrHydralisk.UndergroundVault">Mods and Shit/Underground Vault</li>
+    <li IfModActive="MrHydralisk.AirshipsFleet">Mods and Shit/Airships Fleet</li>
+    <li IfModActive="Skyl3lazer.DigitalStorage">Mods and Shit/Digital Storage</li>
+    <li IfModActive="ODs.Tavern">Mods and Shit/Tavern</li>
+    <li IfModActive="Teok25.ArchotechExpanded">Mods and Shit/Archotech Expanded</li>
+</v1.6>
 </loadFolders>

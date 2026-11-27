@@ -102,7 +102,7 @@
 		<value>
 			<designationCategory>Industrial</designationCategory>
 		</value>
-	</Operation>PRF_Puller_Base
+	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
