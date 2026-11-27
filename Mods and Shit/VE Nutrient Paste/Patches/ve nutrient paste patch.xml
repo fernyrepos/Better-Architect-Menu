@@ -46,12 +46,17 @@
                         <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
                     </value>
                 </Operation>
-                <Operation Class="PatchOperationReplace">
-                    <success>Always</success>
-                    <xpath>Defs/ThingDef[defName="VNPE_NutrientPasteTap"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
-                    </value>
+                <Operation Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Nutrient Paste Expanded: Reimagined Progression</li>
+					</mods>
+					<nomatch Class="PatchOperationReplace">
+						<success>Always</success>
+						<xpath>Defs/ThingDef[defName="VNPE_NutrientPasteTap"]/designationCategory</xpath>
+						<value>
+							<designationCategory>Ferny_NutrientPasteNetwork</designationCategory>
+						</value>
+					</nomatch>
                 </Operation>
                 <Operation Class="PatchOperationReplace">
                     <success>Always</success>
