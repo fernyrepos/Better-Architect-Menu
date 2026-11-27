@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="SimpleStorage"]/label</xpath>
+			<value>
+				<label>Simple Storage</label>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="SimpleStorage"]/order</xpath>
+			<value>
+				<order>3</order>
+			</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs[DesignationCategoryDef/defName="SimpleStorage"]</xpath>
+		<match Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/DesignationCategoryDef[defName="SimpleStorage"]</xpath>
+                    <value>
+                        <modExtensions>
+                        <li Class="BetterArchitect.NestedCategoryExtension">
+                            <parentCategory>Ferny_Storage</parentCategory>
+                        </li>
+                        </modExtensions>
+                    </value>
+		</match>
+	</Operation>
+</Patch>
